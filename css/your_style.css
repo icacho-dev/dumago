@@ -1,19 +1,110 @@
 /*
  * It is advised not to edit the smartadmin_production.css
- * as this will override any changes you make in the 
- * later versions of this theme. 
- * 
- * We advise that you use use this CSS to override 
- * SmartAdmin styles. 
- * 
+ * as this will override any changes you make in the
+ * later versions of this theme.
+ *
+ * We advise that you use use this CSS to override
+ * SmartAdmin styles.
+ *
  * Rename the stylesheet to whatever your liking so it will stay
  * unique to you with each update of SmartAdmin.
  */
 
+
 /*
  * INDEX
- * 
+ *
  * - HTML
  * - BODY
  * - CUSTOM STYLES
  */
+
+.notes-container {
+  background-color: rgba(200, 200, 200, 0.8);
+  top: -195px;
+  position: relative;
+  border-top: solid thin #CACACA;
+}
+.notes-item {
+  background-color: #fafafa;
+  display: block;
+  height: 100px;
+  width: 250px;
+  border: solid thin #BDBDBD;
+  margin: 0 5px 0 0;
+}
+.notes-scroll {
+  /*background-color: rgba(255, 178, 178, 0.47);*/
+  height: 100px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  display: -webkit-box;
+}
+.notes-toLeft,
+.notes-toRight {
+  background-color: rgba(0, 255, 255, 0.29);
+  position: absolute;
+  height: 100px;
+  width: 20px;
+}
+.notes-toLeft {
+  left: 13px;
+}
+.notes-toRight {
+  right: 13px;
+}
+.note-title {
+  font-weight: bold;
+  color: #797979;
+}
+.note-date {
+  font-size: xx-small;
+  color: #7E7E7E;
+  float:left;
+}
+.note-results {
+  font-size: xx-small;
+  color: #7E7E7E;
+  float: right;
+}
+.note-head {
+  display: inline-block;
+  width: 100%;
+  background: #EEEEEE;
+  padding: 4px;
+}
+.note-body {
+  display: inline-flex;
+}
+.note-data {
+  display: inline-block;
+  background-color: white;
+  width: 90%;
+  border-right: 1px solid #FFE1EB;
+  margin-right: 3px;
+}
+.note-content {
+
+}
+.note-subcontent {
+  font-size: smaller;
+  font-style: italic;
+}
+.note-controls {
+  background: white;
+  display: inline-block;
+  text-align: center;
+  width: 10%;
+  border-left: 1px solid #FFE1EB;
+}
+.note-trash {
+  color: #AB3434;
+}
+.note-print {
+  /*7D96A7*/
+  color: #2F96DA;
+}
+.note-print.note-print-false {
+  /*7D96A7*/
+  color: #2F96DA;
+}
