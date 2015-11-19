@@ -1,6 +1,6 @@
 /*!
  * SmartAdmin v1.5.1 ()
- * Copyright 2011-2014 
+ * Copyright 2011-2014
  */
 /*---------------------------------------------------
     LESS Elements 0.9
@@ -493,12 +493,12 @@
   color: #fff;
 }
 .smart-style-2 #logo-group span#activity {
-  background: none !important;
+  /*background: none !important;
   border: none !important;
-  color: #C5C6CA;
+  color: #C5C6CA;*/
 }
 .smart-style-2 #logo-group span#activity:hover {
-  color: #fff;
+  /*color: #fff;*/
 }
 .smart-style-2 #logo-group > span .badge {
   background: #008DC4;
@@ -517,17 +517,16 @@
 }
 .smart-style-2 aside {
   background: #F7F7F7;
-  background: -webkit-gradient(linear, left top, right top, color-stop(99%, #f7f7f7), color-stop(100%, #cacaca));
-  background: -webkit-linear-gradient(left, #f7f7f7 99%, #cacaca 100%);
-  background: -webkit-gradient(linear, top left, top right, from(#f7f7f7), to(#cacaca));
-  background: linear-gradient(to right, #f7f7f7 99%, #cacaca 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(99%, #f7f7f7), color-stop(100%, #f7f7f7));
+  background: -webkit-linear-gradient(left, #f7f7f7 99%, #f7f7f7 100%);
+  background: -webkit-gradient(linear, top left, top right, from(#f7f7f7), to(#f7f7f7));
+  background: linear-gradient(to right, #f7f7f7 99%, #f7f7f7 100%);
   min-height: 100%;
 }
 .smart-style-2 #left-panel {
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-bottom: 15px;
-  padding-top: 64px;
+  padding: 15px;
+  border-top: solid thin #DDDDDD;
+border-right: solid thin #DDDDDD;
 }
 .smart-style-2 .login-info {
   margin-bottom: 7px !important;
@@ -651,19 +650,31 @@ body.smart-style-2 {
   background-color: #22262e;
 }*/
 .smart-style-2 #header {
-  
+  display: block;
+  height: 49px;
+  margin: 0;
+  padding: 0 13px 0 0;
+  background-image: -moz-linear-gradient(top, #FFFFFF, #EFEFEF);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FFFFFF), to(#EFEFEF));
+  background-image: -webkit-linear-gradient(top, #FFFFFF, #EFEFEF);
+  background-image: -o-linear-gradient(top, #FFFFFF, #EFEFEF);
+  background-image: linear-gradient(to bottom, #FFFFFF, #EFEFEF)!important;
+  background-repeat: repeat-x;
+  position: relative;
+  z-index: 905;
+  border-bottom: solid thin #CACACA;
 }
 .smart-style-2 .btn-header  > :first-child  > a,
 .smart-style-2 #hide-menu a  > i {
-  background: none;
+  /*background: none;
   border: none !important;
   color: #C5C6CA !important;
-  box-shadow: none !important;
+  box-shadow: none !important;*/
 }
 .smart-style-2 .btn-header  > :first-child  > a:hover,
 .smart-style-2 #hide-menu a:hover i {
-  color: #fff !important;
-  cursor: pointer !important;
+  /*color: #fff !important;
+  cursor: pointer !important;*/
 }
 .smart-style-2 .header-search  > button,
 .smart-style-2 .header-dropdown-list a.dropdown-toggle {
@@ -761,7 +772,6 @@ body.smart-style-2 {
 }
 .smart-style-2.minified #left-panel {
   padding: 0 !important;
-  padding-top: 50px !important;
 }
 .smart-style-2.minified nav ul > li > a {
   padding: 12px 11px;
@@ -2947,11 +2957,11 @@ body.smart-style-4 {
 }
 .smart-style-5 nav > ul ul li::before,
 .smart-style-5 nav > ul > li > ul::before {
-  border: none !important;
+  /*border: none !important;*/
 }
 .smart-style-5 nav ul ul li > a:hover,
 .smart-style-5 nav ul ul ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  /*background-color: rgba(0, 0, 0, 0.3);*/
 }
 .smart-style-5 {
   /*.profile-pic{
