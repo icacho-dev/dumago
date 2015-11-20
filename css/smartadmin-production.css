@@ -7871,7 +7871,7 @@ div.wijmo-wijmenu .wijmo-wijmenu-child .wijmo-wijmenu-text {
 }
 .chat-body {
   background: #FAFAFA;
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodï¿½EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
   background: -moz-linear-gradient(top, #fafafa 0%, #ffffff 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fafafa), color-stop(100%, #ffffff));
   background: -webkit-linear-gradient(top, #fafafa 0%, #ffffff 100%);
@@ -11104,7 +11104,7 @@ nav ul span.menu-item-parent {
 /* First level: A, Second level: LI Open */
 nav ul li.open > a,
 nav ul li.open > a b {
-  color: #fff !important;
+  color: #fff ;
 }
 /* First level: Icon */
 nav > ul > li > a b {
@@ -12990,7 +12990,7 @@ img.away {
   line-height: normal;
 }
 .degree-sign:after {
-  content: "°F";
+  content: "ï¿½F";
 }
 /*
  * HIDDEN MENU
