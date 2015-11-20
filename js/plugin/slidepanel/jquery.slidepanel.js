@@ -9,10 +9,10 @@
 		var status = 'close';
 
 		//initialize the panel show/hide button
-        $('#slidein-panel-btn').css({'position': 'absolute', 'top': 0, 'right':-$('#slidein-panel-btn').outerWidth()+'px'});
+        $('#slidein-panel-btn').css({'position': 'absolute', 'top': 1, 'right':-$('#slidein-panel-btn').outerWidth()+'px'});
 
         //initialize the panel
-        $('#slidein-panel').css({'position': 'absolute', 'top': 0, 'left': -$('#slidein-panel').outerWidth(), 'height': $(window).height()});
+        $('#slidein-panel').css({'position': 'absolute', 'top': 1, 'left': -$('#slidein-panel').outerWidth(), 'height': $(window).height()});
 
         //show and hide the panel depending on status
 		$('#slidein-panel-btn').click(
