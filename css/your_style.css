@@ -500,7 +500,20 @@ nav ul ul > li:hover b {
     padding-top: 0;
 }
 /*end LIST NAV */
-
+/* pantalla detalle */
+.profile-pic > img {
+    border-radius: 0%;
+    position: relative;
+    border: 5px solid #ffffff;
+     top: 0px;
+    left: 10px;
+    display: inline-block;
+    text-align: right;
+    z-index: 4;
+    max-width: 100px;
+    margin-bottom: 0px; 
+}
+/* end pantalla detalle */
 @media (min-width: 768px) {
   .user-data-top .dl-horizontal dd {
     margin-left: 167px;

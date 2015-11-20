@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
-	<title> Busquedas Exactas</title>
+	<title> Búsquedas Exactas</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -28,6 +28,8 @@
 	<link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<!-- GOOGLE FONT -->
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+	<!--  Slide Panel -->
+	<link rel="stylesheet" type="text/css" media="screen" href="js/plugin/slidepanel/stylesheet.css">
 	<!-- Specifying a Webpage Icon for Web Clip
 	Ref: https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html -->
 	<link rel="apple-touch-icon" href="img/splash/sptouch-icon-iphone.png">
@@ -88,265 +90,61 @@ Use search to find needed section.
 * 'fixed-page-footer' - Fixes footer
 * 'container'         - boxed layout mode (non-responsive: will not work with fixed-navigation & fixed-ribbon)
 -->
-<body class="smart-style-2 fixed-header fixed-ribbon fixed-page-footer">
+<body class="smart-style-0 smart-style-0-alt fixed-page-footer">
+	<div class="container-fluid">
+		<div class="row cns-header">
+			<div class="col col-xs-12 col-sm-4 hidden-xs">
+				<span id="logo" style="float: left;">
+					<img src="img/logo-segob.png" alt="SEGOB">
+					<img src="img/logo-cns.png" alt="CNS">
+				</span>
+			</div>
+			<div class="col col-xs-12 col-sm-4 cns-app-logo">
+				<img src="img/logo-busquedas.png" alt="" class="hide" />
+			</div>
+			<div class="col col-xs-12 col-sm-4 hidden-xs">
+				<div class="user-data-top font-xs pull-right">
+					<dl class="dl-horizontal">
+						<!-- <dt>Sistema:</dt> -->
+						<!-- <dd style=" color: white; background-color: #63AD85; "><strong>Busquedas</strong> <em>v2.0.0</em><i class="fa fa-fw fa-info pull-right"></i></dd> -->
+						<dt>Organización:</dt>
+						<dd>Comisión Nacional de Seguridad</dd>
+						<dt>Área:</dt>
+						<dd>Plataforma México</dd>
+						<dt>Usuario:</dt>
+						<dd>Perez Martinez Juan</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- HEADER -->
 	<header id="header">
-		<!--  logo-group -->
-		<div id="logo-group">
-			<!-- PLACE YOUR LOGO HERE -->
-			<span id="logo"> <img src="img/logo-segob.png" alt="CNS"> </span>
-			<!-- END LOGO PLACEHOLDER -->
-			<!-- Note: The activity badge color changes when clicked and resets the number to 0
-			Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications -->
-			<span id="activity" class="activity-dropdown"> <i class="fa fa-user"></i> <b class="badge"> 6 </b> </span>
-			<!-- AJAX-DROPDOWN : control this dropdown height, look and feel from the LESS variable file -->
-			<div class="ajax-dropdown">
-				<!-- the ID links are fetched via AJAX to the ajax container "ajax-notifications" -->
-				<div class="btn-group btn-group-justified" data-toggle="buttons">
-					<label class="btn btn-default">
-						<input type="radio" name="activity" id="ajax/notify/busquedas.html">
-						Búsquedas Prog. (3)
-					</label>
-					<label class="btn btn-default">
-						<input type="radio" name="activity" id="ajax/notify/notifications.html">
-						Notificaciones (3)
-					</label>
-				</div>
-				<!-- notification content -->
-				<div class="ajax-notifications custom-scroll">
-					<div class="alert alert-transparent">
-						<h4>Click a button to show messages here</h4>
-						This blank page message helps protect your privacy, or you can show the first message here automatically.
-					</div>
-					<i class="fa fa-lock fa-4x fa-border"></i>
-				</div>
-				<!-- end notification content -->
-				<!-- footer: refresh area -->
-				<span class="font-xs text-muted"> Última actualización el: 12/12/2013 9:43AM
-					<button type="button" data-loading-text="<i class='fa fa-refresh fa-spin'></i> Loading..." class="btn btn-xs btn-default pull-right">
-						<i class="fa fa-refresh"></i>
-					</button>
-				</span>
-				<!-- end footer -->
-			</div>
-			<!-- END AJAX-DROPDOWN -->
-		</div>
-		<!--  end logo-group -->
+
+
 		<!--  top-menu -->
-		<ul class="nav navbar-nav bg-color-grayDumago">
-			<!--  menu 01 : persona -->
-			<li class="dropdown dropdown-large">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-					<i class="fa fa-fw fa-user"></i>
-					Persona
+		<ul class="nav navbar-nav bg-color-blueMiranda-alt">
+			<li class="active">
+				<a href="#">
+					<i class="fa fa-lg fa-search-plus"></i>
+					Búsquedas <strong>Exactas</strong>
 				</a>
-				<!--  form-persona -->
-				<div class="dropdown-menu dropdown-menu-large drop-down-dumago row">
-					<form id="login-form-2" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F6">
-						<fieldset>
-							<div class="row">
-								<section class="col col-4">
-									<label class="input"> <i class="icon-prepend fa fa-user"></i>
-										<input type="text" id="fpersona_nombre" name="fpersona_nombre" placeholder="Nombre(s)" >
-									</label>
-								</section>
-								<section class="col col-4">
-									<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-										<input type="text" name="fname" placeholder="Apellido Paterno">
-									</label>
-								</section>
-								<section class="col col-4">
-									<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-										<input type="text" name="fname" placeholder="Apellido Materno">
-									</label>
-								</section>
-							</div>
-						</fieldset>
-						<fieldset>
-							<div class="row">
-								<section class="col col-4">
-									<label class="input"> <i class="icon-prepend fa fa-credit-card"></i>
-										<input type="text" name="frfc" placeholder="RFC">
-									</label>
-								</section>
-								<section class="col col-4">
-									<label class="input"> <i class="icon-prepend fa fa-credit-card"></i>
-										<input type="text" name="fcurp" placeholder="CURP">
-									</label>
-								</section>
-								<section class="col col-4">
-									<label class="input"> <i class="icon-prepend fa fa-credit-card"></i>
-										<input type="text" name="fcuip" placeholder="CUIP">
-									</label>
-								</section>
-							</div>
-						</fieldset>
-					</form>
-				</div>
-				<!--  end form-persona -->
 			</li>
-			<!--  end menu 01 : persona -->
-			<!--  menu 02 : ubicacion -->
-			<li class="dropdown dropdown-large">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-					<i class="fa fa-fw fa-map-marker"></i>
-					Ubicación
+			<li>
+				<a href="#">
+					<i class="fa fa-lg fa-search"></i>
+					Búsquedas <strong>Abiertas</strong>
 				</a>
-				<!--  form-ubicacion -->
-				<div class="dropdown-menu dropdown-menu-large drop-down-dumago row">
-					<form id="login-form-2" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F6">
-						<fieldset>
-							<div class="row">
-								<section class="col col-4">
-									<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
-										<input type="text" id="fubicacion_calle" name="fname" placeholder="Calle" >
-									</label>
-								</section>
-								<section class="col col-4">
-									<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
-										<input type="text" name="fname" placeholder="Colonia">
-									</label>
-								</section>
-								<section class="col col-4">
-									<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
-										<input type="text" name="fname" placeholder="CP">
-									</label>
-								</section>
-							</div>
-						</fieldset>
-						<fieldset>
-							<div class="row">
-								<section class="col col-4">
-									<label class="input"> <i class="icon-prepend fa fa-map"></i>
-										<input type="text" name="frfc" placeholder="Localidad">
-									</label>
-								</section>
-								<section class="col col-4">
-									<label class="input"> <i class="icon-prepend fa fa-map"></i>
-										<input type="text" name="fcurp" placeholder="Municipio">
-									</label>
-								</section>
-								<section class="col col-4">
-									<label class="input"> <i class="icon-prepend fa fa-map"></i>
-										<input type="text" name="fcuip" placeholder="Estado">
-									</label>
-								</section>
-							</div>
-						</fieldset>
-					</form>
-				</div>
-				<!--  end form-ubicacion -->
 			</li>
-			<!--  end menu 02 : ubicacion -->
-			<!--  menu 03 : vehiculo -->
-			<li class="dropdown dropdown-large">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-					<i class="fa fa-fw fa-car"></i>
-					Vehiculo
+			<li>
+				<a href="#">
+					<i class="fa fa-lg fa-stack-overflow"></i>
+					Redes <strong>Sociales</strong>
 				</a>
-				<!--  form-vehiculo -->
-				<div class="dropdown-menu dropdown-menu-large drop-down-dumago row">
-					<form id="login-form-3" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F7">
-						<fieldset>
-							<div class="row">
-								<section class="col col-4">
-									<label class="input"> <i class="icon-prepend fa fa-car"></i>
-										<input type="text" name="fname" placeholder="Marca" >
-									</label>
-								</section>
-								<section class="col col-4">
-									<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-										<input type="text" name="fname" placeholder="Modelo">
-									</label>
-								</section>
-								<section class="col col-4">
-									<label class="input"> <i class="icon-prepend fa fa-calendar-o"></i>
-										<input type="text" name="fname" placeholder="Serie">
-									</label>
-								</section>
-							</div>
-						</fieldset>
-						<fieldset>
-							<div class="row">
-								<section class="col col-3">
-									<label class="input"> <i class="icon-prepend fa fa-barcode"></i>
-										<input type="text" name="frfc" placeholder="Placa">
-									</label>
-								</section>
-								<section class="col col-3">
-									<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-										<input type="text" name="fcurp" placeholder="No. de Motor">
-									</label>
-								</section>
-								<section class="col col-3">
-									<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-										<input type="text" name="fcuip" placeholder="VIN">
-									</label>
-								</section>
-								<section class="col col-3">
-									<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-										<input type="text" name="fcuip" placeholder="Color">
-									</label>
-								</section>
-							</div>
-						</fieldset>
-					</form>
-				</div>
-				<!--  end form-vehiculo -->
 			</li>
-			<!-- end menu 03 : vehiculo -->
-			<!--  menu 04 : arma -->
-			<li class="dropdown dropdown-large">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-					<i class="fa fa-fw fa-bullseye"></i>
-					Arma
-				</a>
-				<!--  form-arma -->
-				<div class="dropdown-menu dropdown-menu-large drop-down-dumago row">
-					<form id="login-form-3" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F7">
-						<fieldset>
-							<div class="row">
-								<section class="col col-4">
-									<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-										<input type="text" name="fname" placeholder="Marca" >
-									</label>
-								</section>
-								<section class="col col-4">
-									<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-										<input type="text" name="fname" placeholder="Tipo">
-									</label>
-								</section>
-								<section class="col col-4">
-									<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-										<input type="text" name="fname" placeholder="Matricula">
-									</label>
-								</section>
-							</div>
-						</fieldset>
-						<fieldset>
-							<div class="row">
-								<section class="col col-4">
-									<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-										<input type="text" name="fcurp" placeholder="Serie">
-									</label>
-								</section>
-								<section class="col col-4">
-									<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-										<input type="text" name="fcuip" placeholder="Calibre">
-									</label>
-								</section>
-								<section class="col col-4">
-									<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-										<input type="text" name="fcuip" placeholder="Modelo">
-									</label>
-								</section>
-							</div>
-						</fieldset>
-					</form>
-				</div>
-				<!--  end form-arma -->
+			<li class="hide">
+				<a href="#">Estadisticas y Producción</a>
 			</li>
-			<!--  end menu 04 : arma -->
 		</ul>
 		<!--  end top-menu -->
 		<!-- projects dropdown -->
@@ -372,6 +170,7 @@ Use search to find needed section.
 			<!-- end dropdown-menu-->
 		</div>
 		<!-- end projects dropdown -->
+
 		<!-- pulled right: nav area -->
 		<div class="pull-right ">
 
@@ -422,7 +221,7 @@ Use search to find needed section.
 			</div>
 			<!-- end search mobile button -->
 			<!-- input: search field -->
-			<form action="search.html" class="header-search pull-right">
+			<form action="search.html" class="header-search pull-right hide">
 				<input id="search-fld"  type="text" name="param" placeholder="Buscar..." data-autocomplete='[
 				"ActionScript",
 				"AppleScript",
@@ -454,7 +253,7 @@ Use search to find needed section.
 			<!-- end input: search field -->
 			<!-- fullscreen button -->
 			<div id="fullscreen" class="btn-header transparent pull-right">
-				<span> <a href="javascript:void(0);" data-action="launchFullscreen" title="Pantalla Completa"><i class="fa fa-arrows-alt"></i></a> </span>
+				<span> <a href="javascript:void(0);" data-action="launchFullscreen" title="Full Screen"><i class="fa fa-arrows-alt"></i></a> </span>
 			</div>
 			<!-- end fullscreen button -->
 
@@ -519,24 +318,64 @@ Use search to find needed section.
 		<!-- end multiple lang -->
 	</div>
 	<!-- end pulled right: nav area -->
-</header>
-<!-- END HEADER -->
-<!-- Left panel : Navigation area -->
-<!-- Note: This width of the aside area can be adjusted through LESS variables -->
-<aside id="left-panel">
-	<!-- User info -->
-	<!-- <div class="login-info">
-	<span>
+	<!--  alerts -->
+	<div id="logo-group" style="float:right;">
 
-	<a href="javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">
-	<img src="img/avatars/sunny.png" alt="me" class="online" />
-	<span>
-	john.doe
-</span>
-<i class="fa fa-angle-down"></i>
-</a>
+		<!-- PLACE YOUR LOGO HERE -->
 
-</span>
+		<!-- END LOGO PLACEHOLDER -->
+					<!-- Note: The activity badge color changes when clicked and resets the number to 0
+					Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications -->
+					<span id="activity" class="activity-dropdown "> <i class="fa fa-user"></i> <b class="badge"> 6 </b> </span>
+					<!-- AJAX-DROPDOWN : control this dropdown height, look and feel from the LESS variable file -->
+					<div class="ajax-dropdown">
+						<!-- the ID links are fetched via AJAX to the ajax container "ajax-notifications" -->
+						<div class="btn-group btn-group-justified" data-toggle="buttons">
+							<label class="btn btn-default">
+								<input type="radio" name="activity" id="ajax/notify/busquedas.html">
+								Búsquedas Prog. (3) </label>
+								<label class="btn btn-default">
+									<input type="radio" name="activity" id="ajax/notify/notifications-ac.html">
+									Notificaciones (3) </label>
+								</div>
+								<!-- notification content -->
+								<div class="ajax-notifications custom-scroll">
+									<div class="alert alert-transparent">
+										<h4>Click a button to show messages here</h4>
+										This blank page message helps protect your privacy, or you can show the first message here automatically.
+									</div>
+									<i class="fa fa-lock fa-4x fa-border"></i>
+								</div>
+								<!-- end notification content -->
+								<!-- footer: refresh area -->
+								<span class="font-xs text-muted"> Última actualización el: 12/12/2013 9:43AM
+									<button type="button" data-loading-text="<i class='fa fa-refresh fa-spin'></i> Loading..." class="btn btn-xs btn-default pull-right">
+										<i class="fa fa-refresh"></i>
+									</button> </span>
+									<!-- end footer -->
+								</div>
+								<!-- END AJAX-DROPDOWN -->
+							</div>
+							<!--  end alerts -->
+						</header>
+						<!-- END HEADER -->
+						<!-- Left panel : Navigation area -->
+						<!-- Note: This width of the aside area can be adjusted through LESS variables -->
+						<aside id="left-panel" class="aside-top-mod">
+
+							<!-- User info -->
+				<!-- <div class="login-info">
+				<span>
+
+				<a href="javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">
+				<img src="img/avatars/sunny.png" alt="me" class="online" />
+				<span>
+				john.doe
+			</span>
+			<i class="fa fa-angle-down"></i>
+		</a>
+
+	</span>
 </div -->
 <!-- end user info -->
 <!-- NAVIGATION : This navigation is also responsive-->
@@ -544,15 +383,15 @@ Use search to find needed section.
 	<ul>
 		<li>
 			<a href="#" title="Fuentes"><i class="fa fa-lg fa-fw fa-filter"></i> <span class="menu-item-parent">Fuentes</span></a>
-			<ul>
-				<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>Todas las fuentes</a></li>
-				<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>REPUVE</a></li>
-				<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>OCRA</a></li>
-				<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>SIOM</a></li>
-				<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>Licencias de Conducir</a></li>
-				<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>Vehiculos Robados y Recuperados</a></li>
-				<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>Empresas de Seguridad Privada</a></li>
-				<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>Registro Federal de Mandamientos Judiciales</a></li>
+			<ul class="list-fuentes">
+				<li><a href="#" data-type="1"><i class="pull-right fa fa-circle-o "></i>Todas las fuentes</a></li>
+				<li><a href="#" data-type="1"><i class="pull-right fa fa-circle-o "></i>REPUVE</a></li>
+				<li><a href="#" data-type="1"><i class="pull-right fa fa-circle-o "></i>OCRA</a></li>
+				<li><a href="#" data-type="1"><i class="pull-right fa fa-circle-o "></i>SIOM</a></li>
+				<li><a href="#" data-type="1"><i class="pull-right fa fa-circle-o "></i>Licencias de Conducir</a></li>
+				<li><a href="#" data-type="1"><i class="pull-right fa fa-circle-o "></i>Vehiculos Robados y Recuperados</a></li>
+				<li><a href="#" data-type="1"><i class="pull-right fa fa-circle-o "></i>Empresas de Seguridad Privada</a></li>
+				<li><a href="#" data-type="1"><i class="pull-right fa fa-circle-o "></i>Registro Federal de Mandamientos Judiciales</a></li>
 			</ul>
 		</li>
 		<li class="menu-taxomonias ">
@@ -622,49 +461,34 @@ Use search to find needed section.
 <!-- MAIN PANEL -->
 <div id="main" role="main">
 	<!-- RIBBON -->
-	<div id="ribbon">
+	<!-- <div id="ribbon">
 
 		<span class="ribbon-button-alignment">
 			<span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh" rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
 				<i class="fa fa-refresh"></i>
 			</span>
 		</span>
-
-		<!-- breadcrumb -->
 		<ol class="breadcrumb">
 			<li>Inicio</li><li>Busquedas Exactas</li>
 		</ol>
-		<!-- end breadcrumb -->
+	</div> -->
+	<!-- END RIBBON -->
+	<!-- MAIN CONTENT -->
+	<div id="content">
 
-		<!-- You can also add more buttons to the
-		ribbon for further usability
+		<!-- widget grid -->
+		<section id="widget-grid" class="">
 
-		Example below:
+			<!-- row -->
+			<div class="row">
 
-		<span class="ribbon-button-alignment pull-right">
-		<span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
-		<span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
-		<span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
-	</span> -->
+				<!-- NEW WIDGET START -->
 
-</div>
-<!-- END RIBBON -->
-<!-- MAIN CONTENT -->
-<div id="content">
-
-	<!-- widget grid -->
-	<section id="widget-grid" class="">
-
-		<!-- row -->
-		<div class="row">
-
-			<!-- NEW WIDGET START -->
-
-			<!-- WIDGET END -->
-			<!-- NEW WIDGET START -->
-			<article class="col-sm-12 col-md-12 col-lg-12">
-				<!--  Widget filtros v2 -->
-				<div class="jarviswidget jarviswidget-color-blueLight hide" id="wid-id-7" data-widget-editbutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="true" role="widget" data-widget-attstyle="jarviswidget-color-white">
+				<!-- WIDGET END -->
+				<!-- NEW WIDGET START -->
+				<article class="col-sm-12 col-md-12 col-lg-12">
+					<!--  Widget filtros v2 -->
+					<div class="jarviswidget jarviswidget-color-darken" id="wid-id-9" data-widget-editbutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="true" role="widget" data-widget-attstyle="jarviswidget-color-darken">
 					<!-- widget options:
 					usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
 
@@ -679,47 +503,11 @@ Use search to find needed section.
 
 				-->
 				<header role="heading">
+					<span class="widget-icon"> <i class="fa fa-lg fa-list"></i> </span>
+					<h2>Criterios de Búsqueda </h2>
 					<div class="jarviswidget-ctrls" role="menu">
 						<a href="javascript:void(0);" class="button-icon jarviswidget-toggle-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Collapse"><i class="fa fa-minus "></i></a></div><div class="widget-toolbar" role="menu"><a data-toggle="dropdown" class="dropdown-toggle color-box selector" href="javascript:void(0);" aria-expanded="false"></a><ul class="dropdown-menu arrow-box-up-right color-select pull-right"><li><span class="bg-color-green" data-widget-setstyle="jarviswidget-color-green" rel="tooltip" data-placement="left" data-original-title="Green Grass"></span></li><li><span class="bg-color-greenDark" data-widget-setstyle="jarviswidget-color-greenDark" rel="tooltip" data-placement="top" data-original-title="Dark Green"></span></li><li><span class="bg-color-greenLight" data-widget-setstyle="jarviswidget-color-greenLight" rel="tooltip" data-placement="top" data-original-title="Light Green"></span></li><li><span class="bg-color-purple" data-widget-setstyle="jarviswidget-color-purple" rel="tooltip" data-placement="top" data-original-title="Purple"></span></li><li><span class="bg-color-magenta" data-widget-setstyle="jarviswidget-color-magenta" rel="tooltip" data-placement="top" data-original-title="Magenta"></span></li><li><span class="bg-color-pink" data-widget-setstyle="jarviswidget-color-pink" rel="tooltip" data-placement="right" data-original-title="Pink"></span></li><li><span class="bg-color-pinkDark" data-widget-setstyle="jarviswidget-color-pinkDark" rel="tooltip" data-placement="left" data-original-title="Fade Pink"></span></li><li><span class="bg-color-blueLight" data-widget-setstyle="jarviswidget-color-blueLight" rel="tooltip" data-placement="top" data-original-title="Light Blue"></span></li><li><span class="bg-color-teal" data-widget-setstyle="jarviswidget-color-teal" rel="tooltip" data-placement="top" data-original-title="Teal"></span></li><li><span class="bg-color-blue" data-widget-setstyle="jarviswidget-color-blue" rel="tooltip" data-placement="top" data-original-title="Ocean Blue"></span></li><li><span class="bg-color-blueDark" data-widget-setstyle="jarviswidget-color-blueDark" rel="tooltip" data-placement="top" data-original-title="Night Sky"></span></li><li><span class="bg-color-darken" data-widget-setstyle="jarviswidget-color-darken" rel="tooltip" data-placement="right" data-original-title="Night"></span></li><li><span class="bg-color-yellow" data-widget-setstyle="jarviswidget-color-yellow" rel="tooltip" data-placement="left" data-original-title="Day Light"></span></li><li><span class="bg-color-orange" data-widget-setstyle="jarviswidget-color-orange" rel="tooltip" data-placement="bottom" data-original-title="Orange"></span></li><li><span class="bg-color-orangeDark" data-widget-setstyle="jarviswidget-color-orangeDark" rel="tooltip" data-placement="bottom" data-original-title="Dark Orange"></span></li><li><span class="bg-color-red" data-widget-setstyle="jarviswidget-color-red" rel="tooltip" data-placement="bottom" data-original-title="Red Rose"></span></li><li><span class="bg-color-redLight" data-widget-setstyle="jarviswidget-color-redLight" rel="tooltip" data-placement="bottom" data-original-title="Light Red"></span></li><li><span class="bg-color-white" data-widget-setstyle="jarviswidget-color-white" rel="tooltip" data-placement="right" data-original-title="Purity"></span></li><li><a href="javascript:void(0);" class="jarviswidget-remove-colors" data-widget-setstyle="" rel="tooltip" data-placement="bottom" data-original-title="Reset widget color to default">Remove</a></li></ul></div>
-						<ul class="nav nav-tabs pull-left in">
 
-							<li class="active">
-
-								<a data-toggle="tab" href="#hr1" aria-expanded="true"> <i class="fa fa-lg fa-user"></i>
-									<span class="hidden-mobile hidden-tablet"> Persona
-										<span class="badge badge-greenLight txt-color-white hide personas-filter">
-											<i class="fa fa-filter"></i>
-										</span>
-									</span>
-								</a>
-
-							</li>
-
-							<li class="">
-								<a data-toggle="tab" href="#hr2" aria-expanded="false">
-									<i class="fa fa-lg fa-map-marker"></i>
-									<span class="hidden-mobile hidden-tablet"> Ubicación </span>
-									<span class="badge badge-greenLight txt-color-white hide ubicacion-filter">
-										<i class="fa fa-filter"></i>
-									</span>
-								</a>
-							</li>
-
-							<li class="">
-								<a data-toggle="tab" href="#hr3" aria-expanded="false">
-									<i class="fa fa-lg fa-car"></i>
-									<span class="hidden-mobile hidden-tablet"> Vehiculo </span>
-								</a>
-							</li>
-
-							<li class="">
-								<a data-toggle="tab" href="#hr4" aria-expanded="false">
-									<i class="fa fa-lg fa-bullseye"></i>
-									<span class="hidden-mobile hidden-tablet"> Arma </span>
-								</a>
-							</li>
-
-						</ul>
 						<span class="jarviswidget-loader" style="display: none;"><i class="fa fa-refresh fa-spin"></i></span></header>
 
 						<!-- widget div-->
@@ -733,201 +521,260 @@ Use search to find needed section.
 							<!-- end widget edit box -->
 
 							<!-- widget content -->
-							<div class="widget-body">
+							<div class="widget-body ">
+								<div class="row">
+									<div class="col col-xs-12">
+										<div class="tabs-left">
+											<ul class="nav nav-tabs tabs-left" id="demo-pill-nav">
+												<li class="active">
 
-								<div class="tab-content">
-									<div class="tab-pane active" id="hr1">
-										<!--  Start Form1 -->
-										<form id="login-form-2" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F6">
-											<fieldset>
-												<div class="row">
-													<section class="col col-4">
-														<label class="input"> <i class="icon-prepend fa fa-user"></i>
-															<input type="text" id="fpersona_nombre" name="fpersona_nombre" placeholder="Nombre(s)" >
-														</label>
-													</section>
-													<section class="col col-4">
-														<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-															<input type="text" name="fname" placeholder="Apellido Paterno">
-														</label>
-													</section>
-													<section class="col col-4">
-														<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-															<input type="text" name="fname" placeholder="Apellido Materno">
-														</label>
-													</section>
+													<a data-toggle="tab" href="#hr1" aria-expanded="true"> <i class="fa fa-lg fa-user"></i>
+														<span class="hidden-mobile hidden-tablet"> Persona
+															<span class="badge bg-color-greenLight txt-color-white hide personas-filter">
+																<i class="fa fa-filter"></i>
+															</span>
+														</span>
+													</a>
+
+												</li>
+
+												<li class="">
+													<a data-toggle="tab" href="#hr2" aria-expanded="false">
+														<i class="fa fa-lg fa-map-marker"></i>
+														<span class="hidden-mobile hidden-tablet"> Ubicación </span>
+														<span class="badge bg-color-greenLight txt-color-white hide ubicacion-filter">
+															<i class="fa fa-filter"></i>
+														</span>
+													</a>
+												</li>
+
+												<li class="">
+													<a data-toggle="tab" href="#hr3" aria-expanded="false">
+														<i class="fa fa-lg fa-car"></i>
+														<span class="hidden-mobile hidden-tablet"> Vehiculo </span>
+													</a>
+												</li>
+
+												<li class="">
+													<a data-toggle="tab" href="#hr4" aria-expanded="false">
+														<i class="fa fa-lg fa-bullseye"></i>
+														<span class="hidden-mobile hidden-tablet"> Arma </span>
+													</a>
+												</li>
+											</ul>
+											<div class="tab-content">
+												<div class="tab-pane active" id="hr1">
+													<!--  Start Form1 -->
+													<form id="login-form-2" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F6">
+														<fieldset>
+															<div class="row">
+																<section class="col col-4">
+																	<label class="input"> <i class="icon-prepend fa fa-user"></i>
+																		<input type="text" id="fpersona_nombre" name="fpersona_nombre" placeholder="Nombre(s)" >
+																	</label>
+																</section>
+																<section class="col col-4">
+																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																		<input type="text" name="fname" placeholder="Apellido Paterno">
+																	</label>
+																</section>
+																<section class="col col-4">
+																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																		<input type="text" name="fname" placeholder="Apellido Materno">
+																	</label>
+																</section>
+															</div>
+															<div class="row">
+																<section class="col col-4">
+																	<label class="input"> <i class="icon-prepend fa fa-credit-card"></i>
+																		<input type="text" name="frfc" placeholder="RFC">
+																	</label>
+																</section>
+																<section class="col col-4">
+																	<label class="input"> <i class="icon-prepend fa fa-credit-card"></i>
+																		<input type="text" name="fcurp" placeholder="CURP">
+																	</label>
+																</section>
+																<section class="col col-4">
+																	<label class="input"> <i class="icon-prepend fa fa-credit-card"></i>
+																		<input type="text" name="fcuip" placeholder="CUIP">
+																	</label>
+																</section>
+															</div>
+															<div class="row">
+																<section class="col col-4">
+																	<label class="input">
+																		<i class="icon-prepend fa fa-credit-card"></i>
+																		<input type="text" name="fcib" placeholder="CIB">
+																	</label>
+																</section>
+																<section class="col col-4">
+
+																</section>
+																<section class="col col-4">
+
+
+																</section>
+															</div>
+														</fieldset>
+													</form>
+													<!--  End Form1 -->
 												</div>
-											</fieldset>
-											<fieldset>
-												<div class="row">
-													<section class="col col-4">
-														<label class="input"> <i class="icon-prepend fa fa-credit-card"></i>
-															<input type="text" name="frfc" placeholder="RFC">
-														</label>
-													</section>
-													<section class="col col-4">
-														<label class="input"> <i class="icon-prepend fa fa-credit-card"></i>
-															<input type="text" name="fcurp" placeholder="CURP">
-														</label>
-													</section>
-													<section class="col col-4">
-														<label class="input"> <i class="icon-prepend fa fa-credit-card"></i>
-															<input type="text" name="fcuip" placeholder="CUIP">
-														</label>
-													</section>
+												<div class="tab-pane" id="hr2">
+													<!--  Start Form2 -->
+													<form id="login-form-2" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F6">
+														<fieldset>
+															<div class="row">
+																<section class="col col-4">
+																	<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
+																		<input type="text" id="fubicacion_calle" name="fname" placeholder="Calle" >
+																	</label>
+																</section>
+																<section class="col col-4">
+																	<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
+																		<input type="text" name="fname" placeholder="Colonia">
+																	</label>
+																</section>
+																<section class="col col-4">
+																	<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
+																		<input type="text" name="fname" placeholder="CP">
+																	</label>
+																</section>
+															</div>
+														</fieldset>
+														<fieldset>
+															<div class="row">
+																<section class="col col-4">
+																	<label class="input"> <i class="icon-prepend fa fa-map"></i>
+																		<input type="text" name="frfc" placeholder="Localidad">
+																	</label>
+																</section>
+																<section class="col col-4">
+																	<label class="input"> <i class="icon-prepend fa fa-map"></i>
+																		<input type="text" name="fcurp" placeholder="Municipio">
+																	</label>
+																</section>
+																<section class="col col-4">
+																	<label class="input"> <i class="icon-prepend fa fa-map"></i>
+																		<input type="text" name="fcuip" placeholder="Estado">
+																	</label>
+																</section>
+															</div>
+														</fieldset>
+													</form>
+													<!--  End Form2 -->
 												</div>
-											</fieldset>
-										</form>
-										<!--  End Form1 -->
+												<div class="tab-pane" id="hr3">
+													<!-- Start Form3 -->
+													<form id="login-form-3" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F7">
+														<fieldset>
+															<div class="row">
+																<section class="col col-4">
+																	<label class="input"> <i class="icon-prepend fa fa-car"></i>
+																		<input type="text" name="fname" placeholder="Marca" >
+																	</label>
+																</section>
+																<section class="col col-4">
+																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																		<input type="text" name="fname" placeholder="Modelo">
+																	</label>
+																</section>
+																<section class="col col-4">
+																	<label class="input"> <i class="icon-prepend fa fa-calendar-o"></i>
+																		<input type="text" name="fname" placeholder="Serie">
+																	</label>
+																</section>
+															</div>
+														</fieldset>
+														<fieldset>
+															<div class="row">
+																<section class="col col-3">
+																	<label class="input"> <i class="icon-prepend fa fa-barcode"></i>
+																		<input type="text" name="frfc" placeholder="Placa">
+																	</label>
+																</section>
+																<section class="col col-3">
+																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																		<input type="text" name="fcurp" placeholder="No. de Motor">
+																	</label>
+																</section>
+																<section class="col col-3">
+																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																		<input type="text" name="fcuip" placeholder="VIN">
+																	</label>
+																</section>
+																<section class="col col-3">
+																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																		<input type="text" name="fcuip" placeholder="Color">
+																	</label>
+																</section>
+															</div>
+														</fieldset>
+													</form>
+													<!-- End Form3 -->
+												</div>
+												<div class="tab-pane" id="hr4">
+													<!-- Start Form4 -->
+													<form id="login-form-3" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F7">
+														<fieldset>
+															<div class="row">
+																<section class="col col-4">
+																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																		<input type="text" name="fname" placeholder="Marca" >
+																	</label>
+																</section>
+																<section class="col col-4">
+																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																		<input type="text" name="fname" placeholder="Tipo">
+																	</label>
+																</section>
+																<section class="col col-4">
+																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																		<input type="text" name="fname" placeholder="Matricula">
+																	</label>
+																</section>
+															</div>
+														</fieldset>
+														<fieldset>
+															<div class="row">
+																<section class="col col-4">
+																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																		<input type="text" name="fcurp" placeholder="Serie">
+																	</label>
+																</section>
+																<section class="col col-4">
+																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																		<input type="text" name="fcuip" placeholder="Calibre">
+																	</label>
+																</section>
+																<section class="col col-4">
+																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																		<input type="text" name="fcuip" placeholder="Modelo">
+																	</label>
+																</section>
+															</div>
+														</fieldset>
+													</form>
+													<!-- End Form4 -->
+												</div>
+											</div>
+										</div>
+
 									</div>
-									<div class="tab-pane" id="hr2">
-										<!--  Start Form2 -->
-										<form id="login-form-2" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F6">
-											<fieldset>
-												<div class="row">
-													<section class="col col-4">
-														<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
-															<input type="text" id="fubicacion_calle" name="fname" placeholder="Calle" >
-														</label>
-													</section>
-													<section class="col col-4">
-														<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
-															<input type="text" name="fname" placeholder="Colonia">
-														</label>
-													</section>
-													<section class="col col-4">
-														<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
-															<input type="text" name="fname" placeholder="CP">
-														</label>
-													</section>
-												</div>
-											</fieldset>
-											<fieldset>
-												<div class="row">
-													<section class="col col-4">
-														<label class="input"> <i class="icon-prepend fa fa-map"></i>
-															<input type="text" name="frfc" placeholder="Localidad">
-														</label>
-													</section>
-													<section class="col col-4">
-														<label class="input"> <i class="icon-prepend fa fa-map"></i>
-															<input type="text" name="fcurp" placeholder="Municipio">
-														</label>
-													</section>
-													<section class="col col-4">
-														<label class="input"> <i class="icon-prepend fa fa-map"></i>
-															<input type="text" name="fcuip" placeholder="Estado">
-														</label>
-													</section>
-												</div>
-											</fieldset>
-										</form>
-										<!--  End Form2 -->
-									</div>
-									<div class="tab-pane" id="hr3">
-										<!-- Start Form3 -->
-										<form id="login-form-3" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F7">
-											<fieldset>
-												<div class="row">
-													<section class="col col-4">
-														<label class="input"> <i class="icon-prepend fa fa-car"></i>
-															<input type="text" name="fname" placeholder="Marca" >
-														</label>
-													</section>
-													<section class="col col-4">
-														<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-															<input type="text" name="fname" placeholder="Modelo">
-														</label>
-													</section>
-													<section class="col col-4">
-														<label class="input"> <i class="icon-prepend fa fa-calendar-o"></i>
-															<input type="text" name="fname" placeholder="Serie">
-														</label>
-													</section>
-												</div>
-											</fieldset>
-											<fieldset>
-												<div class="row">
-													<section class="col col-3">
-														<label class="input"> <i class="icon-prepend fa fa-barcode"></i>
-															<input type="text" name="frfc" placeholder="Placa">
-														</label>
-													</section>
-													<section class="col col-3">
-														<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-															<input type="text" name="fcurp" placeholder="No. de Motor">
-														</label>
-													</section>
-													<section class="col col-3">
-														<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-															<input type="text" name="fcuip" placeholder="VIN">
-														</label>
-													</section>
-													<section class="col col-3">
-														<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-															<input type="text" name="fcuip" placeholder="Color">
-														</label>
-													</section>
-												</div>
-											</fieldset>
-										</form>
-										<!-- End Form3 -->
-									</div>
-									<div class="tab-pane" id="hr4">
-										<!-- Start Form4 -->
-										<form id="login-form-3" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F7">
-											<fieldset>
-												<div class="row">
-													<section class="col col-4">
-														<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-															<input type="text" name="fname" placeholder="Marca" >
-														</label>
-													</section>
-													<section class="col col-4">
-														<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-															<input type="text" name="fname" placeholder="Tipo">
-														</label>
-													</section>
-													<section class="col col-4">
-														<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-															<input type="text" name="fname" placeholder="Matricula">
-														</label>
-													</section>
-												</div>
-											</fieldset>
-											<fieldset>
-												<div class="row">
-													<section class="col col-4">
-														<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-															<input type="text" name="fcurp" placeholder="Serie">
-														</label>
-													</section>
-													<section class="col col-4">
-														<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-															<input type="text" name="fcuip" placeholder="Calibre">
-														</label>
-													</section>
-													<section class="col col-4">
-														<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-															<input type="text" name="fcuip" placeholder="Modelo">
-														</label>
-													</section>
-												</div>
-											</fieldset>
-										</form>
-										<!-- End Form4 -->
-									</div>
+
 								</div>
 
 								<div class="widget-footer">
 
-									<button class="btn btn-sm btn-info disabled" type="button">
-										Limpiar
-									</button>
+									<a href="javascript:void(0);" class="btn btn-labeled btn-info pull-left"> <span class="btn-label"><i class="fa fa-history"></i></span>Nueva Alerta</a>
 
-									<button class="btn btn-sm btn-success callResultsContent" type="button">
-										Buscar
-									</button>
+
+									<a href="javascript:void(0);" class="btn btn-labeled btn-info"> <span class="btn-label"><i class="glyphicon glyphicon-trash"></i></span>Limpiar</a>
+
+
+									<a href="javascript:void(0);" class="btn btn-labeled btn-info callResultsContent"> <span class="btn-label"><i class="glyphicon glyphicon-search"></i></span>Buscar</a>
+
+
 
 								</div>
 
@@ -940,8 +787,7 @@ Use search to find needed section.
 					</div>
 					<!--  end Widget Filtros v2-->
 					<!-- Widget ID (each widget will need unique ID)-->
-					<div class="jarviswidget jarviswidget-color-blueLight" id="wid-id-0" data-widget-editbutton="false"
-					data-widget-deletebutton="false">
+					<div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-0" data-widget-editbutton="false" data-widget-deletebutton="false">
 					<!-- widget options:
 					usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
 					data-widget-colorbutton="false"
@@ -953,8 +799,8 @@ Use search to find needed section.
 					data-widget-collapsed="true"
 					data-widget-sortable="false"-->
 					<header>
-						<span class="widget-icon"> <i class="fa fa-lg fa-search"></i> </span>
-						<h2>Buscador </h2>
+						<span class="widget-icon"> <i class="fa fa-lg fa-th-large"></i> </span>
+						<h2>Resultados </h2>
 
 					</header>
 
@@ -1085,769 +931,779 @@ Use search to find needed section.
 
 				</div>
 				<!-- end widget -->
+			</article>
+			<!-- WIDGET END -->
 
-							</article>
-							<!-- WIDGET END -->
+		</div>
 
-						</div>
+		<!-- end row -->
 
-						<!-- end row -->
+		<!-- row -->
 
-						<!-- row -->
+		<div class="row">
 
-						<div class="row">
+		</div>
 
-						</div>
+		<!-- end row -->
 
-						<!-- end row -->
+	</section>
+	<!-- end widget grid -->
+</div>
+<!-- END MAIN CONTENT -->
+<!-- Modal -->
+<div class="modal fade" id="personaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					×
+				</button>
+				<h4 class="modal-title" id="myModalLabel">Detalle &gt; Persona</h4>
+			</div>
+			<div class="modal-body no-padding" style="overflow-x:hidden;overflow-y:hidden;">
+				<!-- SlidePanel -->
+				<div id="slidein-panel">
+					<!-- SlidePanel Button Container -->
+					<div id="slidein-panel-container">
+						<a id="slidein-panel-btn" href="#">
+							<i class="fa fa-bars"></i>
+						</a>
+					</div>
+					<!-- /SlidePanel Button Container -->
 
-					</section>
-					<!-- end widget grid -->
+					<!-- SlidePanel Content -->
+					<ul>
+						<li><a href="#">Link 1</a></li>
+						<li><a href="#">Link 2</a></li>
+						<li><a href="#">Link 3</a></li>
+						<li><a href="#">Link 4</a></li>
+						<li><a href="#">Link 5</a></li>
+					</ul>
+					<!-- /SlidePanel Content -->
 				</div>
-				<!-- END MAIN CONTENT -->
-				<!-- Modal -->
-				<div class="modal fade" id="personaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-									×
-								</button>
-								<h4 class="modal-title" id="myModalLabel">Detalle &gt; Persona</h4>
-							</div>
-							<div class="modal-body no-padding">
+				<!-- /SlidePanel -->
+				<div class="well well-light well-sm no-margin no-padding">
 
-								<div class="well well-light well-sm no-margin no-padding">
+					<div class="row">
 
-									<div class="row">
+						<div class="col-sm-12" style="
+    background-color: #1A1A1A;
+    height: 300px;
+    background-image: url('img/red-1.png');
+    background-size: initial;
+    background-position: center;
+    background-repeat: no-repeat;
+">
 
-										<div class="col-sm-12">
-											<div id="myCarousel" class="carousel fade profile-carousel">
-												<div class="air air-bottom-right padding-10">
-													<a href="javascript:void(0);" class="btn txt-color-white bg-color-teal btn-sm"><i class="fa fa-check"></i> Liga 1</a>&nbsp; <a href="javascript:void(0);" class="btn txt-color-white bg-color-pinkDark btn-sm"><i class="fa fa-link"></i> Liga 2</a>
-												</div>
-												<div class="air air-top-left padding-10">
-													<h4 class="txt-color-white font-md">Sep 1, 2014</h4>
-												</div>
-												<ol class="carousel-indicators">
-													<li data-target="#myCarousel" data-slide-to="0" class=""></li>
-													<li data-target="#myCarousel" data-slide-to="1" class=""></li>
-													<li data-target="#myCarousel" data-slide-to="2" class="active"></li>
-												</ol>
-												<div class="carousel-inner">
-													<!-- Slide 1 -->
-													<div class="item">
-														<img src="img/demo/s1.jpg" alt="demo user">
-													</div>
-													<!-- Slide 2 -->
-													<div class="item">
-														<img src="img/demo/s2.jpg" alt="demo user">
-													</div>
-													<!-- Slide 3 -->
-													<div class="item active">
-														<img src="img/demo/m3.jpg" alt="demo user">
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-sm-12">
-
-											<div class="row">
-
-												<div class="col-sm-3 profile-pic">
-													<img src="img/avatars/sunny-big.png" alt="demo user">
-													<div class="padding-10">
-														<h4 class="font-md"><strong>1,543</strong>
-															<br>
-															<small>Followers</small></h4>
-															<br>
-															<h4 class="font-md"><strong>419</strong>
-																<br>
-																<small>Connections</small></h4>
-															</div>
-														</div>
-														<div class="col-sm-6">
-															<h1>John <span class="semi-bold">Doe</span>
-																<br>
-																<small> CEO, SmartAdmin</small></h1>
-
-																<ul class="list-unstyled">
-																	<li>
-																		<p class="text-muted">
-																			<i class="fa fa-phone"></i>&nbsp;&nbsp;(<span class="txt-color-darken">313</span>) <span class="txt-color-darken">464</span> - <span class="txt-color-darken">6473</span>
-																		</p>
-																	</li>
-																	<li>
-																		<p class="text-muted">
-																			<i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:simmons@smartadmin">ceo@smartadmin.com</a>
-																		</p>
-																	</li>
-																	<li>
-																		<p class="text-muted">
-																			<i class="fa fa-skype"></i>&nbsp;&nbsp;<span class="txt-color-darken">john12</span>
-																		</p>
-																	</li>
-																	<li>
-																		<p class="text-muted">
-																			<i class="fa fa-calendar"></i>&nbsp;&nbsp;<span class="txt-color-darken">Free after <a href="javascript:void(0);" rel="tooltip" title="" data-placement="top" data-original-title="Create an Appointment">4:30 PM</a></span>
-																		</p>
-																	</li>
-																</ul>
-																<br>
-																<p class="font-md">
-																	<i>A little about me...</i>
-																</p>
-																<p>
-
-																	Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
-																	cumque nihil impedit quo minus id quod maxime placeat facere
-
-																</p>
-																<br>
-																<a href="javascript:void(0);" class="btn btn-default btn-xs"><i class="fa fa-envelope-o"></i> Send Message</a>
-																<br>
-																<br>
-
-															</div>
-															<div class="col-sm-3">
-																<h1><small>Connections</small></h1>
-																<ul class="list-inline friends-list">
-																	<li><img src="img/avatars/1.png" alt="friend-1">
-																	</li>
-																	<li><img src="img/avatars/2.png" alt="friend-2">
-																	</li>
-																	<li><img src="img/avatars/3.png" alt="friend-3">
-																	</li>
-																	<li><img src="img/avatars/4.png" alt="friend-4">
-																	</li>
-																	<li><img src="img/avatars/5.png" alt="friend-5">
-																	</li>
-																	<li><img src="img/avatars/male.png" alt="friend-6">
-																	</li>
-																	<li>
-																		<a href="javascript:void(0);">413 more</a>
-																	</li>
-																</ul>
-
-																<h1><small>Recent visitors</small></h1>
-																<ul class="list-inline friends-list">
-																	<li><img src="img/avatars/male.png" alt="friend-1">
-																	</li>
-																	<li><img src="img/avatars/female.png" alt="friend-2">
-																	</li>
-																	<li><img src="img/avatars/female.png" alt="friend-3">
-																	</li>
-																</ul>
-
-															</div>
-
-														</div>
-
-													</div>
-
-												</div>
-
-
-												<!-- end row -->
-
-											</div>
-
-										</div>
-									</div><!-- /.modal-content -->
-								</div><!-- /.modal-dialog -->
-							</div>
-							<!-- /.modal -->
 						</div>
-						<!-- END MAIN PANEL -->
-						<!-- PAGE FOOTER -->
-						<div class="page-footer">
-							<div class="row">
-								<div class="col-xs-12 col-sm-6">
-									<span class="txt-color-white">CNS <span class="hidden-xs"> - Busquedas 2.0</span> © 2015-2016</span>
-								</div>
-								<div class="col-xs-6 col-sm-6 text-right hidden-xs">
-									<div class="txt-color-white inline-block">
-										<i class="txt-color-blueLight hidden-mobile">Última actividad <i class="fa fa-clock-o"></i> <strong>hace 2 min &nbsp;</strong> </i>
-										<div class="btn-group dropup">
-											<button id="btn-toggle-notes"	 class="btn btn-xs dropdown-toggle bg-color-blue txt-color-white">
-												<i class="fa fa-sticky-note-o"></i> Notas <span class="caret"></span>
-											</button>
-										</div>
-									</div>
-								</div>
-								<!--  Bloque-Notas -->
-								<div id="notescontainer" class="col-xs-12 notes-container padding-10 hide animated fast ">
-									<div class="row">
-										<div class="col-xs-12">
-											<!-- <div class="notes-toLeft">
-											<i class="fa fa-chevron-left"></i>
-										</div>
-										<div id="btn-notes-toRight" class="notes-toRight">
-										<i class="fa fa-chevron-right"></i>
-									</div> -->
-									<div id="notesscroll" class="notes-scroll">
-										<!--  Lista de Items -->
-										<!--  Nota -->
-										<div class="notes-item animated fadeIn padding-5">
-											<div class="note-head">
-												<span class="note-results">
-													<i class="fa fa-star"></i>&nbsp;
-													55 resultados
-												</span>
-												<span class="note-date">
-													<i class="fa fa-calendar-o"></i>&nbsp;
-													11 Nov, 2015
-												</span>
-											</div>
-											<div class="note-body">
-												<div class="note-data">
-													<span class="note-title">Juan José Hernandez</span>
-													<p class="note-content">
-														<span  class="note-subcontent">
-															Lorem ipsum dolor sit amet, consectetur adipiscing elit
-														</span>
-													</p>
-												</div>
-												<div class="note-controls">
-													<ul class="fa-ul">
-														<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
-														<li><i class="fa-li fa fa-fw fa-print note-print note-print"></i>&nbsp;</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-										<!-- /Nota -->
-										<!--  Nota -->
-										<div class="notes-item animated fadeIn padding-5">
-											<div class="note-head">
-												<span class="note-results">
-													<i class="fa fa-star"></i>&nbsp;
-													55 resultados
-												</span>
-												<span class="note-date">
-													<i class="fa fa-calendar-o"></i>&nbsp;
-													11 Nov, 2015
-												</span>
-											</div>
-											<div class="note-body">
-												<div class="note-data">
-													<span class="note-title">Juan José Hernandez</span>
-													<p class="note-content">
-														<span  class="note-subcontent">
-															Lorem ipsum dolor sit amet, consectetur adipiscing elit
-														</span>
-													</p>
-												</div>
-												<div class="note-controls">
-													<ul class="fa-ul">
-														<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
-														<li><i class="fa-li fa fa-fw fa-print note-print"></i>&nbsp;</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-										<!-- /Nota -->
-										<!--  Nota -->
-										<div class="notes-item animated fadeIn padding-5">
-											<div class="note-head">
-												<span class="note-results">
-													<i class="fa fa-star"></i>&nbsp;
-													55 resultados
-												</span>
-												<span class="note-date">
-													<i class="fa fa-calendar-o"></i>&nbsp;
-													11 Nov, 2015
-												</span>
-											</div>
-											<div class="note-body">
-												<div class="note-data">
-													<span class="note-title">Juan José Hernandez</span>
-													<p class="note-content">
-														<span  class="note-subcontent">
-															Lorem ipsum dolor sit amet, consectetur adipiscing elit
-														</span>
-													</p>
-												</div>
-												<div class="note-controls">
-													<ul class="fa-ul">
-														<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
-														<li><i class="fa-li fa fa-fw fa-print note-print"></i>&nbsp;</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-										<!-- /Nota -->
-										<!--  Nota -->
-										<div class="notes-item animated fadeIn padding-5">
-											<div class="note-head">
-												<span class="note-results">
-													<i class="fa fa-star"></i>&nbsp;
-													55 resultados
-												</span>
-												<span class="note-date">
-													<i class="fa fa-calendar-o"></i>&nbsp;
-													11 Nov, 2015
-												</span>
-											</div>
-											<div class="note-body">
-												<div class="note-data">
-													<span class="note-title">Juan José Hernandez</span>
-													<p class="note-content">
-														<span  class="note-subcontent">
-															Lorem ipsum dolor sit amet, consectetur adipiscing elit
-														</span>
-													</p>
-												</div>
-												<div class="note-controls">
-													<ul class="fa-ul">
-														<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
-														<li><i class="fa-li fa fa-fw fa-print note-print note-print"></i>&nbsp;</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-										<!-- /Nota -->
-										<!--  Nota -->
-										<div class="notes-item animated fadeIn padding-5">
-											<div class="note-head">
-												<span class="note-results">
-													<i class="fa fa-star"></i>&nbsp;
-													55 resultados
-												</span>
-												<span class="note-date">
-													<i class="fa fa-calendar-o"></i>&nbsp;
-													11 Nov, 2015
-												</span>
-											</div>
-											<div class="note-body">
-												<div class="note-data">
-													<span class="note-title">Juan José Hernandez</span>
-													<p class="note-content">
-														<span  class="note-subcontent">
-															Lorem ipsum dolor sit amet, consectetur adipiscing elit
-														</span>
-													</p>
-												</div>
-												<div class="note-controls">
-													<ul class="fa-ul">
-														<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
-														<li><i class="fa-li fa fa-fw fa-print note-print note-print"></i>&nbsp;</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-										<!-- /Nota -->
-										<!--  Nota -->
-										<div class="notes-item animated fadeIn padding-5">
-											<div class="note-head">
-												<span class="note-results">
-													<i class="fa fa-star"></i>&nbsp;
-													55 resultados
-												</span>
-												<span class="note-date">
-													<i class="fa fa-calendar-o"></i>&nbsp;
-													11 Nov, 2015
-												</span>
-											</div>
-											<div class="note-body">
-												<div class="note-data">
-													<span class="note-title">Juan José Hernandez</span>
-													<p class="note-content">
-														<span  class="note-subcontent">
-															Lorem ipsum dolor sit amet, consectetur adipiscing elit
-														</span>
-													</p>
-												</div>
-												<div class="note-controls">
-													<ul class="fa-ul">
-														<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
-														<li><i class="fa-li fa fa-fw fa-print note-print"></i>&nbsp;</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-										<!-- /Nota -->
-										<!--  Nota -->
-										<div class="notes-item animated fadeIn padding-5">
-											<div class="note-head">
-												<span class="note-results">
-													<i class="fa fa-star"></i>&nbsp;
-													55 resultados
-												</span>
-												<span class="note-date">
-													<i class="fa fa-calendar-o"></i>&nbsp;
-													11 Nov, 2015
-												</span>
-											</div>
-											<div class="note-body">
-												<div class="note-data">
-													<span class="note-title">Juan José Hernandez</span>
-													<p class="note-content">
-														<span  class="note-subcontent">
-															Lorem ipsum dolor sit amet, consectetur adipiscing elit
-														</span>
-													</p>
-												</div>
-												<div class="note-controls">
-													<ul class="fa-ul">
-														<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
-														<li><i class="fa-li fa fa-fw fa-print note-print note-print-false"></i>&nbsp;</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-										<!-- /Nota -->
 
-										<!-- /Lista de Items -->
-									</div>
-								</div>
-							</div>
+						<div class="col-sm-12">
+
 							<div class="row">
-								<div class="col-xs-12 padding-top-10">
-									<div class="notes-controls">
-										<span id="btn-notes-toMaxLeft" class="fa-stack ">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-angle-double-left fa-stack-1x fa-fw fa-inverse"></i>
-										</span>
-										<span id="btn-notes-toLeft" class="fa-stack ">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-angle-left fa-stack-1x fa-fw fa-inverse"></i>
-										</span>
-										<span id="btn-notes-toRight" class="fa-stack ">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-angle-right fa-stack-1x fa-fw fa-inverse"></i>
-										</span>
-										<span id="btn-notes-toMaxRight" class="fa-stack ">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-angle-double-right fa-stack-1x fa-fw fa-inverse"></i>
-										</span>
-										<span id="btn-notes-print" class="fa-stack ">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-print fa-stack-1x fa-fw fa-inverse"></i>
-										</span>
-										<span id="btn-notes-trash" class="fa-stack ">
-											<i class="fa fa-square fa-stack-2x"></i>
-											<i class="fa fa-trash-o fa-stack-1x fa-fw fa-inverse"></i>
-										</span>
+
+								<div class="col-sm-3 profile-pic">
+
+									<img src="img/avatars/sunny-big.png" alt="demo user">
+									<div class="padding-10">
+										<h4 class="font-md"><strong>43</strong>
+											<br>
+											<small>Alertas</small></h4>
+											<br>
+											<h4 class="font-md"><strong>419</strong>
+												<br>
+												<small>Relaciones</small></h4>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<h1>Juan José <span class="semi-bold">Hernandez Galindo</span>
+												<br>
+												<small> México, Distrito Federal</small></h1>
+
+												<ul class="list-unstyled">
+													<li>
+														<p class="text-muted">
+															<i class="fa fa-phone"></i>&nbsp;&nbsp;(<span class="txt-color-darken">55</span>) <span class="txt-color-darken">123</span> - <span class="txt-color-darken">6473</span>
+														</p>
+													</li>
+													<li>
+														<p class="text-muted">
+															<i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:simmons@smartadmin">jfco@mail.com</a>
+														</p>
+													</li>
+													<li>
+														<p class="text-muted">
+															<i class="fa fa-tag"></i>&nbsp;&nbsp;<span class="txt-color-darken">Alias: <a href="javascript:void(0);" rel="tooltip" title="" data-placement="top" data-original-title="Fuente REPUVE">Pancho</a></span>
+														</p>
+													</li>
+													<li>
+														<p class="text-muted">
+															<i class="fa fa-calendar"></i>&nbsp;&nbsp;<span class="txt-color-darken">Actualizado <a href="javascript:void(0);" rel="tooltip" title="" data-placement="top" data-original-title="Fuente REPUVE">20 Nov, 2015</a></span>
+														</p>
+													</li>
+												</ul>
+
+											</div>
+											<div class="col-sm-3">
+												<h1><small>Relaciones</small></h1>
+												<ul class="list-inline friends-list">
+													<li><img src="img/avatars/1.png" alt="friend-1">
+													</li>
+													<li><img src="img/avatars/2.png" alt="friend-2">
+													</li>
+													<li><img src="img/avatars/3.png" alt="friend-3">
+													</li>
+													<li><img src="img/avatars/4.png" alt="friend-4">
+													</li>
+													<li><img src="img/avatars/5.png" alt="friend-5">
+													</li>
+													<li><img src="img/avatars/male.png" alt="friend-6">
+													</li>
+													<li>
+														<a href="javascript:void(0);">413 más</a>
+													</li>
+												</ul>
+
+												<h1><small>Relaciones 2</small></h1>
+												<ul class="list-inline friends-list">
+													<li><img src="img/avatars/male.png" alt="friend-1">
+													</li>
+													<li><img src="img/avatars/female.png" alt="friend-2">
+													</li>
+													<li><img src="img/avatars/female.png" alt="friend-3">
+													</li>
+												</ul>
+
+											</div>
+
+										</div>
+
 									</div>
+
 								</div>
+
+
+								<!-- end row -->
+
 							</div>
+
 						</div>
-						<!-- /Bloque-Notas -->
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div>
+			<!-- /.modal -->
+		</div>
+		<!-- END MAIN PANEL -->
+		<!-- PAGE FOOTER -->
+		<div class="page-footer">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<span class="cns-text-footer hidden-xs">
+							SUIC&nbsp;<i class="fa fa-fw fa-angle-right"></i>&nbsp;Portal Único&nbsp;<i class="fa fa-fw fa-angle-right"></i>&nbsp;Búsquedas 2.0.0
+					</span>
+				</div>
+				<div class="col-xs-6 col-sm-6 text-right hidden-xs">
+					<div class="txt-color-white inline-block">
+						<i class="txt-color-blueLight hidden-mobile">Última actividad <i class="fa fa-clock-o"></i> <strong>hace 2 min &nbsp;</strong> </i>
+						<div class="btn-group dropup">
+							<button id="btn-toggle-notes"	 class="btn btn-xs dropdown-toggle bg-color-blue txt-color-white">
+								<i class="fa fa-sticky-note-o"></i> Notas <span class="caret"></span>
+							</button>
+						</div>
 					</div>
 				</div>
-				<!-- END PAGE FOOTER -->
-				<!-- SHORTCUT AREA : With large tiles (activated via clicking user name tag)
-				Note: These tiles are completely responsive,
-				you can add as many as you like
-			-->
-			<div id="shortcut">
-				<ul>
-					<li>
-						<a href="inbox.html" class="jarvismetro-tile big-cubes bg-color-blue"> <span class="iconbox"> <i class="fa fa-envelope fa-4x"></i> <span>Mail <span class="label pull-right bg-color-darken">14</span></span> </span> </a>
-					</li>
-					<li>
-						<a href="calendar.html" class="jarvismetro-tile big-cubes bg-color-orangeDark"> <span class="iconbox"> <i class="fa fa-calendar fa-4x"></i> <span>Calendar</span> </span> </a>
-					</li>
-					<li>
-						<a href="gmap-xml.html" class="jarvismetro-tile big-cubes bg-color-purple"> <span class="iconbox"> <i class="fa fa-map-marker fa-4x"></i> <span>Maps</span> </span> </a>
-					</li>
-					<li>
-						<a href="invoice.html" class="jarvismetro-tile big-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa fa-book fa-4x"></i> <span>Invoice <span class="label pull-right bg-color-darken">99</span></span> </span> </a>
-					</li>
-					<li>
-						<a href="gallery.html" class="jarvismetro-tile big-cubes bg-color-greenLight"> <span class="iconbox"> <i class="fa fa-picture-o fa-4x"></i> <span>Gallery </span> </span> </a>
-					</li>
-					<li>
-						<a href="profile.html" class="jarvismetro-tile big-cubes selected bg-color-pinkDark"> <span class="iconbox"> <i class="fa fa-user fa-4x"></i> <span>My Profile </span> </span> </a>
-					</li>
-				</ul>
+				<!--  Bloque-Notas -->
+				<div id="notescontainer" class="col-xs-12 notes-container padding-10 hide animated fast ">
+					<div class="row">
+						<div class="col-xs-12">
+							<!-- <div class="notes-toLeft">
+							<i class="fa fa-chevron-left"></i>
+						</div>
+						<div id="btn-notes-toRight" class="notes-toRight">
+						<i class="fa fa-chevron-right"></i>
+					</div> -->
+					<div id="notesscroll" class="notes-scroll">
+						<!--  Lista de Items -->
+						<!--  Nota -->
+						<div class="notes-item animated fadeIn padding-5">
+							<div class="note-head">
+								<span class="note-results">
+									<i class="fa fa-star"></i>&nbsp;
+									55 resultados
+								</span>
+								<span class="note-date">
+									<i class="fa fa-calendar-o"></i>&nbsp;
+									11 Nov, 2015
+								</span>
+							</div>
+							<div class="note-body">
+								<div class="note-data">
+									<span class="note-title">Juan José Hernandez</span>
+									<p class="note-content">
+										<span  class="note-subcontent">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit
+										</span>
+									</p>
+								</div>
+								<div class="note-controls">
+									<ul class="fa-ul">
+										<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
+										<li><i class="fa-li fa fa-fw fa-print note-print note-print"></i>&nbsp;</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- /Nota -->
+						<!--  Nota -->
+						<div class="notes-item animated fadeIn padding-5">
+							<div class="note-head">
+								<span class="note-results">
+									<i class="fa fa-star"></i>&nbsp;
+									55 resultados
+								</span>
+								<span class="note-date">
+									<i class="fa fa-calendar-o"></i>&nbsp;
+									11 Nov, 2015
+								</span>
+							</div>
+							<div class="note-body">
+								<div class="note-data">
+									<span class="note-title">Juan José Hernandez</span>
+									<p class="note-content">
+										<span  class="note-subcontent">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit
+										</span>
+									</p>
+								</div>
+								<div class="note-controls">
+									<ul class="fa-ul">
+										<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
+										<li><i class="fa-li fa fa-fw fa-print note-print"></i>&nbsp;</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- /Nota -->
+						<!--  Nota -->
+						<div class="notes-item animated fadeIn padding-5">
+							<div class="note-head">
+								<span class="note-results">
+									<i class="fa fa-star"></i>&nbsp;
+									55 resultados
+								</span>
+								<span class="note-date">
+									<i class="fa fa-calendar-o"></i>&nbsp;
+									11 Nov, 2015
+								</span>
+							</div>
+							<div class="note-body">
+								<div class="note-data">
+									<span class="note-title">Juan José Hernandez</span>
+									<p class="note-content">
+										<span  class="note-subcontent">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit
+										</span>
+									</p>
+								</div>
+								<div class="note-controls">
+									<ul class="fa-ul">
+										<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
+										<li><i class="fa-li fa fa-fw fa-print note-print"></i>&nbsp;</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- /Nota -->
+						<!--  Nota -->
+						<div class="notes-item animated fadeIn padding-5">
+							<div class="note-head">
+								<span class="note-results">
+									<i class="fa fa-star"></i>&nbsp;
+									55 resultados
+								</span>
+								<span class="note-date">
+									<i class="fa fa-calendar-o"></i>&nbsp;
+									11 Nov, 2015
+								</span>
+							</div>
+							<div class="note-body">
+								<div class="note-data">
+									<span class="note-title">Juan José Hernandez</span>
+									<p class="note-content">
+										<span  class="note-subcontent">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit
+										</span>
+									</p>
+								</div>
+								<div class="note-controls">
+									<ul class="fa-ul">
+										<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
+										<li><i class="fa-li fa fa-fw fa-print note-print note-print"></i>&nbsp;</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- /Nota -->
+						<!--  Nota -->
+						<div class="notes-item animated fadeIn padding-5">
+							<div class="note-head">
+								<span class="note-results">
+									<i class="fa fa-star"></i>&nbsp;
+									55 resultados
+								</span>
+								<span class="note-date">
+									<i class="fa fa-calendar-o"></i>&nbsp;
+									11 Nov, 2015
+								</span>
+							</div>
+							<div class="note-body">
+								<div class="note-data">
+									<span class="note-title">Juan José Hernandez</span>
+									<p class="note-content">
+										<span  class="note-subcontent">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit
+										</span>
+									</p>
+								</div>
+								<div class="note-controls">
+									<ul class="fa-ul">
+										<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
+										<li><i class="fa-li fa fa-fw fa-print note-print note-print"></i>&nbsp;</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- /Nota -->
+						<!--  Nota -->
+						<div class="notes-item animated fadeIn padding-5">
+							<div class="note-head">
+								<span class="note-results">
+									<i class="fa fa-star"></i>&nbsp;
+									55 resultados
+								</span>
+								<span class="note-date">
+									<i class="fa fa-calendar-o"></i>&nbsp;
+									11 Nov, 2015
+								</span>
+							</div>
+							<div class="note-body">
+								<div class="note-data">
+									<span class="note-title">Juan José Hernandez</span>
+									<p class="note-content">
+										<span  class="note-subcontent">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit
+										</span>
+									</p>
+								</div>
+								<div class="note-controls">
+									<ul class="fa-ul">
+										<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
+										<li><i class="fa-li fa fa-fw fa-print note-print"></i>&nbsp;</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- /Nota -->
+						<!--  Nota -->
+						<div class="notes-item animated fadeIn padding-5">
+							<div class="note-head">
+								<span class="note-results">
+									<i class="fa fa-star"></i>&nbsp;
+									55 resultados
+								</span>
+								<span class="note-date">
+									<i class="fa fa-calendar-o"></i>&nbsp;
+									11 Nov, 2015
+								</span>
+							</div>
+							<div class="note-body">
+								<div class="note-data">
+									<span class="note-title">Juan José Hernandez</span>
+									<p class="note-content">
+										<span  class="note-subcontent">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit
+										</span>
+									</p>
+								</div>
+								<div class="note-controls">
+									<ul class="fa-ul">
+										<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
+										<li><i class="fa-li fa fa-fw fa-print note-print note-print-false"></i>&nbsp;</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- /Nota -->
+
+						<!-- /Lista de Items -->
+					</div>
+				</div>
 			</div>
-			<!-- END SHORTCUT AREA -->
-			<!--================================================== -->
-			<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
-			<script data-pace-options='{ "restartOnRequestAfter": true }' src="js/plugin/pace/pace.min.js"></script>
-			<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
-			<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-			<script>
-			if (!window.jQuery) {
-				document.write('<script src="js/libs/jquery-2.1.1.min.js"><\/script>');
+			<div class="row">
+				<div class="col-xs-12 padding-top-10">
+					<div class="notes-controls">
+						<span id="btn-notes-toMaxLeft" class="fa-stack ">
+							<i class="fa fa-square fa-stack-2x"></i>
+							<i class="fa fa-angle-double-left fa-stack-1x fa-fw fa-inverse"></i>
+						</span>
+						<span id="btn-notes-toLeft" class="fa-stack ">
+							<i class="fa fa-square fa-stack-2x"></i>
+							<i class="fa fa-angle-left fa-stack-1x fa-fw fa-inverse"></i>
+						</span>
+						<span id="btn-notes-toRight" class="fa-stack ">
+							<i class="fa fa-square fa-stack-2x"></i>
+							<i class="fa fa-angle-right fa-stack-1x fa-fw fa-inverse"></i>
+						</span>
+						<span id="btn-notes-toMaxRight" class="fa-stack ">
+							<i class="fa fa-square fa-stack-2x"></i>
+							<i class="fa fa-angle-double-right fa-stack-1x fa-fw fa-inverse"></i>
+						</span>
+						<span id="btn-notes-print" class="fa-stack ">
+							<i class="fa fa-square fa-stack-2x"></i>
+							<i class="fa fa-print fa-stack-1x fa-fw fa-inverse"></i>
+						</span>
+						<span id="btn-notes-trash" class="fa-stack ">
+							<i class="fa fa-square fa-stack-2x"></i>
+							<i class="fa fa-trash-o fa-stack-1x fa-fw fa-inverse"></i>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Bloque-Notas -->
+	</div>
+</div>
+<!-- END PAGE FOOTER -->
+<!-- SHORTCUT AREA : With large tiles (activated via clicking user name tag)
+Note: These tiles are completely responsive,
+you can add as many as you like
+-->
+<div id="shortcut">
+	<ul>
+		<li>
+			<a href="inbox.html" class="jarvismetro-tile big-cubes bg-color-blue"> <span class="iconbox"> <i class="fa fa-envelope fa-4x"></i> <span>Mail <span class="label pull-right bg-color-darken">14</span></span> </span> </a>
+		</li>
+		<li>
+			<a href="calendar.html" class="jarvismetro-tile big-cubes bg-color-orangeDark"> <span class="iconbox"> <i class="fa fa-calendar fa-4x"></i> <span>Calendar</span> </span> </a>
+		</li>
+		<li>
+			<a href="gmap-xml.html" class="jarvismetro-tile big-cubes bg-color-purple"> <span class="iconbox"> <i class="fa fa-map-marker fa-4x"></i> <span>Maps</span> </span> </a>
+		</li>
+		<li>
+			<a href="invoice.html" class="jarvismetro-tile big-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa fa-book fa-4x"></i> <span>Invoice <span class="label pull-right bg-color-darken">99</span></span> </span> </a>
+		</li>
+		<li>
+			<a href="gallery.html" class="jarvismetro-tile big-cubes bg-color-greenLight"> <span class="iconbox"> <i class="fa fa-picture-o fa-4x"></i> <span>Gallery </span> </span> </a>
+		</li>
+		<li>
+			<a href="profile.html" class="jarvismetro-tile big-cubes selected bg-color-pinkDark"> <span class="iconbox"> <i class="fa fa-user fa-4x"></i> <span>My Profile </span> </span> </a>
+		</li>
+	</ul>
+</div>
+<!-- END SHORTCUT AREA -->
+<!--================================================== -->
+<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+<script data-pace-options='{ "restartOnRequestAfter": true }' src="js/plugin/pace/pace.min.js"></script>
+<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+	if (!window.jQuery) {
+		document.write('<script src="js/libs/jquery-2.1.1.min.js"><\/script>');
+	}
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script>
+	if (!window.jQuery.ui) {
+		document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>');
+	}
+</script>
+<!-- IMPORTANT: APP CONFIG -->
+<script src="js/app.config.js"></script>
+<!-- JS TOUCH : include this plugin for mobile drag / drop touch events-->
+<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script>
+<!-- BOOTSTRAP JS -->
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<!-- CUSTOM NOTIFICATION -->
+<script src="js/notification/SmartNotification.min.js"></script>
+<!-- JARVIS WIDGETS -->
+<script src="js/smartwidgets/jarvis.widget.min.js"></script>
+<!-- EASY PIE CHARTS -->
+<script src="js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+<!-- SPARKLINES -->
+<script src="js/plugin/sparkline/jquery.sparkline.min.js"></script>
+<!-- JQUERY VALIDATE -->
+<script src="js/plugin/jquery-validate/jquery.validate.min.js"></script>
+<!-- JQUERY MASKED INPUT -->
+<script src="js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+<!-- JQUERY SELECT2 INPUT -->
+<script src="js/plugin/select2/select2.min.js"></script>
+<!-- JQUERY UI + Bootstrap Slider -->
+<script src="js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
+<!-- browser msie issue fix -->
+<script src="js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
+<!-- FastClick: For mobile devices -->
+<script src="js/plugin/fastclick/fastclick.min.js"></script>
+<!--[if IE 8]>
+<h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
+<![endif]-->
+<!-- Demo purpose only -->
+<!-- <script src="js/demo.min.js"></script> -->
+<!-- MAIN APP JS FILE -->
+<script src="js/app.min.js"></script>
+<!-- ENHANCEMENT PLUGINS : NOT A REQUIREMENT -->
+<!-- Voice command : plugin -->
+<script src="js/speech/voicecommand.min.js"></script>
+<!-- SmartChat UI : plugin -->
+<script src="js/smart-chat-ui/smart.chat.ui.min.js"></script>
+<script src="js/smart-chat-ui/smart.chat.manager.min.js"></script>
+<!--  Slide Panel -->
+<script src="js/plugin/slidepanel/jquery.slidepanel.js"></script>
+<!-- PAGE RELATED PLUGIN(S)
+	<script src="..."></script>-->
+	<script type="text/javascript">
+// DO NOT REMOVE : GLOBAL FUNCTIONS!
+$(document).ready(function() {
+
+	pageSetUp();
+	$.SlidePanel();
+	// PAGE RELATED SCRIPTS
+
+
+	/*
+	* TODO: add a way to add more todo's to list
+	*/
+	// initialize sortable
+	$(function() {
+		$("#sortable1, #sortable2").sortable({
+			handle: '.handle',
+			connectWith: ".todo",
+			update: countTasks
+		}).disableSelection();
+	});
+	// check and uncheck
+	$('.todo .checkbox > input[type="checkbox"]').click(function() {
+		var $this = $(this).parent().parent().parent();
+		if ($(this).prop('checked')) {
+			$this.addClass("complete");
+			// remove this if you want to undo a check list once checked
+			//$(this).attr("disabled", true);
+			$(this).parent().hide();
+			// once clicked - add class, copy to memory then remove and add to sortable3
+			$this.slideUp(500, function() {
+				$this.clone().prependTo("#sortable3").effect("highlight", {}, 800);
+				$this.remove();
+				countTasks();
+			});
+		} else {
+			// insert undo code here...
+		}
+	})
+	// count tasks
+	function countTasks() {
+		$('.todo-group-title').each(function() {
+			var $this = $(this);
+			$this.find(".num-of-tasks").text($this.next().find("li").size());
+		});
+	}
+	/*
+	* ADD TO FILTER LIST
+	*/
+	//Solo filtros de taxonomias
+	$('#left-panel > nav > ul > li > ul > li  a').click(function() {
+		var element = $(this);
+		var elementValue = element.text(); //element.attr('data-value');
+		var labelTemplate = ""
+		var typeStyle = "";
+
+		switch (element.attr('data-type')) {
+			case "1":
+			typeStyle = "primary"
+			break;
+			case "2":
+			typeStyle = "success"
+			break;
+			case "3":
+			typeStyle = "warning"
+			break;
+			default:
+			typeStyle = "danger"
+		};
+
+		if (element.attr('data-type') !== undefined && element.attr('data-type') !== null && elementValue !== undefined && elementValue.length > 0) {
+			labelTemplate = "<span class='label label-" + typeStyle + " animated fadeInRight filter-open-modal' rel='tooltip' title='' data-placement='top' data-original-title='Editar filtro'>" + elementValue + "&nbsp;<i class='fa fa-fw fa-close filter-close-tag' rel='tooltip' title='' data-placement='top' data-original-title='Quitar filtro'></i></span> ";
+
+			$('#advancedFilterTags').append(labelTemplate);
+			//para fuentes
+			if(element.attr('data-type') === "1") {
+				if(!element.find('i').hasClass('fa-check-circle')){
+					element.find('i').removeClass('fa-circle-o').addClass('fa-check-circle txt-color-greenSuccess');
+				}else if(!element.find('i').hasClass('fa-circle-o')){
+					element.find('i').removeClass('fa-check-circle txt-color-greenSuccess').addClass('fa-circle-o');
+				}
 			}
-			</script>
-			<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-			<script>
-			if (!window.jQuery.ui) {
-				document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>');
+
+			console.info(elementValue);
+
+			switch (elementValue) {
+				case "Persona":
+				$('#personaModal').modal('show');
+				break;
+				default:
+				console.log('None Modal to match', elementValue);
 			}
-			</script>
-			<!-- IMPORTANT: APP CONFIG -->
-			<script src="js/app.config.js"></script>
-			<!-- JS TOUCH : include this plugin for mobile drag / drop touch events-->
-			<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script>
-			<!-- BOOTSTRAP JS -->
-			<script src="js/bootstrap/bootstrap.min.js"></script>
-			<!-- CUSTOM NOTIFICATION -->
-			<script src="js/notification/SmartNotification.min.js"></script>
-			<!-- JARVIS WIDGETS -->
-			<script src="js/smartwidgets/jarvis.widget.min.js"></script>
-			<!-- EASY PIE CHARTS -->
-			<script src="js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
-			<!-- SPARKLINES -->
-			<script src="js/plugin/sparkline/jquery.sparkline.min.js"></script>
-			<!-- JQUERY VALIDATE -->
-			<script src="js/plugin/jquery-validate/jquery.validate.min.js"></script>
-			<!-- JQUERY MASKED INPUT -->
-			<script src="js/plugin/masked-input/jquery.maskedinput.min.js"></script>
-			<!-- JQUERY SELECT2 INPUT -->
-			<script src="js/plugin/select2/select2.min.js"></script>
-			<!-- JQUERY UI + Bootstrap Slider -->
-			<script src="js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
-			<!-- browser msie issue fix -->
-			<script src="js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
-			<!-- FastClick: For mobile devices -->
-			<script src="js/plugin/fastclick/fastclick.min.js"></script>
-			<!--[if IE 8]>
-			<h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
-			<![endif]-->
-			<!-- Demo purpose only -->
-			<!-- <script src="js/demo.min.js"></script> -->
-			<!-- MAIN APP JS FILE -->
-			<script src="js/app.min.js"></script>
-			<!-- ENHANCEMENT PLUGINS : NOT A REQUIREMENT -->
-			<!-- Voice command : plugin -->
-			<script src="js/speech/voicecommand.min.js"></script>
-			<!-- SmartChat UI : plugin -->
-			<script src="js/smart-chat-ui/smart.chat.ui.min.js"></script>
-			<script src="js/smart-chat-ui/smart.chat.manager.min.js"></script>
-			<!-- PAGE RELATED PLUGIN(S)
-			<script src="..."></script>-->
-			<script type="text/javascript">
-			// DO NOT REMOVE : GLOBAL FUNCTIONS!
-			$(document).ready(function() {
+		} else {
+			return console.info('NULL or UNDEFINED menu element [data-value] attribute');
+		}
 
-				pageSetUp();
+		// Filter-Tag actions
+		$('.filter-close-tag').click(function(e) {
+			e.preventDefault();
+			console.log(this);
+			var element = $(this).parent();
+			element.removeClass('fadeInRight').delay(300).addClass('fadeOut').delay(300).remove();
+		});
+		// Filter-Tag actions
+		/*$('.filter-open-modal').click(function(e){
+		e.preventDefault();
+		console.log('.filter-open-modal',this);
+		$('#personaModal').modal('show');
+	});*/
 
-				// PAGE RELATED SCRIPTS
+});
 
-				$('.tree > ul').attr('role', 'tree').find('ul').attr('role', 'group');
-				$('.tree').find('li:has(ul)').addClass('parent_li').attr('role', 'treeitem').find(' > span').attr('title', 'Collapse this branch').on('click', function(e) {
-					var children = $(this).parent('li.parent_li').find(' > ul > li');
-					if (children.is(':visible')) {
-						children.hide('fast');
-						$(this).attr('title', 'Expand this branch').find(' > i').removeClass().addClass('fa fa-lg fa-plus-circle');
-					} else {
-						children.show('fast');
-						$(this).attr('title', 'Collapse this branch').find(' > i').removeClass().addClass('fa fa-lg fa-minus-circle');
-					}
-					e.stopPropagation();
-				});
-				/*
-				* TODO: add a way to add more todo's to list
-				*/
-				// initialize sortable
-				$(function() {
-					$("#sortable1, #sortable2").sortable({
-						handle: '.handle',
-						connectWith: ".todo",
-						update: countTasks
-					}).disableSelection();
-				});
-				// check and uncheck
-				$('.todo .checkbox > input[type="checkbox"]').click(function() {
-					var $this = $(this).parent().parent().parent();
-					if ($(this).prop('checked')) {
-						$this.addClass("complete");
-						// remove this if you want to undo a check list once checked
-						//$(this).attr("disabled", true);
-						$(this).parent().hide();
-						// once clicked - add class, copy to memory then remove and add to sortable3
-						$this.slideUp(500, function() {
-							$this.clone().prependTo("#sortable3").effect("highlight", {}, 800);
-							$this.remove();
-							countTasks();
-						});
-					} else {
-						// insert undo code here...
-					}
-				})
-				// count tasks
-				function countTasks() {
-					$('.todo-group-title').each(function() {
-						var $this = $(this);
-						$this.find(".num-of-tasks").text($this.next().find("li").size());
-					});
-				}
-				/*
-				* ADD TO FILTER LIST
-				*/
-				//Solo filtros de taxonomias
-				$('#left-panel > nav > ul > li > ul > li  a').click(function() {
-					var element = $(this);
-					var elementValue = element.text(); //element.attr('data-value');
-					var labelTemplate = ""
-					var typeStyle = "";
+$('#resultsContent > .search-results').hide();
 
-					switch (element.attr('data-type')) {
-						case "1":
-						typeStyle = "primary"
-						break;
-						case "2":
-						typeStyle = "success"
-						break;
-						case "3":
-						typeStyle = "warning"
-						break;
-						default:
-						typeStyle = "danger"
-					};
+$('.callResultsContent').click(function(e) {
+	console.log('callResultsContent', e);
+	$('#resultsContent > .search-results').show();
+	$('#personaModal').modal('hide');
+});
 
-					if (element.attr('data-type') !== undefined && element.attr('data-type') !== null && elementValue !== undefined && elementValue.length > 0) {
-						labelTemplate = "<span class='label label-" + typeStyle + " animated fadeInRight filter-open-modal' rel='tooltip' title='' data-placement='top' data-original-title='Editar filtro'>" + elementValue + "&nbsp;<i class='fa fa-fw fa-close filter-close-tag' rel='tooltip' title='' data-placement='top' data-original-title='Quitar filtro'></i></span> ";
+$('#fpersona_nombre').change(function(e) {
+	console.info('fpersona_nombre', e);
 
-						$('#advancedFilterTags').append(labelTemplate);
+	var el = $('.personas-filter');
+	if (this.value.length > 0 && el.hasClass('hide')) {
+		el.removeClass('hide');
+		addToFilterList('success', 'Persona');
+	} else {
+		el.addClass('hide');
+		$('.filter-id-persona').removeClass('fadeInRight').delay(300).addClass('fadeOut').delay(300).remove();
+	}
+});
 
-						console.info(elementValue);
+$('#fubicacion_calle').change(function(e) {
+	console.info('fubicacion_calle', e);
 
-						switch (elementValue) {
-							case "Persona":
-							$('#personaModal').modal('show');
-							break;
-							default:
-							console.log('None Modal to match', elementValue);
-						}
-					} else {
-						return console.info('NULL or UNDEFINED menu element [data-value] attribute');
-					}
+	var el = $('.ubicacion-filter');
+	if (this.value.length > 0 && el.hasClass('hide')) {
+		el.removeClass('hide');
+		addToFilterList('success', 'Ubicacion');
+	} else {
+		el.addClass('hide');
+		$('.filter-id-ubicacion').removeClass('fadeInRight').delay(300).addClass('fadeOut').delay(300).remove();
+	}
 
-					// Filter-Tag actions
-					$('.filter-close-tag').click(function(e) {
-						e.preventDefault();
-						console.log(this);
-						var element = $(this).parent();
-						element.removeClass('fadeInRight').delay(300).addClass('fadeOut').delay(300).remove();
-					});
-					// Filter-Tag actions
-					/*$('.filter-open-modal').click(function(e){
-					e.preventDefault();
-					console.log('.filter-open-modal',this);
-					$('#personaModal').modal('show');
-				});*/
+});
 
-			});
+/*
+* NOTES CONTAINER
+*/
+// Button for toggle container visibility
+$('#btn-toggle-notes').click(function(e){
+	e.preventDefault();
+	console.log("btn-toggle-notes");
+	var btn = $(this);
+	var element = $("#notescontainer");
 
-			$('#resultsContent > .search-results').hide();
-
-			$('.callResultsContent').click(function(e) {
-				console.log('callResultsContent', e);
-				$('#resultsContent > .search-results').show();
-				$('#personaModal').modal('hide');
-			});
-
-			$('#fpersona_nombre').change(function(e) {
-				console.info('fpersona_nombre', e);
-
-				var el = $('.personas-filter');
-				if (this.value.length > 0 && el.hasClass('hide')) {
-					el.removeClass('hide');
-					addToFilterList('success', 'Persona');
-				} else {
-					el.addClass('hide');
-					$('.filter-id-persona').removeClass('fadeInRight').delay(300).addClass('fadeOut').delay(300).remove();
-				}
-			});
-
-			$('#fubicacion_calle').change(function(e) {
-				console.info('fubicacion_calle', e);
-
-				var el = $('.ubicacion-filter');
-				if (this.value.length > 0 && el.hasClass('hide')) {
-					el.removeClass('hide');
-					addToFilterList('success', 'Ubicacion');
-				} else {
-					el.addClass('hide');
-					$('.filter-id-ubicacion').removeClass('fadeInRight').delay(300).addClass('fadeOut').delay(300).remove();
-				}
-
-			});
-
-			/*
-			* NOTES CONTAINER
-			*/
-			// Button for toggle container visibility
-			$('#btn-toggle-notes').click(function(e){
-				e.preventDefault();
-				console.log("btn-toggle-notes");
-				var btn = $(this);
-				var element = $("#notescontainer");
-
-				if(element.hasClass('hide') && !element.hasClass('fadeOut')){
-					element.removeClass('hide').addClass('fadeIn');
-				} else if (element.hasClass('fadeIn')) {
-					element.removeClass('fadeIn').addClass('hide').delay(300).addClass('fadeOut');
-				} else if (element.hasClass('fadeOut') && element.hasClass('hide')) {
-					element.removeClass('fadeOut').delay(300).removeClass('fadeOut').addClass('fadeIn');
-				};
+	if(element.hasClass('hide') && !element.hasClass('fadeOut')){
+		element.removeClass('hide').addClass('fadeIn');
+	} else if (element.hasClass('fadeIn')) {
+		element.removeClass('fadeIn').addClass('hide').delay(300).addClass('fadeOut');
+	} else if (element.hasClass('fadeOut') && element.hasClass('hide')) {
+		element.removeClass('fadeOut').delay(300).removeClass('fadeOut').addClass('fadeIn');
+	};
 
 
-			});
-			// Notes scroll
-			$('#btn-notes-toMaxLeft').click(function(e){
-				var btn = $(this);
-				var element = $("#notesscroll");
-				var span = element[0].scrollWidth - element[0].clientWidth;
-				element.animate({scrollLeft: "-=" + span }, "fast", "linear");
-			});
-			$('#btn-notes-toLeft').click(function(e){
-				var btn = $(this);
-				var element = $("#notesscroll");
-				element.animate({scrollLeft: "-=" + 250}, "fast", "swing");
-			});
-			$('#btn-notes-toRight').click(function(e){
-				var btn = $(this);
-				var element = $("#notesscroll");
-				element.animate({scrollLeft: "+=" + 250}, "fast", "swing");
-			});
-			$('#btn-notes-toMaxRight').click(function(e){
-				var btn = $(this);
-				var element = $("#notesscroll");
-				var span = element[0].scrollWidth - element[0].clientWidth;
-				element.animate({scrollLeft: "+=" + span }, "fast", "linear");
-			});
-			/* END - NOTES CONTAINER */
+});
+// Notes scroll
+$('#btn-notes-toMaxLeft').click(function(e){
+	var btn = $(this);
+	var element = $("#notesscroll");
+	var span = element[0].scrollWidth - element[0].clientWidth;
+	element.animate({scrollLeft: "-=" + span }, "fast", "linear");
+});
+$('#btn-notes-toLeft').click(function(e){
+	var btn = $(this);
+	var element = $("#notesscroll");
+	element.animate({scrollLeft: "-=" + 250}, "fast", "swing");
+});
+$('#btn-notes-toRight').click(function(e){
+	var btn = $(this);
+	var element = $("#notesscroll");
+	element.animate({scrollLeft: "+=" + 250}, "fast", "swing");
+});
+$('#btn-notes-toMaxRight').click(function(e){
+	var btn = $(this);
+	var element = $("#notesscroll");
+	var span = element[0].scrollWidth - element[0].clientWidth;
+	element.animate({scrollLeft: "+=" + span }, "fast", "linear");
+});
+/* END - NOTES CONTAINER */
 
-			var addToFilterList = function(typeStyle, elementValue) {
+var addToFilterList = function(typeStyle, elementValue) {
 
-				var labelTemplate = "<span class='label label-" + typeStyle + " animated fadeInRight filter-open-modal filter-id-" + (elementValue).toLowerCase() + "' rel='tooltip' title='' data-placement='top' data-original-title='Editar filtro'>" + elementValue + "&nbsp;<i class='fa fa-fw fa-close filter-close-tag' rel='tooltip' title='' data-placement='top' data-original-title='Quitar filtro'></i></span> ";
+	var labelTemplate = "<span class='label label-" + typeStyle + " animated fadeInRight filter-open-modal filter-id-" + (elementValue).toLowerCase() + "' rel='tooltip' title='' data-placement='top' data-original-title='Editar filtro'>" + elementValue + "&nbsp;<i class='fa fa-fw fa-close filter-close-tag' rel='tooltip' title='' data-placement='top' data-original-title='Quitar filtro'></i></span> ";
 
-				$('#advancedFilterTags').append(labelTemplate);
+	$('#advancedFilterTags').append(labelTemplate);
 
-				// Filter-Tag actions
-				$('.filter-close-tag').click(function(e) {
-					e.preventDefault();
-					console.log(this);
-					var element = $(this).parent();
-					element.removeClass('fadeInRight').delay(300).addClass('fadeOut').delay(300).remove();
-				});
+	// Filter-Tag actions
+	$('.filter-close-tag').click(function(e) {
+		e.preventDefault();
+		console.log(this);
+		var element = $(this).parent();
+		element.removeClass('fadeInRight').delay(300).addClass('fadeOut').delay(300).remove();
+	});
 
-			};
+};
 
-		})
-		</script>
-		<!-- Your GOOGLE ANALYTICS CODE Below -->
-		<script type="text/javascript">
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
-		_gaq.push(['_trackPageview']);
+$('ul.bg-color-blueMiranda-alt > li > a').click(function(e){
+	e.preventDefault();
+	console.log('clicked element!');
+	$('ul.bg-color-blueMiranda-alt > li').each(function(){
+		$(this).removeClass('active');
+	});
+	$(this).parent().addClass('active');
 
-		(function() {
-			var ga = document.createElement('script');
-			ga.type = 'text/javascript';
-			ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(ga, s);
-		})();
-		</script>
-	</body>
-	</html>
+});
+
+	$('.filter-open-modal').click(function(e){
+		e.preventDefault();
+		console.log('.filter-open-modal',this);
+		$('#personaModal').modal('show');
+	});
+
+	$('#resultsContent > .search-results h4').click(function(e){
+		e.preventDefault();
+		console.log('.search-results h4',this);
+		$('#personaModal').modal('show');
+	});
+
+})
+</script>
+<!-- Your GOOGLE ANALYTICS CODE Below -->
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+</body>
+</html>
