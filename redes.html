@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
-	<title> Búsquedas Exactas</title>
+	<title> Redes Sociales</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -124,7 +124,7 @@ Use search to find needed section.
 
 		<!--  top-menu -->
 		<ul class="nav navbar-nav bg-color-blueMiranda-alt">
-			<li class="active">
+			<li>
 				<a href="#">
 					<i class="fa fa-lg fa-search-plus"></i>
 					Búsquedas <strong>Exactas</strong>
@@ -136,8 +136,8 @@ Use search to find needed section.
 					Búsquedas <strong>Abiertas</strong>
 				</a>
 			</li>
-			<li>
-				<a href="redes.html">
+			<li  class="active">
+				<a href="#">
 					<i class="fa fa-lg fa-stack-overflow"></i>
 					Redes <strong>Sociales</strong>
 				</a>
@@ -384,14 +384,48 @@ Use search to find needed section.
 		<li>
 			<a href="#" title="Fuentes"><i class="fa fa-lg fa-fw fa-filter"></i> <span class="menu-item-parent">Fuentes</span></a>
 			<ul class="list-fuentes">
-				<li><a href="#" data-type="1"><i class="pull-right fa fa-circle-o "></i>Todas las fuentes</a></li>
-				<li><a href="#" data-type="1"><i class="pull-right fa fa-circle-o "></i>REPUVE</a></li>
-				<li><a href="#" data-type="1"><i class="pull-right fa fa-circle-o "></i>OCRA</a></li>
-				<li><a href="#" data-type="1"><i class="pull-right fa fa-circle-o "></i>SIOM</a></li>
-				<li><a href="#" data-type="1"><i class="pull-right fa fa-circle-o "></i>Licencias de Conducir</a></li>
-				<li><a href="#" data-type="1"><i class="pull-right fa fa-circle-o "></i>Vehiculos Robados y Recuperados</a></li>
-				<li><a href="#" data-type="1"><i class="pull-right fa fa-circle-o "></i>Empresas de Seguridad Privada</a></li>
-				<li><a href="#" data-type="1"><i class="pull-right fa fa-circle-o "></i>Registro Federal de Mandamientos Judiciales</a></li>
+				<li>
+					<a href="#" data-type="1">
+						<i class="fa fa-star"></i>
+						Todas las fuentes
+						<i class="pull-right fa fa-circle-o "></i>
+					</a>
+				</li>
+				<li>
+					<a href="#" data-type="1">
+						<i class="fa fa-google-plus"></i>
+						Google Plus
+						<i class="pull-right fa fa-circle-o "></i>
+					</a>
+				</li>
+				<li>
+					<a href="#" data-type="1">
+						<i class="fa fa-instagram"></i>
+						Instagram
+						<i class="pull-right fa fa-circle-o "></i>
+					</a>
+				</li>
+				<li>
+					<a href="#" data-type="1">
+						<i class="fa fa-facebook"></i>
+						Facebook
+						<i class="pull-right fa fa-circle-o "></i>
+					</a>
+				</li>
+				<li>
+					<a href="#" data-type="1">
+						<i class="fa fa-twitter"></i>
+						Twitter
+						<i class="pull-right fa fa-circle-o "></i>
+					</a>
+				</li>
+				<li>
+					<a href="#" data-type="1">
+						<i class="fa fa-youtube"></i>
+						YouTube
+						<i class="pull-right fa fa-circle-o "></i>
+					</a>
+				</li>
 			</ul>
 		</li>
 		<li class="menu-taxomonias ">
@@ -540,8 +574,8 @@ Use search to find needed section.
 
 												<li class="">
 													<a data-toggle="tab" href="#hr2" aria-expanded="false">
-														<i class="fa fa-lg fa-map-marker"></i>
-														<span class="hidden-mobile hidden-tablet"> Ubicación </span>
+														<i class="fa fa-lg fa-file-text-o"></i>
+														<span class="hidden-mobile hidden-tablet"> Post </span>
 														<span class="badge bg-color-greenLight txt-color-white hide ubicacion-filter">
 															<i class="fa fa-filter"></i>
 														</span>
@@ -550,17 +584,11 @@ Use search to find needed section.
 
 												<li class="">
 													<a data-toggle="tab" href="#hr3" aria-expanded="false">
-														<i class="fa fa-lg fa-car"></i>
-														<span class="hidden-mobile hidden-tablet"> Vehiculo </span>
+														<i class="fa fa-lg fa-tag"></i>
+														<span class="hidden-mobile hidden-tablet"> Medios </span>
 													</a>
 												</li>
 
-												<li class="">
-													<a data-toggle="tab" href="#hr4" aria-expanded="false">
-														<i class="fa fa-lg fa-bullseye"></i>
-														<span class="hidden-mobile hidden-tablet"> Arma </span>
-													</a>
-												</li>
 											</ul>
 											<div class="tab-content">
 												<div class="tab-pane active" id="hr1">
@@ -570,50 +598,28 @@ Use search to find needed section.
 															<div class="row">
 																<section class="col col-4">
 																	<label class="input"> <i class="icon-prepend fa fa-user"></i>
+																		<input type="text" name="fpersona_claveusuario" placeholder="Clave de Usuario/Perfil">
+																	</label>
+																</section>
+																<section class="col col-4">
+																	<label class="input"> <i class="icon-append fa fa-calendar"></i>
+																		<input type="text" name="finishdate" id="finishdate" placeholder="Fecha">
+																	</label>
+																</section>
+																<section class="col col-4">
+																	<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
+																		<input type="text" name="fpersona_lugar" placeholder="Lugar">
+																	</label>
+																</section>
+															</div>
+															<div class="row">
+																<section class="col col-8">
+																	<label class="input"> <i class="icon-prepend fa fa-user"></i>
 																		<input type="text" id="fpersona_nombre" name="fpersona_nombre" placeholder="Nombre(s)" >
 																	</label>
 																</section>
 																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" name="fname" placeholder="Apellido Paterno">
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" name="fname" placeholder="Apellido Materno">
-																	</label>
-																</section>
-															</div>
-															<div class="row">
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-credit-card"></i>
-																		<input type="text" name="frfc" placeholder="RFC">
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-credit-card"></i>
-																		<input type="text" name="fcurp" placeholder="CURP">
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-credit-card"></i>
-																		<input type="text" name="fcuip" placeholder="CUIP">
-																	</label>
-																</section>
-															</div>
-															<div class="row">
-																<section class="col col-4">
-																	<label class="input">
-																		<i class="icon-prepend fa fa-credit-card"></i>
-																		<input type="text" name="fcib" placeholder="CIB">
-																	</label>
-																</section>
-																<section class="col col-4">
-
-																</section>
-																<section class="col col-4">
-
-
+																	 &nbsp;
 																</section>
 															</div>
 														</fieldset>
@@ -622,140 +628,80 @@ Use search to find needed section.
 												</div>
 												<div class="tab-pane" id="hr2">
 													<!--  Start Form2 -->
-													<form id="login-form-2" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F6">
+													<form id="login-form-2" class="smart-form" novalidate="novalidate">
 														<fieldset>
-															<div class="row">
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
-																		<input type="text" id="fubicacion_calle" name="fname" placeholder="Calle" >
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
-																		<input type="text" name="fname" placeholder="Colonia">
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
-																		<input type="text" name="fname" placeholder="CP">
-																	</label>
-																</section>
-															</div>
-														</fieldset>
-														<fieldset>
-															<div class="row">
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-map"></i>
-																		<input type="text" name="frfc" placeholder="Localidad">
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-map"></i>
-																		<input type="text" name="fcurp" placeholder="Municipio">
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-map"></i>
-																		<input type="text" name="fcuip" placeholder="Estado">
-																	</label>
-																</section>
-															</div>
+															<section>
+																<label class="textarea"> <i class="icon-append fa fa-file-text-o "></i>
+																	<textarea rows="3" name="review" id="fpost_contenido" placeholder="Contenido/Texto a buscar..."></textarea>
+																</label>
+															</section>
 														</fieldset>
 													</form>
 													<!--  End Form2 -->
 												</div>
 												<div class="tab-pane" id="hr3">
 													<!-- Start Form3 -->
-													<form id="login-form-3" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F7">
+													<form id="login-form-3" class="smart-form" novalidate="novalidate">
 														<fieldset>
 															<div class="row">
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-car"></i>
-																		<input type="text" name="fname" placeholder="Marca" >
-																	</label>
-																</section>
-																<section class="col col-4">
+																<section class="col col-8">
 																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" name="fname" placeholder="Modelo">
+																		<input type="text" id="fmedios_contenido" name="fmedios_contenido" placeholder="Contenido/Texto a buscar..." >
 																	</label>
 																</section>
 																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-calendar-o"></i>
-																		<input type="text" name="fname" placeholder="Serie">
+																	 &nbsp;
+																</section>
+															</div>
+															<div class="row">
+																<section class="col col-4">
+																	<label class="checkbox">
+																		<input name="subscription" id="subscription" type="checkbox">
+																		<i></i>
+																		Buho Legal
+																	</label>
+																</section>
+																<section class="col col-4">
+																	<label class="checkbox">
+																		<input name="subscription" id="subscription" type="checkbox">
+																		<i></i>
+																		El Reforma
+																	</label>
+																</section>
+																<section class="col col-4">
+																	<label class="checkbox">
+																		<input name="subscription" id="subscription" type="checkbox">
+																		<i></i>
+																		El Universal
 																	</label>
 																</section>
 															</div>
-														</fieldset>
-														<fieldset>
 															<div class="row">
-																<section class="col col-3">
-																	<label class="input"> <i class="icon-prepend fa fa-barcode"></i>
-																		<input type="text" name="frfc" placeholder="Placa">
+																<section class="col col-4">
+																	<label class="checkbox">
+																		<input name="subscription" id="subscription" type="checkbox">
+																		<i></i>
+																		La Jornada
 																	</label>
 																</section>
-																<section class="col col-3">
-																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" name="fcurp" placeholder="No. de Motor">
+																<section class="col col-4">
+																	<label class="checkbox">
+																		<input name="subscription" id="subscription" type="checkbox">
+																		<i></i>
+																		Sitio Web Y
 																	</label>
 																</section>
-																<section class="col col-3">
-																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" name="fcuip" placeholder="VIN">
-																	</label>
-																</section>
-																<section class="col col-3">
-																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" name="fcuip" placeholder="Color">
+																<section class="col col-4">
+																	<label class="checkbox">
+																		<input name="subscription" id="subscription" type="checkbox">
+																		<i></i>
+																		Sitio Web Z
 																	</label>
 																</section>
 															</div>
 														</fieldset>
 													</form>
 													<!-- End Form3 -->
-												</div>
-												<div class="tab-pane" id="hr4">
-													<!-- Start Form4 -->
-													<form id="login-form-3" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F7">
-														<fieldset>
-															<div class="row">
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" name="fname" placeholder="Marca" >
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" name="fname" placeholder="Tipo">
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" name="fname" placeholder="Matricula">
-																	</label>
-																</section>
-															</div>
-														</fieldset>
-														<fieldset>
-															<div class="row">
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" name="fcurp" placeholder="Serie">
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" name="fcuip" placeholder="Calibre">
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" name="fcuip" placeholder="Modelo">
-																	</label>
-																</section>
-															</div>
-														</fieldset>
-													</form>
-													<!-- End Form4 -->
 												</div>
 											</div>
 										</div>
@@ -1667,7 +1613,7 @@ var addToFilterList = function(typeStyle, elementValue) {
 };
 
 $('ul.bg-color-blueMiranda-alt > li > a').click(function(e){
-	e.preventDefault();
+	//e.preventDefault();
 	console.log('clicked element!');
 	$('ul.bg-color-blueMiranda-alt > li').each(function(){
 		$(this).removeClass('active');
@@ -1687,6 +1633,17 @@ $('ul.bg-color-blueMiranda-alt > li > a').click(function(e){
 		console.log('.search-results h4',this);
 		$('#personaModal').modal('show');
 	});
+
+	// start datepicker01
+	$('#finishdate').datepicker({
+		dateFormat : 'dd/mm/yy',
+		prevText : '<i class="fa fa-chevron-left"></i>',
+		nextText : '<i class="fa fa-chevron-right"></i>',
+		onSelect : function(selectedDate) {
+			// $('#startdate').datepicker('option', 'maxDate', selectedDate);
+		}
+	});
+	// end datepicker01
 
 })
 </script>
