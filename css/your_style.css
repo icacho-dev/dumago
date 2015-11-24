@@ -48,6 +48,10 @@
   /*background-color: #616471 !important;*/
 }
 
+.txt-color-blueMiranda {
+  color: #3276B1 !important;
+}
+
 .navbar-nav.bg-color-blueMiranda ,
 .navbar-nav.bg-color-blueMiranda-alt {
   margin: -1px;
@@ -511,7 +515,7 @@ nav ul ul > li:hover b {
     text-align: right;
     z-index: 4;
     max-width: 100px;
-    margin-bottom: 0px; 
+    margin-bottom: 0px;
 }
 /* end pantalla detalle */
 @media (min-width: 768px) {
