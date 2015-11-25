@@ -90,7 +90,7 @@ Use search to find needed section.
 * 'fixed-page-footer' - Fixes footer
 * 'container'         - boxed layout mode (non-responsive: will not work with fixed-navigation & fixed-ribbon)
 -->
-<body class="smart-style-0 smart-style-0-alt fixed-page-footer">
+<body class="smart-style-0 smart-style-0-alt fixed-page-footer no-menu">
 	<div class="container-fluid">
 		<div class="row cns-header">
 			<div class="col col-xs-12 col-sm-4 hidden-xs">
@@ -137,7 +137,7 @@ Use search to find needed section.
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="redes.html">
 					<i class="fa fa-lg fa-stack-overflow"></i>
 					Redes <strong>Sociales</strong>
 				</a>
@@ -324,1145 +324,1170 @@ Use search to find needed section.
 		<!-- PLACE YOUR LOGO HERE -->
 
 		<!-- END LOGO PLACEHOLDER -->
-					<!-- Note: The activity badge color changes when clicked and resets the number to 0
-					Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications -->
-					<span id="activity" class="activity-dropdown "> <i class="fa fa-user"></i> <b class="badge"> 6 </b> </span>
-					<!-- AJAX-DROPDOWN : control this dropdown height, look and feel from the LESS variable file -->
-					<div class="ajax-dropdown">
-						<!-- the ID links are fetched via AJAX to the ajax container "ajax-notifications" -->
-						<div class="btn-group btn-group-justified" data-toggle="buttons">
-							<label class="btn btn-default">
-								<input type="radio" name="activity" id="ajax/notify/busquedas.html">
-								Búsquedas Prog. (3) </label>
-								<label class="btn btn-default">
-									<input type="radio" name="activity" id="ajax/notify/notifications-ac.html">
-									Notificaciones (3) </label>
-								</div>
-								<!-- notification content -->
-								<div class="ajax-notifications custom-scroll">
-									<div class="alert alert-transparent">
-										<h4>Click a button to show messages here</h4>
-										This blank page message helps protect your privacy, or you can show the first message here automatically.
+		<!-- Note: The activity badge color changes when clicked and resets the number to 0
+		Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications -->
+		<span id="activity" class="activity-dropdown "> <i class="fa fa-user"></i> <b class="badge"> 6 </b> </span>
+		<!-- AJAX-DROPDOWN : control this dropdown height, look and feel from the LESS variable file -->
+		<div class="ajax-dropdown">
+			<!-- the ID links are fetched via AJAX to the ajax container "ajax-notifications" -->
+			<div class="btn-group btn-group-justified" data-toggle="buttons">
+				<label class="btn btn-default">
+					<input type="radio" name="activity" id="ajax/notify/busquedas.html">
+					Búsquedas Prog. (3) </label>
+					<label class="btn btn-default">
+						<input type="radio" name="activity" id="ajax/notify/notifications-ac.html">
+						Notificaciones (3) </label>
+					</div>
+					<!-- notification content -->
+					<div class="ajax-notifications custom-scroll">
+						<div class="alert alert-transparent">
+							<h4>Click a button to show messages here</h4>
+							This blank page message helps protect your privacy, or you can show the first message here automatically.
+						</div>
+						<i class="fa fa-lock fa-4x fa-border"></i>
+					</div>
+					<!-- end notification content -->
+					<!-- footer: refresh area -->
+					<span class="font-xs text-muted"> Última actualización el: 12/12/2013 9:43AM
+						<button type="button" data-loading-text="<i class='fa fa-refresh fa-spin'></i> Loading..." class="btn btn-xs btn-default pull-right">
+							<i class="fa fa-refresh"></i>
+						</button> </span>
+						<!-- end footer -->
+					</div>
+					<!-- END AJAX-DROPDOWN -->
+				</div>
+				<!--  end alerts -->
+			</header>
+			<!-- END HEADER -->
+			<!-- Left panel : Navigation area -->
+			<!-- Note: This width of the aside area can be adjusted through LESS variables -->
+
+			<!-- END NAVIGATION -->
+			<!-- MAIN PANEL -->
+			<div id="main" role="main">
+				<!-- RIBBON -->
+				<div id="ribbon" class="hide">
+
+					<span class="ribbon-button-alignment">
+						<span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh" rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
+							<i class="fa fa-refresh"></i>
+						</span>
+					</span>
+					<ol class="breadcrumb">
+						<li>Inicio</li><li>Busquedas Exactas</li>
+					</ol>
+				</div>
+				<!-- END RIBBON -->
+				<!-- MAIN CONTENT -->
+				<div id="content">
+
+					<!-- widget grid -->
+					<section id="widget-grid" class="">
+
+						<!-- row -->
+						<div class="row">
+
+
+							<!-- NEW WIDGET START -->
+							<article class="col-sm-12 col-md-8 col-lg-8">
+								<!--  Widget filtros v2 -->
+								<div class="jarviswidget jarviswidget-color-white" id="wid-id-9" data-widget-editbutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="true" role="widget" data-widget-attstyle="jarviswidget-color-white">
+
+									<header role="heading">
+										<span class="widget-icon"> <i class="fa fa-lg fa-list"></i> </span>
+										<h2>Criterios </h2>
+
+
+										<span class="jarviswidget-loader" style="display: none;"><i class="fa fa-refresh fa-spin"></i></span></header>
+
+										<!-- widget div-->
+										<div role="content">
+
+											<!-- widget edit box -->
+											<div class="jarviswidget-editbox">
+												<!-- This area used as dropdown edit box -->
+
+											</div>
+											<!-- end widget edit box -->
+
+											<!-- widget content -->
+											<div class="widget-body ">
+												<div class="row">
+													<div class="col col-xs-12">
+														<div class="tabs-left">
+															<ul class="nav nav-tabs tabs-left" id="demo-pill-nav">
+																<li class="active">
+
+																	<a data-toggle="tab" href="#hr1" aria-expanded="true"> <i class="fa fa-lg fa-user"></i>
+																		<span class="hidden-mobile hidden-tablet"> Persona
+																			<span class="badge bg-color-greenLight txt-color-white hide personas-filter">
+																				<i class="fa fa-filter"></i>
+																			</span>
+																		</span>
+																	</a>
+
+																</li>
+
+																<li class="">
+																	<a data-toggle="tab" href="#hr2" aria-expanded="false">
+																		<i class="fa fa-lg fa-map-marker"></i>
+																		<span class="hidden-mobile hidden-tablet"> Ubicación </span>
+																		<span class="badge bg-color-greenLight txt-color-white hide ubicacion-filter">
+																			<i class="fa fa-filter"></i>
+																		</span>
+																	</a>
+																</li>
+
+																<li class="">
+																	<a data-toggle="tab" href="#hr3" aria-expanded="false">
+																		<i class="fa fa-lg fa-car"></i>
+																		<span class="hidden-mobile hidden-tablet"> Vehiculo </span>
+																	</a>
+																</li>
+
+																<li class="">
+																	<a data-toggle="tab" href="#hr4" aria-expanded="false">
+																		<i class="fa fa-lg fa-bullseye"></i>
+																		<span class="hidden-mobile hidden-tablet"> Arma </span>
+																	</a>
+																</li>
+															</ul>
+															<div class="tab-content">
+																<div class="tab-pane active" id="hr1">
+																	<!--  Start Form1 -->
+																	<form id="login-form-2" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F6">
+																		<fieldset>
+																			<div class="row">
+																				<section class="col col-4">
+																					<label class="input"> <i class="icon-prepend fa fa-user"></i>
+																						<input type="text" id="fpersona_nombre" name="fpersona_nombre" placeholder="Nombre(s)" >
+																					</label>
+																				</section>
+																				<section class="col col-4">
+																					<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																						<input type="text" name="fname" placeholder="Apellido Paterno">
+																					</label>
+																				</section>
+																				<section class="col col-4">
+																					<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																						<input type="text" name="fname" placeholder="Apellido Materno">
+																					</label>
+																				</section>
+																			</div>
+																			<div class="row">
+																				<section class="col col-4">
+																					<label class="input"> <i class="icon-prepend fa fa-credit-card"></i>
+																						<input type="text" name="frfc" placeholder="RFC">
+																					</label>
+																				</section>
+																				<section class="col col-4">
+																					<label class="input"> <i class="icon-prepend fa fa-credit-card"></i>
+																						<input type="text" name="fcurp" placeholder="CURP">
+																					</label>
+																				</section>
+																				<section class="col col-4">
+																					<label class="input"> <i class="icon-prepend fa fa-credit-card"></i>
+																						<input type="text" name="fcuip" placeholder="CUIP">
+																					</label>
+																				</section>
+																			</div>
+																			<div class="row">
+																				<section class="col col-4">
+																					<label class="input">
+																						<i class="icon-prepend fa fa-credit-card"></i>
+																						<input type="text" name="fcib" placeholder="CIB">
+																					</label>
+																				</section>
+																				<section class="col col-4">
+
+																				</section>
+																				<section class="col col-4">
+
+
+																				</section>
+																			</div>
+																		</fieldset>
+																	</form>
+																	<!--  End Form1 -->
+																</div>
+																<div class="tab-pane" id="hr2">
+																	<!--  Start Form2 -->
+																	<form id="login-form-2" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F6">
+																		<fieldset>
+																			<div class="row">
+																				<section class="col col-4">
+																					<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
+																						<input type="text" id="fubicacion_calle" name="fname" placeholder="Calle" >
+																					</label>
+																				</section>
+																				<section class="col col-4">
+																					<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
+																						<input type="text" name="fname" placeholder="Colonia">
+																					</label>
+																				</section>
+																				<section class="col col-4">
+																					<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
+																						<input type="text" name="fname" placeholder="CP">
+																					</label>
+																				</section>
+																			</div>
+																		</fieldset>
+																		<fieldset>
+																			<div class="row">
+																				<section class="col col-4">
+																					<label class="input"> <i class="icon-prepend fa fa-map"></i>
+																						<input type="text" name="frfc" placeholder="Localidad">
+																					</label>
+																				</section>
+																				<section class="col col-4">
+																					<label class="input"> <i class="icon-prepend fa fa-map"></i>
+																						<input type="text" name="fcurp" placeholder="Municipio">
+																					</label>
+																				</section>
+																				<section class="col col-4">
+																					<label class="input"> <i class="icon-prepend fa fa-map"></i>
+																						<input type="text" name="fcuip" placeholder="Estado">
+																					</label>
+																				</section>
+																			</div>
+																		</fieldset>
+																	</form>
+																	<!--  End Form2 -->
+																</div>
+																<div class="tab-pane" id="hr3">
+																	<!-- Start Form3 -->
+																	<form id="login-form-3" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F7">
+																		<fieldset>
+																			<div class="row">
+																				<section class="col col-4">
+																					<label class="input"> <i class="icon-prepend fa fa-car"></i>
+																						<input type="text" name="fname" placeholder="Marca" >
+																					</label>
+																				</section>
+																				<section class="col col-4">
+																					<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																						<input type="text" name="fname" placeholder="Modelo">
+																					</label>
+																				</section>
+																				<section class="col col-4">
+																					<label class="input"> <i class="icon-prepend fa fa-calendar-o"></i>
+																						<input type="text" name="fname" placeholder="Serie">
+																					</label>
+																				</section>
+																			</div>
+																		</fieldset>
+																		<fieldset>
+																			<div class="row">
+																				<section class="col col-3">
+																					<label class="input"> <i class="icon-prepend fa fa-barcode"></i>
+																						<input type="text" name="frfc" placeholder="Placa">
+																					</label>
+																				</section>
+																				<section class="col col-3">
+																					<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																						<input type="text" name="fcurp" placeholder="No. de Motor">
+																					</label>
+																				</section>
+																				<section class="col col-3">
+																					<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																						<input type="text" name="fcuip" placeholder="VIN">
+																					</label>
+																				</section>
+																				<section class="col col-3">
+																					<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																						<input type="text" name="fcuip" placeholder="Color">
+																					</label>
+																				</section>
+																			</div>
+																		</fieldset>
+																	</form>
+																	<!-- End Form3 -->
+																</div>
+																<div class="tab-pane" id="hr4">
+																	<!-- Start Form4 -->
+																	<form id="login-form-3" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F7">
+																		<fieldset>
+																			<div class="row">
+																				<section class="col col-4">
+																					<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																						<input type="text" name="fname" placeholder="Marca" >
+																					</label>
+																				</section>
+																				<section class="col col-4">
+																					<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																						<input type="text" name="fname" placeholder="Tipo">
+																					</label>
+																				</section>
+																				<section class="col col-4">
+																					<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																						<input type="text" name="fname" placeholder="Matricula">
+																					</label>
+																				</section>
+																			</div>
+																		</fieldset>
+																		<fieldset>
+																			<div class="row">
+																				<section class="col col-4">
+																					<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																						<input type="text" name="fcurp" placeholder="Serie">
+																					</label>
+																				</section>
+																				<section class="col col-4">
+																					<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																						<input type="text" name="fcuip" placeholder="Calibre">
+																					</label>
+																				</section>
+																				<section class="col col-4">
+																					<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																						<input type="text" name="fcuip" placeholder="Modelo">
+																					</label>
+																				</section>
+																			</div>
+																		</fieldset>
+																	</form>
+																	<!-- End Form4 -->
+																</div>
+															</div>
+														</div>
+
+													</div>
+
+												</div>
+
+												<div class="widget-footer">
+
+													<a href="javascript:void(0);" class="btn btn-labeled btn-info pull-left"> <span class="btn-label"><i class="fa fa-history"></i></span>Nueva Alerta</a>
+
+
+													<a href="javascript:void(0);" class="btn btn-labeled btn-info"> <span class="btn-label"><i class="glyphicon glyphicon-trash"></i></span>Limpiar</a>
+
+
+													<a href="javascript:void(0);" class="btn btn-labeled btn-info callResultsContent"> <span class="btn-label"><i class="glyphicon glyphicon-search"></i></span>Buscar</a>
+
+
+
+												</div>
+
+											</div>
+											<!-- end widget content -->
+
+										</div>
+										<!-- end widget div -->
+
 									</div>
-									<i class="fa fa-lock fa-4x fa-border"></i>
-								</div>
-								<!-- end notification content -->
-								<!-- footer: refresh area -->
-								<span class="font-xs text-muted"> Última actualización el: 12/12/2013 9:43AM
-									<button type="button" data-loading-text="<i class='fa fa-refresh fa-spin'></i> Loading..." class="btn btn-xs btn-default pull-right">
-										<i class="fa fa-refresh"></i>
-									</button> </span>
-									<!-- end footer -->
-								</div>
-								<!-- END AJAX-DROPDOWN -->
-							</div>
-							<!--  end alerts -->
-						</header>
-						<!-- END HEADER -->
-						<!-- Left panel : Navigation area -->
-						<!-- Note: This width of the aside area can be adjusted through LESS variables -->
-						<aside id="left-panel" class="aside-top-mod">
+									<!--  end Widget Filtros v2-->
+								</article>
+								<!-- WIDGET END -->
+								<!-- NEW WIDGET START -->
+								<article class="col-sm-12 col-md-4 col-lg-4">
+									<!--  Widget filtros v2 -->
+									<div class="jarviswidget jarviswidget-color-white" id="wid-id-4" data-widget-editbutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="true" role="widget" data-widget-attstyle="jarviswidget-color-white">
 
-							<!-- User info -->
-				<!-- <div class="login-info">
-				<span>
+										<header role="heading">
+											<span class="widget-icon"> <i class="fa fa-lg fa-database"></i> </span>
+											<h2>Fuentes </h2>
+											<div class="jarviswidget-ctrls" role="menu"></div>
 
-				<a href="javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">
-				<img src="img/avatars/sunny.png" alt="me" class="online" />
-				<span>
-				john.doe
-			</span>
-			<i class="fa fa-angle-down"></i>
-		</a>
+											<span class="jarviswidget-loader" style="display: none;"><i class="fa fa-refresh fa-spin"></i></span></header>
 
-	</span>
-</div -->
-<!-- end user info -->
-<!-- NAVIGATION : This navigation is also responsive-->
-<nav>
-	<ul>
-		<li>
-			<a href="#" title="Fuentes"><i class="fa fa-lg fa-fw fa-filter"></i> <span class="menu-item-parent">Fuentes</span></a>
-			<ul class="list-fuentes">
-				<li><a href="#" data-type="1"><i class="pull-right fa fa-circle-o "></i>Todas las fuentes</a></li>
-				<li><a href="#" data-type="1"><i class="pull-right fa fa-circle-o "></i>REPUVE</a></li>
-				<li><a href="#" data-type="1"><i class="pull-right fa fa-circle-o "></i>OCRA</a></li>
-				<li><a href="#" data-type="1"><i class="pull-right fa fa-circle-o "></i>SIOM</a></li>
-				<li><a href="#" data-type="1"><i class="pull-right fa fa-circle-o "></i>Licencias de Conducir</a></li>
-				<li><a href="#" data-type="1"><i class="pull-right fa fa-circle-o "></i>Vehiculos Robados y Recuperados</a></li>
-				<li><a href="#" data-type="1"><i class="pull-right fa fa-circle-o "></i>Empresas de Seguridad Privada</a></li>
-				<li><a href="#" data-type="1"><i class="pull-right fa fa-circle-o "></i>Registro Federal de Mandamientos Judiciales</a></li>
-			</ul>
-		</li>
-		<li class="menu-taxomonias ">
-			<a href="#" title="Categorias"><i class="fa fa-lg fa-fw fa-puzzle-piece"></i> <span class="menu-item-parent">Filtros </span></a>
-			<ul>
-				<!-- <li>
-				<div class="padding-5">
-				<div class="icon-addon addon-sm">
-				<input type="text" placeholder="Filtrar taxonomias..." class="form-control">
-				<label for="filtrar" class="glyphicon glyphicon-search" rel="tooltip" title="" data-original-title="filtrar"></label>
-			</div>
-		</div>
-	</li> -->
-	<li><a href="#">Personas <span class="badge font-xs bg-color-blue">2,230</span></a>
-		<ul>
-			<li><a href="#">Nombre  <span class="badge font-xs bg-color-white txt-color-blue">1,205</span></a>
-				<ul>
-					<li><a href="#" data-type="3">Juan <em class="text-muted font-xs">&nbsp;(&nbsp;605&nbsp;)</em></a></li>
-					<li><a href="#" data-type="3">Juan Jose <em class="text-muted font-xs">&nbsp;(&nbsp;287&nbsp;)</em></a></li>
-					<li><a href="#" data-type="3">Juan de Jose <em class="text-muted font-xs">&nbsp;(&nbsp;313&nbsp;)</em></a></li>
-					<li><a href="#"><i class="fa fa-plus font-xs"></i>Ver más...</a></li>
-				</ul>
-			</li>
-			<li><a href="#">Apellido Paterno  <span class="badge font-xs bg-color-white txt-color-blue">1,000</span></a>
-				<ul>
-					<li><a href="#" data-type="3">Vazquez <em class="text-muted font-xs">&nbsp;(&nbsp;800&nbsp;)</em></a></li>
-					<li><a href="#" data-type="3">Vasquez <em class="text-muted font-xs">&nbsp;(&nbsp;200&nbsp;)</em></a>
-						<li><a href="#"><i class="fa fa-plus font-xs"></i>Ver más...</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Apellido Materno  <span class="badge font-xs bg-color-white txt-color-blue">20</span></a></li>
-				<li><a href="#">Media Afiliación  <span class="badge font-xs bg-color-white txt-color-blue">5</span></a></li>
-			</ul>
-		</li>
-		<li><a href="#">Ubicación  <span class="badge font-xs bg-color-blue">234</span></a>
-			<ul>
-				<li><a href="#">Estado  <span class="badge font-xs bg-color-white txt-color-blue">1,205</span></a>
-					<ul>
-						<li><a href="#" data-type="3">Distrito Federal <em class="text-muted font-xs">&nbsp;(&nbsp;605&nbsp;)</em></a></li>
-						<li><a href="#" data-type="3">Guadalajara <em class="text-muted font-xs">&nbsp;(&nbsp;287&nbsp;)</em></a></li>
-						<li><a href="#" data-type="3">Monterrey <em class="text-muted font-xs">&nbsp;(&nbsp;313&nbsp;)</em></a></li>
-						<li><a href="#"><i class="fa fa-plus font-xs"></i>Ver más...</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Municipio  <span class="badge font-xs bg-color-white txt-color-blue">1,000</span></a>
-					<ul>
-						<li><a href="#" data-type="3">Alvaro Obregón <em class="text-muted font-xs">&nbsp;(&nbsp;800&nbsp;)</em></a></li>
-						<li><a href="#" data-type="3">Nuevo León <em class="text-muted font-xs">&nbsp;(&nbsp;200&nbsp;)</em></a>
-							<li><a href="#"><i class="fa fa-plus font-xs"></i>Ver más...</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Colonia  <span class="badge font-xs bg-color-white txt-color-blue">20</span></a></li>
-					<li><a href="#">Calle  <span class="badge font-xs bg-color-white txt-color-blue">5</span></a></li>
-				</ul>
-			</li>
-			<li><a href="#">Licencias de Conducir  <span class="badge font-xs bg-color-blue">1,941</span></a></li>
-			<li><a href="#">Área de Adscripción  <span class="badge font-xs bg-color-blue">37</span></a></li>
-		</ul>
-	</li>
-</ul>
-</nav>
-<span class="minifyme" data-action="minifyMenu">
-	<i class="fa fa-arrow-circle-left hit"></i>
-</span>
-</aside>
-<!-- END NAVIGATION -->
-<!-- MAIN PANEL -->
-<div id="main" role="main">
-	<!-- RIBBON -->
-	<!-- <div id="ribbon">
+											<!-- widget div-->
+											<div role="content">
 
-		<span class="ribbon-button-alignment">
-			<span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh" rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
-				<i class="fa fa-refresh"></i>
-			</span>
-		</span>
-		<ol class="breadcrumb">
-			<li>Inicio</li><li>Busquedas Exactas</li>
-		</ol>
-	</div> -->
-	<!-- END RIBBON -->
-	<!-- MAIN CONTENT -->
-	<div id="content">
+												<!-- widget edit box -->
+												<div class="jarviswidget-editbox">
+													<!-- This area used as dropdown edit box -->
 
-		<!-- widget grid -->
-		<section id="widget-grid" class="">
-
-			<!-- row -->
-			<div class="row">
-
-				<!-- NEW WIDGET START -->
-
-				<!-- WIDGET END -->
-				<!-- NEW WIDGET START -->
-				<article class="col-sm-12 col-md-12 col-lg-12">
-					<!--  Widget filtros v2 -->
-					<div class="jarviswidget jarviswidget-color-darken" id="wid-id-9" data-widget-editbutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="true" role="widget" data-widget-attstyle="jarviswidget-color-darken">
-					<!-- widget options:
-					usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
-
-					data-widget-colorbutton="false"
-					data-widget-editbutton="false"
-					data-widget-togglebutton="false"
-					data-widget-deletebutton="false"
-					data-widget-fullscreenbutton="false"
-					data-widget-custombutton="false"
-					data-widget-collapsed="true"
-					data-widget-sortable="false"
-
-				-->
-				<header role="heading">
-					<span class="widget-icon"> <i class="fa fa-lg fa-list"></i> </span>
-					<h2>Criterios de Búsqueda </h2>
-					<div class="jarviswidget-ctrls" role="menu">
-						<a href="javascript:void(0);" class="button-icon jarviswidget-toggle-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Collapse"><i class="fa fa-minus "></i></a></div><div class="widget-toolbar" role="menu"><a data-toggle="dropdown" class="dropdown-toggle color-box selector" href="javascript:void(0);" aria-expanded="false"></a><ul class="dropdown-menu arrow-box-up-right color-select pull-right"><li><span class="bg-color-green" data-widget-setstyle="jarviswidget-color-green" rel="tooltip" data-placement="left" data-original-title="Green Grass"></span></li><li><span class="bg-color-greenDark" data-widget-setstyle="jarviswidget-color-greenDark" rel="tooltip" data-placement="top" data-original-title="Dark Green"></span></li><li><span class="bg-color-greenLight" data-widget-setstyle="jarviswidget-color-greenLight" rel="tooltip" data-placement="top" data-original-title="Light Green"></span></li><li><span class="bg-color-purple" data-widget-setstyle="jarviswidget-color-purple" rel="tooltip" data-placement="top" data-original-title="Purple"></span></li><li><span class="bg-color-magenta" data-widget-setstyle="jarviswidget-color-magenta" rel="tooltip" data-placement="top" data-original-title="Magenta"></span></li><li><span class="bg-color-pink" data-widget-setstyle="jarviswidget-color-pink" rel="tooltip" data-placement="right" data-original-title="Pink"></span></li><li><span class="bg-color-pinkDark" data-widget-setstyle="jarviswidget-color-pinkDark" rel="tooltip" data-placement="left" data-original-title="Fade Pink"></span></li><li><span class="bg-color-blueLight" data-widget-setstyle="jarviswidget-color-blueLight" rel="tooltip" data-placement="top" data-original-title="Light Blue"></span></li><li><span class="bg-color-teal" data-widget-setstyle="jarviswidget-color-teal" rel="tooltip" data-placement="top" data-original-title="Teal"></span></li><li><span class="bg-color-blue" data-widget-setstyle="jarviswidget-color-blue" rel="tooltip" data-placement="top" data-original-title="Ocean Blue"></span></li><li><span class="bg-color-blueDark" data-widget-setstyle="jarviswidget-color-blueDark" rel="tooltip" data-placement="top" data-original-title="Night Sky"></span></li><li><span class="bg-color-darken" data-widget-setstyle="jarviswidget-color-darken" rel="tooltip" data-placement="right" data-original-title="Night"></span></li><li><span class="bg-color-yellow" data-widget-setstyle="jarviswidget-color-yellow" rel="tooltip" data-placement="left" data-original-title="Day Light"></span></li><li><span class="bg-color-orange" data-widget-setstyle="jarviswidget-color-orange" rel="tooltip" data-placement="bottom" data-original-title="Orange"></span></li><li><span class="bg-color-orangeDark" data-widget-setstyle="jarviswidget-color-orangeDark" rel="tooltip" data-placement="bottom" data-original-title="Dark Orange"></span></li><li><span class="bg-color-red" data-widget-setstyle="jarviswidget-color-red" rel="tooltip" data-placement="bottom" data-original-title="Red Rose"></span></li><li><span class="bg-color-redLight" data-widget-setstyle="jarviswidget-color-redLight" rel="tooltip" data-placement="bottom" data-original-title="Light Red"></span></li><li><span class="bg-color-white" data-widget-setstyle="jarviswidget-color-white" rel="tooltip" data-placement="right" data-original-title="Purity"></span></li><li><a href="javascript:void(0);" class="jarviswidget-remove-colors" data-widget-setstyle="" rel="tooltip" data-placement="bottom" data-original-title="Reset widget color to default">Remove</a></li></ul></div>
-
-						<span class="jarviswidget-loader" style="display: none;"><i class="fa fa-refresh fa-spin"></i></span></header>
-
-						<!-- widget div-->
-						<div role="content">
-
-							<!-- widget edit box -->
-							<div class="jarviswidget-editbox">
-								<!-- This area used as dropdown edit box -->
-
-							</div>
-							<!-- end widget edit box -->
-
-							<!-- widget content -->
-							<div class="widget-body ">
-								<div class="row">
-									<div class="col col-xs-12">
-										<div class="tabs-left">
-											<ul class="nav nav-tabs tabs-left" id="demo-pill-nav">
-												<li class="active">
-
-													<a data-toggle="tab" href="#hr1" aria-expanded="true"> <i class="fa fa-lg fa-user"></i>
-														<span class="hidden-mobile hidden-tablet"> Persona
-															<span class="badge bg-color-greenLight txt-color-white hide personas-filter">
-																<i class="fa fa-filter"></i>
-															</span>
-														</span>
-													</a>
-
-												</li>
-
-												<li class="">
-													<a data-toggle="tab" href="#hr2" aria-expanded="false">
-														<i class="fa fa-lg fa-map-marker"></i>
-														<span class="hidden-mobile hidden-tablet"> Ubicación </span>
-														<span class="badge bg-color-greenLight txt-color-white hide ubicacion-filter">
-															<i class="fa fa-filter"></i>
-														</span>
-													</a>
-												</li>
-
-												<li class="">
-													<a data-toggle="tab" href="#hr3" aria-expanded="false">
-														<i class="fa fa-lg fa-car"></i>
-														<span class="hidden-mobile hidden-tablet"> Vehiculo </span>
-													</a>
-												</li>
-
-												<li class="">
-													<a data-toggle="tab" href="#hr4" aria-expanded="false">
-														<i class="fa fa-lg fa-bullseye"></i>
-														<span class="hidden-mobile hidden-tablet"> Arma </span>
-													</a>
-												</li>
-											</ul>
-											<div class="tab-content">
-												<div class="tab-pane active" id="hr1">
-													<!--  Start Form1 -->
-													<form id="login-form-2" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F6">
-														<fieldset>
-															<div class="row">
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-user"></i>
-																		<input type="text" id="fpersona_nombre" name="fpersona_nombre" placeholder="Nombre(s)" >
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" name="fname" placeholder="Apellido Paterno">
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" name="fname" placeholder="Apellido Materno">
-																	</label>
-																</section>
-															</div>
-															<div class="row">
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-credit-card"></i>
-																		<input type="text" name="frfc" placeholder="RFC">
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-credit-card"></i>
-																		<input type="text" name="fcurp" placeholder="CURP">
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-credit-card"></i>
-																		<input type="text" name="fcuip" placeholder="CUIP">
-																	</label>
-																</section>
-															</div>
-															<div class="row">
-																<section class="col col-4">
-																	<label class="input">
-																		<i class="icon-prepend fa fa-credit-card"></i>
-																		<input type="text" name="fcib" placeholder="CIB">
-																	</label>
-																</section>
-																<section class="col col-4">
-
-																</section>
-																<section class="col col-4">
-
-
-																</section>
-															</div>
-														</fieldset>
-													</form>
-													<!--  End Form1 -->
 												</div>
-												<div class="tab-pane" id="hr2">
-													<!--  Start Form2 -->
-													<form id="login-form-2" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F6">
-														<fieldset>
-															<div class="row">
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
-																		<input type="text" id="fubicacion_calle" name="fname" placeholder="Calle" >
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
-																		<input type="text" name="fname" placeholder="Colonia">
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
-																		<input type="text" name="fname" placeholder="CP">
-																	</label>
-																</section>
-															</div>
-														</fieldset>
-														<fieldset>
-															<div class="row">
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-map"></i>
-																		<input type="text" name="frfc" placeholder="Localidad">
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-map"></i>
-																		<input type="text" name="fcurp" placeholder="Municipio">
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-map"></i>
-																		<input type="text" name="fcuip" placeholder="Estado">
-																	</label>
-																</section>
-															</div>
-														</fieldset>
-													</form>
-													<!--  End Form2 -->
-												</div>
-												<div class="tab-pane" id="hr3">
-													<!-- Start Form3 -->
-													<form id="login-form-3" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F7">
-														<fieldset>
-															<div class="row">
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-car"></i>
-																		<input type="text" name="fname" placeholder="Marca" >
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" name="fname" placeholder="Modelo">
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-calendar-o"></i>
-																		<input type="text" name="fname" placeholder="Serie">
-																	</label>
-																</section>
-															</div>
-														</fieldset>
-														<fieldset>
-															<div class="row">
-																<section class="col col-3">
-																	<label class="input"> <i class="icon-prepend fa fa-barcode"></i>
-																		<input type="text" name="frfc" placeholder="Placa">
-																	</label>
-																</section>
-																<section class="col col-3">
-																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" name="fcurp" placeholder="No. de Motor">
-																	</label>
-																</section>
-																<section class="col col-3">
-																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" name="fcuip" placeholder="VIN">
-																	</label>
-																</section>
-																<section class="col col-3">
-																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" name="fcuip" placeholder="Color">
-																	</label>
-																</section>
-															</div>
-														</fieldset>
-													</form>
-													<!-- End Form3 -->
-												</div>
-												<div class="tab-pane" id="hr4">
-													<!-- Start Form4 -->
-													<form id="login-form-3" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F7">
-														<fieldset>
-															<div class="row">
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" name="fname" placeholder="Marca" >
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" name="fname" placeholder="Tipo">
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" name="fname" placeholder="Matricula">
-																	</label>
-																</section>
-															</div>
-														</fieldset>
-														<fieldset>
-															<div class="row">
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" name="fcurp" placeholder="Serie">
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" name="fcuip" placeholder="Calibre">
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" name="fcuip" placeholder="Modelo">
-																	</label>
-																</section>
-															</div>
-														</fieldset>
-													</form>
-													<!-- End Form4 -->
+												<!-- end widget edit box -->
+
+												<!-- widget content -->
+												<div class="widget-body no-padding">
+													<!-- <div class="widget-body-toolbar">
+
+													<div class="row">
+
+													<div class="col-xs-12 ">
+													<div class="input-group">
+													<span class="input-group-addon"><i class="fa fa-search"></i></span>
+													<input class="form-control" id="prepend" placeholder="Filtrar" type="text">
 												</div>
 											</div>
+
 										</div>
 
+
+
+									</div> -->
+									<form novalidate="novalidate" id="smart-form-register" class="smart-form custom-scroll" style="overflow-x: hidden; overflow-y: scroll; height: 197px;">
+										<fieldset>
+
+											<section>
+												<label class="checkbox"> <input name="terms_1" id="terms_1" type="checkbox" disabled> <i></i>
+													<strong>Todas las fuentes <span class="txt-color-red font-lg pull-right">2,021</span></strong>
+												</label>
+												<label class="checkbox"> <input name="terms_2" id="terms_2" type="checkbox"> <i></i>
+													Informe Policial Homologado <span class="txt-color-blueMiranda pull-right">0</span>
+												</label>
+												<label class="checkbox"> <input name="terms_6" id="terms_6" type="checkbox" checked="true"> <i></i>
+													Licencias de Conducir <span class="txt-color-blueMiranda pull-right">451</span>
+												</label>
+												<label class="checkbox"> <input name="terms_3" id="terms_3" type="checkbox" checked="true"> <i></i>
+													Registro Público Vehicular <span class="txt-color-blueMiranda pull-right">1,570</span>
+												</label>
+												<label class="checkbox"> <input name="terms_4" id="terms_4" type="checkbox"> <i></i>
+													Registro Nacional de Personal de Seguridad <span class="txt-color-blueMiranda pull-right">0</span>
+												</label>
+												<label class="checkbox"> <input name="terms_7" id="terms_7" type="checkbox"> <i></i>
+													Registro de Iniciados, Procesados y Sentenciados <span class="txt-color-blueMiranda pull-right">0</span>
+												</label>
+												<label class="checkbox"> <input name="terms_8" id="terms_8" type="checkbox"> <i></i>
+													Vehiculos Robodas y Recuperados <span class="txt-color-blueMiranda pull-right">0</span>
+												</label>
+												<label class="checkbox"> <input name="terms_9" id="terms_9" type="checkbox"> <i></i>
+													Registro Nacional de Mandamientos Judiciales <span class="txt-color-blueMiranda pull-right">0</span>
+												</label>
+											</section>
+										</fieldset>
+									</form>
+									<div class="widget-footer">
+										<em class="text-muted font-sm">2 de 7 fuentes seleccionadas</em>
 									</div>
 
 								</div>
-
-								<div class="widget-footer">
-
-									<a href="javascript:void(0);" class="btn btn-labeled btn-info pull-left"> <span class="btn-label"><i class="fa fa-history"></i></span>Nueva Alerta</a>
-
-
-									<a href="javascript:void(0);" class="btn btn-labeled btn-info"> <span class="btn-label"><i class="glyphicon glyphicon-trash"></i></span>Limpiar</a>
-
-
-									<a href="javascript:void(0);" class="btn btn-labeled btn-info callResultsContent"> <span class="btn-label"><i class="glyphicon glyphicon-search"></i></span>Buscar</a>
-
-
-
-								</div>
+								<!-- end widget content -->
 
 							</div>
-							<!-- end widget content -->
+							<!-- end widget div -->
 
 						</div>
-						<!-- end widget div -->
+						<!--  end Widget Filtros v2-->
+						<!-- Widget ID (each widget will need unique ID)-->
 
+						<!-- end widget -->
+					</article>
+					<!-- WIDGET END -->
+				</div>
+
+				<!-- end row -->
+
+				<!-- row -->
+				<div class="row">
+					<div class="col col-xs-12 col-sm-4 col-md-3">
+						<div class="well">
+							<form novalidate="novalidate" id="smart-form-register" class="smart-form" >
+								<header>
+										<h2 class="txt-color-red">Taxonomias:</h2>
+									</header>
+								<fieldset>
+
+									<section>
+										<label class="checkbox"> <input name="terms_1" id="terms_1" type="checkbox"> <i></i>
+										<strong>Todas las fuentes <span class="txt-color-red font-lg pull-right"></span></strong>
+										</label>
+										<label class="checkbox"> <input name="terms_2" id="terms_2" type="checkbox"> <i></i>
+										Informe Policial Homologado <span class="txt-color-blueMiranda pull-right"></span>
+										</label>
+										<label class="checkbox"> <input name="terms_3" id="terms_3" type="checkbox"> <i></i>
+										OCRA <span class="txt-color-blueMiranda pull-right"></span>
+										</label>
+										<label class="checkbox"> <input name="terms_4" id="terms_4" type="checkbox"> <i></i>
+										SIOM <span class="txt-color-blueMiranda pull-right"></span>
+										</label>
+										<label class="checkbox"> <input name="terms_6" id="terms_6" type="checkbox"> <i></i>
+										Licencias de Conducir <span class="txt-color-blueMiranda pull-right"></span>
+										</label>
+										<label class="checkbox"> <input name="terms_7" id="terms_7" type="checkbox"> <i></i>
+										Vehiculos Robados y Recuperados <span class="txt-color-blueMiranda pull-right"></span>
+										</label>
+										<label class="checkbox"> <input name="terms_8" id="terms_8" type="checkbox"> <i></i>
+										Empresas de Seguridad Privada <span class="txt-color-blueMiranda pull-right"></span>
+										</label>
+										<label class="checkbox"> <input name="terms_9" id="terms_9" type="checkbox"> <i></i>
+										Registro Federal de Mandamientos Judiciales <span class="txt-color-blueMiranda pull-right"></span>
+										</label>
+									</section>
+								</fieldset>
+							</form>
+						</div>
 					</div>
-					<!--  end Widget Filtros v2-->
-					<!-- Widget ID (each widget will need unique ID)-->
-					<div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-0" data-widget-editbutton="false" data-widget-deletebutton="false">
-					<!-- widget options:
-					usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
-					data-widget-colorbutton="false"
-					data-widget-editbutton="false"
-					data-widget-togglebutton="false"
-					data-widget-deletebutton="false"
-					data-widget-fullscreenbutton="false"
-					data-widget-custombutton="false"
-					data-widget-collapsed="true"
-					data-widget-sortable="false"-->
-					<header>
-						<span class="widget-icon"> <i class="fa fa-lg fa-th-large"></i> </span>
-						<h2>Resultados </h2>
+					<div class="col col-xs-12 col-sm-8 col-md-9">
+						<div class="panel panel-default">
+						  <div class="panel-heading">
+								<div style="width:100%" id="advancedFilterTags" class="select2-container select2-container-multi select2 select2-container-active">
+									<ul class="select2-choices">
+										<li class="select2-search-choice">
+											<div>Todas las Fuentes
+											</div>
+											<a href="javascript:void();" class="select2-search-choice-close filter-close-tag" tabindex="-1">
+											</a>
+										</li>
+									</ul>
+									<div class="select2-drop select2-drop-multi select2-display-none select2-drop-active">
+										<ul class="select2-results">
+											<li class="select2-no-results">No matches found
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						  <div class="panel-body">
+						    <div class="row">
+									<div class="col col-xs-12 col-sm-4">
+										<!-- start res por page -->
+										<form  class="smart-form no-padding" novalidate="novalidate">
+											<fieldset class="no-padding">
+												<section >
+													<label class="select">
+														<select name="country" class="input-sm">
+															<option value="0" >-Mostrar todas las fuentes-</option>
+															<option value="1" selected="" >Licencias de Conducir</option>
+															<option value="2">Registro Nacional de Personal</option>
+														</select> <i></i>
+													</label>
+												</section>
+											</fieldset>
 
-					</header>
 
-					<!-- widget div-->
-					<div>
-
-						<!-- widget edit box -->
-						<div class="jarviswidget-editbox">
-							<!-- This area used as dropdown edit box -->
-
-						</div>
-						<!-- end widget edit box -->
-
-						<!-- widget content -->
-						<div class="widget-body">
-
-							<div class="widget-body-toolbar">
-
+										</form>
+										<!-- end res por oage -->
+									</div>
+									<div class="col col-xs-12 col-sm-4 no-padding text-center">
+										<!-- start res por page -->
+										<span class="font-md txt-color-red">441</span> registros <span class="note">(tiempo 5.05 seg.) </span>
+										<!-- end res por oage -->
+									</div>
+									<div class="col col-xs-12 col-sm-4 text-align-right ">
+										<ul class="pagination pagination-sm pagination-alt no-margin">
+											<li>
+												<a href="javascript:void(0);"><i class="fa fa-angle-left"></i></a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">1</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">2</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">3</a>
+											</li>
+											<li class="active">
+												<a href="javascript:void(0);">4</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">5</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);"><i class="fa fa-angle-right"></i></a>
+											</li>
+										</ul>
+									</div>
+						    </div>
+								<!--  start results container -->
 								<div class="row">
 
-									<div class="col-sm-12 col-md-12 " id="advancedFilterTags">
-										<!--  *Fuentes -->
-										<!-- <span class="label label-danger animated fadeInRight filter-tag">Todas las Fuentes&nbsp;<i class="fa fa-fw fa-close"></i></span> -->
-										<!--  /*Fuentes -->
-									</div>
+										<!-- end resultsContent -->
+										<div class="col-sm-12 col-md-12 " id="resultsContent">
+											<!-- start Results -->
+											<div class="search-results clearfix">
+												<a><i class="fa fa-share-alt pull-right"></i></a>
+												<a><i class="fa fa-comment pull-right"></i></a>
+												<h4><a href="javascript:void(0);">Juan Jóse Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
+												<img src="img/avatars/male.png" class="hide" alt="">
+												<div>
+													<p class="note">
+														<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> SIOM&nbsp;&nbsp;</a>
+													</p>
+													<div class="url text-success">
+														PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
+													</div>
+													<p class="description">
+														Jun 10, 2006
+													</p>
+												</div>
 
-								</div>
+											</div>
+											<div class="search-results clearfix">
+												<a><i class="fa fa-share-alt pull-right"></i></a>
+												<a><i class="fa fa-comment pull-right"></i></a>
+												<h4><a href="javascript:void(0);">Juan Jóse Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
+												<img src="img/avatars/male.png" class="hide" alt="">
+												<div>
+													<p class="note">
+														<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> REPUVE&nbsp;&nbsp;</a>
+														<a href="javascript:void(0);"><i class="fa fa-legal txt-color-red"></i> Con Orden de Aprensión&nbsp;&nbsp;</a>
+														<a href="javascript:void(0);"><i class="fa fa-globe"></i> Mexicano&nbsp;&nbsp;</a>
+													</p>
+													<div class="url text-success">
+														PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
+													</div>
+													<p class="description">
+														Oct 1, 2013
+													</p>
+												</div>
 
-							</div>
-							<div id="resultsContent" class="" style="min-height:300px;">
-								<!-- start Results -->
-								<div class="search-results clearfix">
-									<a><i class="fa fa-share-alt pull-right"></i></a>
-									<a><i class="fa fa-comment pull-right"></i></a>
-									<h4><a href="javascript:void(0);">Juan Jóse Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
-									<img src="img/avatars/male.png" class="hide" alt="">
-									<div>
-										<p class="note">
-											<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> SIOM&nbsp;&nbsp;</a>
-										</p>
-										<div class="url text-success">
-											PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
+											</div>
+											<div class="search-results clearfix">
+												<a><i class="fa fa-share-alt pull-right"></i></a>
+												<a><i class="fa fa-comment pull-right"></i></a>
+												<h4><a href="javascript:void(0);">José Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
+
+												<div>
+
+													<!-- <span class="sparkline txt-color-blueLight" data-sparkline-type="line" data-sparkline-width="150px" data-sparkline-height="25px"> 10,3,8,4,3,10,7,8,4,6,4,6,8,3 </span>
+													<span class="display-inline note font-lg semi-bold"><small><i class="fa fa-arrow-circle-up text-success"></i> 143.43</small></span> -->
+
+													<p class="note">
+														<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> Licencias de Conducir&nbsp;&nbsp;</a>
+														<a href="javascript:void(0);"><i class="fa fa-globe"></i> Mexicano&nbsp;&nbsp;</a>
+													</p>
+													<div class="url text-success">
+														PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
+													</div>
+													<p class="description">
+														Investigación que participan en estas acciones censaron mil 850 negocios en el perímetro de Eje 2 Norte, Circunvalación, Eje 1 Oriente Vidal Alcocer...
+													</p>
+												</div>
+
+											</div>
+
+											<div class="search-results clearfix">
+												<a><i class="fa fa-share-alt pull-right"></i></a>
+												<a><i class="fa fa-comment pull-right"></i></a>
+												<h4><a href="javascript:void(0);">Juan Jóse Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
+												<img src="img/avatars/male.png" class="hide" alt="">
+												<div>
+													<p class="note">
+														<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> SIOM&nbsp;&nbsp;</a>
+													</p>
+													<div class="url text-success">
+														PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
+													</div>
+													<p class="description">
+														Jun 10, 2006
+													</p>
+												</div>
+
+											</div>
+											<div class="search-results clearfix">
+												<a><i class="fa fa-share-alt pull-right"></i></a>
+												<a><i class="fa fa-comment pull-right"></i></a>
+												<h4><a href="javascript:void(0);">Juan Jóse Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
+												<img src="img/avatars/male.png" class="hide" alt="">
+												<div>
+													<p class="note">
+														<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> REPUVE&nbsp;&nbsp;</a>
+														<a href="javascript:void(0);"><i class="fa fa-legal txt-color-red"></i> Con Orden de Aprensión&nbsp;&nbsp;</a>
+														<a href="javascript:void(0);"><i class="fa fa-globe"></i> Mexicano&nbsp;&nbsp;</a>
+													</p>
+													<div class="url text-success">
+														PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
+													</div>
+													<p class="description">
+														Oct 1, 2013
+													</p>
+												</div>
+
+											</div>
+											<div class="search-results clearfix">
+												<a><i class="fa fa-share-alt pull-right"></i></a>
+												<a><i class="fa fa-comment pull-right"></i></a>
+												<h4><a href="javascript:void(0);">José Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
+
+												<div>
+
+													<!-- <span class="sparkline txt-color-blueLight" data-sparkline-type="line" data-sparkline-width="150px" data-sparkline-height="25px"> 10,3,8,4,3,10,7,8,4,6,4,6,8,3 </span>
+													<span class="display-inline note font-lg semi-bold"><small><i class="fa fa-arrow-circle-up text-success"></i> 143.43</small></span> -->
+
+													<p class="note">
+														<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> Licencias de Conducir&nbsp;&nbsp;</a>
+														<a href="javascript:void(0);"><i class="fa fa-globe"></i> Mexicano&nbsp;&nbsp;</a>
+													</p>
+													<div class="url text-success">
+														PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
+													</div>
+													<p class="description">
+														Investigación que participan en estas acciones censaron mil 850 negocios en el perímetro de Eje 2 Norte, Circunvalación, Eje 1 Oriente Vidal Alcocer...
+													</p>
+												</div>
+
+											</div>
+											<div class="text-center">
+											<hr>
+											<ul class="pagination no-margin">
+												<li class="prev disabled">
+													<a href="javascript:void(0);">Atras</a>
+												</li>
+												<li class="active">
+													<a href="javascript:void(0);">1</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);">2</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);">3</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);">4</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);">5</a>
+												</li>
+												<li class="next">
+													<a href="javascript:void(0);">Siguiente</a>
+												</li>
+											</ul>
+											<br>
+											<span class="note">2,021 resultadoss (5.05 seg.) </span>
+											<br>
+											<br>
 										</div>
-										<p class="description">
-											Jun 10, 2006
-										</p>
-									</div>
-
-								</div>
-								<div class="search-results clearfix">
-									<a><i class="fa fa-share-alt pull-right"></i></a>
-									<a><i class="fa fa-comment pull-right"></i></a>
-									<h4><a href="javascript:void(0);">Juan Jóse Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
-									<img src="img/avatars/male.png" class="hide" alt="">
-									<div>
-										<p class="note">
-											<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> REPUVE&nbsp;&nbsp;</a>
-											<a href="javascript:void(0);"><i class="fa fa-legal txt-color-red"></i> Con Orden de Aprensión&nbsp;&nbsp;</a>
-											<a href="javascript:void(0);"><i class="fa fa-globe"></i> Mexicano&nbsp;&nbsp;</a>
-										</p>
-										<div class="url text-success">
-											PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
+											<!-- end Results -->
 										</div>
-										<p class="description">
-											Oct 1, 2013
-										</p>
-									</div>
+										<!-- end resultsContent -->
+
 
 								</div>
-								<div class="search-results clearfix">
-									<a><i class="fa fa-share-alt pull-right"></i></a>
-									<a><i class="fa fa-comment pull-right"></i></a>
-									<h4><a href="javascript:void(0);">José Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
-
-									<div>
-
-										<!-- <span class="sparkline txt-color-blueLight" data-sparkline-type="line" data-sparkline-width="150px" data-sparkline-height="25px"> 10,3,8,4,3,10,7,8,4,6,4,6,8,3 </span>
-										<span class="display-inline note font-lg semi-bold"><small><i class="fa fa-arrow-circle-up text-success"></i> 143.43</small></span> -->
-
-										<p class="note">
-											<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> Licencias de Conducir&nbsp;&nbsp;</a>
-											<a href="javascript:void(0);"><i class="fa fa-globe"></i> Mexicano&nbsp;&nbsp;</a>
-										</p>
-										<div class="url text-success">
-											PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
-										</div>
-										<p class="description">
-											Investigación que participan en estas acciones censaron mil 850 negocios en el perímetro de Eje 2 Norte, Circunvalación, Eje 1 Oriente Vidal Alcocer...
-										</p>
-									</div>
-
-								</div>
-								<!-- end Results -->
-							</div>
-
-							<!-- widget footer -->
-							<div class="widget-footer">
-								<ul class="pagination pagination-sm">
-									<li>
-										<a href="javascript:void(0);"><i class="fa fa-angle-left"></i></a>
-									</li>
-									<li>
-										<a href="javascript:void(0);">1</a>
-									</li>
-									<li>
-										<a href="javascript:void(0);">2</a>
-									</li>
-									<li class="active">
-										<a href="javascript:void(0);">3</a>
-									</li>
-									<li>
-										<a href="javascript:void(0);">4</a>
-									</li>
-									<li>
-										<a href="javascript:void(0);">5</a>
-									</li>
-									<li>
-										<a href="javascript:void(0);"><i class="fa fa-angle-right"></i></a>
-									</li>
-								</ul>
-							</div>
-							<!-- end widget footer -->
-						</div>
-						<!-- end widget content -->
-
-					</div>
-					<!-- end widget div -->
-
-				</div>
-				<!-- end widget -->
-			</article>
-			<!-- WIDGET END -->
-
-		</div>
-
-		<!-- end row -->
-
-		<!-- row -->
-
-		<div class="row">
-
-		</div>
-
-		<!-- end row -->
-
-	</section>
-	<!-- end widget grid -->
-</div>
-<!-- END MAIN CONTENT -->
-<!-- Modal -->
-<div class="modal fade" id="personaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-lg">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-					×
-				</button>
-				<h4 class="modal-title" id="myModalLabel">Detalle &gt; Persona</h4>
-			</div>
-			<div class="modal-body no-padding" style="overflow-x:hidden;overflow-y:hidden;">
-				<!-- SlidePanel -->
-				<div id="slidein-panel">
-					<!-- SlidePanel Button Container -->
-					<div id="slidein-panel-container">
-						<a id="slidein-panel-btn" href="#">
-							<i class="fa fa-bars"></i>
-						</a>
-					</div>
-					<!-- /SlidePanel Button Container -->
-
-					<!-- SlidePanel Content -->
-					<ul>
-						<li><a href="#">Link 1</a></li>
-						<li><a href="#">Link 2</a></li>
-						<li><a href="#">Link 3</a></li>
-						<li><a href="#">Link 4</a></li>
-						<li><a href="#">Link 5</a></li>
-					</ul>
-					<!-- /SlidePanel Content -->
-				</div>
-				<!-- /SlidePanel -->
-				<div class="well well-light well-sm no-margin no-padding">
-
-					<div class="row">
-
-						<div class="col-sm-12" style="
-    background-color: #1A1A1A;
-    height: 300px;
-    background-image: url('img/red-1.png');
-    background-size: initial;
-    background-position: center;
-    background-repeat: no-repeat;
-">
-
+								<!--  end  results container-->
+						  </div>
 						</div>
 
-						<div class="col-sm-12">
+
+					</div>
+				</div>
+
+
+				<!-- end row -->
+
+			</section>
+			<!-- end widget grid -->
+		</div>
+		<!-- END MAIN CONTENT -->
+		<!-- Modal -->
+		<div class="modal fade" id="personaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							×
+						</button>
+						<h4 class="modal-title" id="myModalLabel">Detalle &gt; Persona</h4>
+					</div>
+					<div class="modal-body no-padding" style="overflow-x:hidden;overflow-y:hidden;">
+						<!-- SlidePanel -->
+						<div id="slidein-panel">
+							<!-- SlidePanel Button Container -->
+							<div id="slidein-panel-container">
+								<a id="slidein-panel-btn" href="#">
+									<i class="fa fa-bars"></i>
+								</a>
+							</div>
+							<!-- /SlidePanel Button Container -->
+
+							<!-- SlidePanel Content -->
+							<ul>
+								<li><a href="#">Link 1</a></li>
+								<li><a href="#">Link 2</a></li>
+								<li><a href="#">Link 3</a></li>
+								<li><a href="#">Link 4</a></li>
+								<li><a href="#">Link 5</a></li>
+							</ul>
+							<!-- /SlidePanel Content -->
+						</div>
+						<!-- /SlidePanel -->
+						<div class="well well-light well-sm no-margin no-padding">
 
 							<div class="row">
 
-								<div class="col-sm-3 profile-pic">
-
-									<img src="img/avatars/sunny-big.png" alt="demo user">
-									<div class="padding-10">
-										<h4 class="font-md"><strong>43</strong>
-											<br>
-											<small>Alertas</small></h4>
-											<br>
-											<h4 class="font-md"><strong>419</strong>
-												<br>
-												<small>Relaciones</small></h4>
-											</div>
-										</div>
-										<div class="col-sm-6">
-											<!--  gal -->
-											<!-- <div id="myCarousel-2" class="carousel slide" style="margin-top: 5px;">
-												<ol class="carousel-indicators">
-													<li data-target="#myCarousel-2" data-slide-to="0" class=""></li>
-													<li data-target="#myCarousel-2" data-slide-to="1" class=""></li>
-													<li data-target="#myCarousel-2" data-slide-to="2" class="active"></li>
-												</ol>
-												<div class="carousel-inner">
-													<div class="item">
-														<img src="img/demo/m3.jpg" alt="">
-
-													</div>
-													<div class="item active left">
-														<img src="img/demo/m1.jpg" alt="">
-
-													</div>
-													<div class="item next left">
-														<img src="img/demo/m2.jpg" alt="">
-
-													</div>
-												</div>
-												<a class="left carousel-control" href="#myCarousel-2" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
-												<a class="right carousel-control" href="#myCarousel-2" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
-											</div> -->
-											<!--  end gal -->
-											<h1>Juan José <span class="semi-bold">Hernandez Galindo</span>
-												<br>
-												<small> México, Distrito Federal</small></h1>
-
-												<ul class="list-unstyled">
-													<li>
-														<p class="text-muted">
-															<i class="fa fa-phone"></i>&nbsp;&nbsp;(<span class="txt-color-darken">55</span>) <span class="txt-color-darken">123</span> - <span class="txt-color-darken">6473</span>
-														</p>
-													</li>
-													<li>
-														<p class="text-muted">
-															<i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:simmons@smartadmin">jfco@mail.com</a>
-														</p>
-													</li>
-													<li>
-														<p class="text-muted">
-															<i class="fa fa-tag"></i>&nbsp;&nbsp;<span class="txt-color-darken">Alias: <a href="javascript:void(0);" rel="tooltip" title="" data-placement="top" data-original-title="Fuente REPUVE">Pancho</a></span>
-														</p>
-													</li>
-													<li>
-														<p class="text-muted">
-															<i class="fa fa-calendar"></i>&nbsp;&nbsp;<span class="txt-color-darken">Actualizado <a href="javascript:void(0);" rel="tooltip" title="" data-placement="top" data-original-title="Fuente REPUVE">20 Nov, 2015</a></span>
-														</p>
-													</li>
-												</ul>
-
-											</div>
-											<div class="col-sm-3">
-												<h1><small>Relaciones</small></h1>
-												<ul class="list-inline friends-list">
-													<li><img src="img/avatars/1.png" alt="friend-1">
-													</li>
-													<li><img src="img/avatars/2.png" alt="friend-2">
-													</li>
-													<li><img src="img/avatars/3.png" alt="friend-3">
-													</li>
-													<li><img src="img/avatars/4.png" alt="friend-4">
-													</li>
-													<li><img src="img/avatars/5.png" alt="friend-5">
-													</li>
-													<li><img src="img/avatars/male.png" alt="friend-6">
-													</li>
-													<li>
-														<a href="javascript:void(0);">413 más</a>
-													</li>
-												</ul>
-
-												<h1><small>Relaciones 2</small></h1>
-												<ul class="list-inline friends-list">
-													<li><img src="img/avatars/male.png" alt="friend-1">
-													</li>
-													<li><img src="img/avatars/female.png" alt="friend-2">
-													</li>
-													<li><img src="img/avatars/female.png" alt="friend-3">
-													</li>
-												</ul>
-
-											</div>
-
-										</div>
-
-									</div>
-									<!-- footer panel-group -->
-									<div class="panel-group smart-accordion-default" id="accordion">
-										<div class="panel panel-default">
-											<div class="panel-heading">
-												<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" class="collapsed"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> Bloque PANEL #1 </a></h4>
-											</div>
-											<div id="collapseOne" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-												<div class="panel-body">
-													<table class="table table-bordered table-condensed">
-														<thead>
-															<tr>
-																<th>Column name</th>
-																<th>Column name</th>
-																<th>Column name</th>
-																<th>Column name</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<td>Row 1</td>
-																<td>Row 2</td>
-																<td>Row 3</td>
-																<td>Row 4</td>
-															</tr>
-															<tr>
-																<td>Row 1</td>
-																<td>Row 2</td>
-																<td>Row 3</td>
-																<td>Row 4</td>
-															</tr>
-															<tr>
-																<td>Row 1</td>
-																<td>Row 2</td>
-																<td>Row 3</td>
-																<td>Row 4</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</div>
-										</div>
-										<div class="panel panel-default">
-											<div class="panel-heading">
-												<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed" aria-expanded="false"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> Bloque PANEL #2 </a></h4>
-											</div>
-											<div id="collapseTwo" class="panel-collapse collapse" aria-expanded="false">
-												<div class="panel-body">
-													Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-												</div>
-											</div>
-										</div>
-										<div class="panel panel-default">
-											<div class="panel-heading">
-												<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed" aria-expanded="false"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i> Bloque PANEL #3 </a></h4>
-											</div>
-											<div id="collapseThree" class="panel-collapse collapse" aria-expanded="false">
-												<div class="panel-body">
-													Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- end footer panel-group -->
-								</div>
-
-
-								<!-- end row -->
+								<div class="col-sm-12" style="
+								background-color: #1A1A1A;
+								height: 300px;
+								background-image: url('img/red-1.png');
+								background-size: initial;
+								background-position: center;
+								background-repeat: no-repeat;
+								">
 
 							</div>
 
-						</div>
-					</div><!-- /.modal-content -->
-				</div><!-- /.modal-dialog -->
+							<div class="col-sm-12">
+
+								<div class="row">
+
+									<div class="col-sm-3 profile-pic">
+
+										<img src="img/avatars/sunny-big.png" alt="demo user">
+										<div class="padding-10">
+											<h4 class="font-md"><strong>43</strong>
+												<br>
+												<small>Alertas</small></h4>
+												<br>
+												<h4 class="font-md"><strong>419</strong>
+													<br>
+													<small>Relaciones</small></h4>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<h1>Juan José <span class="semi-bold">Hernandez Galindo</span>
+													<br>
+													<small> México, Distrito Federal</small></h1>
+
+													<ul class="list-unstyled">
+														<li>
+															<p class="text-muted">
+																<i class="fa fa-phone"></i>&nbsp;&nbsp;(<span class="txt-color-darken">55</span>) <span class="txt-color-darken">123</span> - <span class="txt-color-darken">6473</span>
+															</p>
+														</li>
+														<li>
+															<p class="text-muted">
+																<i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:simmons@smartadmin">jfco@mail.com</a>
+															</p>
+														</li>
+														<li>
+															<p class="text-muted">
+																<i class="fa fa-tag"></i>&nbsp;&nbsp;<span class="txt-color-darken">Alias: <a href="javascript:void(0);" rel="tooltip" title="" data-placement="top" data-original-title="Fuente REPUVE">Pancho</a></span>
+															</p>
+														</li>
+														<li>
+															<p class="text-muted">
+																<i class="fa fa-calendar"></i>&nbsp;&nbsp;<span class="txt-color-darken">Actualizado <a href="javascript:void(0);" rel="tooltip" title="" data-placement="top" data-original-title="Fuente REPUVE">20 Nov, 2015</a></span>
+															</p>
+														</li>
+													</ul>
+
+												</div>
+												<div class="col-sm-3">
+													<h1><small>Relaciones</small></h1>
+													<ul class="list-inline friends-list">
+														<li><img src="img/avatars/1.png" alt="friend-1">
+														</li>
+														<li><img src="img/avatars/2.png" alt="friend-2">
+														</li>
+														<li><img src="img/avatars/3.png" alt="friend-3">
+														</li>
+														<li><img src="img/avatars/4.png" alt="friend-4">
+														</li>
+														<li><img src="img/avatars/5.png" alt="friend-5">
+														</li>
+														<li><img src="img/avatars/male.png" alt="friend-6">
+														</li>
+														<li>
+															<a href="javascript:void(0);">413 más</a>
+														</li>
+													</ul>
+
+													<h1><small>Relaciones 2</small></h1>
+													<ul class="list-inline friends-list">
+														<li><img src="img/avatars/male.png" alt="friend-1">
+														</li>
+														<li><img src="img/avatars/female.png" alt="friend-2">
+														</li>
+														<li><img src="img/avatars/female.png" alt="friend-3">
+														</li>
+													</ul>
+
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+
+
+									<!-- end row -->
+
+								</div>
+
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div>
+				<!-- /.modal -->
 			</div>
-			<!-- /.modal -->
-		</div>
-		<!-- END MAIN PANEL -->
-		<!-- PAGE FOOTER -->
-		<div class="page-footer">
-			<div class="row">
-				<div class="col-xs-12 col-sm-6">
-					<span class="cns-text-footer hidden-xs">
+			<!-- END MAIN PANEL -->
+			<!-- PAGE FOOTER -->
+			<div class="page-footer">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6">
+						<span class="cns-text-footer hidden-xs">
 							SUIC&nbsp;<i class="fa fa-fw fa-angle-right"></i>&nbsp;Portal Único&nbsp;<i class="fa fa-fw fa-angle-right"></i>&nbsp;Búsquedas 2.0.0
-					</span>
-				</div>
-				<div class="col-xs-6 col-sm-6 text-right hidden-xs">
-					<div class="txt-color-white inline-block">
-						<i class="txt-color-blueLight hidden-mobile">Última actividad <i class="fa fa-clock-o"></i> <strong>hace 2 min &nbsp;</strong> </i>
-						<div class="btn-group dropup">
-							<button id="btn-toggle-notes"	 class="btn btn-xs dropdown-toggle bg-color-blue txt-color-white">
-								<i class="fa fa-sticky-note-o"></i> Notas <span class="caret"></span>
-							</button>
+						</span>
+					</div>
+					<div class="col-xs-6 col-sm-6 text-right hidden-xs">
+						<div class="txt-color-white inline-block">
+							<i class="txt-color-blueLight hidden-mobile">Última actividad <i class="fa fa-clock-o"></i> <strong>hace 2 min &nbsp;</strong> </i>
+							<div class="btn-group dropup">
+								<button id="btn-toggle-notes"	 class="btn btn-xs dropdown-toggle bg-color-blue txt-color-white">
+									<i class="fa fa-sticky-note-o"></i> Notas <span class="caret"></span>
+								</button>
+							</div>
 						</div>
 					</div>
-				</div>
-				<!--  Bloque-Notas -->
-				<div id="notescontainer" class="col-xs-12 notes-container padding-10 hide animated fast ">
-					<div class="row">
-						<div class="col-xs-12">
-							<!-- <div class="notes-toLeft">
-							<i class="fa fa-chevron-left"></i>
-						</div>
-						<div id="btn-notes-toRight" class="notes-toRight">
-						<i class="fa fa-chevron-right"></i>
-					</div> -->
-					<div id="notesscroll" class="notes-scroll">
-						<!--  Lista de Items -->
-						<!--  Nota -->
-						<div class="notes-item animated fadeIn padding-5">
-							<div class="note-head">
-								<span class="note-results">
-									<i class="fa fa-star"></i>&nbsp;
-									55 resultados
-								</span>
-								<span class="note-date">
-									<i class="fa fa-calendar-o"></i>&nbsp;
-									11 Nov, 2015
-								</span>
+					<!--  Bloque-Notas -->
+					<div id="notescontainer" class="col-xs-12 notes-container padding-10 hide animated fast ">
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- <div class="notes-toLeft">
+								<i class="fa fa-chevron-left"></i>
 							</div>
-							<div class="note-body">
-								<div class="note-data">
-									<span class="note-title">Juan José Hernandez</span>
-									<p class="note-content">
-										<span  class="note-subcontent">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit
-										</span>
-									</p>
+							<div id="btn-notes-toRight" class="notes-toRight">
+							<i class="fa fa-chevron-right"></i>
+						</div> -->
+						<div id="notesscroll" class="notes-scroll">
+							<!--  Lista de Items -->
+							<!--  Nota -->
+							<div class="notes-item animated fadeIn padding-5">
+								<div class="note-head">
+									<span class="note-results">
+										<i class="fa fa-star"></i>&nbsp;
+										55 resultados
+									</span>
+									<span class="note-date">
+										<i class="fa fa-calendar-o"></i>&nbsp;
+										11 Nov, 2015
+									</span>
 								</div>
-								<div class="note-controls">
-									<ul class="fa-ul">
-										<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
-										<li><i class="fa-li fa fa-fw fa-print note-print note-print"></i>&nbsp;</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<!-- /Nota -->
-						<!--  Nota -->
-						<div class="notes-item animated fadeIn padding-5">
-							<div class="note-head">
-								<span class="note-results">
-									<i class="fa fa-star"></i>&nbsp;
-									55 resultados
-								</span>
-								<span class="note-date">
-									<i class="fa fa-calendar-o"></i>&nbsp;
-									11 Nov, 2015
-								</span>
-							</div>
-							<div class="note-body">
-								<div class="note-data">
-									<span class="note-title">Juan José Hernandez</span>
-									<p class="note-content">
-										<span  class="note-subcontent">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit
-										</span>
-									</p>
-								</div>
-								<div class="note-controls">
-									<ul class="fa-ul">
-										<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
-										<li><i class="fa-li fa fa-fw fa-print note-print"></i>&nbsp;</li>
-									</ul>
+								<div class="note-body">
+									<div class="note-data">
+										<span class="note-title">Juan José Hernandez</span>
+										<p class="note-content">
+											<span  class="note-subcontent">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit
+											</span>
+										</p>
+									</div>
+									<div class="note-controls">
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
+											<li><i class="fa-li fa fa-fw fa-print note-print note-print"></i>&nbsp;</li>
+										</ul>
+									</div>
 								</div>
 							</div>
-						</div>
-						<!-- /Nota -->
-						<!--  Nota -->
-						<div class="notes-item animated fadeIn padding-5">
-							<div class="note-head">
-								<span class="note-results">
-									<i class="fa fa-star"></i>&nbsp;
-									55 resultados
-								</span>
-								<span class="note-date">
-									<i class="fa fa-calendar-o"></i>&nbsp;
-									11 Nov, 2015
-								</span>
-							</div>
-							<div class="note-body">
-								<div class="note-data">
-									<span class="note-title">Juan José Hernandez</span>
-									<p class="note-content">
-										<span  class="note-subcontent">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit
-										</span>
-									</p>
+							<!-- /Nota -->
+							<!--  Nota -->
+							<div class="notes-item animated fadeIn padding-5">
+								<div class="note-head">
+									<span class="note-results">
+										<i class="fa fa-star"></i>&nbsp;
+										55 resultados
+									</span>
+									<span class="note-date">
+										<i class="fa fa-calendar-o"></i>&nbsp;
+										11 Nov, 2015
+									</span>
 								</div>
-								<div class="note-controls">
-									<ul class="fa-ul">
-										<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
-										<li><i class="fa-li fa fa-fw fa-print note-print"></i>&nbsp;</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<!-- /Nota -->
-						<!--  Nota -->
-						<div class="notes-item animated fadeIn padding-5">
-							<div class="note-head">
-								<span class="note-results">
-									<i class="fa fa-star"></i>&nbsp;
-									55 resultados
-								</span>
-								<span class="note-date">
-									<i class="fa fa-calendar-o"></i>&nbsp;
-									11 Nov, 2015
-								</span>
-							</div>
-							<div class="note-body">
-								<div class="note-data">
-									<span class="note-title">Juan José Hernandez</span>
-									<p class="note-content">
-										<span  class="note-subcontent">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit
-										</span>
-									</p>
-								</div>
-								<div class="note-controls">
-									<ul class="fa-ul">
-										<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
-										<li><i class="fa-li fa fa-fw fa-print note-print note-print"></i>&nbsp;</li>
-									</ul>
+								<div class="note-body">
+									<div class="note-data">
+										<span class="note-title">Juan José Hernandez</span>
+										<p class="note-content">
+											<span  class="note-subcontent">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit
+											</span>
+										</p>
+									</div>
+									<div class="note-controls">
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
+											<li><i class="fa-li fa fa-fw fa-print note-print"></i>&nbsp;</li>
+										</ul>
+									</div>
 								</div>
 							</div>
-						</div>
-						<!-- /Nota -->
-						<!--  Nota -->
-						<div class="notes-item animated fadeIn padding-5">
-							<div class="note-head">
-								<span class="note-results">
-									<i class="fa fa-star"></i>&nbsp;
-									55 resultados
-								</span>
-								<span class="note-date">
-									<i class="fa fa-calendar-o"></i>&nbsp;
-									11 Nov, 2015
-								</span>
-							</div>
-							<div class="note-body">
-								<div class="note-data">
-									<span class="note-title">Juan José Hernandez</span>
-									<p class="note-content">
-										<span  class="note-subcontent">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit
-										</span>
-									</p>
+							<!-- /Nota -->
+							<!--  Nota -->
+							<div class="notes-item animated fadeIn padding-5">
+								<div class="note-head">
+									<span class="note-results">
+										<i class="fa fa-star"></i>&nbsp;
+										55 resultados
+									</span>
+									<span class="note-date">
+										<i class="fa fa-calendar-o"></i>&nbsp;
+										11 Nov, 2015
+									</span>
 								</div>
-								<div class="note-controls">
-									<ul class="fa-ul">
-										<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
-										<li><i class="fa-li fa fa-fw fa-print note-print note-print"></i>&nbsp;</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<!-- /Nota -->
-						<!--  Nota -->
-						<div class="notes-item animated fadeIn padding-5">
-							<div class="note-head">
-								<span class="note-results">
-									<i class="fa fa-star"></i>&nbsp;
-									55 resultados
-								</span>
-								<span class="note-date">
-									<i class="fa fa-calendar-o"></i>&nbsp;
-									11 Nov, 2015
-								</span>
-							</div>
-							<div class="note-body">
-								<div class="note-data">
-									<span class="note-title">Juan José Hernandez</span>
-									<p class="note-content">
-										<span  class="note-subcontent">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit
-										</span>
-									</p>
-								</div>
-								<div class="note-controls">
-									<ul class="fa-ul">
-										<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
-										<li><i class="fa-li fa fa-fw fa-print note-print"></i>&nbsp;</li>
-									</ul>
+								<div class="note-body">
+									<div class="note-data">
+										<span class="note-title">Juan José Hernandez</span>
+										<p class="note-content">
+											<span  class="note-subcontent">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit
+											</span>
+										</p>
+									</div>
+									<div class="note-controls">
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
+											<li><i class="fa-li fa fa-fw fa-print note-print"></i>&nbsp;</li>
+										</ul>
+									</div>
 								</div>
 							</div>
-						</div>
-						<!-- /Nota -->
-						<!--  Nota -->
-						<div class="notes-item animated fadeIn padding-5">
-							<div class="note-head">
-								<span class="note-results">
-									<i class="fa fa-star"></i>&nbsp;
-									55 resultados
-								</span>
-								<span class="note-date">
-									<i class="fa fa-calendar-o"></i>&nbsp;
-									11 Nov, 2015
-								</span>
-							</div>
-							<div class="note-body">
-								<div class="note-data">
-									<span class="note-title">Juan José Hernandez</span>
-									<p class="note-content">
-										<span  class="note-subcontent">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit
-										</span>
-									</p>
+							<!-- /Nota -->
+							<!--  Nota -->
+							<div class="notes-item animated fadeIn padding-5">
+								<div class="note-head">
+									<span class="note-results">
+										<i class="fa fa-star"></i>&nbsp;
+										55 resultados
+									</span>
+									<span class="note-date">
+										<i class="fa fa-calendar-o"></i>&nbsp;
+										11 Nov, 2015
+									</span>
 								</div>
-								<div class="note-controls">
-									<ul class="fa-ul">
-										<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
-										<li><i class="fa-li fa fa-fw fa-print note-print note-print-false"></i>&nbsp;</li>
-									</ul>
+								<div class="note-body">
+									<div class="note-data">
+										<span class="note-title">Juan José Hernandez</span>
+										<p class="note-content">
+											<span  class="note-subcontent">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit
+											</span>
+										</p>
+									</div>
+									<div class="note-controls">
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
+											<li><i class="fa-li fa fa-fw fa-print note-print note-print"></i>&nbsp;</li>
+										</ul>
+									</div>
 								</div>
 							</div>
-						</div>
-						<!-- /Nota -->
+							<!-- /Nota -->
+							<!--  Nota -->
+							<div class="notes-item animated fadeIn padding-5">
+								<div class="note-head">
+									<span class="note-results">
+										<i class="fa fa-star"></i>&nbsp;
+										55 resultados
+									</span>
+									<span class="note-date">
+										<i class="fa fa-calendar-o"></i>&nbsp;
+										11 Nov, 2015
+									</span>
+								</div>
+								<div class="note-body">
+									<div class="note-data">
+										<span class="note-title">Juan José Hernandez</span>
+										<p class="note-content">
+											<span  class="note-subcontent">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit
+											</span>
+										</p>
+									</div>
+									<div class="note-controls">
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
+											<li><i class="fa-li fa fa-fw fa-print note-print note-print"></i>&nbsp;</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- /Nota -->
+							<!--  Nota -->
+							<div class="notes-item animated fadeIn padding-5">
+								<div class="note-head">
+									<span class="note-results">
+										<i class="fa fa-star"></i>&nbsp;
+										55 resultados
+									</span>
+									<span class="note-date">
+										<i class="fa fa-calendar-o"></i>&nbsp;
+										11 Nov, 2015
+									</span>
+								</div>
+								<div class="note-body">
+									<div class="note-data">
+										<span class="note-title">Juan José Hernandez</span>
+										<p class="note-content">
+											<span  class="note-subcontent">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit
+											</span>
+										</p>
+									</div>
+									<div class="note-controls">
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
+											<li><i class="fa-li fa fa-fw fa-print note-print"></i>&nbsp;</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- /Nota -->
+							<!--  Nota -->
+							<div class="notes-item animated fadeIn padding-5">
+								<div class="note-head">
+									<span class="note-results">
+										<i class="fa fa-star"></i>&nbsp;
+										55 resultados
+									</span>
+									<span class="note-date">
+										<i class="fa fa-calendar-o"></i>&nbsp;
+										11 Nov, 2015
+									</span>
+								</div>
+								<div class="note-body">
+									<div class="note-data">
+										<span class="note-title">Juan José Hernandez</span>
+										<p class="note-content">
+											<span  class="note-subcontent">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit
+											</span>
+										</p>
+									</div>
+									<div class="note-controls">
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
+											<li><i class="fa-li fa fa-fw fa-print note-print note-print-false"></i>&nbsp;</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- /Nota -->
 
-						<!-- /Lista de Items -->
+							<!-- /Lista de Items -->
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 padding-top-10">
+						<div class="notes-controls">
+							<span id="btn-notes-toMaxLeft" class="fa-stack ">
+								<i class="fa fa-square fa-stack-2x"></i>
+								<i class="fa fa-angle-double-left fa-stack-1x fa-fw fa-inverse"></i>
+							</span>
+							<span id="btn-notes-toLeft" class="fa-stack ">
+								<i class="fa fa-square fa-stack-2x"></i>
+								<i class="fa fa-angle-left fa-stack-1x fa-fw fa-inverse"></i>
+							</span>
+							<span id="btn-notes-toRight" class="fa-stack ">
+								<i class="fa fa-square fa-stack-2x"></i>
+								<i class="fa fa-angle-right fa-stack-1x fa-fw fa-inverse"></i>
+							</span>
+							<span id="btn-notes-toMaxRight" class="fa-stack ">
+								<i class="fa fa-square fa-stack-2x"></i>
+								<i class="fa fa-angle-double-right fa-stack-1x fa-fw fa-inverse"></i>
+							</span>
+							<span id="btn-notes-print" class="fa-stack ">
+								<i class="fa fa-square fa-stack-2x"></i>
+								<i class="fa fa-print fa-stack-1x fa-fw fa-inverse"></i>
+							</span>
+							<span id="btn-notes-trash" class="fa-stack ">
+								<i class="fa fa-square fa-stack-2x"></i>
+								<i class="fa fa-trash-o fa-stack-1x fa-fw fa-inverse"></i>
+							</span>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-xs-12 padding-top-10">
-					<div class="notes-controls">
-						<span id="btn-notes-toMaxLeft" class="fa-stack ">
-							<i class="fa fa-square fa-stack-2x"></i>
-							<i class="fa fa-angle-double-left fa-stack-1x fa-fw fa-inverse"></i>
-						</span>
-						<span id="btn-notes-toLeft" class="fa-stack ">
-							<i class="fa fa-square fa-stack-2x"></i>
-							<i class="fa fa-angle-left fa-stack-1x fa-fw fa-inverse"></i>
-						</span>
-						<span id="btn-notes-toRight" class="fa-stack ">
-							<i class="fa fa-square fa-stack-2x"></i>
-							<i class="fa fa-angle-right fa-stack-1x fa-fw fa-inverse"></i>
-						</span>
-						<span id="btn-notes-toMaxRight" class="fa-stack ">
-							<i class="fa fa-square fa-stack-2x"></i>
-							<i class="fa fa-angle-double-right fa-stack-1x fa-fw fa-inverse"></i>
-						</span>
-						<span id="btn-notes-print" class="fa-stack ">
-							<i class="fa fa-square fa-stack-2x"></i>
-							<i class="fa fa-print fa-stack-1x fa-fw fa-inverse"></i>
-						</span>
-						<span id="btn-notes-trash" class="fa-stack ">
-							<i class="fa fa-square fa-stack-2x"></i>
-							<i class="fa fa-trash-o fa-stack-1x fa-fw fa-inverse"></i>
-						</span>
-					</div>
-				</div>
-			</div>
+			<!-- /Bloque-Notas -->
 		</div>
-		<!-- /Bloque-Notas -->
 	</div>
-</div>
-<!-- END PAGE FOOTER -->
-<!-- SHORTCUT AREA : With large tiles (activated via clicking user name tag)
-Note: These tiles are completely responsive,
-you can add as many as you like
+	<!-- END PAGE FOOTER -->
+	<!-- SHORTCUT AREA : With large tiles (activated via clicking user name tag)
+	Note: These tiles are completely responsive,
+	you can add as many as you like
 -->
 <div id="shortcut">
 	<ul>
@@ -1476,7 +1501,7 @@ you can add as many as you like
 			<a href="gmap-xml.html" class="jarvismetro-tile big-cubes bg-color-purple"> <span class="iconbox"> <i class="fa fa-map-marker fa-4x"></i> <span>Maps</span> </span> </a>
 		</li>
 		<li>
-			<a href="invoice.html" class="jarvismetro-tile big-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa fa-book fa-4x"></i> <span>Invoice <span class="label pull-right bg-color-darken">99</span></span> </span> </a>
+			<a href="invoice.html" class="jarvismetro-tile big-cubes bg-color-white"> <span class="iconbox"> <i class="fa fa-book fa-4x"></i> <span>Invoice <span class="label pull-right bg-color-darken">99</span></span> </span> </a>
 		</li>
 		<li>
 			<a href="gallery.html" class="jarvismetro-tile big-cubes bg-color-greenLight"> <span class="iconbox"> <i class="fa fa-picture-o fa-4x"></i> <span>Gallery </span> </span> </a>
@@ -1493,15 +1518,15 @@ you can add as many as you like
 <!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
-	if (!window.jQuery) {
-		document.write('<script src="js/libs/jquery-2.1.1.min.js"><\/script>');
-	}
+if (!window.jQuery) {
+	document.write('<script src="js/libs/jquery-2.1.1.min.js"><\/script>');
+}
 </script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <script>
-	if (!window.jQuery.ui) {
-		document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>');
-	}
+if (!window.jQuery.ui) {
+	document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>');
+}
 </script>
 <!-- IMPORTANT: APP CONFIG -->
 <script src="js/app.config.js"></script>
@@ -1545,8 +1570,8 @@ you can add as many as you like
 <!--  Slide Panel -->
 <script src="js/plugin/slidepanel/jquery.slidepanel.js"></script>
 <!-- PAGE RELATED PLUGIN(S)
-	<script src="..."></script>-->
-	<script type="text/javascript">
+<script src="..."></script>-->
+<script type="text/javascript">
 // DO NOT REMOVE : GLOBAL FUNCTIONS!
 $(document).ready(function() {
 
@@ -1616,17 +1641,23 @@ $(document).ready(function() {
 		};
 
 		if (element.attr('data-type') !== undefined && element.attr('data-type') !== null && elementValue !== undefined && elementValue.length > 0) {
-			labelTemplate = "<span class='label label-" + typeStyle + " animated fadeInRight filter-open-modal' rel='tooltip' title='' data-placement='top' data-original-title='Editar filtro'>" + elementValue + "&nbsp;<i class='fa fa-fw fa-close filter-close-tag' rel='tooltip' title='' data-placement='top' data-original-title='Quitar filtro'></i></span> ";
-
-			$('#advancedFilterTags').append(labelTemplate);
+			//labelTemplate = "<span class='label label-" + typeStyle + " animated fadeInRight filter-open-modal' rel='tooltip' title='' data-placement='top' data-original-title='Editar filtro'>" + elementValue + "&nbsp;<i class='fa fa-fw fa-close filter-close-tag' rel='tooltip' title='' data-placement='top' data-original-title='Quitar filtro'></i></span> ";
+			labelTemplate = '<li class="select2-search-choice">'+
+				'<div>Nevada'+
+				'</div>'+
+				'<a href="#" class="select2-search-choice-close" tabindex="-1">'+
+				'</a>'+
+			'</li>';
+			// $('#advancedFilterTags').append(labelTemplate);
+			$('#advancedFilterTags ul').append(labelTemplate);
 			//para fuentes
-			if(element.attr('data-type') === "1") {
-				if(!element.find('i').hasClass('fa-check-circle')){
-					element.find('i').removeClass('fa-circle-o').addClass('fa-check-circle txt-color-greenSuccess');
-				}else if(!element.find('i').hasClass('fa-circle-o')){
-					element.find('i').removeClass('fa-check-circle txt-color-greenSuccess').addClass('fa-circle-o');
-				}
-			}
+			// if(element.attr('data-type') === "1") {
+			// 	if(!element.find('i').hasClass('fa-check-circle')){
+			// 		element.find('i').removeClass('fa-circle-o').addClass('fa-check-circle txt-color-greenSuccess');
+			// 	}else if(!element.find('i').hasClass('fa-circle-o')){
+			// 		element.find('i').removeClass('fa-check-circle txt-color-greenSuccess').addClass('fa-circle-o');
+			// 	}
+			// }
 
 			console.info(elementValue);
 
@@ -1739,9 +1770,15 @@ $('#btn-notes-toMaxRight').click(function(e){
 
 var addToFilterList = function(typeStyle, elementValue) {
 
-	var labelTemplate = "<span class='label label-" + typeStyle + " animated fadeInRight filter-open-modal filter-id-" + (elementValue).toLowerCase() + "' rel='tooltip' title='' data-placement='top' data-original-title='Editar filtro'>" + elementValue + "&nbsp;<i class='fa fa-fw fa-close filter-close-tag' rel='tooltip' title='' data-placement='top' data-original-title='Quitar filtro'></i></span> ";
+	//var labelTemplate = "<span class='label label-" + typeStyle + " animated fadeInRight filter-open-modal filter-id-" + (elementValue).toLowerCase() + "' rel='tooltip' title='' data-placement='top' data-original-title='Editar filtro'>" + elementValue + "&nbsp;<i class='fa fa-fw fa-close filter-close-tag' rel='tooltip' title='' data-placement='top' data-original-title='Quitar filtro'></i></span> ";
+	var labelTemplate = '<li class="select2-search-choice animated fadeInRight filter-open-modal filter-id-'+(elementValue).toLowerCase()+'">'+
+		'<div>' + elementValue +
+		'</div>'+
+		'<a href="#" class="select2-search-choice-close filter-close-tag" tabindex="-1">'+
+		'</a>'+
+	'</li>';
 
-	$('#advancedFilterTags').append(labelTemplate);
+	$('#advancedFilterTags ul').append(labelTemplate);
 
 	// Filter-Tag actions
 	$('.filter-close-tag').click(function(e) {
@@ -1763,34 +1800,34 @@ $('ul.bg-color-blueMiranda-alt > li > a').click(function(e){
 
 });
 
-	$('.filter-open-modal').click(function(e){
-		e.preventDefault();
-		console.log('.filter-open-modal',this);
-		$('#personaModal').modal('show');
-	});
+$('.filter-open-modal').click(function(e){
+	e.preventDefault();
+	console.log('.filter-open-modal',this);
+	$('#personaModal').modal('show');
+});
 
-	$('#resultsContent > .search-results h4').click(function(e){
-		e.preventDefault();
-		console.log('.search-results h4',this);
-		$('#personaModal').modal('show');
-	});
+$('#resultsContent > .search-results h4').click(function(e){
+	e.preventDefault();
+	console.log('.search-results h4',this);
+	$('#personaModal').modal('show');
+});
 
 })
 </script>
 <!-- Your GOOGLE ANALYTICS CODE Below -->
 <script type="text/javascript">
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
-	_gaq.push(['_trackPageview']);
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+_gaq.push(['_trackPageview']);
 
-	(function() {
-		var ga = document.createElement('script');
-		ga.type = 'text/javascript';
-		ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0];
-		s.parentNode.insertBefore(ga, s);
-	})();
+(function() {
+	var ga = document.createElement('script');
+	ga.type = 'text/javascript';
+	ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(ga, s);
+})();
 </script>
 </body>
 </html>
