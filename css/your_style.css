@@ -199,12 +199,19 @@
   color: #2F96DA;
 }
 .note-print.note-print-false {
-  /*7D96A7*/
   color: #2F96DA;
 }
 .user-data-top {
   color: #8C8C8C;
-  padding: 9px;
+  padding: 9px 0 9px 9px;
+  border: dashed thin transparent;
+  text-align: right;
+  display: flex;
+}
+
+.user-data-left {
+  font-size: xx-small;
+  padding: 8px 5px 0 0;
 }
 
 /*
@@ -529,9 +536,11 @@ nav ul ul > li:hover b {
 
 /* end pantalla detalle */
 
-@media (min-width: 768px) {
-  .user-data-top .dl-horizontal dd {
-    margin-left: 167px;
-    padding-left: 5px;
-  }
+.smart-form .col {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.smart-form section {
+    margin-bottom: 10px;
+    position: relative;
 }
