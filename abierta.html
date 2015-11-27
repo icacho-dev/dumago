@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
 	<meta charset="utf-8">
 	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
@@ -87,12 +88,14 @@ Use search to find needed section.
 * 'fixed-page-footer' - Fixes footer
 * 'container'         - boxed layout mode (non-responsive: will not work with fixed-navigation & fixed-ribbon)
 -->
+
 <body class="smart-style-2 fixed-header fixed-ribbon fixed-page-footer">
 	<!-- HEADER -->
 	<header id="header">
 		<div id="logo-group">
 			<!-- PLACE YOUR LOGO HERE -->
-			<span id="logo"> <img src="img/logo-segob.png" alt="CNS"> </span>
+			<span id="logo">
+				<img src="img/logo-segob.png" alt="CNS"> </span>
 			<!-- END LOGO PLACEHOLDER -->
 			<!-- Note: The activity badge color changes when clicked and resets the number to 0
 			Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications -->
@@ -102,105 +105,104 @@ Use search to find needed section.
 				<!-- the ID links are fetched via AJAX to the ajax container "ajax-notifications" -->
 				<div class="btn-group btn-group-justified" data-toggle="buttons">
 					<label class="btn btn-default">
-						<input type="radio" name="activity" id="ajax/notify/busquedas.html">
-						Búsquedas Prog. (3) </label>
-						<label class="btn btn-default">
-							<input type="radio" name="activity" id="ajax/notify/notifications.html">
-							Notificaciones (3) </label>
-						</div>
-						<!-- notification content -->
-						<div class="ajax-notifications custom-scroll">
-							<div class="alert alert-transparent">
-								<h4>Click a button to show messages here</h4>
-								This blank page message helps protect your privacy, or you can show the first message here automatically.
-							</div>
-							<i class="fa fa-lock fa-4x fa-border"></i>
-						</div>
-						<!-- end notification content -->
-						<!-- footer: refresh area -->
-						<span class="font-xs text-muted"> Última actualización el: 12/12/2013 9:43AM
-							<button type="button" data-loading-text="<i class='fa fa-refresh fa-spin'></i> Loading..." class="btn btn-xs btn-default pull-right">
-								<i class="fa fa-refresh"></i>
-							</button> </span>
-							<!-- end footer -->
-						</div>
-						<!-- END AJAX-DROPDOWN -->
+						<input type="radio" name="activity" id="ajax/notify/busquedas.html"> Búsquedas Prog. (3) </label>
+					<label class="btn btn-default">
+						<input type="radio" name="activity" id="ajax/notify/notifications.html"> Notificaciones (3) </label>
+				</div>
+				<!-- notification content -->
+				<div class="ajax-notifications custom-scroll">
+					<div class="alert alert-transparent">
+						<h4>Click a button to show messages here</h4>
+						This blank page message helps protect your privacy, or you can show the first message here automatically.
 					</div>
-					<!-- projects dropdown -->
-					<div class="project-context hidden-xs hide">
-						<span class="label">Projects:</span>
-						<span class="project-selector dropdown-toggle" data-toggle="dropdown">Recent projects <i class="fa fa-angle-down"></i></span>
-						<!-- Suggestion: populate this list with fetch and push technique -->
-						<ul class="dropdown-menu">
-							<li>
-								<a href="javascript:void(0);">Online e-merchant management system - attaching integration with the iOS</a>
-							</li>
-							<li>
-								<a href="javascript:void(0);">Notes on pipeline upgradee</a>
-							</li>
-							<li>
-								<a href="javascript:void(0);">Assesment Report for merchant account</a>
-							</li>
-							<li class="divider"></li>
-							<li>
-								<a href="javascript:void(0);"><i class="fa fa-power-off"></i> Clear</a>
-							</li>
-						</ul>
-						<!-- end dropdown-menu-->
-					</div>
-					<!-- end projects dropdown -->
-					<!-- pulled right: nav area -->
-					<div class="pull-right ">
+					<i class="fa fa-lock fa-4x fa-border"></i>
+				</div>
+				<!-- end notification content -->
+				<!-- footer: refresh area -->
+				<span class="font-xs text-muted"> Última actualización el: 12/12/2013 9:43AM
+					<button type="button" data-loading-text="<i class='fa fa-refresh fa-spin'></i> Loading..." class="btn btn-xs btn-default pull-right">
+						<i class="fa fa-refresh"></i>
+					</button>
+				</span>
+				<!-- end footer -->
+			</div>
+			<!-- END AJAX-DROPDOWN -->
+		</div>
+		<!-- projects dropdown -->
+		<div class="project-context hidden-xs hide">
+			<span class="label">Projects:</span>
+			<span class="project-selector dropdown-toggle" data-toggle="dropdown">Recent projects <i class="fa fa-angle-down"></i></span>
+			<!-- Suggestion: populate this list with fetch and push technique -->
+			<ul class="dropdown-menu">
+				<li>
+					<a href="javascript:void(0);">Online e-merchant management system - attaching integration with the iOS</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">Notes on pipeline upgradee</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">Assesment Report for merchant account</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a href="javascript:void(0);"><i class="fa fa-power-off"></i> Clear</a>
+				</li>
+			</ul>
+			<!-- end dropdown-menu-->
+		</div>
+		<!-- end projects dropdown -->
+		<!-- pulled right: nav area -->
+		<div class="pull-right ">
 
-						<!-- collapse menu button -->
-						<div id="hide-menu" class="btn-header pull-right hide">
-							<span> <a href="javascript:void(0);" data-action="toggleMenu" title="Collapse Menu"><i class="fa fa-reorder"></i></a> </span>
-						</div>
-						<!-- end collapse menu -->
+			<!-- collapse menu button -->
+			<div id="hide-menu" class="btn-header pull-right hide">
+				<span> <a href="javascript:void(0);" data-action="toggleMenu" title="Collapse Menu"><i class="fa fa-reorder"></i></a> </span>
+			</div>
+			<!-- end collapse menu -->
 
-						<!-- #MOBILE -->
-						<!-- Top menu profile link : this shows only when top menu is active -->
-						<ul id="mobile-profile-img" class="header-dropdown-list hidden-xs padding-5 hide">
-							<li class="">
-								<a href="#" class="dropdown-toggle no-margin userdropdown" data-toggle="dropdown">
-									<img src="img/avatars/sunny.png" alt="John Doe" class="online" />
-								</a>
-								<ul class="dropdown-menu pull-right">
-									<li>
-										<a href="javascript:void(0);" class="padding-10 padding-top-0 padding-bottom-0"><i class="fa fa-cog"></i> Setting</a>
-									</li>
-									<li class="divider"></li>
-									<li>
-										<a href="profile.html" class="padding-10 padding-top-0 padding-bottom-0"> <i class="fa fa-user"></i> <u>P</u>rofile</a>
-									</li>
-									<li class="divider"></li>
-									<li>
-										<a href="javascript:void(0);" class="padding-10 padding-top-0 padding-bottom-0" data-action="toggleShortcut"><i class="fa fa-arrow-down"></i> <u>S</u>hortcut</a>
-									</li>
-									<li class="divider"></li>
-									<li>
-										<a href="javascript:void(0);" class="padding-10 padding-top-0 padding-bottom-0" data-action="launchFullscreen"><i class="fa fa-arrows-alt"></i> Full <u>S</u>creen</a>
-									</li>
-									<li class="divider"></li>
-									<li>
-										<a href="login.html" class="padding-10 padding-top-5 padding-bottom-5" data-action="userLogout"><i class="fa fa-sign-out fa-lg"></i> <strong><u>L</u>ogout</strong></a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						<!-- logout button -->
-						<div id="logout" class="btn-header transparent pull-right hide">
-							<span> <a href="login.html" title="Sign Out" data-action="userLogout" data-logout-msg="You can improve your security further after logging out by closing this opened browser"><i class="fa fa-sign-out"></i></a> </span>
-						</div>
-						<!-- end logout button -->
-						<!-- search mobile button (this is hidden till mobile view port) -->
-						<div id="search-mobile" class="btn-header transparent pull-right hide">
-							<span> <a href="javascript:void(0)" title="Search"><i class="fa fa-search"></i></a> </span>
-						</div>
-						<!-- end search mobile button -->
-						<!-- input: search field -->
-						<form action="search.html" class="header-search pull-right hide">
-							<input id="search-fld"  type="text" name="param" placeholder="Buscar..." data-autocomplete='[
+			<!-- #MOBILE -->
+			<!-- Top menu profile link : this shows only when top menu is active -->
+			<ul id="mobile-profile-img" class="header-dropdown-list hidden-xs padding-5 hide">
+				<li class="">
+					<a href="#" class="dropdown-toggle no-margin userdropdown" data-toggle="dropdown">
+						<img src="img/avatars/sunny.png" alt="John Doe" class="online" />
+					</a>
+					<ul class="dropdown-menu pull-right">
+						<li>
+							<a href="javascript:void(0);" class="padding-10 padding-top-0 padding-bottom-0"><i class="fa fa-cog"></i> Setting</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a href="profile.html" class="padding-10 padding-top-0 padding-bottom-0"> <i class="fa fa-user"></i> <u>P</u>rofile</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a href="javascript:void(0);" class="padding-10 padding-top-0 padding-bottom-0" data-action="toggleShortcut"><i class="fa fa-arrow-down"></i> <u>S</u>hortcut</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a href="javascript:void(0);" class="padding-10 padding-top-0 padding-bottom-0" data-action="launchFullscreen"><i class="fa fa-arrows-alt"></i> Full <u>S</u>creen</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a href="login.html" class="padding-10 padding-top-5 padding-bottom-5" data-action="userLogout"><i class="fa fa-sign-out fa-lg"></i> <strong><u>L</u>ogout</strong></a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<!-- logout button -->
+			<div id="logout" class="btn-header transparent pull-right hide">
+				<span> <a href="login.html" title="Sign Out" data-action="userLogout" data-logout-msg="You can improve your security further after logging out by closing this opened browser"><i class="fa fa-sign-out"></i></a> </span>
+			</div>
+			<!-- end logout button -->
+			<!-- search mobile button (this is hidden till mobile view port) -->
+			<div id="search-mobile" class="btn-header transparent pull-right hide">
+				<span> <a href="javascript:void(0)" title="Search"><i class="fa fa-search"></i></a> </span>
+			</div>
+			<!-- end search mobile button -->
+			<!-- input: search field -->
+			<form action="search.html" class="header-search pull-right hide">
+				<input id="search-fld" type="text" name="param" placeholder="Buscar..." data-autocomplete='[
 							"ActionScript",
 							"AppleScript",
 							"Asp",
@@ -223,86 +225,107 @@ Use search to find needed section.
 							"Ruby",
 							"Scala",
 							"Scheme"]'>
-							<button type="submit">
-								<i class="fa fa-search"></i>
-							</button>
-							<a href="javascript:void(0);" id="cancel-search-js" title="Cancel Search"><i class="fa fa-times"></i></a>
-						</form>
-						<!-- end input: search field -->
-						<!-- fullscreen button -->
-						<div id="fullscreen" class="btn-header transparent pull-right">
-							<span> <a href="javascript:void(0);" data-action="launchFullscreen" title="Full Screen"><i class="fa fa-arrows-alt"></i></a> </span>
-						</div>
-						<!-- end fullscreen button -->
+				<button type="submit">
+					<i class="fa fa-search"></i>
+				</button>
+				<a href="javascript:void(0);" id="cancel-search-js" title="Cancel Search"><i class="fa fa-times"></i></a>
+			</form>
+			<!-- end input: search field -->
+			<!-- fullscreen button -->
+			<div id="fullscreen" class="btn-header transparent pull-right">
+				<span> <a href="javascript:void(0);" data-action="launchFullscreen" title="Full Screen"><i class="fa fa-arrows-alt"></i></a> </span>
+			</div>
+			<!-- end fullscreen button -->
 
-						<!-- #Voice Command: Start Speech -->
-						<div id="speech-btn" class="btn-header transparent pull-right hidden-sm hidden-xs hide">
-							<div>
-								<a href="javascript:void(0)" title="Voice Command" data-action="voiceCommand"><i class="fa fa-microphone"></i></a>
-								<div class="popover bottom"><div class="arrow"></div>
-								<div class="popover-content">
-									<h4 class="vc-title">Voice command activated <br><small>Please speak clearly into the mic</small></h4>
-									<h4 class="vc-title-error text-center">
-										<i class="fa fa-microphone-slash"></i> Voice command failed
-										<br><small class="txt-color-red">Must <strong>"Allow"</strong> Microphone</small>
-										<br><small class="txt-color-red">Must have <strong>Internet Connection</strong></small>
-									</h4>
-									<a href="javascript:void(0);" class="btn btn-success" onclick="commands.help()">See Commands</a>
-									<a href="javascript:void(0);" class="btn bg-color-purple txt-color-white" onclick="$('#speech-btn .popover').fadeOut(50);">Close Popup</a>
-								</div>
-							</div>
+			<!-- #Voice Command: Start Speech -->
+			<div id="speech-btn" class="btn-header transparent pull-right hidden-sm hidden-xs hide">
+				<div>
+					<a href="javascript:void(0)" title="Voice Command" data-action="voiceCommand"><i class="fa fa-microphone"></i></a>
+					<div class="popover bottom">
+						<div class="arrow"></div>
+						<div class="popover-content">
+							<h4 class="vc-title">Voice command activated
+								<br>
+								<small>Please speak clearly into the mic</small>
+							</h4>
+							<h4 class="vc-title-error text-center">
+								<i class="fa fa-microphone-slash"></i> Voice command failed
+								<br>
+								<small class="txt-color-red">Must
+									<strong>"Allow"</strong> Microphone</small>
+								<br>
+								<small class="txt-color-red">Must have
+									<strong>Internet Connection</strong>
+								</small>
+							</h4>
+							<a href="javascript:void(0);" class="btn btn-success" onclick="commands.help()">See Commands</a>
+							<a href="javascript:void(0);" class="btn bg-color-purple txt-color-white" onclick="$('#speech-btn .popover').fadeOut(50);">Close Popup</a>
 						</div>
 					</div>
-					<!-- end voice command -->
-					<!-- multiple lang dropdown : find all flags in the flags page -->
-					<ul class="header-dropdown-list hidden-xs hide">
-						<li>
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="img/blank.gif" class="flag flag-us" alt="United States"> <span> English (US) </span> <i class="fa fa-angle-down"></i> </a>
-							<ul class="dropdown-menu pull-right">
-								<li class="active">
-									<a href="javascript:void(0);"><img src="img/blank.gif" class="flag flag-us" alt="United States"> English (US)</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);"><img src="img/blank.gif" class="flag flag-fr" alt="France"> Français</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);"><img src="img/blank.gif" class="flag flag-es" alt="Spanish"> Español</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);"><img src="img/blank.gif" class="flag flag-de" alt="German"> Deutsch</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);"><img src="img/blank.gif" class="flag flag-jp" alt="Japan"> 日本語</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);"><img src="img/blank.gif" class="flag flag-cn" alt="China"> 中文</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);"><img src="img/blank.gif" class="flag flag-it" alt="Italy"> Italiano</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);"><img src="img/blank.gif" class="flag flag-pt" alt="Portugal"> Portugal</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);"><img src="img/blank.gif" class="flag flag-ru" alt="Russia"> Русский язык</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);"><img src="img/blank.gif" class="flag flag-kr" alt="Korea"> 한국어</a>
-								</li>
-
-							</ul>
-						</li>
-					</ul>
-					<!-- end multiple lang -->
 				</div>
-				<!-- end pulled right: nav area -->
-			</header>
-			<!-- END HEADER -->
-			<!-- Left panel : Navigation area -->
-			<!-- Note: This width of the aside area can be adjusted through LESS variables -->
-			<aside id="left-panel">
-				<!-- User info -->
-					<!-- <div class="login-info">
+			</div>
+			<!-- end voice command -->
+			<!-- multiple lang dropdown : find all flags in the flags page -->
+			<ul class="header-dropdown-list hidden-xs hide">
+				<li>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<img src="img/blank.gif" class="flag flag-us" alt="United States">
+						<span> English (US) </span> <i class="fa fa-angle-down"></i> </a>
+					<ul class="dropdown-menu pull-right">
+						<li class="active">
+							<a href="javascript:void(0);">
+								<img src="img/blank.gif" class="flag flag-us" alt="United States"> English (US)</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="img/blank.gif" class="flag flag-fr" alt="France"> Français</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="img/blank.gif" class="flag flag-es" alt="Spanish"> Español</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="img/blank.gif" class="flag flag-de" alt="German"> Deutsch</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="img/blank.gif" class="flag flag-jp" alt="Japan"> 日本語</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="img/blank.gif" class="flag flag-cn" alt="China"> 中文</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="img/blank.gif" class="flag flag-it" alt="Italy"> Italiano</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="img/blank.gif" class="flag flag-pt" alt="Portugal"> Portugal</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="img/blank.gif" class="flag flag-ru" alt="Russia"> Русский язык</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="img/blank.gif" class="flag flag-kr" alt="Korea"> 한국어</a>
+						</li>
+
+					</ul>
+				</li>
+			</ul>
+			<!-- end multiple lang -->
+		</div>
+		<!-- end pulled right: nav area -->
+	</header>
+	<!-- END HEADER -->
+	<!-- Left panel : Navigation area -->
+	<!-- Note: This width of the aside area can be adjusted through LESS variables -->
+	<aside id="left-panel">
+		<!-- User info -->
+		<!-- <div class="login-info">
 						<span>
 
 							<a href="javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">
@@ -315,27 +338,27 @@ Use search to find needed section.
 
 						</span>
 					</div -->
-					<!-- end user info -->
-					<!-- NAVIGATION : This navigation is also responsive-->
-					<nav>
-						<ul>							
-							<li>
-								<a href="#" title="Fuentes"><i class="fa fa-lg fa-fw fa-filter"></i> <span class="menu-item-parent">Fuentes</span></a>
-								<ul>
-									<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>Todas las fuentes</a></li>
-									<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>REPUVE</a></li>
-									<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>OCRA</a></li>
-									<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>SIOM</a></li>
-									<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>Licencias de Conducir</a></li>
-									<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>Vehiculos Robados y Recuperados</a></li>
-									<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>Empresas de Seguridad Privada</a></li>
-									<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>Registro Federal de Mandamientos Judiciales</a></li>
-								</ul>
-							</li>
-							<li class="menu-taxomonias ">
-								<a href="#" title="Categorias"><i class="fa fa-lg fa-fw fa-puzzle-piece"></i> <span class="menu-item-parent">Filtros </span></a>
-								<ul>
-									<!-- <li>
+		<!-- end user info -->
+		<!-- NAVIGATION : This navigation is also responsive-->
+		<nav>
+			<ul>
+				<li>
+					<a href="#" title="Fuentes"><i class="fa fa-lg fa-fw fa-filter"></i> <span class="menu-item-parent">Fuentes</span></a>
+					<ul>
+						<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>Todas las fuentes</a></li>
+						<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>REPUVE</a></li>
+						<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>OCRA</a></li>
+						<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>SIOM</a></li>
+						<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>Licencias de Conducir</a></li>
+						<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>Vehiculos Robados y Recuperados</a></li>
+						<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>Empresas de Seguridad Privada</a></li>
+						<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>Registro Federal de Mandamientos Judiciales</a></li>
+					</ul>
+				</li>
+				<li class="menu-taxomonias ">
+					<a href="#" title="Categorias"><i class="fa fa-lg fa-fw fa-puzzle-piece"></i> <span class="menu-item-parent">Filtros </span></a>
+					<ul>
+						<!-- <li>
 										<div class="padding-5">
 											<div class="icon-addon addon-sm">
 							                    <input type="text" placeholder="Filtrar taxonomias..." class="form-control">
@@ -343,77 +366,78 @@ Use search to find needed section.
 							                </div>
 										</div>
 									</li> -->
-									<li><a href="#">Personas <span class="badge font-xs bg-color-blue">2,230</span></a>
+						<li><a href="#">Personas <span class="badge font-xs bg-color-blue">2,230</span></a>
+							<ul>
+								<li><a href="#">Nombre  <span class="badge font-xs bg-color-white txt-color-blue">1,205</span></a>
+									<ul>
+										<li><a href="#" data-type="3">Juan <em class="text-muted font-xs">&nbsp;(&nbsp;605&nbsp;)</em></a></li>
+										<li><a href="#" data-type="3">Juan Jose <em class="text-muted font-xs">&nbsp;(&nbsp;287&nbsp;)</em></a></li>
+										<li><a href="#" data-type="3">Juan de Jose <em class="text-muted font-xs">&nbsp;(&nbsp;313&nbsp;)</em></a></li>
+										<li><a href="#"><i class="fa fa-plus font-xs"></i>Ver más...</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Apellido Paterno  <span class="badge font-xs bg-color-white txt-color-blue">1,000</span></a>
+									<ul>
+										<li><a href="#" data-type="3">Vazquez <em class="text-muted font-xs">&nbsp;(&nbsp;800&nbsp;)</em></a></li>
+										<li><a href="#" data-type="3">Vasquez <em class="text-muted font-xs">&nbsp;(&nbsp;200&nbsp;)</em></a>
+											<li><a href="#"><i class="fa fa-plus font-xs"></i>Ver más...</a></li>
+									</ul>
+									</li>
+									<li><a href="#">Apellido Materno  <span class="badge font-xs bg-color-white txt-color-blue">20</span></a></li>
+									<li><a href="#">Media Afiliación  <span class="badge font-xs bg-color-white txt-color-blue">5</span></a></li>
+							</ul>
+							</li>
+							<li><a href="#">Ubicación  <span class="badge font-xs bg-color-blue">234</span></a>
+								<ul>
+									<li><a href="#">Estado  <span class="badge font-xs bg-color-white txt-color-blue">1,205</span></a>
 										<ul>
-											<li><a href="#">Nombre  <span class="badge font-xs bg-color-white txt-color-blue">1,205</span></a>
-												<ul>
-													<li><a href="#" data-type="3">Juan <em class="text-muted font-xs">&nbsp;(&nbsp;605&nbsp;)</em></a></li>
-													<li><a href="#" data-type="3">Juan Jose <em class="text-muted font-xs">&nbsp;(&nbsp;287&nbsp;)</em></a></li>
-													<li><a href="#" data-type="3">Juan de Jose <em class="text-muted font-xs">&nbsp;(&nbsp;313&nbsp;)</em></a></li>	
-													<li><a href="#"><i class="fa fa-plus font-xs"></i>Ver más...</a></li>
-												</ul>
-											</li>
-											<li><a href="#">Apellido Paterno  <span class="badge font-xs bg-color-white txt-color-blue">1,000</span></a>
-												<ul>
-													<li><a href="#" data-type="3">Vazquez <em class="text-muted font-xs">&nbsp;(&nbsp;800&nbsp;)</em></a></li>
-													<li><a href="#" data-type="3">Vasquez <em class="text-muted font-xs">&nbsp;(&nbsp;200&nbsp;)</em></a>
-														<li><a href="#"><i class="fa fa-plus font-xs"></i>Ver más...</a></li>
-													</ul>
-												</li>
-												<li><a href="#">Apellido Materno  <span class="badge font-xs bg-color-white txt-color-blue">20</span></a></li>
-												<li><a href="#">Media Afiliación  <span class="badge font-xs bg-color-white txt-color-blue">5</span></a></li>
-											</ul>
-										</li>
-										<li><a href="#">Ubicación  <span class="badge font-xs bg-color-blue">234</span></a>
-											<ul>
-												<li><a href="#">Estado  <span class="badge font-xs bg-color-white txt-color-blue">1,205</span></a>
-													<ul>
-														<li><a href="#" data-type="3">Distrito Federal <em class="text-muted font-xs">&nbsp;(&nbsp;605&nbsp;)</em></a></li>
-														<li><a href="#" data-type="3">Guadalajara <em class="text-muted font-xs">&nbsp;(&nbsp;287&nbsp;)</em></a></li>
-														<li><a href="#" data-type="3">Monterrey <em class="text-muted font-xs">&nbsp;(&nbsp;313&nbsp;)</em></a></li>	
-														<li><a href="#"><i class="fa fa-plus font-xs"></i>Ver más...</a></li>
-													</ul>
-												</li>
-												<li><a href="#">Municipio  <span class="badge font-xs bg-color-white txt-color-blue">1,000</span></a>
-													<ul>
-														<li><a href="#" data-type="3">Alvaro Obregón <em class="text-muted font-xs">&nbsp;(&nbsp;800&nbsp;)</em></a></li>
-														<li><a href="#" data-type="3">Nuevo León <em class="text-muted font-xs">&nbsp;(&nbsp;200&nbsp;)</em></a>
-															<li><a href="#"><i class="fa fa-plus font-xs"></i>Ver más...</a></li>
-														</ul>
-													</li>
-													<li><a href="#">Colonia  <span class="badge font-xs bg-color-white txt-color-blue">20</span></a></li>
-													<li><a href="#">Calle  <span class="badge font-xs bg-color-white txt-color-blue">5</span></a></li>
-												</ul>
-											</li>
-											<li><a href="#">Licencias de Conducir  <span class="badge font-xs bg-color-blue">1,941</span></a></li>
-											<li><a href="#">Área de Adscripción  <span class="badge font-xs bg-color-blue">37</span></a></li>
+											<li><a href="#" data-type="3">Distrito Federal <em class="text-muted font-xs">&nbsp;(&nbsp;605&nbsp;)</em></a></li>
+											<li><a href="#" data-type="3">Guadalajara <em class="text-muted font-xs">&nbsp;(&nbsp;287&nbsp;)</em></a></li>
+											<li><a href="#" data-type="3">Monterrey <em class="text-muted font-xs">&nbsp;(&nbsp;313&nbsp;)</em></a></li>
+											<li><a href="#"><i class="fa fa-plus font-xs"></i>Ver más...</a></li>
 										</ul>
 									</li>
+									<li><a href="#">Municipio  <span class="badge font-xs bg-color-white txt-color-blue">1,000</span></a>
+										<ul>
+											<li><a href="#" data-type="3">Alvaro Obregón <em class="text-muted font-xs">&nbsp;(&nbsp;800&nbsp;)</em></a></li>
+											<li><a href="#" data-type="3">Nuevo León <em class="text-muted font-xs">&nbsp;(&nbsp;200&nbsp;)</em></a>
+												<li><a href="#"><i class="fa fa-plus font-xs"></i>Ver más...</a></li>
+										</ul>
+										</li>
+										<li><a href="#">Colonia  <span class="badge font-xs bg-color-white txt-color-blue">20</span></a></li>
+										<li><a href="#">Calle  <span class="badge font-xs bg-color-white txt-color-blue">5</span></a></li>
 								</ul>
-							</nav>
-							<span class="minifyme" data-action="minifyMenu">
-								<i class="fa fa-arrow-circle-left hit"></i>
-							</span>
-						</aside>
-						<!-- END NAVIGATION -->
-						<!-- MAIN PANEL -->
-						<div id="main" role="main">
-							<!-- RIBBON -->
-							<div id="ribbon">
+								</li>
+								<li><a href="#">Licencias de Conducir  <span class="badge font-xs bg-color-blue">1,941</span></a></li>
+								<li><a href="#">Área de Adscripción  <span class="badge font-xs bg-color-blue">37</span></a></li>
+					</ul>
+					</li>
+			</ul>
+		</nav>
+		<span class="minifyme" data-action="minifyMenu">
+			<i class="fa fa-arrow-circle-left hit"></i>
+		</span>
+	</aside>
+	<!-- END NAVIGATION -->
+	<!-- MAIN PANEL -->
+	<div id="main" role="main">
+		<!-- RIBBON -->
+		<div id="ribbon">
 
-								<span class="ribbon-button-alignment"> 
-									<span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh" rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
-										<i class="fa fa-refresh"></i>
-									</span> 
-								</span>
+			<span class="ribbon-button-alignment">
+				<span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh" rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
+					<i class="fa fa-refresh"></i>
+				</span>
+			</span>
 
-								<!-- breadcrumb -->
-								<ol class="breadcrumb">
-									<li>Inicio</li><li>Busquedas Abiertas</li>
-								</ol>
-								<!-- end breadcrumb -->
+			<!-- breadcrumb -->
+			<ol class="breadcrumb">
+				<li>Inicio</li>
+				<li>Busquedas Abiertas</li>
+			</ol>
+			<!-- end breadcrumb -->
 
-				<!-- You can also add more buttons to the
+			<!-- You can also add more buttons to the
 				ribbon for further usability
 
 				Example below:
@@ -437,7 +461,7 @@ Use search to find needed section.
 						<input class="form-control" type="text" placeholder="Buscar...">
 						<div class="input-group-btn">
 							<button class="btn btn-default btn-primary" type="button">
-								<i class="fa fa-search"></i> 
+								<i class="fa fa-search"></i>
 							</button>
 						</div>
 					</div>
@@ -452,11 +476,11 @@ Use search to find needed section.
 					<!-- NEW WIDGET START -->
 					<article class="col-sm-12 col-md-12 col-lg-12">
 						<!--  Widget filtros v2 -->
-						
+
 						<!--  end Widget Filtros v2-->
 						<!-- Widget ID (each widget will need unique ID)-->
-							<div class="jarviswidget jarviswidget-color-magenta" id="wid-id-0" data-widget-editbutton="false">
-				<!-- widget options:
+						<div class="jarviswidget jarviswidget-color-magenta" id="wid-id-0" data-widget-editbutton="false">
+							<!-- widget options:
 				usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
 				data-widget-colorbutton="false"
 				data-widget-editbutton="false"
@@ -466,147 +490,147 @@ Use search to find needed section.
 				data-widget-custombutton="false"
 				data-widget-collapsed="true"
 				data-widget-sortable="false"-->
-				<header>
-					<span class="widget-icon"> <i class="fa fa-lg fa-search"></i> </span>
-					<h2>Buscador </h2>
+							<header>
+								<span class="widget-icon"> <i class="fa fa-lg fa-search"></i> </span>
+								<h2>Resultados </h2>
 
-				</header>
+							</header>
 
-				<!-- widget div-->
-				<div>
+							<!-- widget div-->
+							<div>
 
-					<!-- widget edit box -->
-					<div class="jarviswidget-editbox">
-						<!-- This area used as dropdown edit box -->
+								<!-- widget edit box -->
+								<div class="jarviswidget-editbox">
+									<!-- This area used as dropdown edit box -->
 
-					</div>
-					<!-- end widget edit box -->
-
-					<!-- widget content -->
-					<div class="widget-body">
-
-						<div class="widget-body-toolbar">
-
-							<div class="row">
-
-								<div class="col-sm-12 col-md-12 " id="advancedFilterTags">
-									<!--  *Fuentes -->
-									<!-- <span class="label label-danger animated fadeInRight filter-tag">Todas las Fuentes&nbsp;<i class="fa fa-fw fa-close"></i></span> -->
-									<!--  /*Fuentes -->
 								</div>
+								<!-- end widget edit box -->
 
-							</div>
+								<!-- widget content -->
+								<div class="widget-body">
 
-						</div>
-						<div id="resultsContent" class="" style="min-height:300px;">
-							<!-- start Results -->
-							<div class="search-results clearfix">
-								<a><i class="fa fa-share-alt pull-right"></i></a>
-								<a><i class="fa fa-comment pull-right"></i></a>
-								<h4><a href="javascript:void(0);">Juan Jóse Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
-								<img src="img/avatars/male.png" class="hide" alt="">
-								<div>
-									<p class="note">
-										<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> SIOM&nbsp;&nbsp;</a>
-									</p>
-									<div class="url text-success">
-										PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
+									<div class="widget-body-toolbar">
+
+										<div class="row">
+
+											<div class="col-sm-12 col-md-12 " id="advancedFilterTags">
+												<!--  *Fuentes -->
+												<!-- <span class="label label-danger animated fadeInRight filter-tag">Todas las Fuentes&nbsp;<i class="fa fa-fw fa-close"></i></span> -->
+												<!--  /*Fuentes -->
+											</div>
+
+										</div>
+
 									</div>
-									<p class="description">
-										Jun 10, 2006
-										<br>
-										<br>
-										<span class="badge badge-info">3</span> imagenes
-									</p>
-								</div>
+									<div id="resultsContent" class="" style="min-height:300px;">
+										<!-- start Results -->
+										<div class="search-results clearfix">
+											<a><i class="fa fa-share-alt pull-right"></i></a>
+											<a><i class="fa fa-comment pull-right"></i></a>
+											<h4><a href="javascript:void(0);">Juan Jóse Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
+											<img src="img/avatars/male.png" class="hide" alt="">
+											<div>
+												<p class="note">
+													<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> SIOM&nbsp;&nbsp;</a>
+												</p>
+												<div class="url text-success">
+													PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
+												</div>
+												<p class="description">
+													Jun 10, 2006
+													<br>
+													<br>
+													<span class="badge badge-info">3</span> imagenes
+												</p>
+											</div>
 
-							</div>
-							<div class="search-results clearfix">
-								<a><i class="fa fa-share-alt pull-right"></i></a>
-								<a><i class="fa fa-comment pull-right"></i></a>
-								<h4><a href="javascript:void(0);">Juan Jóse Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
-								<img src="img/avatars/male.png" class="hide" alt="">
-								<div>
-									<p class="note">
-										<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> REPUVE&nbsp;&nbsp;</a>
-										<a href="javascript:void(0);"><i class="fa fa-legal txt-color-red"></i> Con Orden de Aprensión&nbsp;&nbsp;</a>
-										<a href="javascript:void(0);"><i class="fa fa-globe"></i> Mexicano&nbsp;&nbsp;</a>
-									</p>
-									<div class="url text-success">
-										PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
-									</div>
-									<p class="description">
-										Oct 1, 2013
-										<br>
-										<br>
-										<span class="badge bg-color-greenLight">22</span> imagenes
-									</p>
-								</div>
+										</div>
+										<div class="search-results clearfix">
+											<a><i class="fa fa-share-alt pull-right"></i></a>
+											<a><i class="fa fa-comment pull-right"></i></a>
+											<h4><a href="javascript:void(0);">Juan Jóse Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
+											<img src="img/avatars/male.png" class="hide" alt="">
+											<div>
+												<p class="note">
+													<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> REPUVE&nbsp;&nbsp;</a>
+													<a href="javascript:void(0);"><i class="fa fa-legal txt-color-red"></i> Con Orden de Aprensión&nbsp;&nbsp;</a>
+													<a href="javascript:void(0);"><i class="fa fa-globe"></i> Mexicano&nbsp;&nbsp;</a>
+												</p>
+												<div class="url text-success">
+													PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
+												</div>
+												<p class="description">
+													Oct 1, 2013
+													<br>
+													<br>
+													<span class="badge bg-color-greenLight">22</span> imagenes
+												</p>
+											</div>
 
-							</div>
-							<div class="search-results clearfix">
-								<a><i class="fa fa-share-alt pull-right"></i></a>
-								<a><i class="fa fa-comment pull-right"></i></a>
-								<h4><a href="javascript:void(0);">José Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
+										</div>
+										<div class="search-results clearfix">
+											<a><i class="fa fa-share-alt pull-right"></i></a>
+											<a><i class="fa fa-comment pull-right"></i></a>
+											<h4><a href="javascript:void(0);">José Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
 
-								<div>
+											<div>
 
-								<!-- <span class="sparkline txt-color-blueLight" data-sparkline-type="line" data-sparkline-width="150px" data-sparkline-height="25px"> 10,3,8,4,3,10,7,8,4,6,4,6,8,3 </span>
+												<!-- <span class="sparkline txt-color-blueLight" data-sparkline-type="line" data-sparkline-width="150px" data-sparkline-height="25px"> 10,3,8,4,3,10,7,8,4,6,4,6,8,3 </span>
 								<span class="display-inline note font-lg semi-bold"><small><i class="fa fa-arrow-circle-up text-success"></i> 143.43</small></span> -->
 
-								<p class="note">
-									<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> Licencias de Conducir&nbsp;&nbsp;</a>
-									<a href="javascript:void(0);"><i class="fa fa-globe"></i> Mexicano&nbsp;&nbsp;</a>
-								</p>
-								<div class="url text-success">
-									PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
+												<p class="note">
+													<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> Licencias de Conducir&nbsp;&nbsp;</a>
+													<a href="javascript:void(0);"><i class="fa fa-globe"></i> Mexicano&nbsp;&nbsp;</a>
+												</p>
+												<div class="url text-success">
+													PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
+												</div>
+												<p class="description">
+													Investigación que participan en estas acciones censaron mil 850 negocios en el perímetro de Eje 2 Norte, Circunvalación, Eje 1 Oriente Vidal Alcocer...
+												</p>
+											</div>
+
+										</div>
+										<!-- end Results -->
+									</div>
+
+									<!-- widget footer -->
+									<div class="widget-footer">
+										<ul class="pagination pagination-sm">
+											<li>
+												<a href="javascript:void(0);"><i class="fa fa-angle-left"></i></a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">1</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">2</a>
+											</li>
+											<li class="active">
+												<a href="javascript:void(0);">3</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">4</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">5</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);"><i class="fa fa-angle-right"></i></a>
+											</li>
+										</ul>
+									</div>
+									<!-- end widget footer -->
 								</div>
-								<p class="description">
-									Investigación que participan en estas acciones censaron mil 850 negocios en el perímetro de Eje 2 Norte, Circunvalación, Eje 1 Oriente Vidal Alcocer...
-								</p>
+								<!-- end widget content -->
+
 							</div>
+							<!-- end widget div -->
 
 						</div>
-						<!-- end Results -->
-					</div>
-
-					<!-- widget footer -->
-					<div class="widget-footer">
-						<ul class="pagination pagination-sm">
-							<li>
-								<a href="javascript:void(0);"><i class="fa fa-angle-left"></i></a>
-							</li>
-							<li>
-								<a href="javascript:void(0);">1</a>
-							</li>
-							<li>
-								<a href="javascript:void(0);">2</a>
-							</li>
-							<li class="active">
-								<a href="javascript:void(0);">3</a>
-							</li>
-							<li>
-								<a href="javascript:void(0);">4</a>
-							</li>
-							<li>
-								<a href="javascript:void(0);">5</a>
-							</li>
-							<li>
-								<a href="javascript:void(0);"><i class="fa fa-angle-right"></i></a>
-							</li>
-						</ul>
-					</div>
-					<!-- end widget footer -->
-				</div>
-				<!-- end widget content -->
-
-			</div>
-			<!-- end widget div -->
-
-		</div>
-		<!-- end widget -->
-		<div class="jarviswidget jarviswidget-color-blue jarviswidget-sortable" id="wid-id-4" data-widget-editbutton="false" data-widget-colorbutton="false" role="widget">
-			<!-- widget options:
+						<!-- end widget -->
+						<div class="jarviswidget jarviswidget-color-blue jarviswidget-sortable" id="wid-id-4" data-widget-editbutton="false" data-widget-colorbutton="false" role="widget">
+							<!-- widget options:
 			usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
 			data-widget-colorbutton="false"
 			data-widget-editbutton="false"
@@ -617,74 +641,98 @@ Use search to find needed section.
 			data-widget-collapsed="true"
 			data-widget-sortable="false"
 		-->
-		<header role="heading"><div class="jarviswidget-ctrls" role="menu">   <a href="javascript:void(0);" class="button-icon jarviswidget-toggle-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Collapse"><i class="fa fa-minus "></i></a> <a href="javascript:void(0);" class="button-icon jarviswidget-fullscreen-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Fullscreen"><i class="fa fa-expand "></i></a> <a href="javascript:void(0);" class="button-icon jarviswidget-delete-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Delete"><i class="fa fa-times"></i></a></div>
-			<span class="widget-icon"> <i class="fa fa-sticky-note-o txt-color-white"></i> </span>
-			<h2> Notas </h2>
-			<!-- <div class="widget-toolbar">
+							<header role="heading">
+								<div class="jarviswidget-ctrls" role="menu"> <a href="javascript:void(0);" class="button-icon jarviswidget-toggle-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Collapse"><i class="fa fa-minus "></i></a> <a href="javascript:void(0);" class="button-icon jarviswidget-fullscreen-btn"
+									rel="tooltip" title="" data-placement="bottom" data-original-title="Fullscreen"><i class="fa fa-expand "></i></a>
+									<a href="javascript:void(0);" class="button-icon jarviswidget-delete-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Delete"><i class="fa fa-times"></i></a>
+								</div>
+								<span class="widget-icon"> <i class="fa fa-sticky-note-o txt-color-white"></i> </span>
+								<h2> Notas </h2>
+								<!-- <div class="widget-toolbar">
 			add: non-hidden - to disable auto hide
 		</div>-->
-		<span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span></header>
-		<!-- widget div-->
-		<div role="content">
-			<!-- widget edit box -->
-			<div class="jarviswidget-editbox">
-				<div>
-					<label>Title:</label>
-					<input type="text">
-				</div>
-			</div>
-			<!-- end widget edit box -->
-			<div class="widget-body no-padding smart-form">
-				<!-- content goes here -->
-				<h5 class="todo-group-title"><i class="fa fa-warning"></i> Notas Criticas (<small class="num-of-tasks">1</small>)</h5>
-				<ul id="sortable1" class="todo ui-sortable">
-					<li>
-						<span class="handle"> <label class="checkbox">
-							<input type="checkbox" name="checkbox-inline">
-							<i></i> </label> </span>
-							<p>
-								<strong>Fuente 6</strong> - José Hernandez Galindo [<a href="javascript:void(0);" class="font-xs">Ver Detalle</a>] <span class="text-muted">Investigación PGJ </span>
-								<span class="date">Jan 1, 2014</span>
-							</p>
-						</li>
-					</ul>
-					<h5 class="todo-group-title"><i class="fa fa-exclamation"></i> Notas Importantes (<small class="num-of-tasks">3</small>)</h5>
-					<ul id="sortable2" class="todo ui-sortable">
-						<li>
-							<span class="handle"> <label class="checkbox">
-								<input type="checkbox" name="checkbox-inline">
-								<i></i> </label> </span>
-								<p>
-									<strong>Fuente 1</strong> - Vehiculo reportado robo <small>(Sonora)</small> [<a href="javascript:void(0);" class="font-xs">Ver Detalle</a>] <span class="date">Nov 02, 2015</span>
-								</p>
-							</li>
-							<li>
-								<span class="handle"> <label class="checkbox">
-									<input type="checkbox" name="checkbox-inline">
-									<i></i> </label> </span>
-									<p>
-										<strong>Fuente 3</strong> - Call customer support re: Issue <a href="javascript:void(0);" class="font-xs">#6134</a><small>(code review)</small>
-										<span class="date">Nov 22, 2013</span>
-									</p>
-								</li>
-								<li>
-									<span class="handle"> <label class="checkbox">
-										<input type="checkbox" name="checkbox-inline">
-										<i></i> </label> </span>
-										<p>
-											<strong>Fuente 1</strong> - Investigación judicial 456 [<a href="javascript:void(0);" class="font-xs">Ver Detalle</a>] <span class="text-muted">Circunvalación, Eje 1 Oriente VidalCircunvalación, Eje 1 Oriente Vidal. </span>
-											<span class="date">Jan 1, 2014</span>
-										</p>
-									</li>
-								</ul>
-								<h5 class="todo-group-title"><i class="fa fa-close"></i> Notas Descartadas (<small class="num-of-tasks">1</small>)</h5>
-								<ul id="sortable3" class="todo">
-									<li class="complete">
-										<span class="handle" style="display:none"> <label class="checkbox state-disabled">
-											<input type="checkbox" name="checkbox-inline" checked="checked" disabled="disabled">
-											<i></i> </label> </span>
+								<span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span>
+							</header>
+							<!-- widget div-->
+							<div role="content">
+								<!-- widget edit box -->
+								<div class="jarviswidget-editbox">
+									<div>
+										<label>Title:</label>
+										<input type="text">
+									</div>
+								</div>
+								<!-- end widget edit box -->
+								<div class="widget-body no-padding smart-form">
+									<!-- content goes here -->
+									<h5 class="todo-group-title"><i class="fa fa-warning"></i> Notas Criticas (
+										<small class="num-of-tasks">1</small>)</h5>
+									<ul id="sortable1" class="todo ui-sortable">
+										<li>
+											<span class="handle">
+												<label class="checkbox">
+													<input type="checkbox" name="checkbox-inline">
+													<i></i> </label>
+											</span>
 											<p>
-												<strong>ID #17643</strong> - Orden aprensión 124 [<a href="javascript:void(0);" class="font-xs">Ver Detalle</a>] <span class="text-muted">Pruebas de invesigación.... </span>
+												<strong>Fuente 6</strong> - José Hernandez Galindo [<a href="javascript:void(0);" class="font-xs">Ver Detalle</a>]
+												<span class="text-muted">Investigación PGJ </span>
+												<span class="date">Jan 1, 2014</span>
+											</p>
+										</li>
+									</ul>
+									<h5 class="todo-group-title"><i class="fa fa-exclamation"></i> Notas Importantes (
+										<small class="num-of-tasks">3</small>)</h5>
+									<ul id="sortable2" class="todo ui-sortable">
+										<li>
+											<span class="handle">
+												<label class="checkbox">
+													<input type="checkbox" name="checkbox-inline">
+													<i></i> </label>
+											</span>
+											<p>
+												<strong>Fuente 1</strong> - Vehiculo reportado robo
+												<small>(Sonora)</small> [<a href="javascript:void(0);" class="font-xs">Ver Detalle</a>]
+												<span class="date">Nov 02, 2015</span>
+											</p>
+										</li>
+										<li>
+											<span class="handle">
+												<label class="checkbox">
+													<input type="checkbox" name="checkbox-inline">
+													<i></i> </label>
+											</span>
+											<p>
+												<strong>Fuente 3</strong> - Call customer support re: Issue <a href="javascript:void(0);" class="font-xs">#6134</a>
+												<small>(code review)</small>
+												<span class="date">Nov 22, 2013</span>
+											</p>
+										</li>
+										<li>
+											<span class="handle">
+												<label class="checkbox">
+													<input type="checkbox" name="checkbox-inline">
+													<i></i> </label>
+											</span>
+											<p>
+												<strong>Fuente 1</strong> - Investigación judicial 456 [<a href="javascript:void(0);" class="font-xs">Ver Detalle</a>]
+												<span class="text-muted">Circunvalación, Eje 1 Oriente VidalCircunvalación, Eje 1 Oriente Vidal. </span>
+												<span class="date">Jan 1, 2014</span>
+											</p>
+										</li>
+									</ul>
+									<h5 class="todo-group-title"><i class="fa fa-close"></i> Notas Descartadas (
+										<small class="num-of-tasks">1</small>)</h5>
+									<ul id="sortable3" class="todo">
+										<li class="complete">
+											<span class="handle" style="display:none">
+												<label class="checkbox state-disabled">
+													<input type="checkbox" name="checkbox-inline" checked="checked" disabled="disabled">
+													<i></i> </label>
+											</span>
+											<p>
+												<strong>ID #17643</strong> - Orden aprensión 124 [<a href="javascript:void(0);" class="font-xs">Ver Detalle</a>]
+												<span class="text-muted">Pruebas de invesigación.... </span>
 												<span class="date">Ene 1, 2015</span>
 											</p>
 										</li>
@@ -729,7 +777,7 @@ Use search to find needed section.
 							<fieldset>
 								<section>
 									<label class="input"> <i class="icon-prepend fa fa-user"></i>
-										<input type="text" name="fname" placeholder="Nombre(s)" >
+										<input type="text" name="fname" placeholder="Nombre(s)">
 									</label>
 								</section>
 								<div class="row">
@@ -771,8 +819,10 @@ Use search to find needed section.
 						</form>
 
 					</div>
-				</div><!-- /.modal-content -->
-			</div><!-- /.modal-dialog -->
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
 		</div>
 		<!-- /.modal -->
 	</div>
@@ -781,20 +831,24 @@ Use search to find needed section.
 	<div class="page-footer">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6">
-				<span class="txt-color-white">CNS <span class="hidden-xs"> - Busquedas 2.0</span> © 2015-2016</span>
+				<span class="txt-color-white">CNS
+					<span class="hidden-xs"> - Busquedas 2.0</span> © 2015-2016</span>
 			</div>
 			<div class="col-xs-6 col-sm-6 text-right hidden-xs">
 				<div class="txt-color-white inline-block">
-					<i class="txt-color-blueLight hidden-mobile">Última actividad <i class="fa fa-clock-o"></i> <strong>hace 2 min &nbsp;</strong> </i>
+					<i class="txt-color-blueLight hidden-mobile">Última actividad <i class="fa fa-clock-o"></i>
+					<strong>hace 2 min &nbsp;</strong>
+					</i>
 					<div class="btn-group dropup">
 						<button class="btn btn-xs dropdown-toggle bg-color-blue txt-color-white" data-toggle="dropdown">
-							<i class="fa fa-sticky-note-o"></i> Notas <span class="caret"></span>
+							<i class="fa fa-sticky-note-o"></i> Notas
+							<span class="caret"></span>
 						</button>
 						<ul class="dropdown-menu pull-right text-left">
 							<li>
 								<div class="padding-5">
 									<p class="txt-color-darken font-sm no-margin">Fuente 1</p>
-									
+
 									<span style="txt-color-darken font-sm no-margin">Contenido de la nota</span>
 								</div>
 							</li>
@@ -810,7 +864,9 @@ Use search to find needed section.
 							<li class="divider"></li>
 							<li>
 								<div class="padding-5">
-									<p class="txt-color-darken font-sm no-margin">Memory Load <span class="text-danger">*critical*</span></p>
+									<p class="txt-color-darken font-sm no-margin">Memory Load
+										<span class="text-danger">*critical*</span>
+									</p>
 									<div class="progress progress-micro no-margin">
 										<div class="progress-bar progress-bar-danger" style="width: 70%;"></div>
 									</div>
@@ -833,268 +889,298 @@ Use search to find needed section.
 	Note: These tiles are completely responsive,
 	you can add as many as you like
 -->
-<div id="shortcut">
-	<ul>
-		<li>
-			<a href="inbox.html" class="jarvismetro-tile big-cubes bg-color-blue"> <span class="iconbox"> <i class="fa fa-envelope fa-4x"></i> <span>Mail <span class="label pull-right bg-color-darken">14</span></span> </span> </a>
-		</li>
-		<li>
-			<a href="calendar.html" class="jarvismetro-tile big-cubes bg-color-orangeDark"> <span class="iconbox"> <i class="fa fa-calendar fa-4x"></i> <span>Calendar</span> </span> </a>
-		</li>
-		<li>
-			<a href="gmap-xml.html" class="jarvismetro-tile big-cubes bg-color-purple"> <span class="iconbox"> <i class="fa fa-map-marker fa-4x"></i> <span>Maps</span> </span> </a>
-		</li>
-		<li>
-			<a href="invoice.html" class="jarvismetro-tile big-cubes bg-color-blueDark"> <span class="iconbox"> <i class="fa fa-book fa-4x"></i> <span>Invoice <span class="label pull-right bg-color-darken">99</span></span> </span> </a>
-		</li>
-		<li>
-			<a href="gallery.html" class="jarvismetro-tile big-cubes bg-color-greenLight"> <span class="iconbox"> <i class="fa fa-picture-o fa-4x"></i> <span>Gallery </span> </span> </a>
-		</li>
-		<li>
-			<a href="profile.html" class="jarvismetro-tile big-cubes selected bg-color-pinkDark"> <span class="iconbox"> <i class="fa fa-user fa-4x"></i> <span>My Profile </span> </span> </a>
-		</li>
-	</ul>
-</div>
-<!-- END SHORTCUT AREA -->
-<!--================================================== -->
-<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
-<script data-pace-options='{ "restartOnRequestAfter": true }' src="js/plugin/pace/pace.min.js"></script>
-<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script>
-	if (!window.jQuery) {
-		document.write('<script src="js/libs/jquery-2.1.1.min.js"><\/script>');
-	}
-</script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-<script>
-	if (!window.jQuery.ui) {
-		document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>');
-	}
-</script>
-<!-- IMPORTANT: APP CONFIG -->
-<script src="js/app.config.js"></script>
-<!-- JS TOUCH : include this plugin for mobile drag / drop touch events-->
-<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script>
-<!-- BOOTSTRAP JS -->
-<script src="js/bootstrap/bootstrap.min.js"></script>
-<!-- CUSTOM NOTIFICATION -->
-<script src="js/notification/SmartNotification.min.js"></script>
-<!-- JARVIS WIDGETS -->
-<script src="js/smartwidgets/jarvis.widget.min.js"></script>
-<!-- EASY PIE CHARTS -->
-<script src="js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
-<!-- SPARKLINES -->
-<script src="js/plugin/sparkline/jquery.sparkline.min.js"></script>
-<!-- JQUERY VALIDATE -->
-<script src="js/plugin/jquery-validate/jquery.validate.min.js"></script>
-<!-- JQUERY MASKED INPUT -->
-<script src="js/plugin/masked-input/jquery.maskedinput.min.js"></script>
-<!-- JQUERY SELECT2 INPUT -->
-<script src="js/plugin/select2/select2.min.js"></script>
-<!-- JQUERY UI + Bootstrap Slider -->
-<script src="js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
-<!-- browser msie issue fix -->
-<script src="js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
-<!-- FastClick: For mobile devices -->
-<script src="js/plugin/fastclick/fastclick.min.js"></script>
-<!--[if IE 8]>
+	<div id="shortcut">
+		<ul>
+			<li>
+				<a href="inbox.html" class="jarvismetro-tile big-cubes bg-color-blue">
+					<span class="iconbox"> <i class="fa fa-envelope fa-4x"></i>
+						<span>Mail
+							<span class="label pull-right bg-color-darken">14</span>
+						</span>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="calendar.html" class="jarvismetro-tile big-cubes bg-color-orangeDark">
+					<span class="iconbox"> <i class="fa fa-calendar fa-4x"></i>
+						<span>Calendar</span>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="gmap-xml.html" class="jarvismetro-tile big-cubes bg-color-purple">
+					<span class="iconbox"> <i class="fa fa-map-marker fa-4x"></i>
+						<span>Maps</span>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="invoice.html" class="jarvismetro-tile big-cubes bg-color-blueDark">
+					<span class="iconbox"> <i class="fa fa-book fa-4x"></i>
+						<span>Invoice
+							<span class="label pull-right bg-color-darken">99</span>
+						</span>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="gallery.html" class="jarvismetro-tile big-cubes bg-color-greenLight">
+					<span class="iconbox"> <i class="fa fa-picture-o fa-4x"></i>
+						<span>Gallery </span>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="profile.html" class="jarvismetro-tile big-cubes selected bg-color-pinkDark">
+					<span class="iconbox"> <i class="fa fa-user fa-4x"></i>
+						<span>My Profile </span>
+					</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- END SHORTCUT AREA -->
+	<!--================================================== -->
+	<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+	<script data-pace-options='{ "restartOnRequestAfter": true }' src="js/plugin/pace/pace.min.js"></script>
+	<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		if (!window.jQuery) {
+			document.write('<script src="js/libs/jquery-2.1.1.min.js"><\/script>');
+		}
+	</script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script>
+		if (!window.jQuery.ui) {
+			document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>');
+		}
+	</script>
+	<!-- IMPORTANT: APP CONFIG -->
+	<script src="js/app.config.js"></script>
+	<!-- JS TOUCH : include this plugin for mobile drag / drop touch events-->
+	<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script>
+	<!-- BOOTSTRAP JS -->
+	<script src="js/bootstrap/bootstrap.min.js"></script>
+	<!-- CUSTOM NOTIFICATION -->
+	<script src="js/notification/SmartNotification.min.js"></script>
+	<!-- JARVIS WIDGETS -->
+	<script src="js/smartwidgets/jarvis.widget.min.js"></script>
+	<!-- EASY PIE CHARTS -->
+	<script src="js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+	<!-- SPARKLINES -->
+	<script src="js/plugin/sparkline/jquery.sparkline.min.js"></script>
+	<!-- JQUERY VALIDATE -->
+	<script src="js/plugin/jquery-validate/jquery.validate.min.js"></script>
+	<!-- JQUERY MASKED INPUT -->
+	<script src="js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+	<!-- JQUERY SELECT2 INPUT -->
+	<script src="js/plugin/select2/select2.min.js"></script>
+	<!-- JQUERY UI + Bootstrap Slider -->
+	<script src="js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
+	<!-- browser msie issue fix -->
+	<script src="js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
+	<!-- FastClick: For mobile devices -->
+	<script src="js/plugin/fastclick/fastclick.min.js"></script>
+	<!--[if IE 8]>
 <h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
 <![endif]-->
-<!-- Demo purpose only -->
-<!-- <script src="js/demo.min.js"></script> -->
-<!-- MAIN APP JS FILE -->
-<script src="js/app.min.js"></script>
-<!-- ENHANCEMENT PLUGINS : NOT A REQUIREMENT -->
-<!-- Voice command : plugin -->
-<script src="js/speech/voicecommand.min.js"></script>
-<!-- SmartChat UI : plugin -->
-<script src="js/smart-chat-ui/smart.chat.ui.min.js"></script>
-<script src="js/smart-chat-ui/smart.chat.manager.min.js"></script>
-<!-- PAGE RELATED PLUGIN(S)
+	<!-- Demo purpose only -->
+	<!-- <script src="js/demo.min.js"></script> -->
+	<!-- MAIN APP JS FILE -->
+	<script src="js/app.min.js"></script>
+	<!-- ENHANCEMENT PLUGINS : NOT A REQUIREMENT -->
+	<!-- Voice command : plugin -->
+	<script src="js/speech/voicecommand.min.js"></script>
+	<!-- SmartChat UI : plugin -->
+	<script src="js/smart-chat-ui/smart.chat.ui.min.js"></script>
+	<script src="js/smart-chat-ui/smart.chat.manager.min.js"></script>
+	<!-- PAGE RELATED PLUGIN(S)
 	<script src="..."></script>-->
 	<script type="text/javascript">
+		// DO NOT REMOVE : GLOBAL FUNCTIONS!
 
-// DO NOT REMOVE : GLOBAL FUNCTIONS!
+		$(document).ready(function() {
 
-$(document).ready(function() {
+			pageSetUp();
 
-	pageSetUp();
+			// PAGE RELATED SCRIPTS
 
-	// PAGE RELATED SCRIPTS
-
-	$('.tree > ul').attr('role', 'tree').find('ul').attr('role', 'group');
-	$('.tree').find('li:has(ul)').addClass('parent_li').attr('role', 'treeitem').find(' > span').attr('title', 'Collapse this branch').on('click', function(e) {
-		var children = $(this).parent('li.parent_li').find(' > ul > li');
-		if (children.is(':visible')) {
-			children.hide('fast');
-			$(this).attr('title', 'Expand this branch').find(' > i').removeClass().addClass('fa fa-lg fa-plus-circle');
-		} else {
-			children.show('fast');
-			$(this).attr('title', 'Collapse this branch').find(' > i').removeClass().addClass('fa fa-lg fa-minus-circle');
-		}
-		e.stopPropagation();
-	});
-	/*
-	* TODO: add a way to add more todo's to list
-	*/
-	// initialize sortable
-	$(function() {
-		$("#sortable1, #sortable2").sortable({
-			handle : '.handle',
-			connectWith : ".todo",
-			update : countTasks
-		}).disableSelection();
-	});
-	// check and uncheck
-	$('.todo .checkbox > input[type="checkbox"]').click(function() {
-		var $this = $(this).parent().parent().parent();
-		if ($(this).prop('checked')) {
-			$this.addClass("complete");
-			// remove this if you want to undo a check list once checked
-			//$(this).attr("disabled", true);
-			$(this).parent().hide();
-			// once clicked - add class, copy to memory then remove and add to sortable3
-			$this.slideUp(500, function() {
-				$this.clone().prependTo("#sortable3").effect("highlight", {}, 800);
-				$this.remove();
-				countTasks();
+			$('.tree > ul').attr('role', 'tree').find('ul').attr('role', 'group');
+			$('.tree').find('li:has(ul)').addClass('parent_li').attr('role', 'treeitem').find(' > span').attr('title', 'Collapse this branch').on('click', function(e) {
+				var children = $(this).parent('li.parent_li').find(' > ul > li');
+				if (children.is(':visible')) {
+					children.hide('fast');
+					$(this).attr('title', 'Expand this branch').find(' > i').removeClass().addClass('fa fa-lg fa-plus-circle');
+				} else {
+					children.show('fast');
+					$(this).attr('title', 'Collapse this branch').find(' > i').removeClass().addClass('fa fa-lg fa-minus-circle');
+				}
+				e.stopPropagation();
 			});
-		} else {
-			// insert undo code here...
-		}
-	})
-	// count tasks
-	function countTasks() {
-		$('.todo-group-title').each(function() {
-			var $this = $(this);
-			$this.find(".num-of-tasks").text($this.next().find("li").size());
-		});
-	}
-	/*
-	* ADD TO FILTER LIST
-	*/
-	//Solo filtros de taxonomias
-	$('#left-panel > nav > ul > li > ul > li  a').click(function() {
-		var element = $(this);
-		var elementValue = element.text();//element.attr('data-value');
-		var labelTemplate = ""
-		var typeStyle = "";
-
-		switch (element.attr('data-type')) {
-			case "1" :
-			typeStyle = "primary"
-			break;
-			case "2" :
-			typeStyle = "success"
-			break;
-			case "3" :
-			typeStyle = "warning"
-			break;
-			default :
-			typeStyle = "danger"
-		};
-
-		if(element.attr('data-type') !== undefined && element.attr('data-type') !== null && elementValue !== undefined && elementValue.length > 0) {
-			labelTemplate = "<span class='label label-"+typeStyle+" animated fadeInRight filter-open-modal' rel='tooltip' title='' data-placement='top' data-original-title='Editar filtro'>"+elementValue+"&nbsp;<i class='fa fa-fw fa-close filter-close-tag' rel='tooltip' title='' data-placement='top' data-original-title='Quitar filtro'></i></span> ";
-
-			$('#advancedFilterTags').append(labelTemplate);
-
-			console.info(elementValue);
-
-			switch (elementValue) {
-				case "Persona":
-				$('#personaModal').modal('show');
-				break;
-				default:
-				console.log('None Modal to match',elementValue);
+			/*
+			 * TODO: add a way to add more todo's to list
+			 */
+			// initialize sortable
+			$(function() {
+				$("#sortable1, #sortable2").sortable({
+					handle: '.handle',
+					connectWith: ".todo",
+					update: countTasks
+				}).disableSelection();
+			});
+			// check and uncheck
+			$('.todo .checkbox > input[type="checkbox"]').click(function() {
+					var $this = $(this).parent().parent().parent();
+					if ($(this).prop('checked')) {
+						$this.addClass("complete");
+						// remove this if you want to undo a check list once checked
+						//$(this).attr("disabled", true);
+						$(this).parent().hide();
+						// once clicked - add class, copy to memory then remove and add to sortable3
+						$this.slideUp(500, function() {
+							$this.clone().prependTo("#sortable3").effect("highlight", {}, 800);
+							$this.remove();
+							countTasks();
+						});
+					} else {
+						// insert undo code here...
+					}
+				})
+				// count tasks
+			function countTasks() {
+				$('.todo-group-title').each(function() {
+					var $this = $(this);
+					$this.find(".num-of-tasks").text($this.next().find("li").size());
+				});
 			}
-		} else {
-			return console.info('NULL or UNDEFINED menu element [data-value] attribute');
-		}
+			/*
+			 * ADD TO FILTER LIST
+			 */
+			//Solo filtros de taxonomias
+			$('#left-panel > nav > ul > li > ul > li  a').click(function() {
+				var element = $(this);
+				var elementValue = element.text(); //element.attr('data-value');
+				var labelTemplate = ""
+				var typeStyle = "";
 
-		// Filter-Tag actions
-		$('.filter-close-tag').click(function(e){
-			e.preventDefault();
-			console.log(this);
-			var element = $(this).parent();
-			element.removeClass('fadeInRight').delay(300).addClass('fadeOut').delay(300).remove();
-		});
-		// Filter-Tag actions
-		/*$('.filter-open-modal').click(function(e){
-			e.preventDefault();
-			console.log('.filter-open-modal',this);
-			$('#personaModal').modal('show');
-		});*/
+				switch (element.attr('data-type')) {
+					case "1":
+						typeStyle = "primary"
+						break;
+					case "2":
+						typeStyle = "success"
+						break;
+					case "3":
+						typeStyle = "warning"
+						break;
+					default:
+						typeStyle = "danger"
+				};
 
-});
+				if (element.attr('data-type') !== undefined && element.attr('data-type') !== null && elementValue !== undefined && elementValue.length > 0) {
+					labelTemplate = "<span class='label label-" + typeStyle + " animated fadeInRight filter-open-modal' rel='tooltip' title='' data-placement='top' data-original-title='Editar filtro'>" + elementValue +
+						"&nbsp;<i class='fa fa-fw fa-close filter-close-tag' rel='tooltip' title='' data-placement='top' data-original-title='Quitar filtro'></i></span> ";
 
-$('#resultsContent > .search-results').hide();
+					$('#advancedFilterTags').append(labelTemplate);
 
-$('.callResultsContent').click(function(e){
-	console.log('callResultsContent',e);
-	$('#resultsContent > .search-results').show();
-	$('#personaModal').modal('hide');
-});
+					console.info(elementValue);
 
-$('#fpersona_nombre').change(function(e){
-	console.info('fpersona_nombre',e);
+					switch (elementValue) {
+						case "Persona":
+							$('#personaModal').modal('show');
+							break;
+						default:
+							console.log('None Modal to match', elementValue);
+					}
+				} else {
+					return console.info('NULL or UNDEFINED menu element [data-value] attribute');
+				}
 
-	var el = $('.personas-filter');
-	if(this.value.length > 0 && el.hasClass('hide')){
-		el.removeClass('hide');
-		addToFilterList('success','Persona');
-	}else{
-		el.addClass('hide');
-		$('.filter-id-persona').removeClass('fadeInRight').delay(300).addClass('fadeOut').delay(300).remove();
-	}
-});
+				// Filter-Tag actions
+				$('.filter-close-tag').click(function(e) {
+					e.preventDefault();
+					console.log(this);
+					var element = $(this).parent();
+					element.removeClass('fadeInRight').delay(300).addClass('fadeOut').delay(300).remove();
+				});
+				// Filter-Tag actions
+				/*$('.filter-open-modal').click(function(e){
+					e.preventDefault();
+					console.log('.filter-open-modal',this);
+					$('#personaModal').modal('show');
+				});*/
 
-$('#fubicacion_calle').change(function(e){
-	console.info('fubicacion_calle',e);
+			});
 
-	var el = $('.ubicacion-filter');
-	if(this.value.length > 0 && el.hasClass('hide')){
-		el.removeClass('hide');
-		addToFilterList('success','Ubicacion');
-	}else{
-		el.addClass('hide');
-		$('.filter-id-ubicacion').removeClass('fadeInRight').delay(300).addClass('fadeOut').delay(300).remove();
-	}
-});
+			$('#resultsContent > .search-results').hide();
 
-var addToFilterList = function(typeStyle,elementValue){
+			$('.callResultsContent').click(function(e) {
+				console.log('callResultsContent', e);
+				$('#resultsContent > .search-results').show();
+				$('#personaModal').modal('hide');
+			});
 
-	var labelTemplate = "<span class='label label-"+typeStyle+" animated fadeInRight filter-open-modal filter-id-"+(elementValue).toLowerCase()+"' rel='tooltip' title='' data-placement='top' data-original-title='Editar filtro'>"+elementValue+"&nbsp;<i class='fa fa-fw fa-close filter-close-tag' rel='tooltip' title='' data-placement='top' data-original-title='Quitar filtro'></i></span> ";
+			$('#fpersona_nombre').change(function(e) {
+				console.info('fpersona_nombre', e);
 
-	$('#advancedFilterTags').append(labelTemplate);
+				var el = $('.personas-filter');
+				if (this.value.length > 0 && el.hasClass('hide')) {
+					el.removeClass('hide');
+					addToFilterList('success', 'Persona');
+				} else {
+					el.addClass('hide');
+					$('.filter-id-persona').removeClass('fadeInRight').delay(300).addClass('fadeOut').delay(300).remove();
+				}
+			});
 
-		// Filter-Tag actions
-		$('.filter-close-tag').click(function(e){
-			e.preventDefault();
-			console.log(this);
-			var element = $(this).parent();
-			element.removeClass('fadeInRight').delay(300).addClass('fadeOut').delay(300).remove();
-		});
+			$('#fubicacion_calle').change(function(e) {
+				console.info('fubicacion_calle', e);
 
-	};
+				var el = $('.ubicacion-filter');
+				if (this.value.length > 0 && el.hasClass('hide')) {
+					el.removeClass('hide');
+					addToFilterList('success', 'Ubicacion');
+				} else {
+					el.addClass('hide');
+					$('.filter-id-ubicacion').removeClass('fadeInRight').delay(300).addClass('fadeOut').delay(300).remove();
+				}
+			});
 
-})
-</script>
-<!-- Your GOOGLE ANALYTICS CODE Below -->
-<script type="text/javascript">
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
-	_gaq.push(['_trackPageview']);
+			var addToFilterList = function(typeStyle, elementValue) {
 
-	(function() {
-		var ga = document.createElement('script');
-		ga.type = 'text/javascript';
-		ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0];
-		s.parentNode.insertBefore(ga, s);
-	})();
-</script>
+				var labelTemplate = "<span class='label label-" + typeStyle + " animated fadeInRight filter-open-modal filter-id-" + (elementValue).toLowerCase() + "' rel='tooltip' title='' data-placement='top' data-original-title='Editar filtro'>" +
+					elementValue + "&nbsp;<i class='fa fa-fw fa-close filter-close-tag' rel='tooltip' title='' data-placement='top' data-original-title='Quitar filtro'></i></span> ";
+
+				$('#advancedFilterTags').append(labelTemplate);
+
+				// Filter-Tag actions
+				$('.filter-close-tag').click(function(e) {
+					e.preventDefault();
+					console.log(this);
+					var element = $(this).parent();
+					element.removeClass('fadeInRight').delay(300).addClass('fadeOut').delay(300).remove();
+				});
+
+			};
+
+		})
+	</script>
+	<!-- Your GOOGLE ANALYTICS CODE Below -->
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
 </body>
+
 </html>
