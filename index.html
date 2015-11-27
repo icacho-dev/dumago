@@ -431,16 +431,6 @@ Use search to find needed section.
 													</li>
 
 													<li class="">
-														<a data-toggle="tab" href="#hr2" aria-expanded="false">
-															<i class="fa fa-lg fa-map-marker"></i>
-															<span class="hidden-mobile hidden-tablet"> Ubicación </span>
-															<span class="badge bg-color-greenLight txt-color-white hide ubicacion-filter">
-																<i class="fa fa-filter"></i>
-															</span>
-														</a>
-													</li>
-
-													<li class="">
 														<a data-toggle="tab" href="#hr3" aria-expanded="false">
 															<i class="fa fa-lg fa-car"></i>
 															<span class="hidden-mobile hidden-tablet"> Vehiculo </span>
@@ -453,12 +443,22 @@ Use search to find needed section.
 															<span class="hidden-mobile hidden-tablet"> Arma </span>
 														</a>
 													</li>
+
+													<li class="">
+														<a data-toggle="tab" href="#hr2" aria-expanded="false">
+															<i class="fa fa-lg fa-map-marker"></i>
+															<span class="hidden-mobile hidden-tablet"> Ubicación </span>
+															<span class="badge bg-color-greenLight txt-color-white hide ubicacion-filter">
+																<i class="fa fa-filter"></i>
+															</span>
+														</a>
+													</li>
 												</ul>
 												<div class="tab-content">
 													<div class="tab-pane active" id="hr1">
 														<!--  Start Form1 -->
 														<form id="login-form-2" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F6">
-															<fieldset>
+															<fieldset class="padding-top-0">
 																<div class="row">
 																	<section class="col col-4">
 																		<label class="input"> <i class="icon-prepend fa fa-user"></i>
@@ -501,10 +501,31 @@ Use search to find needed section.
 																		</label>
 																	</section>
 																	<section class="col col-4">
-
+																		<label class="input">
+																			<i class="icon-prepend fa fa-tag"></i>
+																			<input type="text" name="falias" placeholder="Alias">
+																		</label>
 																	</section>
 																	<section class="col col-4">
-
+																		<label class="input">
+																			<i class="icon-prepend fa fa-credit-card"></i>
+																			<input type="text" name="fnopasaporte" placeholder="Número de Pasaporte">
+																		</label>
+																	</section>
+																</div>
+																<div class="row">
+																	<section class="col col-4">
+																		<label class="input">
+																			<i class="icon-prepend fa fa-car"></i>
+																			<input type="text" name="fplicencia" placeholder="Número de Licencia">
+																		</label>
+																	</section>
+																	<section class="col col-4">
+																		<label class="input"> <i class="icon-prepend fa fa-calendar"></i>
+																			<input type="text" name="pfechanacimiento" id="pfechanacimiento" placeholder="Fecha de Nacimiento">
+																		</label>
+																	</section>
+																	<section class="col col-4">
 
 																	</section>
 																</div>
@@ -515,42 +536,58 @@ Use search to find needed section.
 													<div class="tab-pane" id="hr2">
 														<!--  Start Form2 -->
 														<form id="login-form-2" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F6">
-															<fieldset>
+															<fieldset class="padding-top-0">
 																<div class="row">
-																	<section class="col col-4">
-																		<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
-																			<input type="text" id="fubicacion_calle" name="fname" placeholder="Calle">
+																	<section class="col col-6">
+																		<label class="input"> <i class="icon-prepend fa fa-map"></i>
+																			<input type="text" name="fubicacion_pais" placeholder="País">
 																		</label>
 																	</section>
-																	<section class="col col-4">
-																		<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
-																			<input type="text" name="fname" placeholder="Colonia">
+																	<section class="col col-6">
+																		<label class="input"> <i class="icon-prepend fa fa-map"></i>
+																			<input type="text" name="fubicacion_edo" placeholder="Estado">
 																		</label>
 																	</section>
-																	<section class="col col-4">
-																		<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
-																			<input type="text" name="fname" placeholder="CP">
-																		</label>
-																	</section>
+
 																</div>
-															</fieldset>
-															<fieldset>
 																<div class="row">
-																	<section class="col col-4">
+																	<section class="col col-6">
 																		<label class="input"> <i class="icon-prepend fa fa-map"></i>
-																			<input type="text" name="frfc" placeholder="Localidad">
+																			<input type="text" name="fubicacion_mpo" placeholder="Municipio">
 																		</label>
 																	</section>
-																	<section class="col col-4">
-																		<label class="input"> <i class="icon-prepend fa fa-map"></i>
-																			<input type="text" name="fcurp" placeholder="Municipio">
+																	<section class="col col-6">
+																		<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
+																			<input type="text" name="fubicacion_entidad" placeholder="Entidad">
 																		</label>
 																	</section>
-																	<section class="col col-4">
-																		<label class="input"> <i class="icon-prepend fa fa-map"></i>
-																			<input type="text" name="fcuip" placeholder="Estado">
+
+																</div>
+																<div class="row">
+																	<section class="col col-6">
+																		<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
+																			<input type="text" id="fubicacion_calle" name="fubicacion_calle" placeholder="Calle">
 																		</label>
 																	</section>
+																	<section class="col col-6">
+																		<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
+																			<input type="text" name="fubicacion_colonia" placeholder="Colonia">
+																		</label>
+																	</section>
+
+																</div>
+																<div class="row">
+																	<section class="col col-6">
+																		<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
+																			<input type="text" name="fubicacion_cuidad" placeholder="Ciudad">
+																		</label>
+																	</section>
+																	<section class="col col-6">
+																		<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																			<input type="text" name="fubicacion_cp" placeholder="CP">
+																		</label>
+																	</section>
+
 																</div>
 															</fieldset>
 														</form>
@@ -559,49 +596,78 @@ Use search to find needed section.
 													<div class="tab-pane" id="hr3">
 														<!-- Start Form3 -->
 														<form id="login-form-3" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F7">
-															<fieldset>
+															<fieldset class="padding-top-0">
 																<div class="row">
-																	<section class="col col-4">
+																	<section class="col col-6">
 																		<label class="input"> <i class="icon-prepend fa fa-car"></i>
 																			<input type="text" name="fname" placeholder="Marca">
 																		</label>
 																	</section>
-																	<section class="col col-4">
+																	<section class="col col-6">
+																		<label class="input"> <i class="icon-prepend fa fa-barcode"></i>
+																			<input type="text" name="frfc" placeholder="Placa">
+																		</label>
+																	</section>
+																	<section class="col col-6">
 																		<label class="input"> <i class="icon-prepend fa fa-tag"></i>
 																			<input type="text" name="fname" placeholder="Modelo">
 																		</label>
 																	</section>
-																	<section class="col col-4">
+																	<section class="col col-6">
 																		<label class="input"> <i class="icon-prepend fa fa-calendar-o"></i>
 																			<input type="text" name="fname" placeholder="Serie">
 																		</label>
 																	</section>
 																</div>
-															</fieldset>
-															<fieldset>
 																<div class="row">
-																	<section class="col col-3">
-																		<label class="input"> <i class="icon-prepend fa fa-barcode"></i>
-																			<input type="text" name="frfc" placeholder="Placa">
-																		</label>
-																	</section>
-																	<section class="col col-3">
+																	<section class="col col-6">
 																		<label class="input"> <i class="icon-prepend fa fa-tag"></i>
 																			<input type="text" name="fcurp" placeholder="No. de Motor">
 																		</label>
 																	</section>
-																	<section class="col col-3">
-																		<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																			<input type="text" name="fcuip" placeholder="VIN">
-																		</label>
-																	</section>
-																	<section class="col col-3">
+																	<section class="col col-6">
 																		<label class="input"> <i class="icon-prepend fa fa-tag"></i>
 																			<input type="text" name="fcuip" placeholder="Color">
 																		</label>
 																	</section>
 																</div>
+																<div class="row">
+																	<section class="col col-6">
+																		<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																			<input type="text" name="fcuip" placeholder="Submarca">
+																		</label>
+																	</section>
+																	<section class="col col-6">
+																		<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																			<input type="text" name="fcuip" placeholder="Infracciones">
+																		</label>
+																	</section>
+																</div>
+																<div class="row">
+																	<section class="col col-4">
+																		<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																			<input type="text" name="fcuip" placeholder="VIN">
+																		</label>
+																	</section>
+																	<section class="col col-4">
+																		<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																			<input type="text" name="fcuip" placeholder="Modelo">
+																		</label>
+																	</section>
+																	<section class="col col-4">
+																		<label class="input"> <i class="icon-prepend fa fa-tag"></i>
+																			<input type="text" name="fcuip" placeholder="REPUVE">
+																		</label>
+																	</section>
+																</div>
+																<div class="row">
+
+
+
+
+																</div>
 															</fieldset>
+
 														</form>
 														<!-- End Form3 -->
 													</div>
@@ -653,51 +719,102 @@ Use search to find needed section.
 											</div>
 
 										</div>
-										<div class="col col-xs-12 col-sm-12 col-md-5 padding-bottom-10">
-											<div class="well well-sm no-padding">
-												<form novalidate="novalidate" id="smart-form-register" class="smart-form custom-scroll" style="overflow-x: hidden; overflow-y: scroll; height: 197px;">
-													<fieldset>
+										<div class="col col-xs-12 col-sm-12 col-md-5">
+<!-- ini0 -->
+<div class="jarviswidget jarviswidget-color-white jarviswidget-sortable margin-bottom-10" id="wid-id-2" data-widget-editbutton="false" data-widget-colorbutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" role="widget">
+								<!-- widget options:
+									usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
 
-														<section>
-															<label class="checkbox">
-																<input name="terms_1" id="terms_1" type="checkbox"> <i></i>
-																<strong>Todas las fuentes
-																	<span class="txt-color-red font-lg pull-right">2,021</span>
-																</strong>
-															</label>
-															<label class="checkbox">
-																<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Informe Policial Homologado
-																<span class="txt-color-blueMiranda pull-right">0</span>
-															</label>
-															<label class="checkbox">
-																<input name="terms_6" id="terms_6" type="checkbox" checked="true"> <i></i> Licencias de Conducir
-																<span class="txt-color-blueMiranda pull-right">451</span>
-															</label>
-															<label class="checkbox">
-																<input name="terms_3" id="terms_3" type="checkbox" checked="true"> <i></i> Registro Público Vehicular
-																<span class="txt-color-blueMiranda pull-right">1,570</span>
-															</label>
-															<label class="checkbox">
-																<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Registro Nacional de Personal de Seguridad
-																<span class="txt-color-blueMiranda pull-right">0</span>
-															</label>
-															<label class="checkbox">
-																<input name="terms_7" id="terms_7" type="checkbox"> <i></i> Registro de Iniciados, Procesados y Sentenciados
-																<span class="txt-color-blueMiranda pull-right">0</span>
-															</label>
-															<label class="checkbox">
-																<input name="terms_8" id="terms_8" type="checkbox"> <i></i> Vehiculos Robodas y Recuperados
-																<span class="txt-color-blueMiranda pull-right">0</span>
-															</label>
-															<label class="checkbox">
-																<input name="terms_9" id="terms_9" type="checkbox"> <i></i> Registro Nacional de Mandamientos Judiciales
-																<span class="txt-color-blueMiranda pull-right">0</span>
-															</label>
-														</section>
-													</fieldset>
-												</form>
+									data-widget-colorbutton="false"
+									data-widget-editbutton="false"
+									data-widget-togglebutton="false"
+									data-widget-deletebutton="false"
+									data-widget-fullscreenbutton="false"
+									data-widget-custombutton="false"
+									data-widget-collapsed="true"
+									data-widget-sortable="false"
 
-											</div>
+								-->
+								<header role="heading">
+									<div class="jarviswidget-ctrls" role="menu">
+										<!-- <a href="javascript:void(0);" class="button-icon jarviswidget-toggle-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Collapse">
+											<i class="fa fa-minus "></i>
+										</a> -->
+									</div>
+									<span class="widget-icon">
+										<i class="fa fa-filter"></i>
+									</span>
+									<h2 class="font-sm">
+										Fuentes
+									</h2>
+									<span class="jarviswidget-loader">
+										<i class="fa fa-refresh fa-spin"></i>
+									</span>
+								</header>
+
+								<!-- widget div-->
+								<div role="content">
+
+									<!-- widget edit box -->
+									<div class="jarviswidget-editbox">
+										<!-- This area used as dropdown edit box -->
+
+									</div>
+									<!-- end widget edit box -->
+
+									<!-- widget content -->
+									<div class="widget-body no-padding">
+
+										<form novalidate="novalidate" id="smart-form-register" class="smart-form custom-scroll" style="overflow-x: hidden; overflow-y: scroll; height: 154px;">
+											<fieldset class="no-padding">
+												<section class="padding-10">
+													<label class="checkbox">
+														<input name="terms_1" id="terms_1" type="checkbox"> <i></i>
+														<strong>Todas las fuentes
+															<span class="txt-color-red font-lg pull-right">2,021</span>
+														</strong>
+													</label>
+													<label class="checkbox">
+														<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Informe Policial Homologado
+														<span class="txt-color-blueMiranda pull-right">0</span>
+													</label>
+													<label class="checkbox">
+														<input name="terms_6" id="terms_6" type="checkbox" checked="true"> <i></i> Licencias de Conducir
+														<span class="txt-color-blueMiranda pull-right">451</span>
+													</label>
+													<label class="checkbox">
+														<input name="terms_3" id="terms_3" type="checkbox" checked="true"> <i></i> Registro Público Vehicular
+														<span class="txt-color-blueMiranda pull-right">1,570</span>
+													</label>
+													<label class="checkbox">
+														<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Registro Nacional de Personal de Seguridad
+														<span class="txt-color-blueMiranda pull-right">0</span>
+													</label>
+													<label class="checkbox">
+														<input name="terms_7" id="terms_7" type="checkbox"> <i></i> Registro de Iniciados, Procesados y Sentenciados
+														<span class="txt-color-blueMiranda pull-right">0</span>
+													</label>
+													<label class="checkbox">
+														<input name="terms_8" id="terms_8" type="checkbox"> <i></i> Vehiculos Robodas y Recuperados
+														<span class="txt-color-blueMiranda pull-right">0</span>
+													</label>
+													<label class="checkbox">
+														<input name="terms_9" id="terms_9" type="checkbox"> <i></i> Registro Nacional de Mandamientos Judiciales
+														<span class="txt-color-blueMiranda pull-right">0</span>
+													</label>
+												</section>
+											</fieldset>
+										</form>
+
+									</div>
+									<!-- end widget content -->
+
+								</div>
+								<!-- end widget div -->
+
+							</div>
+<!-- /ini0 -->
+
 										</div>
 
 									</div>
@@ -742,12 +859,12 @@ Use search to find needed section.
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<h4 class="panel-title">
-										<a data-toggle="collapse" href="#collapseOne" aria-expanded="false" class="collapsed"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i>
+										<a data-toggle="collapse" href="#collapseOne" aria-expanded="true" class=""> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i>
 											<strong>Persona</strong>
 										</a>
 									</h4>
 								</div>
-								<div id="collapseOne" class="panel-collapse collapse " aria-expanded="false" style="height: 0px;">
+								<div id="collapseOne" class="panel-collapse collapse in" aria-expanded="true" >
 									<div class="panel-body no-padding custom-scroll" style="max-height: 800px; display: block; overflow-x: hidden; overflow-y: scroll;">
 										<form novalidate="novalidate" id="smart-form-register" class="smart-form">
 											<fieldset>
@@ -895,6 +1012,158 @@ Use search to find needed section.
 							</div>
 						</div>
 
+
+
+						<div class="panel-group smart-accordion-default" id="accordion">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" href="#collapse3_1" aria-expanded="false" class="collapsed"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i>
+											<strong>Ubicación</strong>
+										</a>
+									</h4>
+								</div>
+								<div id="collapse3_1" class="panel-collapse collapse " aria-expanded="false" style="height: 0px;">
+									<div class="panel-body no-padding custom-scroll" style="max-height: 800px; display: block; overflow-x: hidden; overflow-y: scroll;">
+										<form novalidate="novalidate" id="smart-form-register" class="smart-form">
+											<fieldset>
+												<section>
+													<label class="input">
+														<input type="search" name="search" placeholder="Busca por Ubicación...">
+													</label>
+												</section>
+
+												<section class="cns-checkbox-list">
+													<span class="label padding-5 cns-title1">Pais</span>
+
+													<label class="checkbox">
+														<input name="terms_2" id="terms_2" type="checkbox"> <i></i> México
+														<span class="text-muted pull-right">(510)</span>
+													</label>
+													<label class="checkbox">
+														<input name="terms_3" id="terms_3" type="checkbox"> <i></i> Estados Unidos de America
+														<span class="text-muted pull-right">(50)</span>
+													</label>
+													<label class="checkbox">
+														<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Colombia
+														<span class="text-muted pull-right">(24)</span>
+													</label>
+													<label class="checkbox">
+														<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Canada
+														<span class="text-muted pull-right">(24)</span>
+													</label>
+													<label class="checkbox">
+														<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Francia
+														<span class="text-muted pull-right">(24)</span>
+													</label>
+													<label for="" class="label txt-color-grayText" id="personaAllBtn"><i class="fa fa-fw fa-plus"></i>Todos los Paises</label>
+													<div id="personaAll" class="allContainer" style="display:none;">
+														<label class="checkbox">
+															<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+															<span class="text-muted pull-right">(24)</span>
+														</label>
+														<label class="checkbox">
+															<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+															<span class="text-muted pull-right">(24)</span>
+														</label><label class="checkbox">
+															<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+															<span class="text-muted pull-right">(24)</span>
+														</label><label class="checkbox">
+															<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+															<span class="text-muted pull-right">(24)</span>
+														</label><label class="checkbox">
+															<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+															<span class="text-muted pull-right">(24)</span>
+														</label><label class="checkbox">
+															<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+															<span class="text-muted pull-right">(24)</span>
+														</label><label class="checkbox">
+															<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+															<span class="text-muted pull-right">(24)</span>
+														</label><label class="checkbox">
+															<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+															<span class="text-muted pull-right">(24)</span>
+														</label><label class="checkbox">
+															<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+															<span class="text-muted pull-right">(24)</span>
+														</label><label class="checkbox">
+															<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+															<span class="text-muted pull-right">(24)</span>
+														</label><label class="checkbox">
+															<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+															<span class="text-muted pull-right">(24)</span>
+														</label><label class="checkbox">
+															<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+															<span class="text-muted pull-right">(24)</span>
+														</label><label class="checkbox">
+															<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+															<span class="text-muted pull-right">(24)</span>
+														</label>
+													</div>
+												</section>
+
+												<section>
+													<span class="label padding-5 cns-title1">Estado</span>
+
+													<label class="checkbox">
+														<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Distrito Federal
+														<span class="text-muted pull-right">(55)</span>
+													</label>
+													<label class="checkbox">
+														<input name="terms_3" id="terms_3" type="checkbox"> <i></i> Salva Tierra
+														<span class="text-muted pull-right">(14)</span>
+													</label>
+													<label class="checkbox">
+														<input name="terms_3" id="terms_3" type="checkbox"> <i></i> Querétaro
+														<span class="text-muted pull-right">(14)</span>
+													</label>
+													<label class="checkbox">
+														<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Nuevo León
+														<span class="text-muted pull-right">(1,515)</span>
+													</label>
+													<label class="checkbox">
+														<input name="terms_3" id="terms_3" type="checkbox"> <i></i> Panama
+														<span class="text-muted pull-right">(14)</span>
+													</label>
+													<label for="" class="label txt-color-grayText" id="appaAllBtn"><i class="fa fa-fw fa-plus"></i>Todos los Estados</label>
+
+												</section>
+
+												<section>
+													<span class="label padding-5 cns-title1">Municipio</span>
+
+													<label class="checkbox">
+														<input name="terms_3" id="terms_3" type="checkbox"> <i></i> Mpo 1-x
+														<span class="text-muted pull-right">(15)</span>
+													</label>
+													<label class="checkbox">
+														<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Mpo 1-x
+														<span class="text-muted pull-right">(12)</span>
+													</label>
+													<label class="checkbox">
+														<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Mpo 1-x
+														<span class="text-muted pull-right">(81)</span>
+													</label>
+													<label class="checkbox">
+														<input name="terms_3" id="terms_3" type="checkbox"> <i></i> Mpo 1-x
+														<span class="text-muted pull-right">(5)</span>
+													</label>
+													<label class="checkbox">
+														<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Mpo 1-x
+														<span class="text-muted pull-right">(3)</span>
+													</label>
+													<label for="" class="label txt-color-grayText" id="apmaAllBtn"><i class="fa fa-fw fa-plus"></i>Todos los Municipios</label>
+
+												</section>
+
+											</fieldset>
+
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+
 						<div class="panel-group smart-accordion-default" id="accordion2">
 							<div class="panel panel-default">
 								<div class="panel-heading">
@@ -905,37 +1174,148 @@ Use search to find needed section.
 									</h4>
 								</div>
 								<div id="collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-									<div class="panel-body no-padding custom-scroll" style="max-height: 400px; display: block; overflow-x: hidden; overflow-y: scroll;">
+									<div class="panel-body no-padding">
 										<form novalidate="novalidate" id="smart-form-register" class="smart-form">
 											<!-- <header>
 												<h2 class="txt-color-red">Filtrado por:</h2>
 											</header> -->
 											<fieldset>
-
 												<section>
-
-													<label class="checkbox">
-														<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Hernandez
-														<span class="txt-color-blueMiranda pull-right"></span>
+													<label class="input">
+														<input type="search" name="search" placeholder="Busca por Media Filiación...">
 													</label>
-													<label class="checkbox">
-														<input name="terms_3" id="terms_3" type="checkbox"> <i></i> Henandes
-														<span class="txt-color-blueMiranda pull-right"></span>
-													</label>
-													<label class="checkbox">
-														<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Hernan
-														<span class="txt-color-blueMiranda pull-right"></span>
-													</label>
-
 												</section>
+
 											</fieldset>
 
 										</form>
+										<!-- children -->
+										<div class="panel-group smart-accordion-default" id="accordion2_1">
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" href="#collapse2_1" aria-expanded="false" class="collapsed"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i>
+															<strong>Complexión</strong>
+														</a>
+													</h4>
+												</div>
+												<div id="collapse2_1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+													<div class="panel-body no-padding">
+														<form novalidate="novalidate" id="smart-form-register" class="smart-form">
+															<!-- <header>
+																<h2 class="txt-color-red">Filtrado por:</h2>
+															</header> -->
+															<fieldset>
+																<section>
+																	<label class="checkbox">
+																		<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Delgada
+																		<span class="text-muted pull-right">(81)</span>
+																	</label>
+																	<label class="checkbox">
+																		<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Gruesa
+																		<span class="text-muted pull-right">(7)</span>
+																	</label>
+																</section>
+
+															</fieldset>
+
+														</form>
+														<!-- children -->
+
+														<!--/children -->
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel-group smart-accordion-default" id="accordion2_2">
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" href="#collapse2_2" aria-expanded="false" class="collapsed"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i>
+															<strong>Color de Piel</strong>
+														</a>
+													</h4>
+												</div>
+												<div id="collapse2_2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+													<div class="panel-body no-padding">
+														<form novalidate="novalidate" id="smart-form-register" class="smart-form">
+															<!-- <header>
+																<h2 class="txt-color-red">Filtrado por:</h2>
+															</header> -->
+															<fieldset>
+																<section>
+																	<label class="checkbox">
+																		<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Blanca
+																		<span class="text-muted pull-right">(72)</span>
+																	</label>
+																	<label class="checkbox">
+																		<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Morena
+																		<span class="text-muted pull-right">(56)</span>
+																	</label>
+																	<label class="checkbox">
+																		<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Obscura
+																		<span class="text-muted pull-right">(3)</span>
+																	</label>
+																</section>
+
+															</fieldset>
+
+														</form>
+														<!-- children -->
+
+														<!--/children -->
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel-group smart-accordion-default" id="accordion2_3">
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" href="#collapse2_3" aria-expanded="false" class="collapsed"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i>
+															<strong>Cara</strong>
+														</a>
+													</h4>
+												</div>
+												<div id="collapse2_3" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+													<div class="panel-body no-padding">
+														<form novalidate="novalidate" id="smart-form-register" class="smart-form">
+															<!-- <header>
+																<h2 class="txt-color-red">Filtrado por:</h2>
+															</header> -->
+															<fieldset>
+																<section>
+																	<label class="checkbox">
+																		<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Tipo-1-1
+																		<span class="text-muted pull-right">(5)</span>
+																	</label>
+																	<label class="checkbox">
+																		<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Tipo-1-2
+																		<span class="text-muted pull-right">(7)</span>
+																	</label>
+																	<label class="checkbox">
+																		<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Tipo-1-3
+																		<span class="text-muted pull-right">(33)</span>
+																	</label>
+																</section>
+
+															</fieldset>
+
+														</form>
+														<!-- children -->
+
+														<!--/children -->
+													</div>
+												</div>
+											</div>
+										</div>
+										<!--/children -->
 									</div>
 								</div>
 							</div>
 						</div>
-
 						<!--  end taxonomias -->
 					</div>
 					<div class="col col-xs-12 col-sm-8 col-md-9">
@@ -1997,26 +2377,26 @@ Use search to find needed section.
 				console.log('.#personaAllBtn', this);
 				if ($('#personaAll').is(":visible")) {
 					$(this).find('i').removeClass('fa-minus');
-					$('#personaAll').hide('fast');
+					$('#personaAll').hide('slow');
 					$(this).find('i').addClass('fa-plus');
 				} else {
 					$(this).find('i').removeClass('fa-plus');
-					$('#personaAll').show('fast');
+					$('#personaAll').show('slow');
 					$(this).find('i').addClass('fa-minus');
 				}
 
 			});
 
-			// $('.cns-checkbox-list > label').click(function(e){
-			// 	e.preventDefault();
-			// 	console.log('.cns-checkbox-list > labe',this);
-			// 	/*
-			// 		$(this).find('i').removeClass('fa-minus');
-			// 		$('#personaAll').hide('fast');
-			// 		$(this).find('i').addClass('fa-plus');
-			// 	*/
-			//
-			// });
+			// start datepicker01
+			$('#pfechanacimiento').datepicker({
+				dateFormat : 'dd/mm/yy',
+				prevText : '<i class="fa fa-chevron-left"></i>',
+				nextText : '<i class="fa fa-chevron-right"></i>',
+				onSelect : function(selectedDate) {
+					// $('#startdate').datepicker('option', 'maxDate', selectedDate);
+				}
+			});
+			// end datepicker01
 
 
 		})

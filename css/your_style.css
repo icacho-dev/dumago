@@ -213,6 +213,8 @@
 
 .tabs-left .nav-tabs > li.active > a {
   top: -2px !important;
+  box-shadow: -2px 0 0 #929292;
+  background-color: #E4E4E4;
 }
 .jarviswidget-color-blueLight>header {
   border-color: #a0aeb3!important;
