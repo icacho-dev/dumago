@@ -92,26 +92,28 @@ Use search to find needed section.
 * 'container'         - boxed layout mode (non-responsive: will not work with fixed-navigation & fixed-ribbon)
 -->
 
-<body class="smart-style-0 smart-style-0-alt fixed-page-footer no-menu">
+<body class="smart-style-0 smart-style-0-alt hidden-menu fixed-page-footer no-menu">
 	<div class="container-fluid">
 		<div class="row cns-header">
 			<div class="col col-xs-12 col-sm-4 hidden-xs">
 				<div class="user-data-top ">
-					<img src="img/logo-segob-y-cns-01.png" alt="" class="img-responsive"  style="max-height: 50px; padding-right: 5px;">
-
+					<img src="img/logo-segob-y-cns-01.png" alt="" class="img-responsive" style="max-height: 50px; padding-right: 5px;">
+					<img src="img/logo-pm-01.png" alt="" class="" />
 				</div>
 			</div>
 			<div class="col col-xs-12 col-sm-4 cns-app-logo">
-				<img src="img/logo-pm-01.png" alt="" class="" />
+
 			</div>
 			<div class="col col-xs-12 col-sm-4 hidden-xs">
 
 				<div class="user-data-top pull-right">
-					<img src="img/demo/image-placeholder-64x64.png" alt="" class="img-responsive"  style="max-height: 50px; padding-right: 5px;">
+					<img src="img/externos/nl-ssp-01.png" alt="" class="img-responsive" style="max-height: 50px; padding-right: 5px;">
 
 					<div class="user-data-left">
-						<span>Comisión Nacional de Seguridad <i class="fa fa-fw fa-building txt-color-grayText"></i></span><br>
-						<span>Plataforma México <i class="fa fa-fw fa-map-marker txt-color-grayText"></i></span><br>
+						<span>Comisión Nacional de Seguridad <i class="fa fa-fw fa-building txt-color-grayText"></i></span>
+						<br>
+						<span>Plataforma México <i class="fa fa-fw fa-map-marker txt-color-grayText"></i></span>
+						<br>
 						<span>Perez Martinez Juan <i class="fa fa-fw fa-user txt-color-grayText"></i></span>
 					</div>
 					<img src="img/avatars/male.png" alt="" class="img-circle" style="max-height: 50px;">
@@ -125,15 +127,15 @@ Use search to find needed section.
 
 
 		<!--  top-menu -->
-		<ul class="nav navbar-nav bg-color-blueMiranda">
+		<ul class="nav navbar-nav bg-color-blueMiranda-alt">
 			<li class="active">
-				<a href="#">
+				<a href="index.html">
 					<i class="fa fa-lg fa-search-plus"></i> Búsquedas
 					<strong>Exactas</strong>
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<a href="abiertas.html">
 					<i class="fa fa-lg fa-search"></i> Búsquedas
 					<strong>Abiertas</strong>
 				</a>
@@ -322,7 +324,7 @@ Use search to find needed section.
 			<!-- END LOGO PLACEHOLDER -->
 			<!-- Note: The activity badge color changes when clicked and resets the number to 0
 		Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications -->
-			<span id="activity" class="activity-dropdown "> <i class="fa fa-user"></i> <b class="badge"> 6 </b> </span>
+			<span id="activity" class="activity-dropdown "> <i class="fa fa-bell"></i> <b class="badge"> 6 </b> </span>
 			<!-- AJAX-DROPDOWN : control this dropdown height, look and feel from the LESS variable file -->
 			<div class="ajax-dropdown">
 				<!-- the ID links are fetched via AJAX to the ajax container "ajax-notifications" -->
@@ -415,7 +417,7 @@ Use search to find needed section.
 								<!-- widget content -->
 								<div class="widget-body ">
 									<div class="row">
-										<div class="col col-xs-12 col-sm-12 col-md-7">
+										<div class="col col-xs-12 col-sm-12 col-md-8">
 											<div class="tabs-left">
 												<ul class="nav nav-tabs tabs-left" id="demo-pill-nav">
 													<li class="active">
@@ -711,101 +713,73 @@ Use search to find needed section.
 											</div>
 
 										</div>
-										<div class="col col-xs-12 col-sm-12 col-md-5">
-<!-- ini0 -->
-<div class="jarviswidget jarviswidget-color-white jarviswidget-sortable margin-bottom-10" id="wid-id-2" data-widget-editbutton="false" data-widget-colorbutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" role="widget">
-								<!-- widget options:
-									usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+										<div class="col col-xs-12 col-sm-12 col-md-4">
+											<!-- ini0 -->
+											<div class="jarviswidget jarviswidget-color-white jarviswidget-sortable margin-bottom-10" id="wid-id-2" data-widget-editbutton="false" data-widget-colorbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-sortable="false" data-widget-fullscreenbutton="false">
+												<header role="heading">
 
-									data-widget-colorbutton="false"
-									data-widget-editbutton="false"
-									data-widget-togglebutton="false"
-									data-widget-deletebutton="false"
-									data-widget-fullscreenbutton="false"
-									data-widget-custombutton="false"
-									data-widget-collapsed="true"
-									data-widget-sortable="false"
+													<span class="widget-icon">
+														<i class="fa fa-filter"></i>
+													</span>
+													<h2 class="font-sm">
+														Búscar en las Fuentes seleccionadas
+													</h2>
+												</header>
 
-								-->
-								<header role="heading">
-									<div class="jarviswidget-ctrls" role="menu">
-										<!-- <a href="javascript:void(0);" class="button-icon jarviswidget-toggle-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Collapse">
-											<i class="fa fa-minus "></i>
-										</a> -->
-									</div>
-									<span class="widget-icon">
-										<i class="fa fa-filter"></i>
-									</span>
-									<h2 class="font-sm">
-										Fuentes
-									</h2>
-									<span class="jarviswidget-loader">
-										<i class="fa fa-refresh fa-spin"></i>
-									</span>
-								</header>
+												<!-- widget div-->
+												<div role="content">
 
-								<!-- widget div-->
-								<div role="content">
+													<!-- widget edit box -->
+													<div class="jarviswidget-editbox">
+														<!-- This area used as dropdown edit box -->
 
-									<!-- widget edit box -->
-									<div class="jarviswidget-editbox">
-										<!-- This area used as dropdown edit box -->
+													</div>
+													<!-- end widget edit box -->
 
-									</div>
-									<!-- end widget edit box -->
+													<!-- widget content -->
+													<div class="widget-body no-padding">
 
-									<!-- widget content -->
-									<div class="widget-body no-padding">
+														<form novalidate="novalidate" id="smart-form-register" class="smart-form custom-scroll cns-fuentes-block" style="">
+															<fieldset class="no-padding">
+																<section class="padding-10">
+																	<label class="checkbox">
+																		<input name="terms_1" id="terms_1" type="checkbox"> <i></i>
+																		<strong>Todas las fuentes
+																		</strong>
+																	</label>
+																	<label class="checkbox">
+																		<input name="terms_2" id="terms_2" type="checkbox"  checked="true"> <i></i> Informe Policial Homologado
+																	</label>
+																	<label class="checkbox">
+																		<input name="terms_6" id="terms_6" type="checkbox" checked="true"> <i></i> Licencias de Conducir
+																	</label>
+																	<label class="checkbox">
+																		<input name="terms_3" id="terms_3" type="checkbox" checked="true"> <i></i> Registro Público Vehicular
+																	</label>
+																	<label class="checkbox">
+																		<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Registro Nacional de Personal de Seguridad
+																	</label>
+																	<label class="checkbox">
+																		<input name="terms_7" id="terms_7" type="checkbox"> <i></i> Registro de Iniciados, Procesados y Sentenciados
+																	</label>
+																	<label class="checkbox">
+																		<input name="terms_8" id="terms_8" type="checkbox"> <i></i> Vehiculos Robodas y Recuperados
+																	</label>
+																	<label class="checkbox">
+																		<input name="terms_9" id="terms_9" type="checkbox"> <i></i> Registro Nacional de Mandamientos Judiciales
+																	</label>
+																</section>
+															</fieldset>
+														</form>
 
-										<form novalidate="novalidate" id="smart-form-register" class="smart-form custom-scroll" style="overflow-x: hidden; overflow-y: scroll; height: 154px;">
-											<fieldset class="no-padding">
-												<section class="padding-10">
-													<label class="checkbox">
-														<input name="terms_1" id="terms_1" type="checkbox"> <i></i>
-														<strong>Todas las fuentes
-															<span class="txt-color-red font-lg pull-right">2,021</span>
-														</strong>
-													</label>
-													<label class="checkbox">
-														<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Informe Policial Homologado
-														<span class="txt-color-blueMiranda pull-right">0</span>
-													</label>
-													<label class="checkbox">
-														<input name="terms_6" id="terms_6" type="checkbox" checked="true"> <i></i> Licencias de Conducir
-														<span class="txt-color-blueMiranda pull-right">451</span>
-													</label>
-													<label class="checkbox">
-														<input name="terms_3" id="terms_3" type="checkbox" checked="true"> <i></i> Registro Público Vehicular
-														<span class="txt-color-blueMiranda pull-right">1,570</span>
-													</label>
-													<label class="checkbox">
-														<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Registro Nacional de Personal de Seguridad
-														<span class="txt-color-blueMiranda pull-right">0</span>
-													</label>
-													<label class="checkbox">
-														<input name="terms_7" id="terms_7" type="checkbox"> <i></i> Registro de Iniciados, Procesados y Sentenciados
-														<span class="txt-color-blueMiranda pull-right">0</span>
-													</label>
-													<label class="checkbox">
-														<input name="terms_8" id="terms_8" type="checkbox"> <i></i> Vehiculos Robodas y Recuperados
-														<span class="txt-color-blueMiranda pull-right">0</span>
-													</label>
-													<label class="checkbox">
-														<input name="terms_9" id="terms_9" type="checkbox"> <i></i> Registro Nacional de Mandamientos Judiciales
-														<span class="txt-color-blueMiranda pull-right">0</span>
-													</label>
-												</section>
-											</fieldset>
-										</form>
+													</div>
+													<!-- end widget content -->
 
-									</div>
-									<!-- end widget content -->
+												</div>
+												<!-- end widget div -->
 
-								</div>
-								<!-- end widget div -->
-
-							</div>
-<!-- /ini0 -->
+											</div>
+											<!-- /ini0 -->
 
 										</div>
 
@@ -814,7 +788,7 @@ Use search to find needed section.
 									<div class="widget-footer">
 
 
-										<a href="javascript:void(0);" class="btn btn-labeled btn-info">
+										<a href="javascript:void(0);" class="btn btn-labeled btn-info cleanScreen">
 											<span class="btn-label"><i class="glyphicon glyphicon-trash"></i></span>Limpiar</a>
 
 
@@ -833,6 +807,7 @@ Use search to find needed section.
 
 						</div>
 						<!--  end Widget Filtros v2-->
+
 					</article>
 					<!-- WIDGET END -->
 
@@ -841,14 +816,41 @@ Use search to find needed section.
 				<!-- end row -->
 
 				<!-- row -->
-				<div class="row">
+				<div id="resultsBlock" class="row animated hide">
 					<div class="col col-xs-12 col-sm-4 col-md-3">
-
+						<!--  start panel fuentes con resultado -->
 						<div class="panel panel-default">
+						  <div class="panel-heading">
+						    <span class="font-md txt-color-red"><strong>Resultados por Fuente</strong></span>
+						  </div>
+						  <div class="panel-body no-padding">
+						    <!--  start taxonomias -->
+								<div class="btn-group-vertical btn-block">
+									<a href="javascript:void(0);" class="btn btn-default disable" disabled>
+									  Informe Policial Homologado&nbsp;
+									  <span class="badge font-sm bg-color-grayDark pull-right">0</span>
+									</a>
+									<a href="javascript:void(0);" class="btn btn-default showTaxonomiasBlock">
+									  Licencias de Conducir&nbsp;
+									  <span class="badge font-sm bg-color-green pull-right">320</span>
+									</a>
+									<a href="javascript:void(0);" class="btn btn-default">
+									  Registro Público Vehicular&nbsp;
+									  <span class="badge font-sm bg-color-green pull-right">231</span>
+									</a>
+								</div>
+
+						    <!--  end taxonomias -->
+						  </div>
+						</div>
+						<!--  end panel fuentes con resultado -->
+						<!--  start panel taxonomias-->
+						<div id="taxonomiasBlock" class="panel panel-default hide">
 							<div class="panel-heading">
-								<h4 class="txt-color-red">Filtrado por:</h4>
-							</div>
+						    <span class="font-md txt-color-red"><strong>Filtros</strong></span>
+						  </div>
 							<div class="panel-body no-padding">
+
 								<!--  start taxonomias -->
 								<div class="panel-group smart-accordion-default" id="accordion">
 									<div class="panel panel-default">
@@ -859,7 +861,7 @@ Use search to find needed section.
 												</a>
 											</h4>
 										</div>
-										<div id="collapseOne" class="panel-collapse collapse in" aria-expanded="true" >
+										<div id="collapseOne" class="panel-collapse collapse in" aria-expanded="true">
 											<div class="panel-body no-padding custom-scroll" style="max-height: 800px; display: block; overflow-x: hidden; overflow-y: scroll;">
 												<form novalidate="novalidate" id="smart-form-register" class="smart-form">
 													<fieldset>
@@ -870,7 +872,7 @@ Use search to find needed section.
 														</section>
 
 														<section class="cns-checkbox-list">
-															<span class="label padding-5 cns-title1">Nombre</span>
+															<span class="label padding-5 cns-title1 ">Nombre</span>
 
 															<label class="checkbox">
 																<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Juan José
@@ -1060,37 +1062,48 @@ Use search to find needed section.
 																<label class="checkbox">
 																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
 																	<span class="text-muted pull-right">(24)</span>
-																</label><label class="checkbox">
+																</label>
+																<label class="checkbox">
 																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
 																	<span class="text-muted pull-right">(24)</span>
-																</label><label class="checkbox">
+																</label>
+																<label class="checkbox">
 																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
 																	<span class="text-muted pull-right">(24)</span>
-																</label><label class="checkbox">
+																</label>
+																<label class="checkbox">
 																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
 																	<span class="text-muted pull-right">(24)</span>
-																</label><label class="checkbox">
+																</label>
+																<label class="checkbox">
 																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
 																	<span class="text-muted pull-right">(24)</span>
-																</label><label class="checkbox">
+																</label>
+																<label class="checkbox">
 																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
 																	<span class="text-muted pull-right">(24)</span>
-																</label><label class="checkbox">
+																</label>
+																<label class="checkbox">
 																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
 																	<span class="text-muted pull-right">(24)</span>
-																</label><label class="checkbox">
+																</label>
+																<label class="checkbox">
 																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
 																	<span class="text-muted pull-right">(24)</span>
-																</label><label class="checkbox">
+																</label>
+																<label class="checkbox">
 																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
 																	<span class="text-muted pull-right">(24)</span>
-																</label><label class="checkbox">
+																</label>
+																<label class="checkbox">
 																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
 																	<span class="text-muted pull-right">(24)</span>
-																</label><label class="checkbox">
+																</label>
+																<label class="checkbox">
 																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
 																	<span class="text-muted pull-right">(24)</span>
-																</label><label class="checkbox">
+																</label>
+																<label class="checkbox">
 																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
 																	<span class="text-muted pull-right">(24)</span>
 																</label>
@@ -1314,57 +1327,27 @@ Use search to find needed section.
 								<!--  end taxonomias -->
 							</div>
 						</div>
-
-
+						<!--  end panel taxonomias-->
 					</div>
 					<div class="col col-xs-12 col-sm-8 col-md-9">
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<div style="width:100%" id="advancedFilterTags" class="select2-container select2-container-multi select2 select2-container-active">
-									<ul class="select2-choices">
-										<li class="select2-search-choice">
-											<div>Todas las Fuentes
-											</div>
-											<a href="javascript:void();" class="select2-search-choice-close filter-close-tag" tabindex="-1">
-											</a>
-										</li>
-									</ul>
-									<div class="select2-drop select2-drop-multi select2-display-none select2-drop-active">
-										<ul class="select2-results">
-											<li class="select2-no-results">No matches found
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="panel-body">
 								<div class="row">
 									<div class="col col-xs-12 col-sm-4">
-										<!-- start res por page -->
-										<form class="smart-form no-padding" novalidate="novalidate">
-											<fieldset class="no-padding">
-												<section>
-													<label class="select">
-														<select name="country" class="input-sm">
-															<option value="0">-Mostrar todas las fuentes-</option>
-															<option value="1" selected="">Licencias de Conducir</option>
-															<option value="2">Registro Nacional de Personal</option>
-														</select> <i></i>
-													</label>
-												</section>
-											</fieldset>
-
-										</form>
-										<!-- end res por oage -->
+										<span id="fuenteActiva" style="font-size:1.5em!important;"></span>
 									</div>
 									<div class="col col-xs-12 col-sm-4 no-padding text-center">
 										<!-- start res por page -->
-										<span class="font-md txt-color-red">441</span> registros
+										<span id="totalResults" class="font-md txt-color-red" style="    font-weight: bold;
+    font-size: 1.5em!important;">451</span> resultados
 										<span class="note">(tiempo 5.05 seg.) </span>
 										<!-- end res por oage -->
 									</div>
 									<div class="col col-xs-12 col-sm-4 text-align-right ">
-										<ul class="pagination pagination-sm pagination-alt no-margin">
+										<ul class="pagination pagination-sm pagination no-margin">
+											<li>
+												<a href="javascript:void(0);"><i class="fa fa-angle-double-left"></i></a>
+											</li>
 											<li>
 												<a href="javascript:void(0);"><i class="fa fa-angle-left"></i></a>
 											</li>
@@ -1386,9 +1369,15 @@ Use search to find needed section.
 											<li>
 												<a href="javascript:void(0);"><i class="fa fa-angle-right"></i></a>
 											</li>
+											<li>
+												<a href="javascript:void(0);"><i class="fa fa-angle-double-right"></i></a>
+											</li>
 										</ul>
 									</div>
 								</div>
+							</div>
+							<div class="panel-body">
+
 								<!--  start results container -->
 								<div class="row">
 
@@ -1396,8 +1385,12 @@ Use search to find needed section.
 									<div class="col-sm-12 col-md-12 " id="resultsContent">
 										<!-- start Results -->
 										<div class="search-results clearfix">
-											<a><i class="fa fa-share-alt pull-right"></i></a>
-											<a><i class="fa fa-comment pull-right"></i></a>
+
+											<div class="btn-group-vertical pull-right">
+												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-sticky-note-o"></i></a>
+												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-share-alt"></i></a>
+											</div>
+
 											<h4><a href="javascript:void(0);">Juan Jóse Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
 											<img src="img/avatars/male.png" class="hide" alt="">
 											<div>
@@ -1414,8 +1407,10 @@ Use search to find needed section.
 
 										</div>
 										<div class="search-results clearfix">
-											<a><i class="fa fa-share-alt pull-right"></i></a>
-											<a><i class="fa fa-comment pull-right"></i></a>
+											<div class="btn-group-vertical pull-right">
+												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-sticky-note-o"></i></a>
+												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-share-alt"></i></a>
+											</div>
 											<h4><a href="javascript:void(0);">Juan Jóse Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
 											<img src="img/avatars/male.png" class="hide" alt="">
 											<div>
@@ -1434,8 +1429,10 @@ Use search to find needed section.
 
 										</div>
 										<div class="search-results clearfix">
-											<a><i class="fa fa-share-alt pull-right"></i></a>
-											<a><i class="fa fa-comment pull-right"></i></a>
+											<div class="btn-group-vertical pull-right">
+												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-sticky-note-o"></i></a>
+												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-share-alt"></i></a>
+											</div>
 											<h4><a href="javascript:void(0);">José Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
 
 											<div>
@@ -1458,8 +1455,10 @@ Use search to find needed section.
 										</div>
 
 										<div class="search-results clearfix">
-											<a><i class="fa fa-share-alt pull-right"></i></a>
-											<a><i class="fa fa-comment pull-right"></i></a>
+											<div class="btn-group-vertical pull-right">
+												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-sticky-note-o"></i></a>
+												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-share-alt"></i></a>
+											</div>
 											<h4><a href="javascript:void(0);">Juan Jóse Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
 											<img src="img/avatars/male.png" class="hide" alt="">
 											<div>
@@ -1476,8 +1475,10 @@ Use search to find needed section.
 
 										</div>
 										<div class="search-results clearfix">
-											<a><i class="fa fa-share-alt pull-right"></i></a>
-											<a><i class="fa fa-comment pull-right"></i></a>
+											<div class="btn-group-vertical pull-right">
+												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-sticky-note-o"></i></a>
+												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-share-alt"></i></a>
+											</div>
 											<h4><a href="javascript:void(0);">Juan Jóse Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
 											<img src="img/avatars/male.png" class="hide" alt="">
 											<div>
@@ -1496,8 +1497,10 @@ Use search to find needed section.
 
 										</div>
 										<div class="search-results clearfix">
-											<a><i class="fa fa-share-alt pull-right"></i></a>
-											<a><i class="fa fa-comment pull-right"></i></a>
+											<div class="btn-group-vertical pull-right">
+												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-sticky-note-o"></i></a>
+												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-share-alt"></i></a>
+											</div>
 											<h4><a href="javascript:void(0);">José Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
 
 											<div>
@@ -1544,7 +1547,7 @@ Use search to find needed section.
 												</li>
 											</ul>
 											<br>
-											<span class="note">2,021 resultadoss (5.05 seg.) </span>
+											<span class="note">320 resultadoss (5.05 seg.) </span>
 											<br>
 											<br>
 										</div>
@@ -2243,7 +2246,25 @@ Use search to find needed section.
 			$('.callResultsContent').click(function(e) {
 				console.log('callResultsContent', e);
 				$('#resultsContent > .search-results').show();
-				$('#personaModal').modal('hide');
+				// $('#personaModal').modal('hide');
+				$('#resultsBlock').removeClass('hide');
+			});
+
+			$('.cleanScreen').click(function(e) {
+				console.log('cleanScreen', e);
+				$('#resultsContent > .search-results').hide();
+				// $('#personaModal').modal('hide');
+				$('#resultsBlock').addClass('hide');
+				$('#taxonomiasBlock').addClass('hide');
+
+			});
+
+			$('.showTaxonomiasBlock').click(function(e) {
+				console.log('showTaxonomiasBlock', e);
+				$('#taxonomiasBlock').removeClass('hide');
+
+				$('#fuenteActiva').text('Licencias de Conducir');
+				$('#totalResults').text('320');
 			});
 
 			$('#fpersona_nombre').change(function(e) {
@@ -2388,10 +2409,10 @@ Use search to find needed section.
 
 			// start datepicker01
 			$('#pfechanacimiento').datepicker({
-				dateFormat : 'dd/mm/yy',
-				prevText : '<i class="fa fa-chevron-left"></i>',
-				nextText : '<i class="fa fa-chevron-right"></i>',
-				onSelect : function(selectedDate) {
+				dateFormat: 'dd/mm/yy',
+				prevText: '<i class="fa fa-chevron-left"></i>',
+				nextText: '<i class="fa fa-chevron-right"></i>',
+				onSelect: function(selectedDate) {
 					// $('#startdate').datepicker('option', 'maxDate', selectedDate);
 				}
 			});

@@ -44,6 +44,18 @@
 .cns-checkbox-list > label > input [type="checkbox"] {
   background-color: red!important;
 }
+
+div:not( #jarviswidget-fullscreen-mode ) > .jarviswidget > div > .widget-body > .cns-fuentes-block {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 154px;
+}
+
+#jarviswidget-fullscreen-mode > .jarviswidget > div > .widget-body > .cns-fuentes-block {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  color: red!important;
+}
 .txt-color-greenSuccess {
   color: #7EC751;
 }
@@ -93,7 +105,7 @@
   margin-top: -4px;
 }
 .navbar-nav.bg-color-blueMiranda > li.active a {
-  background-color: #DA4A4A !important;
+  background-color: #000000 !important;
   color: #FFFFFF;
 }
 .navbar-nav {
@@ -208,7 +220,6 @@
   text-align: right;
   display: flex;
 }
-
 .user-data-left {
   font-size: xx-small;
   padding: 8px 5px 0 0;
@@ -249,6 +260,7 @@
   background-repeat: repeat-x;
   position: relative;
   z-index: 905;
+  border: solid thin #C3C3C3;
 }
 #header >:first-child {
   width: auto;
@@ -541,6 +553,6 @@ nav ul ul > li:hover b {
   padding-right: 5px;
 }
 .smart-form section {
-    margin-bottom: 10px;
-    position: relative;
+  margin-bottom: 10px;
+  position: relative;
 }
