@@ -232,7 +232,7 @@ div:not( #jarviswidget-fullscreen-mode ) > .jarviswidget > div > .widget-body > 
 .tabs-left .nav-tabs > li.active > a {
   top: -2px !important;
   box-shadow: -2px 0 0 #929292;
-  background-color: #E4E4E4;
+  background-color: #FFFFFF;
 }
 .jarviswidget-color-blueLight>header {
   border-color: #a0aeb3!important;
@@ -555,4 +555,14 @@ nav ul ul > li:hover b {
 .smart-form section {
   margin-bottom: 10px;
   position: relative;
+}
+
+.tabs-left > .nav-tabs > li > a {
+    margin-right: -1px;
+    background-color: #F8F7F7;
+    border-right: solid thin #D5D5D5;
+}
+
+.nav-tabs>li {
+    margin-bottom: -3px;
 }
