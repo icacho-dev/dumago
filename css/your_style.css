@@ -45,6 +45,33 @@
   background-color: red!important;
 }
 
+#personaModal {
+  padding-right: 0px!important;
+}
+
+#personaModal > .modal-dialog {
+  width: auto;
+  margin: 10px;
+}
+
+#mapModal {
+  padding-right: 0px!important;
+}
+
+#mapModal > .modal-dialog {
+  width: auto;
+  margin: 10px;
+}
+
+#redModal {
+  padding-right: 0px!important;
+}
+
+#redModal > .modal-dialog {
+  width: auto;
+  margin: 10px;
+}
+
 div:not( #jarviswidget-fullscreen-mode ) > .jarviswidget > div > .widget-body > .cns-fuentes-block {
   overflow-x: hidden;
   overflow-y: scroll;

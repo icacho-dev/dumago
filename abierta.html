@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
-	<title> Busquedas Abiertas</title>
+	<title> Búsquedas Abiertas</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -21,6 +21,7 @@
 	<!-- We recommend you use "your_style.css" to override SmartAdmin
 	specific styles this will also ensure you retrain your customization with each SmartAdmin update.
 	<link rel="stylesheet" type="text/css" media="screen" href="css/your_style.css"> -->
+	<link rel="stylesheet" type="text/css" media="screen" href="css/your_style.css">
 	<!-- Demo purpose only: goes with demo.js, you can delete this css when designing your own WebApp -->
 	<!-- <link rel="stylesheet" type="text/css" media="screen" href="css/demo.min.css"> -->
 	<!-- FAVICONS -->
@@ -28,6 +29,8 @@
 	<link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<!-- GOOGLE FONT -->
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+	<!--  Slide Panel -->
+	<link rel="stylesheet" type="text/css" media="screen" href="js/plugin/slidepanel/stylesheet.css">
 	<!-- Specifying a Webpage Icon for Web Clip
 	Ref: https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html -->
 	<link rel="apple-touch-icon" href="img/splash/sptouch-icon-iphone.png">
@@ -89,45 +92,62 @@ Use search to find needed section.
 * 'container'         - boxed layout mode (non-responsive: will not work with fixed-navigation & fixed-ribbon)
 -->
 
-<body class="smart-style-2 fixed-header fixed-ribbon fixed-page-footer">
+<body class="smart-style-0 smart-style-0-alt fixed-page-footer no-menu">
+	<div class="container-fluid">
+		<div class="row cns-header">
+			<div class="col col-xs-12 col-sm-6 hidden-xs">
+				<div class="user-data-top ">
+					<img src="img/logo-segob-y-cns-01.png" alt="" class="img-responsive" style="max-height: 50px; padding-right: 5px;">
+					<img src="img/logo-pm-01.png" alt="" class="" />
+				</div>
+			</div>
+			<div class="col col-xs-12 col-sm-6 hidden-xs">
+
+				<div class="user-data-top pull-right">
+					<img src="img/externos/nl-gov.gif" alt="" class="img-responsive" style="height: 50px; padding-right: 5px;">
+
+					<div class="user-data-left">
+						<span>Gobierno de Nuevo León <i class="fa fa-fw fa-building txt-color-grayText"></i></span>
+						<br>
+						<span>Únidad Antisecuestros <i class="fa fa-fw fa-map-marker txt-color-grayText"></i></span>
+						<br>
+						<span>Perez Martinez Juan <i class="fa fa-fw fa-user txt-color-grayText"></i></span>
+					</div>
+					<img src="img/avatars/male.png" alt="" class="img-circle" style="height: 50px;">
+				</div>
+
+			</div>
+		</div>
+	</div>
 	<!-- HEADER -->
 	<header id="header">
-		<div id="logo-group">
-			<!-- PLACE YOUR LOGO HERE -->
-			<span id="logo">
-				<img src="img/logo-segob.png" alt="CNS"> </span>
-			<!-- END LOGO PLACEHOLDER -->
-			<!-- Note: The activity badge color changes when clicked and resets the number to 0
-			Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications -->
-			<span id="activity" class="activity-dropdown"> <i class="fa fa-user"></i> <b class="badge"> 6 </b> </span>
-			<!-- AJAX-DROPDOWN : control this dropdown height, look and feel from the LESS variable file -->
-			<div class="ajax-dropdown">
-				<!-- the ID links are fetched via AJAX to the ajax container "ajax-notifications" -->
-				<div class="btn-group btn-group-justified" data-toggle="buttons">
-					<label class="btn btn-default">
-						<input type="radio" name="activity" id="ajax/notify/busquedas.html"> Búsquedas Prog. (3) </label>
-					<label class="btn btn-default">
-						<input type="radio" name="activity" id="ajax/notify/notifications.html"> Notificaciones (3) </label>
-				</div>
-				<!-- notification content -->
-				<div class="ajax-notifications custom-scroll">
-					<div class="alert alert-transparent">
-						<h4>Click a button to show messages here</h4>
-						This blank page message helps protect your privacy, or you can show the first message here automatically.
-					</div>
-					<i class="fa fa-lock fa-4x fa-border"></i>
-				</div>
-				<!-- end notification content -->
-				<!-- footer: refresh area -->
-				<span class="font-xs text-muted"> Última actualización el: 12/12/2013 9:43AM
-					<button type="button" data-loading-text="<i class='fa fa-refresh fa-spin'></i> Loading..." class="btn btn-xs btn-default pull-right">
-						<i class="fa fa-refresh"></i>
-					</button>
-				</span>
-				<!-- end footer -->
-			</div>
-			<!-- END AJAX-DROPDOWN -->
-		</div>
+
+
+		<!--  top-menu -->
+		<ul class="nav navbar-nav bg-color-blueMiranda-alt">
+			<li>
+				<a href="index.html">
+					<i class="fa fa-lg fa-search-plus"></i> Búsquedas
+					<strong>Exactas</strong>
+				</a>
+			</li>
+			<li class="active">
+				<a href="abiertas.html">
+					<i class="fa fa-lg fa-search"></i> Búsquedas
+					<strong>Abiertas</strong>
+				</a>
+			</li>
+			<li>
+				<a href="redes.html">
+					<i class="fa fa-lg fa-stack-overflow"></i> Redes
+					<strong>Sociales</strong>
+				</a>
+			</li>
+			<li class="hide">
+				<a href="#">Estadisticas y Producción</a>
+			</li>
+		</ul>
+		<!--  end top-menu -->
 		<!-- projects dropdown -->
 		<div class="project-context hidden-xs hide">
 			<span class="label">Projects:</span>
@@ -151,6 +171,7 @@ Use search to find needed section.
 			<!-- end dropdown-menu-->
 		</div>
 		<!-- end projects dropdown -->
+
 		<!-- pulled right: nav area -->
 		<div class="pull-right ">
 
@@ -162,34 +183,7 @@ Use search to find needed section.
 
 			<!-- #MOBILE -->
 			<!-- Top menu profile link : this shows only when top menu is active -->
-			<ul id="mobile-profile-img" class="header-dropdown-list hidden-xs padding-5 hide">
-				<li class="">
-					<a href="#" class="dropdown-toggle no-margin userdropdown" data-toggle="dropdown">
-						<img src="img/avatars/sunny.png" alt="John Doe" class="online" />
-					</a>
-					<ul class="dropdown-menu pull-right">
-						<li>
-							<a href="javascript:void(0);" class="padding-10 padding-top-0 padding-bottom-0"><i class="fa fa-cog"></i> Setting</a>
-						</li>
-						<li class="divider"></li>
-						<li>
-							<a href="profile.html" class="padding-10 padding-top-0 padding-bottom-0"> <i class="fa fa-user"></i> <u>P</u>rofile</a>
-						</li>
-						<li class="divider"></li>
-						<li>
-							<a href="javascript:void(0);" class="padding-10 padding-top-0 padding-bottom-0" data-action="toggleShortcut"><i class="fa fa-arrow-down"></i> <u>S</u>hortcut</a>
-						</li>
-						<li class="divider"></li>
-						<li>
-							<a href="javascript:void(0);" class="padding-10 padding-top-0 padding-bottom-0" data-action="launchFullscreen"><i class="fa fa-arrows-alt"></i> Full <u>S</u>creen</a>
-						</li>
-						<li class="divider"></li>
-						<li>
-							<a href="login.html" class="padding-10 padding-top-5 padding-bottom-5" data-action="userLogout"><i class="fa fa-sign-out fa-lg"></i> <strong><u>L</u>ogout</strong></a>
-						</li>
-					</ul>
-				</li>
-			</ul>
+
 			<!-- logout button -->
 			<div id="logout" class="btn-header transparent pull-right hide">
 				<span> <a href="login.html" title="Sign Out" data-action="userLogout" data-logout-msg="You can improve your security further after logging out by closing this opened browser"><i class="fa fa-sign-out"></i></a> </span>
@@ -203,32 +197,32 @@ Use search to find needed section.
 			<!-- input: search field -->
 			<form action="search.html" class="header-search pull-right hide">
 				<input id="search-fld" type="text" name="param" placeholder="Buscar..." data-autocomplete='[
-							"ActionScript",
-							"AppleScript",
-							"Asp",
-							"BASIC",
-							"C",
-							"C++",
-							"Clojure",
-							"COBOL",
-							"ColdFusion",
-							"Erlang",
-							"Fortran",
-							"Groovy",
-							"Haskell",
-							"Java",
-							"JavaScript",
-							"Lisp",
-							"Perl",
-							"PHP",
-							"Python",
-							"Ruby",
-							"Scala",
-							"Scheme"]'>
+				"ActionScript",
+				"AppleScript",
+				"Asp",
+				"BASIC",
+				"C",
+				"C++",
+				"Clojure",
+				"COBOL",
+				"ColdFusion",
+				"Erlang",
+				"Fortran",
+				"Groovy",
+				"Haskell",
+				"Java",
+				"JavaScript",
+				"Lisp",
+				"Perl",
+				"PHP",
+				"Python",
+				"Ruby",
+				"Scala",
+				"Scheme"]'>
 				<button type="submit">
 					<i class="fa fa-search"></i>
 				</button>
-				<a href="javascript:void(0);" id="cancel-search-js" title="Cancel Search"><i class="fa fa-times"></i></a>
+				<!-- <a href="javascript:void(0);" id="cancel-search-js" title="Cancel Search"><i class="fa fa-times"></i></a> -->
 			</form>
 			<!-- end input: search field -->
 			<!-- fullscreen button -->
@@ -319,135 +313,64 @@ Use search to find needed section.
 			<!-- end multiple lang -->
 		</div>
 		<!-- end pulled right: nav area -->
+		<!--  alerts -->
+		<div id="logo-group" style="float:right;">
+
+			<!-- PLACE YOUR LOGO HERE -->
+
+			<!-- END LOGO PLACEHOLDER -->
+			<!-- Note: The activity badge color changes when clicked and resets the number to 0
+		Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications -->
+			<span id="activity" class="activity-dropdown hide"> <i class="fa fa-bell"></i> <b class="badge"> 6 </b> </span>
+			<!-- AJAX-DROPDOWN : control this dropdown height, look and feel from the LESS variable file -->
+			<div class="ajax-dropdown">
+				<!-- the ID links are fetched via AJAX to the ajax container "ajax-notifications" -->
+				<div class="btn-group btn-group-justified" data-toggle="buttons">
+					<label class="btn btn-default">
+						<input type="radio" name="activity" id="ajax/notify/busquedas.html"> Búsquedas Prog. (3) </label>
+					<label class="btn btn-default">
+						<input type="radio" name="activity" id="ajax/notify/notifications-ac.html"> Notificaciones (3) </label>
+				</div>
+				<!-- notification content -->
+				<div class="ajax-notifications custom-scroll">
+					<div class="alert alert-transparent">
+						<h4>Click a button to show messages here</h4>
+						This blank page message helps protect your privacy, or you can show the first message here automatically.
+					</div>
+					<i class="fa fa-lock fa-4x fa-border"></i>
+				</div>
+				<!-- end notification content -->
+				<!-- footer: refresh area -->
+				<span class="font-xs text-muted"> Última actualización el: 12/12/2013 9:43AM
+					<button type="button" data-loading-text="<i class='fa fa-refresh fa-spin'></i> Loading..." class="btn btn-xs btn-default pull-right">
+						<i class="fa fa-refresh"></i>
+					</button>
+				</span>
+				<!-- end footer -->
+			</div>
+			<!-- END AJAX-DROPDOWN -->
+		</div>
+		<!--  end alerts -->
 	</header>
 	<!-- END HEADER -->
 	<!-- Left panel : Navigation area -->
 	<!-- Note: This width of the aside area can be adjusted through LESS variables -->
-	<aside id="left-panel">
-		<!-- User info -->
-		<!-- <div class="login-info">
-						<span>
 
-							<a href="javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">
-								<img src="img/avatars/sunny.png" alt="me" class="online" />
-								<span>
-									john.doe
-								</span>
-								<i class="fa fa-angle-down"></i>
-							</a>
-
-						</span>
-					</div -->
-		<!-- end user info -->
-		<!-- NAVIGATION : This navigation is also responsive-->
-		<nav>
-			<ul>
-				<li>
-					<a href="#" title="Fuentes"><i class="fa fa-lg fa-fw fa-filter"></i> <span class="menu-item-parent">Fuentes</span></a>
-					<ul>
-						<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>Todas las fuentes</a></li>
-						<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>REPUVE</a></li>
-						<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>OCRA</a></li>
-						<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>SIOM</a></li>
-						<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>Licencias de Conducir</a></li>
-						<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>Vehiculos Robados y Recuperados</a></li>
-						<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>Empresas de Seguridad Privada</a></li>
-						<li><a href="#" data-type="1"><i class="pull-right fa fa-check-square-o txt-color-blue"></i>Registro Federal de Mandamientos Judiciales</a></li>
-					</ul>
-				</li>
-				<li class="menu-taxomonias ">
-					<a href="#" title="Categorias"><i class="fa fa-lg fa-fw fa-puzzle-piece"></i> <span class="menu-item-parent">Filtros </span></a>
-					<ul>
-						<!-- <li>
-										<div class="padding-5">
-											<div class="icon-addon addon-sm">
-							                    <input type="text" placeholder="Filtrar taxonomias..." class="form-control">
-							                    <label for="filtrar" class="glyphicon glyphicon-search" rel="tooltip" title="" data-original-title="filtrar"></label>
-							                </div>
-										</div>
-									</li> -->
-						<li><a href="#">Personas <span class="badge font-xs bg-color-blue">2,230</span></a>
-							<ul>
-								<li><a href="#">Nombre  <span class="badge font-xs bg-color-white txt-color-blue">1,205</span></a>
-									<ul>
-										<li><a href="#" data-type="3">Juan <em class="text-muted font-xs">&nbsp;(&nbsp;605&nbsp;)</em></a></li>
-										<li><a href="#" data-type="3">Juan Jose <em class="text-muted font-xs">&nbsp;(&nbsp;287&nbsp;)</em></a></li>
-										<li><a href="#" data-type="3">Juan de Jose <em class="text-muted font-xs">&nbsp;(&nbsp;313&nbsp;)</em></a></li>
-										<li><a href="#"><i class="fa fa-plus font-xs"></i>Ver más...</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Apellido Paterno  <span class="badge font-xs bg-color-white txt-color-blue">1,000</span></a>
-									<ul>
-										<li><a href="#" data-type="3">Vazquez <em class="text-muted font-xs">&nbsp;(&nbsp;800&nbsp;)</em></a></li>
-										<li><a href="#" data-type="3">Vasquez <em class="text-muted font-xs">&nbsp;(&nbsp;200&nbsp;)</em></a>
-											<li><a href="#"><i class="fa fa-plus font-xs"></i>Ver más...</a></li>
-									</ul>
-									</li>
-									<li><a href="#">Apellido Materno  <span class="badge font-xs bg-color-white txt-color-blue">20</span></a></li>
-									<li><a href="#">Media Afiliación  <span class="badge font-xs bg-color-white txt-color-blue">5</span></a></li>
-							</ul>
-							</li>
-							<li><a href="#">Ubicación  <span class="badge font-xs bg-color-blue">234</span></a>
-								<ul>
-									<li><a href="#">Estado  <span class="badge font-xs bg-color-white txt-color-blue">1,205</span></a>
-										<ul>
-											<li><a href="#" data-type="3">Distrito Federal <em class="text-muted font-xs">&nbsp;(&nbsp;605&nbsp;)</em></a></li>
-											<li><a href="#" data-type="3">Guadalajara <em class="text-muted font-xs">&nbsp;(&nbsp;287&nbsp;)</em></a></li>
-											<li><a href="#" data-type="3">Monterrey <em class="text-muted font-xs">&nbsp;(&nbsp;313&nbsp;)</em></a></li>
-											<li><a href="#"><i class="fa fa-plus font-xs"></i>Ver más...</a></li>
-										</ul>
-									</li>
-									<li><a href="#">Municipio  <span class="badge font-xs bg-color-white txt-color-blue">1,000</span></a>
-										<ul>
-											<li><a href="#" data-type="3">Alvaro Obregón <em class="text-muted font-xs">&nbsp;(&nbsp;800&nbsp;)</em></a></li>
-											<li><a href="#" data-type="3">Nuevo León <em class="text-muted font-xs">&nbsp;(&nbsp;200&nbsp;)</em></a>
-												<li><a href="#"><i class="fa fa-plus font-xs"></i>Ver más...</a></li>
-										</ul>
-										</li>
-										<li><a href="#">Colonia  <span class="badge font-xs bg-color-white txt-color-blue">20</span></a></li>
-										<li><a href="#">Calle  <span class="badge font-xs bg-color-white txt-color-blue">5</span></a></li>
-								</ul>
-								</li>
-								<li><a href="#">Licencias de Conducir  <span class="badge font-xs bg-color-blue">1,941</span></a></li>
-								<li><a href="#">Área de Adscripción  <span class="badge font-xs bg-color-blue">37</span></a></li>
-					</ul>
-					</li>
-			</ul>
-		</nav>
-		<span class="minifyme" data-action="minifyMenu">
-			<i class="fa fa-arrow-circle-left hit"></i>
-		</span>
-	</aside>
 	<!-- END NAVIGATION -->
 	<!-- MAIN PANEL -->
 	<div id="main" role="main">
 		<!-- RIBBON -->
-		<div id="ribbon">
+		<div id="ribbon" class="hide">
 
 			<span class="ribbon-button-alignment">
 				<span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh" rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true">
 					<i class="fa fa-refresh"></i>
 				</span>
 			</span>
-
-			<!-- breadcrumb -->
 			<ol class="breadcrumb">
 				<li>Inicio</li>
-				<li>Busquedas Abiertas</li>
+				<li>Busquedas Exactas</li>
 			</ol>
-			<!-- end breadcrumb -->
-
-			<!-- You can also add more buttons to the
-				ribbon for further usability
-
-				Example below:
-
-				<span class="ribbon-button-alignment pull-right">
-				<span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
-				<span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
-				<span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
-			</span> -->
-
 		</div>
 		<!-- END RIBBON -->
 		<!-- MAIN CONTENT -->
@@ -456,77 +379,597 @@ Use search to find needed section.
 			<!-- widget grid -->
 			<section id="widget-grid" class="">
 
+				<!-- row -->
 				<div class="well">
 					<div class="input-group">
 						<input class="form-control" type="text" placeholder="Buscar...">
 						<div class="input-group-btn">
-							<button class="btn btn-default btn-primary" type="button">
+							<button class="btn btn-default btn-primary callResultsContent" type="button">
 								<i class="fa fa-search"></i>
 							</button>
 						</div>
 					</div>
 				</div>
 
+				<!-- end row -->
+
 				<!-- row -->
-				<div class="row">
-
-					<!-- NEW WIDGET START -->
-
-					<!-- WIDGET END -->
-					<!-- NEW WIDGET START -->
-					<article class="col-sm-12 col-md-12 col-lg-12">
-						<!--  Widget filtros v2 -->
-
-						<!--  end Widget Filtros v2-->
-						<!-- Widget ID (each widget will need unique ID)-->
-						<div class="jarviswidget jarviswidget-color-magenta" id="wid-id-0" data-widget-editbutton="false">
-							<!-- widget options:
-				usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
-				data-widget-colorbutton="false"
-				data-widget-editbutton="false"
-				data-widget-togglebutton="false"
-				data-widget-deletebutton="false"
-				data-widget-fullscreenbutton="false"
-				data-widget-custombutton="false"
-				data-widget-collapsed="true"
-				data-widget-sortable="false"-->
-							<header>
-								<span class="widget-icon"> <i class="fa fa-lg fa-search"></i> </span>
-								<h2>Resultados </h2>
-
-							</header>
-
-							<!-- widget div-->
-							<div>
-
-								<!-- widget edit box -->
-								<div class="jarviswidget-editbox">
-									<!-- This area used as dropdown edit box -->
-
+				<div id="resultsBlock" class="row animated hide">
+					<div class="col col-xs-12 col-sm-4 col-md-3">
+						<!--  start panel fuentes con resultado -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<span class="font-md txt-color-red">
+									<strong>Resultados por Fuente</strong>
+								</span>
+							</div>
+							<div class="panel-body no-padding">
+								<!--  start taxonomias -->
+								<div class="btn-group-vertical btn-block">
+									<a href="javascript:void(0);" class="btn btn-default" style="text-align:left;" disabled>
+									  Informe Policial Homologado&nbsp;
+									  <span class="font-sm pull-right txt-color-blue">(0)</span>
+									</a>
+									<a href="javascript:void(0);" class="btn btn-default showTaxonomiasBlock" style="text-align:left;">
+									  Licencias de Conducir&nbsp;
+									  <span class="font-sm pull-right txt-color-blue">(320)</span>
+									</a>
+									<a href="javascript:void(0);" class="btn btn-default" style="text-align:left;">
+									  Registro Público Vehicular&nbsp;
+									  <span class="font-sm pull-right txt-color-blue">(231)</span>
+									</a>
 								</div>
-								<!-- end widget edit box -->
 
-								<!-- widget content -->
-								<div class="widget-body">
+								<!--  end taxonomias -->
+							</div>
+							<div class="panel-footer" style="font-weight: bold;">Resultados Totales
+								<span class="pull-right" style="font-size: 1.3em; line-height: 1em;">551</span>
+							</div>
+						</div>
+						<!--  end panel fuentes con resultado -->
+						<!--  start panel taxonomias-->
+						<div id="taxonomiasBlock" class="panel panel-default hide">
+							<div class="panel-heading">
+								<span class="font-md txt-color-red">
+									<strong>Filtros</strong>
+								</span>
+							</div>
+							<div class="panel-body no-padding">
 
-									<div class="widget-body-toolbar">
-
-										<div class="row">
-
-											<div class="col-sm-12 col-md-12 " id="advancedFilterTags">
-												<!--  *Fuentes -->
-												<!-- <span class="label label-danger animated fadeInRight filter-tag">Todas las Fuentes&nbsp;<i class="fa fa-fw fa-close"></i></span> -->
-												<!--  /*Fuentes -->
-											</div>
-
+								<!--  start taxonomias -->
+								<div class="panel-group smart-accordion-default" id="accordion">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" href="#collapseOne" aria-expanded="true" class=""> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i>
+													<strong>Persona</strong>
+												</a>
+											</h4>
 										</div>
+										<div id="collapseOne" class="panel-collapse collapse in" aria-expanded="true">
+											<div class="panel-body no-padding custom-scroll" style="max-height: 800px; display: block; overflow-x: hidden; overflow-y: scroll;">
+												<form novalidate="novalidate" id="smart-form-register" class="smart-form">
+													<fieldset>
+														<section>
+															<label class="input">
+																<input type="search" name="search" placeholder="Busca por Persona...">
+															</label>
+														</section>
 
+														<section class="cns-checkbox-list">
+															<span class="label padding-5 cns-title1 ">Nombre</span>
+
+															<label class="checkbox">
+																<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Juan José
+																<span class="text-muted pull-right">(510)</span>
+															</label>
+															<label class="checkbox">
+																<input name="terms_3" id="terms_3" type="checkbox"> <i></i> Juan de Jose
+																<span class="text-muted pull-right">(50)</span>
+															</label>
+															<label class="checkbox">
+																<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Juan José Luis
+																<span class="text-muted pull-right">(24)</span>
+															</label>
+															<label class="checkbox">
+																<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Jozé Juan
+																<span class="text-muted pull-right">(67)</span>
+															</label>
+															<label class="checkbox">
+																<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Jossé
+																<span class="text-muted pull-right">(77)</span>
+															</label>
+															<label for="" class="label txt-color-grayText" id="personaAllBtn"><i class="fa fa-fw fa-plus"></i>Todos los Nombres</label>
+															<div id="personaAll" class="allContainer" style="display:none;">
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Juan José Luis
+																	<span class="text-muted pull-right">(24)</span>
+																</label>
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Jozé Juan
+																	<span class="text-muted pull-right">(67)</span>
+																</label>
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Jossé
+																	<span class="text-muted pull-right">(77)</span>
+																</label>
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Juan José Luis
+																	<span class="text-muted pull-right">(24)</span>
+																</label>
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Jozé Juan
+																	<span class="text-muted pull-right">(67)</span>
+																</label>
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Jossé
+																	<span class="text-muted pull-right">(77)</span>
+																</label>
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Juan José Luis
+																	<span class="text-muted pull-right">(24)</span>
+																</label>
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Jozé Juan
+																	<span class="text-muted pull-right">(67)</span>
+																</label>
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Jossé
+																	<span class="text-muted pull-right">(77)</span>
+																</label>
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Juan José Luis
+																	<span class="text-muted pull-right">(24)</span>
+																</label>
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Jozé Juan
+																	<span class="text-muted pull-right">(67)</span>
+																</label>
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Jossé
+																	<span class="text-muted pull-right">(77)</span>
+																</label>
+															</div>
+														</section>
+
+														<section>
+															<span class="label padding-5 cns-title1">Apellido Paterno</span>
+
+															<label class="checkbox">
+																<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Hernandez
+																<span class="text-muted pull-right">(55)</span>
+															</label>
+															<label class="checkbox">
+																<input name="terms_3" id="terms_3" type="checkbox"> <i></i> Henandes
+																<span class="text-muted pull-right">(14)</span>
+															</label>
+															<label class="checkbox">
+																<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Hernan
+																<span class="text-muted pull-right">(1,515)</span>
+															</label>
+															<label class="checkbox">
+																<input name="terms_3" id="terms_3" type="checkbox"> <i></i> Heenandes
+																<span class="text-muted pull-right">(14)</span>
+															</label>
+															<label class="checkbox">
+																<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Heirnan
+																<span class="text-muted pull-right">(115)</span>
+															</label>
+															<label for="" class="label txt-color-grayText" id="appaAllBtn"><i class="fa fa-fw fa-plus"></i>Todos los Apellidos Paternos</label>
+
+														</section>
+
+														<section>
+															<span class="label padding-5 cns-title1">Apellido Materno</span>
+
+															<label class="checkbox">
+																<input name="terms_3" id="terms_3" type="checkbox"> <i></i> Galindó
+																<span class="text-muted pull-right">(15)</span>
+															</label>
+															<label class="checkbox">
+																<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Galindun
+																<span class="text-muted pull-right">(12)</span>
+															</label>
+															<label class="checkbox">
+																<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Galinpo
+																<span class="text-muted pull-right">(81)</span>
+															</label>
+															<label class="checkbox">
+																<input name="terms_3" id="terms_3" type="checkbox"> <i></i> Galindes
+																<span class="text-muted pull-right">(5)</span>
+															</label>
+															<label class="checkbox">
+																<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Galindon
+																<span class="text-muted pull-right">(3)</span>
+															</label>
+															<label for="" class="label txt-color-grayText" id="apmaAllBtn"><i class="fa fa-fw fa-plus"></i>Todos los Apellidos Maternos</label>
+
+														</section>
+
+													</fieldset>
+
+												</form>
+											</div>
+										</div>
 									</div>
-									<div id="resultsContent" class="" style="min-height:300px;">
+								</div>
+
+
+
+								<div class="panel-group smart-accordion-default" id="accordion">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" href="#collapse3_1" aria-expanded="false" class="collapsed"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i>
+													<strong>Ubicación</strong>
+												</a>
+											</h4>
+										</div>
+										<div id="collapse3_1" class="panel-collapse collapse " aria-expanded="false" style="height: 0px;">
+											<div class="panel-body no-padding custom-scroll" style="max-height: 800px; display: block; overflow-x: hidden; overflow-y: scroll;">
+												<form novalidate="novalidate" id="smart-form-register" class="smart-form">
+													<fieldset>
+														<section>
+															<label class="input">
+																<input type="search" name="search" placeholder="Busca por Ubicación...">
+															</label>
+														</section>
+
+														<section class="cns-checkbox-list">
+															<span class="label padding-5 cns-title1">Pais</span>
+
+															<label class="checkbox">
+																<input name="terms_2" id="terms_2" type="checkbox"> <i></i> México
+																<span class="text-muted pull-right">(510)</span>
+															</label>
+															<label class="checkbox">
+																<input name="terms_3" id="terms_3" type="checkbox"> <i></i> Estados Unidos de America
+																<span class="text-muted pull-right">(50)</span>
+															</label>
+															<label class="checkbox">
+																<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Colombia
+																<span class="text-muted pull-right">(24)</span>
+															</label>
+															<label class="checkbox">
+																<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Canada
+																<span class="text-muted pull-right">(24)</span>
+															</label>
+															<label class="checkbox">
+																<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Francia
+																<span class="text-muted pull-right">(24)</span>
+															</label>
+															<label for="" class="label txt-color-grayText" id="personaAllBtn"><i class="fa fa-fw fa-plus"></i>Todos los Paises</label>
+															<div id="personaAll" class="allContainer" style="display:none;">
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+																	<span class="text-muted pull-right">(24)</span>
+																</label>
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+																	<span class="text-muted pull-right">(24)</span>
+																</label>
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+																	<span class="text-muted pull-right">(24)</span>
+																</label>
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+																	<span class="text-muted pull-right">(24)</span>
+																</label>
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+																	<span class="text-muted pull-right">(24)</span>
+																</label>
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+																	<span class="text-muted pull-right">(24)</span>
+																</label>
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+																	<span class="text-muted pull-right">(24)</span>
+																</label>
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+																	<span class="text-muted pull-right">(24)</span>
+																</label>
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+																	<span class="text-muted pull-right">(24)</span>
+																</label>
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+																	<span class="text-muted pull-right">(24)</span>
+																</label>
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+																	<span class="text-muted pull-right">(24)</span>
+																</label>
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+																	<span class="text-muted pull-right">(24)</span>
+																</label>
+																<label class="checkbox">
+																	<input name="terms_4" id="terms_4" type="checkbox"> <i></i> PaisX
+																	<span class="text-muted pull-right">(24)</span>
+																</label>
+															</div>
+														</section>
+
+														<section>
+															<span class="label padding-5 cns-title1">Estado</span>
+
+															<label class="checkbox">
+																<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Distrito Federal
+																<span class="text-muted pull-right">(55)</span>
+															</label>
+															<label class="checkbox">
+																<input name="terms_3" id="terms_3" type="checkbox"> <i></i> Salva Tierra
+																<span class="text-muted pull-right">(14)</span>
+															</label>
+															<label class="checkbox">
+																<input name="terms_3" id="terms_3" type="checkbox"> <i></i> Querétaro
+																<span class="text-muted pull-right">(14)</span>
+															</label>
+															<label class="checkbox">
+																<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Nuevo León
+																<span class="text-muted pull-right">(1,515)</span>
+															</label>
+															<label class="checkbox">
+																<input name="terms_3" id="terms_3" type="checkbox"> <i></i> Panama
+																<span class="text-muted pull-right">(14)</span>
+															</label>
+															<label for="" class="label txt-color-grayText" id="appaAllBtn"><i class="fa fa-fw fa-plus"></i>Todos los Estados</label>
+
+														</section>
+
+														<section>
+															<span class="label padding-5 cns-title1">Municipio</span>
+
+															<label class="checkbox">
+																<input name="terms_3" id="terms_3" type="checkbox"> <i></i> Mpo 1-x
+																<span class="text-muted pull-right">(15)</span>
+															</label>
+															<label class="checkbox">
+																<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Mpo 1-x
+																<span class="text-muted pull-right">(12)</span>
+															</label>
+															<label class="checkbox">
+																<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Mpo 1-x
+																<span class="text-muted pull-right">(81)</span>
+															</label>
+															<label class="checkbox">
+																<input name="terms_3" id="terms_3" type="checkbox"> <i></i> Mpo 1-x
+																<span class="text-muted pull-right">(5)</span>
+															</label>
+															<label class="checkbox">
+																<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Mpo 1-x
+																<span class="text-muted pull-right">(3)</span>
+															</label>
+															<label for="" class="label txt-color-grayText" id="apmaAllBtn"><i class="fa fa-fw fa-plus"></i>Todos los Municipios</label>
+
+														</section>
+
+													</fieldset>
+
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="panel-group smart-accordion-default" id="accordion2">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<a data-toggle="collapse" href="#collapseTwo" aria-expanded="false" class="collapsed"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i>
+													<strong>Media Filiación</strong>
+												</a>
+											</h4>
+										</div>
+										<div id="collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+											<div class="panel-body no-padding">
+												<form novalidate="novalidate" id="smart-form-register" class="smart-form">
+													<!-- <header>
+														<h2 class="txt-color-red">Filtrado por:</h2>
+													</header> -->
+													<fieldset>
+														<section>
+															<label class="input">
+																<input type="search" name="search" placeholder="Busca por Media Filiación...">
+															</label>
+														</section>
+
+													</fieldset>
+
+												</form>
+												<!-- children -->
+												<div class="panel-group smart-accordion-default" id="accordion2_1">
+													<div class="panel panel-default">
+														<div class="panel-heading">
+															<h4 class="panel-title">
+																<a data-toggle="collapse" href="#collapse2_1" aria-expanded="false" class="collapsed"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i>
+																	<strong>Complexión</strong>
+																</a>
+															</h4>
+														</div>
+														<div id="collapse2_1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+															<div class="panel-body no-padding">
+																<form novalidate="novalidate" id="smart-form-register" class="smart-form">
+																	<!-- <header>
+																		<h2 class="txt-color-red">Filtrado por:</h2>
+																	</header> -->
+																	<fieldset>
+																		<section>
+																			<label class="checkbox">
+																				<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Delgada
+																				<span class="text-muted pull-right">(81)</span>
+																			</label>
+																			<label class="checkbox">
+																				<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Gruesa
+																				<span class="text-muted pull-right">(7)</span>
+																			</label>
+																		</section>
+
+																	</fieldset>
+
+																</form>
+																<!-- children -->
+
+																<!--/children -->
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="panel-group smart-accordion-default" id="accordion2_2">
+													<div class="panel panel-default">
+														<div class="panel-heading">
+															<h4 class="panel-title">
+																<a data-toggle="collapse" href="#collapse2_2" aria-expanded="false" class="collapsed"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i>
+																	<strong>Color de Piel</strong>
+																</a>
+															</h4>
+														</div>
+														<div id="collapse2_2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+															<div class="panel-body no-padding">
+																<form novalidate="novalidate" id="smart-form-register" class="smart-form">
+																	<!-- <header>
+																		<h2 class="txt-color-red">Filtrado por:</h2>
+																	</header> -->
+																	<fieldset>
+																		<section>
+																			<label class="checkbox">
+																				<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Blanca
+																				<span class="text-muted pull-right">(72)</span>
+																			</label>
+																			<label class="checkbox">
+																				<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Morena
+																				<span class="text-muted pull-right">(56)</span>
+																			</label>
+																			<label class="checkbox">
+																				<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Obscura
+																				<span class="text-muted pull-right">(3)</span>
+																			</label>
+																		</section>
+
+																	</fieldset>
+
+																</form>
+																<!-- children -->
+
+																<!--/children -->
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="panel-group smart-accordion-default" id="accordion2_3">
+													<div class="panel panel-default">
+														<div class="panel-heading">
+															<h4 class="panel-title">
+																<a data-toggle="collapse" href="#collapse2_3" aria-expanded="false" class="collapsed"> <i class="fa fa-lg fa-angle-down pull-right"></i> <i class="fa fa-lg fa-angle-up pull-right"></i>
+																	<strong>Cara</strong>
+																</a>
+															</h4>
+														</div>
+														<div id="collapse2_3" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+															<div class="panel-body no-padding">
+																<form novalidate="novalidate" id="smart-form-register" class="smart-form">
+																	<!-- <header>
+																		<h2 class="txt-color-red">Filtrado por:</h2>
+																	</header> -->
+																	<fieldset>
+																		<section>
+																			<label class="checkbox">
+																				<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Tipo-1-1
+																				<span class="text-muted pull-right">(5)</span>
+																			</label>
+																			<label class="checkbox">
+																				<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Tipo-1-2
+																				<span class="text-muted pull-right">(7)</span>
+																			</label>
+																			<label class="checkbox">
+																				<input name="terms_2" id="terms_2" type="checkbox"> <i></i> Tipo-1-3
+																				<span class="text-muted pull-right">(33)</span>
+																			</label>
+																		</section>
+
+																	</fieldset>
+
+																</form>
+																<!-- children -->
+
+																<!--/children -->
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--/children -->
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--  end taxonomias -->
+							</div>
+						</div>
+						<!--  end panel taxonomias-->
+					</div>
+					<div class="col col-xs-12 col-sm-8 col-md-9">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="row">
+									<div class="col col-xs-12 col-sm-4">
+										<span id="fuenteActiva" style="font-size:1.5em!important;"></span>
+									</div>
+									<div class="col col-xs-12 col-sm-4 no-padding text-center">
+										<!-- start res por page -->
+										<span id="totalResults" class="font-md txt-color-red" style="    font-weight: bold;
+    font-size: 1.5em!important;">451</span> resultados
+										<span class="note">(tiempo 5.05 seg.) </span>
+										<!-- end res por oage -->
+									</div>
+									<div class="col col-xs-12 col-sm-4 text-align-right ">
+										<ul class="pagination pagination-sm pagination no-margin">
+											<li>
+												<a href="javascript:void(0);"><i class="fa fa-angle-left"></i></a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">1</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">2</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">3</a>
+											</li>
+											<li class="active">
+												<a href="javascript:void(0);">4</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">5</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);"><i class="fa fa-angle-right"></i></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="panel-body">
+
+								<!--  start results container -->
+								<div class="row">
+
+									<!-- end resultsContent -->
+									<div class="col-sm-12 col-md-12 " id="resultsContent">
 										<!-- start Results -->
 										<div class="search-results clearfix">
-											<a><i class="fa fa-share-alt pull-right"></i></a>
-											<a><i class="fa fa-comment pull-right"></i></a>
+
+											<div class="btn-group-vertical pull-right">
+												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-sticky-note-o"></i></a>
+												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-share-alt"></i></a>
+											</div>
+
 											<h4><a href="javascript:void(0);">Juan Jóse Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
 											<img src="img/avatars/male.png" class="hide" alt="">
 											<div>
@@ -538,16 +981,15 @@ Use search to find needed section.
 												</div>
 												<p class="description">
 													Jun 10, 2006
-													<br>
-													<br>
-													<span class="badge badge-info">3</span> imagenes
 												</p>
 											</div>
 
 										</div>
 										<div class="search-results clearfix">
-											<a><i class="fa fa-share-alt pull-right"></i></a>
-											<a><i class="fa fa-comment pull-right"></i></a>
+											<div class="btn-group-vertical pull-right">
+												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-sticky-note-o"></i></a>
+												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-share-alt"></i></a>
+											</div>
 											<h4><a href="javascript:void(0);">Juan Jóse Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
 											<img src="img/avatars/male.png" class="hide" alt="">
 											<div>
@@ -561,22 +1003,21 @@ Use search to find needed section.
 												</div>
 												<p class="description">
 													Oct 1, 2013
-													<br>
-													<br>
-													<span class="badge bg-color-greenLight">22</span> imagenes
 												</p>
 											</div>
 
 										</div>
 										<div class="search-results clearfix">
-											<a><i class="fa fa-share-alt pull-right"></i></a>
-											<a><i class="fa fa-comment pull-right"></i></a>
+											<div class="btn-group-vertical pull-right">
+												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-sticky-note-o"></i></a>
+												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-share-alt"></i></a>
+											</div>
 											<h4><a href="javascript:void(0);">José Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
 
 											<div>
 
 												<!-- <span class="sparkline txt-color-blueLight" data-sparkline-type="line" data-sparkline-width="150px" data-sparkline-height="25px"> 10,3,8,4,3,10,7,8,4,6,4,6,8,3 </span>
-								<span class="display-inline note font-lg semi-bold"><small><i class="fa fa-arrow-circle-up text-success"></i> 143.43</small></span> -->
+													<span class="display-inline note font-lg semi-bold"><small><i class="fa fa-arrow-circle-up text-success"></i> 143.43</small></span> -->
 
 												<p class="note">
 													<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> Licencias de Conducir&nbsp;&nbsp;</a>
@@ -591,169 +1032,118 @@ Use search to find needed section.
 											</div>
 
 										</div>
+
+										<div class="search-results clearfix">
+											<div class="btn-group-vertical pull-right">
+												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-sticky-note-o"></i></a>
+												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-share-alt"></i></a>
+											</div>
+											<h4><a href="javascript:void(0);">Juan Jóse Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
+											<img src="img/avatars/male.png" class="hide" alt="">
+											<div>
+												<p class="note">
+													<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> SIOM&nbsp;&nbsp;</a>
+												</p>
+												<div class="url text-success">
+													PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
+												</div>
+												<p class="description">
+													Jun 10, 2006
+												</p>
+											</div>
+
+										</div>
+										<div class="search-results clearfix">
+											<div class="btn-group-vertical pull-right">
+												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-sticky-note-o"></i></a>
+												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-share-alt"></i></a>
+											</div>
+											<h4><a href="javascript:void(0);">Juan Jóse Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
+											<img src="img/avatars/male.png" class="hide" alt="">
+											<div>
+												<p class="note">
+													<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> REPUVE&nbsp;&nbsp;</a>
+													<a href="javascript:void(0);"><i class="fa fa-legal txt-color-red"></i> Con Orden de Aprensión&nbsp;&nbsp;</a>
+													<a href="javascript:void(0);"><i class="fa fa-globe"></i> Mexicano&nbsp;&nbsp;</a>
+												</p>
+												<div class="url text-success">
+													PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
+												</div>
+												<p class="description">
+													Oct 1, 2013
+												</p>
+											</div>
+
+										</div>
+										<div class="search-results clearfix">
+											<div class="btn-group-vertical pull-right">
+												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-sticky-note-o"></i></a>
+												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-share-alt"></i></a>
+											</div>
+											<h4><a href="javascript:void(0);">José Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
+
+											<div>
+
+												<!-- <span class="sparkline txt-color-blueLight" data-sparkline-type="line" data-sparkline-width="150px" data-sparkline-height="25px"> 10,3,8,4,3,10,7,8,4,6,4,6,8,3 </span>
+													<span class="display-inline note font-lg semi-bold"><small><i class="fa fa-arrow-circle-up text-success"></i> 143.43</small></span> -->
+
+												<p class="note">
+													<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> Licencias de Conducir&nbsp;&nbsp;</a>
+													<a href="javascript:void(0);"><i class="fa fa-globe"></i> Mexicano&nbsp;&nbsp;</a>
+												</p>
+												<div class="url text-success">
+													PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
+												</div>
+												<p class="description">
+													Investigación que participan en estas acciones censaron mil 850 negocios en el perímetro de Eje 2 Norte, Circunvalación, Eje 1 Oriente Vidal Alcocer...
+												</p>
+											</div>
+
+										</div>
+										<div class="text-center">
+											<hr>
+											<ul class="pagination no-margin">
+												<li class="prev disabled">
+													<a href="javascript:void(0);">Atras</a>
+												</li>
+												<li class="active">
+													<a href="javascript:void(0);">1</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);">2</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);">3</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);">4</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);">5</a>
+												</li>
+												<li class="next">
+													<a href="javascript:void(0);">Siguiente</a>
+												</li>
+											</ul>
+											<br>
+											<span class="note">320 resultadoss (5.05 seg.) </span>
+											<br>
+											<br>
+										</div>
 										<!-- end Results -->
 									</div>
+									<!-- end resultsContent -->
 
-									<!-- widget footer -->
-									<div class="widget-footer">
-										<ul class="pagination pagination-sm">
-											<li>
-												<a href="javascript:void(0);"><i class="fa fa-angle-left"></i></a>
-											</li>
-											<li>
-												<a href="javascript:void(0);">1</a>
-											</li>
-											<li>
-												<a href="javascript:void(0);">2</a>
-											</li>
-											<li class="active">
-												<a href="javascript:void(0);">3</a>
-											</li>
-											<li>
-												<a href="javascript:void(0);">4</a>
-											</li>
-											<li>
-												<a href="javascript:void(0);">5</a>
-											</li>
-											<li>
-												<a href="javascript:void(0);"><i class="fa fa-angle-right"></i></a>
-											</li>
-										</ul>
-									</div>
-									<!-- end widget footer -->
+
 								</div>
-								<!-- end widget content -->
-
+								<!--  end  results container-->
 							</div>
-							<!-- end widget div -->
-
 						</div>
-						<!-- end widget -->
-						<div class="jarviswidget jarviswidget-color-blue jarviswidget-sortable" id="wid-id-4" data-widget-editbutton="false" data-widget-colorbutton="false" role="widget">
-							<!-- widget options:
-			usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
-			data-widget-colorbutton="false"
-			data-widget-editbutton="false"
-			data-widget-togglebutton="false"
-			data-widget-deletebutton="false"
-			data-widget-fullscreenbutton="false"
-			data-widget-custombutton="false"
-			data-widget-collapsed="true"
-			data-widget-sortable="false"
-		-->
-							<header role="heading">
-								<div class="jarviswidget-ctrls" role="menu"> <a href="javascript:void(0);" class="button-icon jarviswidget-toggle-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Collapse"><i class="fa fa-minus "></i></a> <a href="javascript:void(0);" class="button-icon jarviswidget-fullscreen-btn"
-									rel="tooltip" title="" data-placement="bottom" data-original-title="Fullscreen"><i class="fa fa-expand "></i></a>
-									<a href="javascript:void(0);" class="button-icon jarviswidget-delete-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Delete"><i class="fa fa-times"></i></a>
-								</div>
-								<span class="widget-icon"> <i class="fa fa-sticky-note-o txt-color-white"></i> </span>
-								<h2> Notas </h2>
-								<!-- <div class="widget-toolbar">
-			add: non-hidden - to disable auto hide
-		</div>-->
-								<span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span>
-							</header>
-							<!-- widget div-->
-							<div role="content">
-								<!-- widget edit box -->
-								<div class="jarviswidget-editbox">
-									<div>
-										<label>Title:</label>
-										<input type="text">
-									</div>
-								</div>
-								<!-- end widget edit box -->
-								<div class="widget-body no-padding smart-form">
-									<!-- content goes here -->
-									<h5 class="todo-group-title"><i class="fa fa-warning"></i> Notas Criticas (
-										<small class="num-of-tasks">1</small>)</h5>
-									<ul id="sortable1" class="todo ui-sortable">
-										<li>
-											<span class="handle">
-												<label class="checkbox">
-													<input type="checkbox" name="checkbox-inline">
-													<i></i> </label>
-											</span>
-											<p>
-												<strong>Fuente 6</strong> - José Hernandez Galindo [<a href="javascript:void(0);" class="font-xs">Ver Detalle</a>]
-												<span class="text-muted">Investigación PGJ </span>
-												<span class="date">Jan 1, 2014</span>
-											</p>
-										</li>
-									</ul>
-									<h5 class="todo-group-title"><i class="fa fa-exclamation"></i> Notas Importantes (
-										<small class="num-of-tasks">3</small>)</h5>
-									<ul id="sortable2" class="todo ui-sortable">
-										<li>
-											<span class="handle">
-												<label class="checkbox">
-													<input type="checkbox" name="checkbox-inline">
-													<i></i> </label>
-											</span>
-											<p>
-												<strong>Fuente 1</strong> - Vehiculo reportado robo
-												<small>(Sonora)</small> [<a href="javascript:void(0);" class="font-xs">Ver Detalle</a>]
-												<span class="date">Nov 02, 2015</span>
-											</p>
-										</li>
-										<li>
-											<span class="handle">
-												<label class="checkbox">
-													<input type="checkbox" name="checkbox-inline">
-													<i></i> </label>
-											</span>
-											<p>
-												<strong>Fuente 3</strong> - Call customer support re: Issue <a href="javascript:void(0);" class="font-xs">#6134</a>
-												<small>(code review)</small>
-												<span class="date">Nov 22, 2013</span>
-											</p>
-										</li>
-										<li>
-											<span class="handle">
-												<label class="checkbox">
-													<input type="checkbox" name="checkbox-inline">
-													<i></i> </label>
-											</span>
-											<p>
-												<strong>Fuente 1</strong> - Investigación judicial 456 [<a href="javascript:void(0);" class="font-xs">Ver Detalle</a>]
-												<span class="text-muted">Circunvalación, Eje 1 Oriente VidalCircunvalación, Eje 1 Oriente Vidal. </span>
-												<span class="date">Jan 1, 2014</span>
-											</p>
-										</li>
-									</ul>
-									<h5 class="todo-group-title"><i class="fa fa-close"></i> Notas Descartadas (
-										<small class="num-of-tasks">1</small>)</h5>
-									<ul id="sortable3" class="todo">
-										<li class="complete">
-											<span class="handle" style="display:none">
-												<label class="checkbox state-disabled">
-													<input type="checkbox" name="checkbox-inline" checked="checked" disabled="disabled">
-													<i></i> </label>
-											</span>
-											<p>
-												<strong>ID #17643</strong> - Orden aprensión 124 [<a href="javascript:void(0);" class="font-xs">Ver Detalle</a>]
-												<span class="text-muted">Pruebas de invesigación.... </span>
-												<span class="date">Ene 1, 2015</span>
-											</p>
-										</li>
-									</ul>
-									<!-- end content -->
-								</div>
-							</div>
-							<!-- end widget div -->
-						</div>
-					</article>
-					<!-- WIDGET END -->
 
+
+					</div>
 				</div>
 
-				<!-- end row -->
-
-				<!-- row -->
-
-				<div class="row">
-
-				</div>
 
 				<!-- end row -->
 
@@ -763,60 +1153,123 @@ Use search to find needed section.
 		<!-- END MAIN CONTENT -->
 		<!-- Modal -->
 		<div class="modal fade" id="personaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
+			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 							×
 						</button>
-						<h4 class="modal-title" id="myModalLabel">Filtro Avanzado &gt; Persona</h4>
+						<h4 class="modal-title" id="myModalLabel">Detalle &gt; Persona</h4>
 					</div>
-					<div class="modal-body no-padding">
+					<div class="modal-body no-padding" style="overflow-x:hidden;overflow-y:hidden;">
+						<!-- SlidePanel -->
+						<div id="slidein-panel">
+							<!-- SlidePanel Button Container -->
+							<div id="slidein-panel-container">
+								<a id="slidein-panel-btn" href="#">
+									<i class="fa fa-bars"></i>
+								</a>
+							</div>
+							<!-- /SlidePanel Button Container -->
 
-						<form id="login-form" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F5">
-							<fieldset>
-								<section>
-									<label class="input"> <i class="icon-prepend fa fa-user"></i>
-										<input type="text" name="fname" placeholder="Nombre(s)">
-									</label>
-								</section>
-								<div class="row">
-									<section class="col col-6">
-										<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-											<input type="text" name="fname" placeholder="Apellido Paterno">
-										</label>
-									</section>
-									<section class="col col-6">
-										<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-											<input type="text" name="fname" placeholder="Apellido Materno">
-										</label>
-									</section>
-								</div>
-							</fieldset>
-							<fieldset>
-								<div class="row">
-									<section class="col col-6">
-										<label class="input"> <i class="icon-prepend fa fa-credit-card"></i>
-											<input type="text" name="fname" placeholder="RFC">
-										</label>
-									</section>
-									<section class="col col-6">
-										<label class="input"> <i class="icon-prepend fa fa-credit-card"></i>
-											<input type="text" name="fname" placeholder="CURP">
-										</label>
-									</section>
-								</div>
-							</fieldset>
+							<!-- SlidePanel Content -->
+							<ul>
+								<li><a href="#">Link 1</a></li>
+								<li><a href="#">Link 2</a></li>
+								<li><a href="#">Link 3</a></li>
+								<li><a href="#">Link 4</a></li>
+								<li><a href="#">Link 5</a></li>
+							</ul>
+							<!-- /SlidePanel Content -->
+						</div>
+						<!-- /SlidePanel -->
+						<div class="well well-light well-sm no-margin no-padding">
 
-							<footer>
-								<button type="button" class="btn btn-default" data-dismiss="modal">
-									Cancelar
-								</button>
-								<button id="" type="button" class="btn btn-success callResultsContent">
-									Buscar
-								</button>
-							</footer>
-						</form>
+							<div class="row">
+
+
+
+								<div class="col-sm-12">
+
+									<div class="row">
+
+										<div class="col-sm-3 profile-pic">
+
+											<img src="img/avatars/sunny-big.png" alt="demo user">
+
+										</div>
+										<div class="col-sm-6">
+											<h1>Juan José
+												<span class="semi-bold">Hernandez Galindo</span>
+												<span class="text-muted" style="font-size: small;">
+													<br>Lugar de Nacimiento</span>
+												<br>
+												<small> México, Distrito Federal</small>
+												<br>
+
+											</h1>
+
+											<ul class="list-unstyled">
+												<li>
+													<p class="text-muted">
+														<i class="fa fa-calendar-o"></i>&nbsp;&nbsp; Fecha de Nacimiento:
+														<span class="txt-color-darken">20/12/1987</span>
+													</p>
+												</li>
+												<li>
+													<p class="text-muted">
+														<i class="fa fa-calendar"></i>&nbsp;&nbsp; Edad:
+														<span class="txt-color-darken">25</span>
+													</p>
+												</li>
+												<li>
+													<p class="text-muted">
+														<i class="fa fa-tag"></i>&nbsp;&nbsp; RFC:
+														<span class="txt-color-darken">ACHU481701-UHC</span>
+													</p>
+												</li>
+												<li>
+													<p class="text-muted">
+														<i class="fa fa-tag"></i>&nbsp;&nbsp; CURP:
+														<span class="txt-color-darken">ACHU4817056456781ASD</span>
+													</p>
+												</li>
+												<li>
+													<p class="text-muted">
+														<i class="fa fa-map-marker"></i>&nbsp;&nbsp; Domicilio:
+														<span class="txt-color-darken">Calle de Prueba No.123, Colonia Demo, Distrito Federal, México, CP 76000 <span class="label label-primary"><i class=" fa fa-fw fa-map-o"></i> Ver mapa</span></span>
+													</p>
+												</li>
+											</ul>
+
+										</div>
+										<div class="col-sm-3">
+											<div class="row">
+												<div class="col-sm-12" style="
+												background-color: #1A1A1A;
+												height: 300px;
+												background-image: url('img/red-1.png');
+												background-size: initial;
+												background-position: center;
+												background-repeat: no-repeat;
+												">
+
+												</div>
+											</div>
+
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+
+							<!-- end row -->
+
+						</div>
 
 					</div>
 				</div>
@@ -831,8 +1284,9 @@ Use search to find needed section.
 	<div class="page-footer">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6">
-				<span class="txt-color-white">CNS
-					<span class="hidden-xs"> - Busquedas 2.0</span> © 2015-2016</span>
+				<span class="cns-text-footer hidden-xs">
+					SUIC&nbsp;<i class="fa fa-fw fa-angle-right"></i>&nbsp;Portal Único&nbsp;<i class="fa fa-fw fa-angle-right"></i>&nbsp;Búsquedas 2.0.0
+				</span>
 			</div>
 			<div class="col-xs-6 col-sm-6 text-right hidden-xs">
 				<div class="txt-color-white inline-block">
@@ -840,48 +1294,258 @@ Use search to find needed section.
 					<strong>hace 2 min &nbsp;</strong>
 					</i>
 					<div class="btn-group dropup">
-						<button class="btn btn-xs dropdown-toggle bg-color-blue txt-color-white" data-toggle="dropdown">
+						<button id="btn-toggle-notes" class="btn btn-xs dropdown-toggle bg-color-blue txt-color-white">
 							<i class="fa fa-sticky-note-o"></i> Notas
 							<span class="caret"></span>
 						</button>
-						<ul class="dropdown-menu pull-right text-left">
-							<li>
-								<div class="padding-5">
-									<p class="txt-color-darken font-sm no-margin">Fuente 1</p>
-
-									<span style="txt-color-darken font-sm no-margin">Contenido de la nota</span>
-								</div>
-							</li>
-							<li class="divider"></li>
-							<li>
-								<div class="padding-5">
-									<p class="txt-color-darken font-sm no-margin">Server Load</p>
-									<div class="progress progress-micro no-margin">
-										<div class="progress-bar progress-bar-success" style="width: 20%;"></div>
-									</div>
-								</div>
-							</li>
-							<li class="divider"></li>
-							<li>
-								<div class="padding-5">
-									<p class="txt-color-darken font-sm no-margin">Memory Load
-										<span class="text-danger">*critical*</span>
-									</p>
-									<div class="progress progress-micro no-margin">
-										<div class="progress-bar progress-bar-danger" style="width: 70%;"></div>
-									</div>
-								</div>
-							</li>
-							<li class="divider"></li>
-							<li>
-								<div class="padding-5">
-									<button class="btn btn-block btn-default">Imprimir</button>
-								</div>
-							</li>
-						</ul>
 					</div>
 				</div>
 			</div>
+			<!--  Bloque-Notas -->
+			<div id="notescontainer" class="col-xs-12 notes-container padding-10 hide animated fast ">
+				<div class="row">
+					<div class="col-xs-12">
+						<!-- <div class="notes-toLeft">
+								<i class="fa fa-chevron-left"></i>
+							</div>
+							<div id="btn-notes-toRight" class="notes-toRight">
+							<i class="fa fa-chevron-right"></i>
+						</div> -->
+						<div id="notesscroll" class="notes-scroll">
+							<!--  Lista de Items -->
+							<!--  Nota -->
+							<div class="notes-item animated fadeIn padding-5">
+								<div class="note-head">
+									<span class="note-results">
+										<i class="fa fa-star"></i>&nbsp; 55 resultados
+									</span>
+									<span class="note-date">
+										<i class="fa fa-calendar-o"></i>&nbsp; 11 Nov, 2015
+									</span>
+								</div>
+								<div class="note-body">
+									<div class="note-data">
+										<span class="note-title">Juan José Hernandez</span>
+										<p class="note-content">
+											<span class="note-subcontent">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit
+											</span>
+										</p>
+									</div>
+									<div class="note-controls">
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
+											<li><i class="fa-li fa fa-fw fa-print note-print note-print"></i>&nbsp;</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- /Nota -->
+							<!--  Nota -->
+							<div class="notes-item animated fadeIn padding-5">
+								<div class="note-head">
+									<span class="note-results">
+										<i class="fa fa-star"></i>&nbsp; 55 resultados
+									</span>
+									<span class="note-date">
+										<i class="fa fa-calendar-o"></i>&nbsp; 11 Nov, 2015
+									</span>
+								</div>
+								<div class="note-body">
+									<div class="note-data">
+										<span class="note-title">Juan José Hernandez</span>
+										<p class="note-content">
+											<span class="note-subcontent">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit
+											</span>
+										</p>
+									</div>
+									<div class="note-controls">
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
+											<li><i class="fa-li fa fa-fw fa-print note-print"></i>&nbsp;</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- /Nota -->
+							<!--  Nota -->
+							<div class="notes-item animated fadeIn padding-5">
+								<div class="note-head">
+									<span class="note-results">
+										<i class="fa fa-star"></i>&nbsp; 55 resultados
+									</span>
+									<span class="note-date">
+										<i class="fa fa-calendar-o"></i>&nbsp; 11 Nov, 2015
+									</span>
+								</div>
+								<div class="note-body">
+									<div class="note-data">
+										<span class="note-title">Juan José Hernandez</span>
+										<p class="note-content">
+											<span class="note-subcontent">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit
+											</span>
+										</p>
+									</div>
+									<div class="note-controls">
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
+											<li><i class="fa-li fa fa-fw fa-print note-print"></i>&nbsp;</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- /Nota -->
+							<!--  Nota -->
+							<div class="notes-item animated fadeIn padding-5">
+								<div class="note-head">
+									<span class="note-results">
+										<i class="fa fa-star"></i>&nbsp; 55 resultados
+									</span>
+									<span class="note-date">
+										<i class="fa fa-calendar-o"></i>&nbsp; 11 Nov, 2015
+									</span>
+								</div>
+								<div class="note-body">
+									<div class="note-data">
+										<span class="note-title">Juan José Hernandez</span>
+										<p class="note-content">
+											<span class="note-subcontent">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit
+											</span>
+										</p>
+									</div>
+									<div class="note-controls">
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
+											<li><i class="fa-li fa fa-fw fa-print note-print note-print"></i>&nbsp;</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- /Nota -->
+							<!--  Nota -->
+							<div class="notes-item animated fadeIn padding-5">
+								<div class="note-head">
+									<span class="note-results">
+										<i class="fa fa-star"></i>&nbsp; 55 resultados
+									</span>
+									<span class="note-date">
+										<i class="fa fa-calendar-o"></i>&nbsp; 11 Nov, 2015
+									</span>
+								</div>
+								<div class="note-body">
+									<div class="note-data">
+										<span class="note-title">Juan José Hernandez</span>
+										<p class="note-content">
+											<span class="note-subcontent">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit
+											</span>
+										</p>
+									</div>
+									<div class="note-controls">
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
+											<li><i class="fa-li fa fa-fw fa-print note-print note-print"></i>&nbsp;</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- /Nota -->
+							<!--  Nota -->
+							<div class="notes-item animated fadeIn padding-5">
+								<div class="note-head">
+									<span class="note-results">
+										<i class="fa fa-star"></i>&nbsp; 55 resultados
+									</span>
+									<span class="note-date">
+										<i class="fa fa-calendar-o"></i>&nbsp; 11 Nov, 2015
+									</span>
+								</div>
+								<div class="note-body">
+									<div class="note-data">
+										<span class="note-title">Juan José Hernandez</span>
+										<p class="note-content">
+											<span class="note-subcontent">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit
+											</span>
+										</p>
+									</div>
+									<div class="note-controls">
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
+											<li><i class="fa-li fa fa-fw fa-print note-print"></i>&nbsp;</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- /Nota -->
+							<!--  Nota -->
+							<div class="notes-item animated fadeIn padding-5">
+								<div class="note-head">
+									<span class="note-results">
+										<i class="fa fa-star"></i>&nbsp; 55 resultados
+									</span>
+									<span class="note-date">
+										<i class="fa fa-calendar-o"></i>&nbsp; 11 Nov, 2015
+									</span>
+								</div>
+								<div class="note-body">
+									<div class="note-data">
+										<span class="note-title">Juan José Hernandez</span>
+										<p class="note-content">
+											<span class="note-subcontent">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit
+											</span>
+										</p>
+									</div>
+									<div class="note-controls">
+										<ul class="fa-ul">
+											<li><i class="fa-li fa fa-fw fa-trash-o note-trash"></i>&nbsp;</li>
+											<li><i class="fa-li fa fa-fw fa-print note-print note-print-false"></i>&nbsp;</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- /Nota -->
+
+							<!-- /Lista de Items -->
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 padding-top-10">
+						<div class="notes-controls">
+							<span id="btn-notes-toMaxLeft" class="fa-stack ">
+								<i class="fa fa-square fa-stack-2x"></i>
+								<i class="fa fa-angle-double-left fa-stack-1x fa-fw fa-inverse"></i>
+							</span>
+							<span id="btn-notes-toLeft" class="fa-stack ">
+								<i class="fa fa-square fa-stack-2x"></i>
+								<i class="fa fa-angle-left fa-stack-1x fa-fw fa-inverse"></i>
+							</span>
+							<span id="btn-notes-toRight" class="fa-stack ">
+								<i class="fa fa-square fa-stack-2x"></i>
+								<i class="fa fa-angle-right fa-stack-1x fa-fw fa-inverse"></i>
+							</span>
+							<span id="btn-notes-toMaxRight" class="fa-stack ">
+								<i class="fa fa-square fa-stack-2x"></i>
+								<i class="fa fa-angle-double-right fa-stack-1x fa-fw fa-inverse"></i>
+							</span>
+							<span id="btn-notes-print" class="fa-stack ">
+								<i class="fa fa-square fa-stack-2x"></i>
+								<i class="fa fa-print fa-stack-1x fa-fw fa-inverse"></i>
+							</span>
+							<span id="btn-notes-trash" class="fa-stack ">
+								<i class="fa fa-square fa-stack-2x"></i>
+								<i class="fa fa-trash-o fa-stack-1x fa-fw fa-inverse"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /Bloque-Notas -->
 		</div>
 	</div>
 	<!-- END PAGE FOOTER -->
@@ -915,7 +1579,7 @@ Use search to find needed section.
 				</a>
 			</li>
 			<li>
-				<a href="invoice.html" class="jarvismetro-tile big-cubes bg-color-blueDark">
+				<a href="invoice.html" class="jarvismetro-tile big-cubes bg-color-white">
 					<span class="iconbox"> <i class="fa fa-book fa-4x"></i>
 						<span>Invoice
 							<span class="label pull-right bg-color-darken">99</span>
@@ -995,29 +1659,19 @@ Use search to find needed section.
 	<!-- SmartChat UI : plugin -->
 	<script src="js/smart-chat-ui/smart.chat.ui.min.js"></script>
 	<script src="js/smart-chat-ui/smart.chat.manager.min.js"></script>
+	<!--  Slide Panel -->
+	<script src="js/plugin/slidepanel/jquery.slidepanel.js"></script>
 	<!-- PAGE RELATED PLUGIN(S)
-	<script src="..."></script>-->
+<script src="..."></script>-->
 	<script type="text/javascript">
 		// DO NOT REMOVE : GLOBAL FUNCTIONS!
-
 		$(document).ready(function() {
 
 			pageSetUp();
-
+			$.SlidePanel();
 			// PAGE RELATED SCRIPTS
 
-			$('.tree > ul').attr('role', 'tree').find('ul').attr('role', 'group');
-			$('.tree').find('li:has(ul)').addClass('parent_li').attr('role', 'treeitem').find(' > span').attr('title', 'Collapse this branch').on('click', function(e) {
-				var children = $(this).parent('li.parent_li').find(' > ul > li');
-				if (children.is(':visible')) {
-					children.hide('fast');
-					$(this).attr('title', 'Expand this branch').find(' > i').removeClass().addClass('fa fa-lg fa-plus-circle');
-				} else {
-					children.show('fast');
-					$(this).attr('title', 'Collapse this branch').find(' > i').removeClass().addClass('fa fa-lg fa-minus-circle');
-				}
-				e.stopPropagation();
-			});
+
 			/*
 			 * TODO: add a way to add more todo's to list
 			 */
@@ -1079,10 +1733,23 @@ Use search to find needed section.
 				};
 
 				if (element.attr('data-type') !== undefined && element.attr('data-type') !== null && elementValue !== undefined && elementValue.length > 0) {
-					labelTemplate = "<span class='label label-" + typeStyle + " animated fadeInRight filter-open-modal' rel='tooltip' title='' data-placement='top' data-original-title='Editar filtro'>" + elementValue +
-						"&nbsp;<i class='fa fa-fw fa-close filter-close-tag' rel='tooltip' title='' data-placement='top' data-original-title='Quitar filtro'></i></span> ";
-
-					$('#advancedFilterTags').append(labelTemplate);
+					//labelTemplate = "<span class='label label-" + typeStyle + " animated fadeInRight filter-open-modal' rel='tooltip' title='' data-placement='top' data-original-title='Editar filtro'>" + elementValue + "&nbsp;<i class='fa fa-fw fa-close filter-close-tag' rel='tooltip' title='' data-placement='top' data-original-title='Quitar filtro'></i></span> ";
+					labelTemplate = '<li class="select2-search-choice">' +
+						'<div>Nevada' +
+						'</div>' +
+						'<a href="#" class="select2-search-choice-close" tabindex="-1">' +
+						'</a>' +
+						'</li>';
+					// $('#advancedFilterTags').append(labelTemplate);
+					$('#advancedFilterTags ul').append(labelTemplate);
+					//para fuentes
+					// if(element.attr('data-type') === "1") {
+					// 	if(!element.find('i').hasClass('fa-check-circle')){
+					// 		element.find('i').removeClass('fa-circle-o').addClass('fa-check-circle txt-color-greenSuccess');
+					// 	}else if(!element.find('i').hasClass('fa-circle-o')){
+					// 		element.find('i').removeClass('fa-check-circle txt-color-greenSuccess').addClass('fa-circle-o');
+					// 	}
+					// }
 
 					console.info(elementValue);
 
@@ -1106,10 +1773,10 @@ Use search to find needed section.
 				});
 				// Filter-Tag actions
 				/*$('.filter-open-modal').click(function(e){
-					e.preventDefault();
-					console.log('.filter-open-modal',this);
-					$('#personaModal').modal('show');
-				});*/
+		e.preventDefault();
+		console.log('.filter-open-modal',this);
+		$('#personaModal').modal('show');
+	});*/
 
 			});
 
@@ -1118,7 +1785,25 @@ Use search to find needed section.
 			$('.callResultsContent').click(function(e) {
 				console.log('callResultsContent', e);
 				$('#resultsContent > .search-results').show();
-				$('#personaModal').modal('hide');
+				// $('#personaModal').modal('hide');
+				$('#resultsBlock').removeClass('hide');
+			});
+
+			$('.cleanScreen').click(function(e) {
+				console.log('cleanScreen', e);
+				$('#resultsContent > .search-results').hide();
+				// $('#personaModal').modal('hide');
+				$('#resultsBlock').addClass('hide');
+				$('#taxonomiasBlock').addClass('hide');
+
+			});
+
+			$('.showTaxonomiasBlock').click(function(e) {
+				console.log('showTaxonomiasBlock', e);
+				$('#taxonomiasBlock').removeClass('hide');
+
+				$('#fuenteActiva').text('Licencias de Conducir');
+				$('#totalResults').text('320');
 			});
 
 			$('#fpersona_nombre').change(function(e) {
@@ -1145,14 +1830,73 @@ Use search to find needed section.
 					el.addClass('hide');
 					$('.filter-id-ubicacion').removeClass('fadeInRight').delay(300).addClass('fadeOut').delay(300).remove();
 				}
+
 			});
+
+			/*
+			 * NOTES CONTAINER
+			 */
+			// Button for toggle container visibility
+			$('#btn-toggle-notes').click(function(e) {
+				e.preventDefault();
+				console.log("btn-toggle-notes");
+				var btn = $(this);
+				var element = $("#notescontainer");
+
+				if (element.hasClass('hide') && !element.hasClass('fadeOut')) {
+					element.removeClass('hide').addClass('fadeIn');
+				} else if (element.hasClass('fadeIn')) {
+					element.removeClass('fadeIn').addClass('hide').delay(300).addClass('fadeOut');
+				} else if (element.hasClass('fadeOut') && element.hasClass('hide')) {
+					element.removeClass('fadeOut').delay(300).removeClass('fadeOut').addClass('fadeIn');
+				};
+
+
+			});
+			// Notes scroll
+			$('#btn-notes-toMaxLeft').click(function(e) {
+				var btn = $(this);
+				var element = $("#notesscroll");
+				var span = element[0].scrollWidth - element[0].clientWidth;
+				element.animate({
+					scrollLeft: "-=" + span
+				}, "fast", "linear");
+			});
+			$('#btn-notes-toLeft').click(function(e) {
+				var btn = $(this);
+				var element = $("#notesscroll");
+				element.animate({
+					scrollLeft: "-=" + 250
+				}, "fast", "swing");
+			});
+			$('#btn-notes-toRight').click(function(e) {
+				var btn = $(this);
+				var element = $("#notesscroll");
+				element.animate({
+					scrollLeft: "+=" + 250
+				}, "fast", "swing");
+			});
+			$('#btn-notes-toMaxRight').click(function(e) {
+				var btn = $(this);
+				var element = $("#notesscroll");
+				var span = element[0].scrollWidth - element[0].clientWidth;
+				element.animate({
+					scrollLeft: "+=" + span
+				}, "fast", "linear");
+			});
+			/* END - NOTES CONTAINER */
 
 			var addToFilterList = function(typeStyle, elementValue) {
 
-				var labelTemplate = "<span class='label label-" + typeStyle + " animated fadeInRight filter-open-modal filter-id-" + (elementValue).toLowerCase() + "' rel='tooltip' title='' data-placement='top' data-original-title='Editar filtro'>" +
-					elementValue + "&nbsp;<i class='fa fa-fw fa-close filter-close-tag' rel='tooltip' title='' data-placement='top' data-original-title='Quitar filtro'></i></span> ";
+				//var labelTemplate = "<span class='label label-" + typeStyle + " animated fadeInRight filter-open-modal filter-id-" + (elementValue).toLowerCase() + "' rel='tooltip' title='' data-placement='top' data-original-title='Editar filtro'>" + elementValue + "&nbsp;<i class='fa fa-fw fa-close filter-close-tag' rel='tooltip' title='' data-placement='top' data-original-title='Quitar filtro'></i></span> ";
+				var labelTemplate = '<li class="select2-search-choice animated fadeInRight filter-open-modal filter-id-' + (elementValue).toLowerCase() + '">' +
+					'<div>' + elementValue +
+					'</div>' +
+					'<a href="#" class="select2-search-choice-close filter-close-tag" tabindex="-1">' +
+					'</a>' +
+					'</li>';
 
-				$('#advancedFilterTags').append(labelTemplate);
+				$('#advancedFilterTags ul').append(labelTemplate);
 
 				// Filter-Tag actions
 				$('.filter-close-tag').click(function(e) {
@@ -1163,6 +1907,56 @@ Use search to find needed section.
 				});
 
 			};
+
+			$('ul.bg-color-blueMiranda-alt > li > a').click(function(e) {
+				e.preventDefault();
+				console.log('clicked element!');
+				$('ul.bg-color-blueMiranda-alt > li').each(function() {
+					$(this).removeClass('active');
+				});
+				$(this).parent().addClass('active');
+
+			});
+
+			$('.filter-open-modal').click(function(e) {
+				e.preventDefault();
+				console.log('.filter-open-modal', this);
+				$('#personaModal').modal('show');
+			});
+
+			$('#resultsContent > .search-results h4').click(function(e) {
+				e.preventDefault();
+				console.log('.search-results h4', this);
+				$('#personaModal').modal('show');
+			});
+
+			//toggle personaAll list
+			$('#personaAllBtn').click(function(e) {
+				e.preventDefault();
+				console.log('.#personaAllBtn', this);
+				if ($('#personaAll').is(":visible")) {
+					$(this).find('i').removeClass('fa-minus');
+					$('#personaAll').hide('slow');
+					$(this).find('i').addClass('fa-plus');
+				} else {
+					$(this).find('i').removeClass('fa-plus');
+					$('#personaAll').show('slow');
+					$(this).find('i').addClass('fa-minus');
+				}
+
+			});
+
+			// start datepicker01
+			$('#pfechanacimiento').datepicker({
+				dateFormat: 'dd/mm/yy',
+				prevText: '<i class="fa fa-chevron-left"></i>',
+				nextText: '<i class="fa fa-chevron-right"></i>',
+				onSelect: function(selectedDate) {
+					// $('#startdate').datepicker('option', 'maxDate', selectedDate);
+				}
+			});
+			// end datepicker01
+
 
 		})
 	</script>

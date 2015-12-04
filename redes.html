@@ -90,31 +90,30 @@ Use search to find needed section.
 * 'fixed-page-footer' - Fixes footer
 * 'container'         - boxed layout mode (non-responsive: will not work with fixed-navigation & fixed-ribbon)
 -->
-<body class="smart-style-0 smart-style-0-alt fixed-page-footer">
+<body class="smart-style-0 no-menu smart-style-0-alt fixed-page-footer">
 	<div class="container-fluid">
 		<div class="row cns-header">
-			<div class="col col-xs-12 col-sm-4 hidden-xs">
-				<span id="logo" style="float: left;">
-					<img src="img/logo-segob.png" alt="SEGOB">
-					<img src="img/logo-cns.png" alt="CNS">
-				</span>
-			</div>
-			<div class="col col-xs-12 col-sm-4 cns-app-logo">
-				<img src="img/logo-busquedas.png" alt="" class="hide" />
-			</div>
-			<div class="col col-xs-12 col-sm-4 hidden-xs">
-				<div class="user-data-top font-xs pull-right">
-					<dl class="dl-horizontal">
-						<!-- <dt>Sistema:</dt> -->
-						<!-- <dd style=" color: white; background-color: #63AD85; "><strong>Busquedas</strong> <em>v2.0.0</em><i class="fa fa-fw fa-info pull-right"></i></dd> -->
-						<dt>Organización:</dt>
-						<dd>Comisión Nacional de Seguridad</dd>
-						<dt>Área:</dt>
-						<dd>Plataforma México</dd>
-						<dt>Usuario:</dt>
-						<dd>Perez Martinez Juan</dd>
-					</dl>
+			<div class="col col-xs-12 col-sm-6 hidden-xs">
+				<div class="user-data-top ">
+					<img src="img/logo-segob-y-cns-01.png" alt="" class="img-responsive" style="max-height: 50px; padding-right: 5px;">
+					<img src="img/logo-pm-01.png" alt="" class="" />
 				</div>
+			</div>
+			<div class="col col-xs-12 col-sm-6 hidden-xs">
+
+				<div class="user-data-top pull-right">
+					<img src="img/externos/nl-gov.gif" alt="" class="img-responsive" style="height: 50px; padding-right: 5px;">
+
+					<div class="user-data-left">
+						<span>Gobierno de Nuevo León <i class="fa fa-fw fa-building txt-color-grayText"></i></span>
+						<br>
+						<span>Únidad Antisecuestros <i class="fa fa-fw fa-map-marker txt-color-grayText"></i></span>
+						<br>
+						<span>Perez Martinez Juan <i class="fa fa-fw fa-user txt-color-grayText"></i></span>
+					</div>
+					<img src="img/avatars/male.png" alt="" class="img-circle" style="height: 50px;">
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -182,7 +181,7 @@ Use search to find needed section.
 
 			<!-- #MOBILE -->
 			<!-- Top menu profile link : this shows only when top menu is active -->
-			<ul id="mobile-profile-img" class="header-dropdown-list hidden-xs padding-5 hide">
+			<!-- <ul id="mobile-profile-img" class="header-dropdown-list hidden-xs padding-5 hide">
 				<li class="">
 					<a href="#" class="dropdown-toggle no-margin userdropdown" data-toggle="dropdown">
 						<img src="img/avatars/sunny.png" alt="John Doe" class="online" />
@@ -209,7 +208,7 @@ Use search to find needed section.
 						</li>
 					</ul>
 				</li>
-			</ul>
+			</ul> -->
 			<!-- logout button -->
 			<div id="logout" class="btn-header transparent pull-right hide">
 				<span> <a href="login.html" title="Sign Out" data-action="userLogout" data-logout-msg="You can improve your security further after logging out by closing this opened browser"><i class="fa fa-sign-out"></i></a> </span>
@@ -517,32 +516,22 @@ Use search to find needed section.
 			<div class="row">
 
 				<!-- NEW WIDGET START -->
-
-				<!-- WIDGET END -->
-				<!-- NEW WIDGET START -->
 				<article class="col-sm-12 col-md-12 col-lg-12">
 					<!--  Widget filtros v2 -->
-					<div class="jarviswidget jarviswidget-color-darken" id="wid-id-9" data-widget-editbutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="true" role="widget" data-widget-attstyle="jarviswidget-color-darken">
-					<!-- widget options:
-					usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+					<div class="jarviswidget jarviswidget-color-darken" id="wid-id-0" data-widget-editbutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="true" role="widget" data-widget-attstyle="jarviswidget-color-darken">
 
-					data-widget-colorbutton="false"
-					data-widget-editbutton="false"
-					data-widget-togglebutton="false"
-					data-widget-deletebutton="false"
-					data-widget-fullscreenbutton="false"
-					data-widget-custombutton="false"
-					data-widget-collapsed="true"
-					data-widget-sortable="false"
+						<header role="heading">
+							<span class="widget-icon"> <i class="fa fa-lg fa-list"></i> </span>
+							<h2>Criterios de Búsqueda</h2>
+							<div class="jarviswidget-ctrls" role="menu">
+								<a href="javascript:void(0);" class="button-icon jarviswidget-toggle-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Collapse"><i class="fa fa-minus "></i></a>
+								<!-- <a href="javascript:void(0);" class="button-icon jarviswidget-fullscreen-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Fullscreen"><i class="fa fa-expand "></i></a> -->
+								<!-- <a href="javascript:void(0);" class="button-icon jarviswidget-delete-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Delete"><i class="fa fa-times"></i></a> -->
+							</div>
 
-				-->
-				<header role="heading">
-					<span class="widget-icon"> <i class="fa fa-lg fa-list"></i> </span>
-					<h2>Criterios de Búsqueda </h2>
-					<div class="jarviswidget-ctrls" role="menu">
-						<a href="javascript:void(0);" class="button-icon jarviswidget-toggle-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Collapse"><i class="fa fa-minus "></i></a></div><div class="widget-toolbar" role="menu"><a data-toggle="dropdown" class="dropdown-toggle color-box selector" href="javascript:void(0);" aria-expanded="false"></a><ul class="dropdown-menu arrow-box-up-right color-select pull-right"><li><span class="bg-color-green" data-widget-setstyle="jarviswidget-color-green" rel="tooltip" data-placement="left" data-original-title="Green Grass"></span></li><li><span class="bg-color-greenDark" data-widget-setstyle="jarviswidget-color-greenDark" rel="tooltip" data-placement="top" data-original-title="Dark Green"></span></li><li><span class="bg-color-greenLight" data-widget-setstyle="jarviswidget-color-greenLight" rel="tooltip" data-placement="top" data-original-title="Light Green"></span></li><li><span class="bg-color-purple" data-widget-setstyle="jarviswidget-color-purple" rel="tooltip" data-placement="top" data-original-title="Purple"></span></li><li><span class="bg-color-magenta" data-widget-setstyle="jarviswidget-color-magenta" rel="tooltip" data-placement="top" data-original-title="Magenta"></span></li><li><span class="bg-color-pink" data-widget-setstyle="jarviswidget-color-pink" rel="tooltip" data-placement="right" data-original-title="Pink"></span></li><li><span class="bg-color-pinkDark" data-widget-setstyle="jarviswidget-color-pinkDark" rel="tooltip" data-placement="left" data-original-title="Fade Pink"></span></li><li><span class="bg-color-blueLight" data-widget-setstyle="jarviswidget-color-blueLight" rel="tooltip" data-placement="top" data-original-title="Light Blue"></span></li><li><span class="bg-color-teal" data-widget-setstyle="jarviswidget-color-teal" rel="tooltip" data-placement="top" data-original-title="Teal"></span></li><li><span class="bg-color-blue" data-widget-setstyle="jarviswidget-color-blue" rel="tooltip" data-placement="top" data-original-title="Ocean Blue"></span></li><li><span class="bg-color-blueDark" data-widget-setstyle="jarviswidget-color-blueDark" rel="tooltip" data-placement="top" data-original-title="Night Sky"></span></li><li><span class="bg-color-darken" data-widget-setstyle="jarviswidget-color-darken" rel="tooltip" data-placement="right" data-original-title="Night"></span></li><li><span class="bg-color-yellow" data-widget-setstyle="jarviswidget-color-yellow" rel="tooltip" data-placement="left" data-original-title="Day Light"></span></li><li><span class="bg-color-orange" data-widget-setstyle="jarviswidget-color-orange" rel="tooltip" data-placement="bottom" data-original-title="Orange"></span></li><li><span class="bg-color-orangeDark" data-widget-setstyle="jarviswidget-color-orangeDark" rel="tooltip" data-placement="bottom" data-original-title="Dark Orange"></span></li><li><span class="bg-color-red" data-widget-setstyle="jarviswidget-color-red" rel="tooltip" data-placement="bottom" data-original-title="Red Rose"></span></li><li><span class="bg-color-redLight" data-widget-setstyle="jarviswidget-color-redLight" rel="tooltip" data-placement="bottom" data-original-title="Light Red"></span></li><li><span class="bg-color-white" data-widget-setstyle="jarviswidget-color-white" rel="tooltip" data-placement="right" data-original-title="Purity"></span></li><li><a href="javascript:void(0);" class="jarviswidget-remove-colors" data-widget-setstyle="" rel="tooltip" data-placement="bottom" data-original-title="Reset widget color to default">Remove</a></li></ul></div>
 
-						<span class="jarviswidget-loader" style="display: none;"><i class="fa fa-refresh fa-spin"></i></span></header>
+							<span class="jarviswidget-loader" style="display: none;"><i class="fa fa-refresh fa-spin"></i></span>
+						</header>
 
 						<!-- widget div-->
 						<div role="content">
@@ -557,7 +546,7 @@ Use search to find needed section.
 							<!-- widget content -->
 							<div class="widget-body ">
 								<div class="row">
-									<div class="col col-xs-12">
+									<div class="col col-xs-12 col-sm-12 col-md-8">
 										<div class="tabs-left">
 											<ul class="nav nav-tabs tabs-left" id="demo-pill-nav">
 												<li class="active">
@@ -594,32 +583,29 @@ Use search to find needed section.
 												<div class="tab-pane active" id="hr1">
 													<!--  Start Form1 -->
 													<form id="login-form-2" class="smart-form" novalidate="novalidate" pmbx_context="5C83B937-B413-42DD-82B2-11E512CF17F6">
-														<fieldset>
+														<fieldset class="padding-top-0">
 															<div class="row">
-																<section class="col col-4">
+																<section class="col col-6">
 																	<label class="input"> <i class="icon-prepend fa fa-user"></i>
 																		<input type="text" name="fpersona_claveusuario" placeholder="Clave de Usuario/Perfil">
 																	</label>
 																</section>
-																<section class="col col-4">
+																<section class="col col-6">
 																	<label class="input"> <i class="icon-append fa fa-calendar"></i>
 																		<input type="text" name="finishdate" id="finishdate" placeholder="Fecha">
 																	</label>
 																</section>
-																<section class="col col-4">
-																	<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
-																		<input type="text" name="fpersona_lugar" placeholder="Lugar">
-																	</label>
-																</section>
 															</div>
 															<div class="row">
-																<section class="col col-8">
+																<section class="col col-6">
 																	<label class="input"> <i class="icon-prepend fa fa-user"></i>
 																		<input type="text" id="fpersona_nombre" name="fpersona_nombre" placeholder="Nombre(s)" >
 																	</label>
 																</section>
-																<section class="col col-4">
-																	 &nbsp;
+																<section class="col col-6">
+																	<label class="input"> <i class="icon-prepend fa fa-map-marker"></i>
+																		<input type="text" name="fpersona_lugar" placeholder="Lugar">
+																	</label>
 																</section>
 															</div>
 														</fieldset>
@@ -629,10 +615,10 @@ Use search to find needed section.
 												<div class="tab-pane" id="hr2">
 													<!--  Start Form2 -->
 													<form id="login-form-2" class="smart-form" novalidate="novalidate">
-														<fieldset>
+														<fieldset class="padding-top-0">
 															<section>
 																<label class="textarea"> <i class="icon-append fa fa-file-text-o "></i>
-																	<textarea rows="3" name="review" id="fpost_contenido" placeholder="Contenido/Texto a buscar..."></textarea>
+																	<textarea rows="6" name="review" id="fpost_contenido" placeholder="Contenido/Texto a buscar..."></textarea>
 																</label>
 															</section>
 														</fieldset>
@@ -642,15 +628,12 @@ Use search to find needed section.
 												<div class="tab-pane" id="hr3">
 													<!-- Start Form3 -->
 													<form id="login-form-3" class="smart-form" novalidate="novalidate">
-														<fieldset>
+														<fieldset class="padding-top-0">
 															<div class="row">
-																<section class="col col-8">
+																<section>
 																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
 																		<input type="text" id="fmedios_contenido" name="fmedios_contenido" placeholder="Contenido/Texto a buscar..." >
 																	</label>
-																</section>
-																<section class="col col-4">
-																	 &nbsp;
 																</section>
 															</div>
 															<div class="row">
@@ -705,6 +688,74 @@ Use search to find needed section.
 												</div>
 											</div>
 										</div>
+									</div>
+									<div class="col col-xs-12 col-sm-12 col-md-4">
+										<!-- ini0 -->
+										<div class="jarviswidget jarviswidget-color-white jarviswidget-sortable margin-bottom-10" id="wid-id-2" data-widget-editbutton="false" data-widget-colorbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-sortable="false"
+										data-widget-fullscreenbutton="false">
+											<header role="heading">
+
+												<span class="widget-icon">
+													<i class="fa fa-filter"></i>
+												</span>
+												<h2 class="font-sm">
+													Búscar en las Fuentes seleccionadas
+												</h2>
+											</header>
+
+											<!-- widget div-->
+											<div role="content">
+
+												<!-- widget edit box -->
+												<div class="jarviswidget-editbox">
+													<!-- This area used as dropdown edit box -->
+
+												</div>
+												<!-- end widget edit box -->
+
+												<!-- widget content -->
+												<div class="widget-body no-padding">
+
+													<form novalidate="novalidate" id="smart-form-register" class="smart-form custom-scroll cns-fuentes-block" style="">
+														<fieldset class="no-padding">
+															<section class="padding-10">
+																<label class="checkbox">
+																	<input name="terms_1" id="terms_1" type="checkbox"> <i></i>
+																	<strong>Todas las fuentes
+																	</strong>
+																</label>
+																<label class="checkbox">
+																	<input name="terms_2" id="terms_2" type="checkbox"><i></i>
+																	Google Plus
+																</label>
+																<label class="checkbox">
+																	<input name="terms_2" id="terms_2" type="checkbox"><i></i>
+																	Instagram
+																</label>
+																<label class="checkbox">
+																	<input name="terms_2" id="terms_2" type="checkbox"><i></i>
+																	Facebook
+																</label>
+																<label class="checkbox">
+																	<input name="terms_2" id="terms_2" type="checkbox"><i></i>
+																	Twitter
+																</label>
+																<label class="checkbox">
+																	<input name="terms_2" id="terms_2" type="checkbox"><i></i>
+																	YouTube
+																</label>
+															</section>
+														</fieldset>
+													</form>
+
+												</div>
+												<!-- end widget content -->
+
+											</div>
+											<!-- end widget div -->
+
+										</div>
+										<!-- /ini0 -->
 
 									</div>
 
@@ -712,15 +763,14 @@ Use search to find needed section.
 
 								<div class="widget-footer">
 
-									<a href="javascript:void(0);" class="btn btn-labeled btn-info pull-left"> <span class="btn-label"><i class="fa fa-history"></i></span>Nueva Alerta</a>
+									<a href="javascript:void(0);" class="btn btn-labeled btn-info pull-left">
+										<span class="btn-label"><i class="fa fa-history"></i></span>Nueva Alerta</a>
 
+									<a href="javascript:void(0);" class="btn btn-labeled btn-info cleanScreen">
+										<span class="btn-label"><i class="glyphicon glyphicon-trash"></i></span>Limpiar</a>
 
-									<a href="javascript:void(0);" class="btn btn-labeled btn-info"> <span class="btn-label"><i class="glyphicon glyphicon-trash"></i></span>Limpiar</a>
-
-
-									<a href="javascript:void(0);" class="btn btn-labeled btn-info callResultsContent"> <span class="btn-label"><i class="glyphicon glyphicon-search"></i></span>Buscar</a>
-
-
+									<a href="javascript:void(0);" class="btn btn-labeled btn-info callResultsContent">
+										<span class="btn-label"><i class="glyphicon glyphicon-search"></i></span>Buscar</a>
 
 								</div>
 
@@ -732,153 +782,10 @@ Use search to find needed section.
 
 					</div>
 					<!--  end Widget Filtros v2-->
-					<!-- Widget ID (each widget will need unique ID)-->
-					<div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-0" data-widget-editbutton="false" data-widget-deletebutton="false">
-					<!-- widget options:
-					usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
-					data-widget-colorbutton="false"
-					data-widget-editbutton="false"
-					data-widget-togglebutton="false"
-					data-widget-deletebutton="false"
-					data-widget-fullscreenbutton="false"
-					data-widget-custombutton="false"
-					data-widget-collapsed="true"
-					data-widget-sortable="false"-->
-					<header>
-						<span class="widget-icon"> <i class="fa fa-lg fa-th-large"></i> </span>
-						<h2>Resultados </h2>
 
-					</header>
+				</article>
+				<!-- WIDGET END -->
 
-					<!-- widget div-->
-					<div>
-
-						<!-- widget edit box -->
-						<div class="jarviswidget-editbox">
-							<!-- This area used as dropdown edit box -->
-
-						</div>
-						<!-- end widget edit box -->
-
-						<!-- widget content -->
-						<div class="widget-body">
-
-							<div class="widget-body-toolbar">
-
-								<div class="row">
-
-									<div class="col-sm-12 col-md-12 " id="advancedFilterTags">
-										<!--  *Fuentes -->
-										<!-- <span class="label label-danger animated fadeInRight filter-tag">Todas las Fuentes&nbsp;<i class="fa fa-fw fa-close"></i></span> -->
-										<!--  /*Fuentes -->
-									</div>
-
-								</div>
-
-							</div>
-							<div id="resultsContent" class="" style="min-height:300px;">
-								<!-- start Results -->
-								<div class="search-results clearfix">
-									<a><i class="fa fa-share-alt pull-right"></i></a>
-									<a><i class="fa fa-comment pull-right"></i></a>
-									<h4><a href="javascript:void(0);">Juan Jóse Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
-									<img src="img/avatars/male.png" class="hide" alt="">
-									<div>
-										<p class="note">
-											<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> SIOM&nbsp;&nbsp;</a>
-										</p>
-										<div class="url text-success">
-											PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
-										</div>
-										<p class="description">
-											Jun 10, 2006
-										</p>
-									</div>
-
-								</div>
-								<div class="search-results clearfix">
-									<a><i class="fa fa-share-alt pull-right"></i></a>
-									<a><i class="fa fa-comment pull-right"></i></a>
-									<h4><a href="javascript:void(0);">Juan Jóse Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
-									<img src="img/avatars/male.png" class="hide" alt="">
-									<div>
-										<p class="note">
-											<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> REPUVE&nbsp;&nbsp;</a>
-											<a href="javascript:void(0);"><i class="fa fa-legal txt-color-red"></i> Con Orden de Aprensión&nbsp;&nbsp;</a>
-											<a href="javascript:void(0);"><i class="fa fa-globe"></i> Mexicano&nbsp;&nbsp;</a>
-										</p>
-										<div class="url text-success">
-											PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
-										</div>
-										<p class="description">
-											Oct 1, 2013
-										</p>
-									</div>
-
-								</div>
-								<div class="search-results clearfix">
-									<a><i class="fa fa-share-alt pull-right"></i></a>
-									<a><i class="fa fa-comment pull-right"></i></a>
-									<h4><a href="javascript:void(0);">José Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
-
-									<div>
-
-										<!-- <span class="sparkline txt-color-blueLight" data-sparkline-type="line" data-sparkline-width="150px" data-sparkline-height="25px"> 10,3,8,4,3,10,7,8,4,6,4,6,8,3 </span>
-										<span class="display-inline note font-lg semi-bold"><small><i class="fa fa-arrow-circle-up text-success"></i> 143.43</small></span> -->
-
-										<p class="note">
-											<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> Licencias de Conducir&nbsp;&nbsp;</a>
-											<a href="javascript:void(0);"><i class="fa fa-globe"></i> Mexicano&nbsp;&nbsp;</a>
-										</p>
-										<div class="url text-success">
-											PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
-										</div>
-										<p class="description">
-											Investigación que participan en estas acciones censaron mil 850 negocios en el perímetro de Eje 2 Norte, Circunvalación, Eje 1 Oriente Vidal Alcocer...
-										</p>
-									</div>
-
-								</div>
-								<!-- end Results -->
-							</div>
-
-							<!-- widget footer -->
-							<div class="widget-footer">
-								<ul class="pagination pagination-sm">
-									<li>
-										<a href="javascript:void(0);"><i class="fa fa-angle-left"></i></a>
-									</li>
-									<li>
-										<a href="javascript:void(0);">1</a>
-									</li>
-									<li>
-										<a href="javascript:void(0);">2</a>
-									</li>
-									<li class="active">
-										<a href="javascript:void(0);">3</a>
-									</li>
-									<li>
-										<a href="javascript:void(0);">4</a>
-									</li>
-									<li>
-										<a href="javascript:void(0);">5</a>
-									</li>
-									<li>
-										<a href="javascript:void(0);"><i class="fa fa-angle-right"></i></a>
-									</li>
-								</ul>
-							</div>
-							<!-- end widget footer -->
-						</div>
-						<!-- end widget content -->
-
-					</div>
-					<!-- end widget div -->
-
-				</div>
-				<!-- end widget -->
-			</article>
-			<!-- WIDGET END -->
 
 		</div>
 
