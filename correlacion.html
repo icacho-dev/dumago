@@ -2071,7 +2071,7 @@ src="https://www.google.com/maps/embed/v1/place?q=ssp&key=AIzaSyD8rd4WJFLjFBFWOS
 			$('.showMapCR').click(function(e) {
 				e.preventDefault();
 				console.log('.showMapCR', this);
-				$('#personaModal').modal('hide');
+				//$('#personaModal').modal('hide');
 				$('#mapModal').modal('show').delay(300).queue(function(){
 					$('#mapModal .modal-body').css({'height':$('#mapModal').outerHeight()-86});
 				});
@@ -2081,7 +2081,7 @@ src="https://www.google.com/maps/embed/v1/place?q=ssp&key=AIzaSyD8rd4WJFLjFBFWOS
 			$('.showRedCR').click(function(e) {
 				e.preventDefault();
 				console.log('.showRedCR', this);
-				$('#personaModal').modal('hide');
+				//$('#personaModal').modal('hide');
 				$('#redModal').modal('show').delay(300).queue(function(){
 					$('#redModal .modal-body').css({'height':$('#redModal').outerHeight()-86});
 				});
