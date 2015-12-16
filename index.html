@@ -741,30 +741,30 @@ Use search to find needed section.
 															<fieldset class="no-padding">
 																<section class="padding-10">
 																	<label class="checkbox">
-																		<input name="terms_1" id="terms_1" type="checkbox"> <i></i>
+																		<input name="terms_1" id="terms_1" class="term_fuente" type="checkbox"> <i></i>
 																		<strong>Todas las fuentes
 																		</strong>
 																	</label>
 																	<label class="checkbox">
-																		<input name="terms_2" id="terms_2" type="checkbox" checked="true"> <i></i> Informe Policial Homologado
+																		<input name="terms_2" id="terms_2" class="term_fuente" type="checkbox" checked="true"> <i></i> Informe Policial Homologado
 																	</label>
 																	<label class="checkbox">
-																		<input name="terms_6" id="terms_6" type="checkbox" checked="true"> <i></i> Licencias de Conducir
+																		<input name="terms_6" id="terms_6" class="term_fuente" type="checkbox" checked="true"> <i></i> Licencias de Conducir
 																	</label>
 																	<label class="checkbox">
-																		<input name="terms_3" id="terms_3" type="checkbox" checked="true"> <i></i> Registro Público Vehicular
+																		<input name="terms_3" id="terms_3" class="term_fuente" type="checkbox" checked="true"> <i></i> Registro Público Vehicular
 																	</label>
 																	<label class="checkbox">
-																		<input name="terms_4" id="terms_4" type="checkbox"> <i></i> Registro Nacional de Personal de Seguridad
+																		<input name="terms_4" id="terms_4" class="term_fuente" type="checkbox"> <i></i> Registro Nacional de Personal de Seguridad
 																	</label>
 																	<label class="checkbox">
-																		<input name="terms_7" id="terms_7" type="checkbox"> <i></i> Registro de Iniciados, Procesados y Sentenciados
+																		<input name="terms_7" id="terms_7" class="term_fuente" type="checkbox"> <i></i> Registro de Iniciados, Procesados y Sentenciados
 																	</label>
 																	<label class="checkbox">
-																		<input name="terms_8" id="terms_8" type="checkbox"> <i></i> Vehiculos Robodas y Recuperados
+																		<input name="terms_8" id="terms_8" class="term_fuente" type="checkbox"> <i></i> Vehiculos Robodas y Recuperados
 																	</label>
 																	<label class="checkbox">
-																		<input name="terms_9" id="terms_9" type="checkbox"> <i></i> Registro Nacional de Mandamientos Judiciales
+																		<input name="terms_9" id="terms_9" class="term_fuente" type="checkbox"> <i></i> Registro Nacional de Mandamientos Judiciales
 																	</label>
 																</section>
 															</fieldset>
@@ -2376,8 +2376,23 @@ Use search to find needed section.
 				}
 			});
 			// end datepicker01
-
-
+			// start select fuentes
+			$('#terms_1').click(function(e){
+				//take out first element
+				var fuentes = $('.term_fuente').splice(1);
+				( $(this).is(':checked') ) ?
+					$(fuentes).each(function(){
+						$(this).prop('checked',1);
+						$(this).prop('disabled',1);
+						$(this).parent().addClass('state-disabled'); }) :
+					$(fuentes).each(function(){
+						$(this).prop('checked',0);
+						$(this).prop('disabled',0);
+						$(this).parent().removeClass('state-disabled');
+				 });
+				 console.log('fuentes[]',fuentes);
+			});
+			// end select fuentes
 		})
 	</script>
 	<!-- Your GOOGLE ANALYTICS CODE Below -->
