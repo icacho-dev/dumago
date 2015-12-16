@@ -24,7 +24,6 @@
 * PALETTE
 * GREEN BASE : #5CAA81
 */
-@import url("fonts.css");
 
 .cns-app-logo {
   text-align: center;
@@ -45,40 +44,32 @@
 .cns-checkbox-list > label > input [type="checkbox"] {
   background-color: red!important;
 }
-
 #personaModal {
   padding-right: 0px!important;
 }
-
 #personaModal > .modal-dialog {
   width: auto;
   margin: 10px;
 }
-
 #mapModal {
   padding-right: 0px!important;
 }
-
 #mapModal > .modal-dialog {
   width: auto;
   margin: 10px;
 }
-
 #redModal {
   padding-right: 0px!important;
 }
-
 #redModal > .modal-dialog {
   width: auto;
   margin: 10px;
 }
-
-div:not( #jarviswidget-fullscreen-mode ) > .jarviswidget > div > .widget-body > .cns-fuentes-block {
+div:not( #jarviswidget-fullscreen-mode) > .jarviswidget > div > .widget-body > .cns-fuentes-block {
   overflow-x: hidden;
   overflow-y: scroll;
   height: 154px;
 }
-
 #jarviswidget-fullscreen-mode > .jarviswidget > div > .widget-body > .cns-fuentes-block {
   overflow-x: hidden;
   overflow-y: hidden;
@@ -584,13 +575,11 @@ nav ul ul > li:hover b {
   margin-bottom: 10px;
   position: relative;
 }
-
 .tabs-left > .nav-tabs > li > a {
-    margin-right: -1px;
-    background-color: #F8F7F7;
-    border-right: solid thin #D5D5D5;
+  margin-right: -1px;
+  background-color: #F8F7F7;
+  border-right: solid thin #D5D5D5;
 }
-
 .nav-tabs>li {
-    margin-bottom: -3px;
+  margin-bottom: -3px;
 }
