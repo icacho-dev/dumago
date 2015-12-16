@@ -1,16 +1,14 @@
-# Add correct content-type for fonts
-AddType application/vnd.ms-fontobject .eot
+# BEGIN REQUIRED FOR WEBFONTS
+
 AddType font/ttf .ttf
+AddType font/eot .eot
 AddType font/otf .otf
-AddType font/x-woff .woff
-AddType image/svg+xml .svg
+AddType font/woff .woff
 
-# Compress compressible fonts
-AddOutputFilterByType DEFLATE font/ttf font/otf image/svg+xml
+<FilesMatch "\.(ttf|otf|eot|woff)$">
+    <IfModule mod_headers.c>
+        Header set Access-Control-Allow-Origin "*"
+    </IfModule>
+</FilesMatch>
 
-# Add a far future Expires header for fonts
-ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
-ExpiresByType font/ttf "access plus 1 year"
-ExpiresByType font/otf "access plus 1 year"
-ExpiresByType font/x-woff "access plus 1 year"
-ExpiresByType image/svg+xml "access plus 1 year"
+# END REQUIRED FOR WEBFONTS
