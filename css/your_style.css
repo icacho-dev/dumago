@@ -583,3 +583,63 @@ nav ul ul > li:hover b {
 .nav-tabs>li {
   margin-bottom: -3px;
 }
+.masonry-cards > div {
+  /*border: dashed thin blue;*/
+  padding: 5px;
+  margin: 0!important;
+}
+.masonry-cards .masonry-card {
+  background-color: rgb(245, 245, 245);
+  border: solid thin #E4E4E4;
+  padding: 5px;
+  margin: 0!important;
+}
+.masonry-card h3,
+.masonry-card .top-data {
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.masonry-cards .mugshot {
+  height: 150px;
+  background-size: cover;
+  background-position: 50% 50%;
+  border: solid 2px white;
+}
+.bottom-button {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+.bottom-button:hover {
+  cursor: pointer;
+}
+.bottom-button:hover .triangle-bottomright {
+  border-bottom: 30px solid #a7233a;
+  border-left: 30px solid transparent;
+}
+.bottom-button:hover .rectangle-bottomright {
+  background-color: #a7233a;
+  color: rgba(255, 255, 255, 1);
+}
+.triangle-bottomright {
+  width: 0;
+  height: 0;
+  border-bottom: 30px solid #C01735;
+  border-left: 30px solid transparent;
+  float: left;
+}
+.rectangle-bottomright {
+  width: 30px;
+  height: 30px;
+  background-color: #C01735;
+  float: left;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding-top: 7px;
+}
+.rectangle-bottomright > i {
+  font-size: 15px;
+}
