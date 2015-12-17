@@ -28,7 +28,8 @@
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<!-- GOOGLE FONT -->
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+	<!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700"> -->
+	<link rel="stylesheet" type="text/css" media="screen" href="css/fonts.css">
 	<!--  Slide Panel -->
 	<link rel="stylesheet" type="text/css" media="screen" href="js/plugin/slidepanel/stylesheet.css">
 	<!-- Specifying a Webpage Icon for Web Clip
@@ -92,16 +93,27 @@ Use search to find needed section.
 * 'container'         - boxed layout mode (non-responsive: will not work with fixed-navigation & fixed-ribbon)
 -->
 
-<body class="smart-style-0 smart-style-0-alt fixed-page-footer no-menu">
+<body class="smart-style-0 smart-style-0-alt fixed-page-footer hidden-menu no-menu">
 	<div class="container-fluid">
 		<div class="row cns-header">
-			<div class="col col-xs-12 col-sm-6 hidden-xs">
+			<div class="col col-xs-12 col-sm-4 hidden-xs">
 				<div class="user-data-top ">
 					<img src="img/logo-segob-y-cns-01.png" alt="" class="img-responsive" style="max-height: 50px; padding-right: 5px;">
 					<img src="img/logo-pm-01.png" alt="" class="" />
 				</div>
 			</div>
-			<div class="col col-xs-12 col-sm-6 hidden-xs">
+			<div class="col col-xs-12 col-sm-4 hidden-xs text-center padding-top-10">
+				<span class="hide" style="
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 2em;
+    padding: 5px;
+    color: #C0C3C3;
+">Búsquedas de <strong style="
+    color: #C0C3C3;
+">Correlación</strong></span>
+			</div>
+			<div class="col col-xs-12 col-sm-4 hidden-xs">
 
 				<div class="user-data-top pull-right">
 					<img src="img/externos/nl-gov.gif" alt="" class="img-responsive" style="height: 50px; padding-right: 5px;">
@@ -120,7 +132,7 @@ Use search to find needed section.
 		</div>
 	</div>
 	<!-- HEADER -->
-	<header id="header">
+	<header id="header" class="hide">
 
 
 		<!--  top-menu -->
@@ -348,12 +360,18 @@ Use search to find needed section.
 						<div class="jarviswidget jarviswidget-color-darken" id="wid-id-0" data-widget-editbutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="true" role="widget" data-widget-attstyle="jarviswidget-color-darken">
 
 							<header role="heading">
+
 								<span class="widget-icon"> <i class="fa fa-lg fa-list"></i> </span>
 								<h2>Criterios de Búsqueda</h2>
 								<div class="jarviswidget-ctrls" role="menu">
 									<a href="javascript:void(0);" class="button-icon jarviswidget-toggle-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Collapse"><i class="fa fa-minus "></i></a>
 									<!-- <a href="javascript:void(0);" class="button-icon jarviswidget-fullscreen-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Fullscreen"><i class="fa fa-expand "></i></a> -->
 									<!-- <a href="javascript:void(0);" class="button-icon jarviswidget-delete-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Delete"><i class="fa fa-times"></i></a> -->
+								</div>
+								<div class="widget-toolbar" role="menu">
+										<div class="label bg-color-red" style="font-size: 14px; padding: 4px 7px; font-weight: 400;">
+											<i class="fa fa-fw fa-search"></i> <strong>SISTEMA DE CORRELACIÓN</strong> 2.0
+										</div>
 								</div>
 
 
@@ -748,148 +766,277 @@ Use search to find needed section.
 							<div class="panel-body">
 
 								<!--  start results container -->
-								<div class="row">
+								<!--  start masonry cards -->
+								<div class="row masonry-cards">
 
-									<!-- end resultsContent -->
-									<div class="col-sm-12 col-md-12 " id="resultsContent">
-										<!-- start Results -->
-										<div class="search-results clearfix">
-
-											<div class="btn-group-vertical pull-right">
-												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-sticky-note-o"></i></a>
-												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-share-alt"></i></a>
+									<div class="col col-xs-12 col-sm-6 col-md-6 col-lg-4">
+										<div class="row masonry-card">
+											<!-- begin bottom-button -->
+											<div class="bottom-button">
+												<div class="triangle-bottomright"></div>
+												<div class="rectangle-bottomright"><i class="fa fa-plus "></i></div>
 											</div>
+											<!-- end bottom-button -->
+											<div class="col-xs-3 mugshot" style="background-image:url('img/demo-pics/mugshot-1.jpg');"></div>
+											<div class="col-xs-9">
+												<div class="row">
+													<div class="col-xs-12">
+														<h3>Júan José Hernandes de Santiago</h2>
+														<span class="text-muted top-data">
+															<i class="fa fa-fw fa-map-marker text-muted"></i> Origen: <strong>Santiago de Querétaro, Querétaro</strong>
+														</span>
+													</div>
+													<div class="col-xs-12 col-sm-7">
+														<span class="text-muted">
+															<i class="fa fa-fw fa-tag text-muted"></i> CURP <strong>SHJJ481526ED56</strong>
+														</span>
+													</div>
+													<div class="col-xs-12 col-sm-5">
+														<span class="text-muted">
+															<i class="fa fa-fw fa-calendar-o text-muted"></i> Edad <strong>40</strong> años <br>
 
-											<h4><a href="javascript:void(0);">Juan Jóse Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
-											<img src="img/avatars/male.png" class="hide" alt="">
-											<div>
-												<p class="note">
-													<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> SIOM&nbsp;&nbsp;</a>
-												</p>
-												<div class="url text-success">
-													PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
+														</span>
+													</div>
 												</div>
-												<p class="description">
-													Jun 10, 2006
-												</p>
-											</div>
 
-										</div>
-										<div class="search-results clearfix">
-											<div class="btn-group-vertical pull-right">
-												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-sticky-note-o"></i></a>
-												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-share-alt"></i></a>
 											</div>
-											<h4><a href="javascript:void(0);">Juan Jóse Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
-											<img src="img/avatars/male.png" class="hide" alt="">
-											<div>
-												<p class="note">
-													<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> REPUVE&nbsp;&nbsp;</a>
-													<a href="javascript:void(0);"><i class="fa fa-legal txt-color-red"></i> Con Orden de Aprensión&nbsp;&nbsp;</a>
-													<a href="javascript:void(0);"><i class="fa fa-globe"></i> Mexicano&nbsp;&nbsp;</a>
-												</p>
-												<div class="url text-success">
-													PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
+										</div>
+									</div>
+
+									<div class="col col-xs-12 col-sm-6 col-md-6 col-lg-4">
+										<div class="row masonry-card">
+											<!-- begin bottom-button -->
+											<div class="bottom-button">
+												<div class="triangle-bottomright"></div>
+												<div class="rectangle-bottomright"><i class="fa fa-plus "></i></div>
+											</div>
+											<!-- end bottom-button -->
+											<div class="col-xs-3 mugshot" style="background-image:url('img/demo-pics/mugshot-2.jpg');"></div>
+											<div class="col-xs-9">
+												<div class="row">
+													<div class="col-xs-12">
+														<h3>Júan José Hernandes de Santiago</h2>
+														<span class="text-muted top-data">
+															<i class="fa fa-fw fa-map-marker text-muted"></i> Origen: <strong>Santiago de Querétaro, Querétaro</strong>
+														</span>
+													</div>
+													<div class="col-xs-12 col-sm-7">
+														<span class="text-muted">
+															<i class="fa fa-fw fa-tag text-muted"></i> CURP <strong>SHJJ481526ED56</strong>
+														</span>
+													</div>
+													<div class="col-xs-12 col-sm-5">
+														<span class="text-muted">
+															<i class="fa fa-fw fa-calendar-o text-muted"></i> Edad <strong>40</strong> años <br>
+
+														</span>
+													</div>
 												</div>
-												<p class="description">
-													Oct 1, 2013
-												</p>
 											</div>
-
 										</div>
-										<div class="search-results clearfix">
-											<div class="btn-group-vertical pull-right">
-												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-sticky-note-o"></i></a>
-												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-share-alt"></i></a>
+									</div>
+
+									<div class="col col-xs-12 col-sm-6 col-md-6 col-lg-4">
+										<div class="row masonry-card">
+											<!-- begin bottom-button -->
+											<div class="bottom-button">
+												<div class="triangle-bottomright"></div>
+												<div class="rectangle-bottomright"><i class="fa fa-plus "></i></div>
 											</div>
-											<h4><a href="javascript:void(0);">José Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
+											<!-- end bottom-button -->
+											<div class="col-xs-3 mugshot" style="background-image:url('img/demo-pics/mugshot-3.jpg');"></div>
+											<div class="col-xs-9">
+												<div class="row">
+													<div class="col-xs-12">
+														<h3>Júan Hernandéz Garcia Zarate</h2>
+														<span class="text-muted top-data">
+															<i class="fa fa-fw fa-map-marker text-muted"></i> Origen: <strong>Santiago de Querétaro, Querétaro</strong>
+														</span>
+													</div>
+													<div class="col-xs-12 col-sm-7">
+														<span class="text-muted">
+															<i class="fa fa-fw fa-tag text-muted"></i> CURP <strong>SHJJ481526ED56</strong>
+														</span>
+													</div>
+													<div class="col-xs-12 col-sm-5">
+														<span class="text-muted">
+															<i class="fa fa-fw fa-calendar-o text-muted"></i> Edad <strong>40</strong> años <br>
 
-											<div>
-
-												<!-- <span class="sparkline txt-color-blueLight" data-sparkline-type="line" data-sparkline-width="150px" data-sparkline-height="25px"> 10,3,8,4,3,10,7,8,4,6,4,6,8,3 </span>
-													<span class="display-inline note font-lg semi-bold"><small><i class="fa fa-arrow-circle-up text-success"></i> 143.43</small></span> -->
-
-												<p class="note">
-													<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> Licencias de Conducir&nbsp;&nbsp;</a>
-													<a href="javascript:void(0);"><i class="fa fa-globe"></i> Mexicano&nbsp;&nbsp;</a>
-												</p>
-												<div class="url text-success">
-													PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
+														</span>
+													</div>
 												</div>
-												<p class="description">
-													Investigación que participan en estas acciones censaron mil 850 negocios en el perímetro de Eje 2 Norte, Circunvalación, Eje 1 Oriente Vidal Alcocer...
-												</p>
 											</div>
-
 										</div>
+									</div>
 
-										<div class="search-results clearfix">
-											<div class="btn-group-vertical pull-right">
-												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-sticky-note-o"></i></a>
-												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-share-alt"></i></a>
+									<div class="col col-xs-12 col-sm-6 col-md-6 col-lg-4">
+										<div class="row masonry-card">
+											<!-- begin bottom-button -->
+											<div class="bottom-button">
+												<div class="triangle-bottomright"></div>
+												<div class="rectangle-bottomright"><i class="fa fa-plus "></i></div>
 											</div>
-											<h4><a href="javascript:void(0);">Juan Jóse Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
-											<img src="img/avatars/male.png" class="hide" alt="">
-											<div>
-												<p class="note">
-													<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> SIOM&nbsp;&nbsp;</a>
-												</p>
-												<div class="url text-success">
-													PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
+											<!-- end bottom-button -->
+											<div class="col-xs-3 mugshot" style="background-image:url('img/demo-pics/mugshot-4.jpg');"></div>
+											<div class="col-xs-9">
+												<div class="row">
+													<div class="col-xs-12">
+														<h3>Júan José Hernandes Gonzalez</h2>
+														<span class="text-muted top-data">
+															<i class="fa fa-fw fa-map-marker text-muted"></i> Origen: <strong>Tecate, Baja California Norte</strong>
+														</span>
+													</div>
+													<div class="col-xs-12 col-sm-7">
+														<span class="text-muted">
+															<i class="fa fa-fw fa-tag text-muted"></i> CURP <strong>SDEW481526ED56</strong>
+														</span>
+													</div>
+													<div class="col-xs-12 col-sm-5">
+														<span class="text-muted">
+															<i class="fa fa-fw fa-calendar-o text-muted"></i> Edad <strong>30</strong> años <br>
+
+														</span>
+													</div>
 												</div>
-												<p class="description">
-													Jun 10, 2006
-												</p>
 											</div>
-
 										</div>
-										<div class="search-results clearfix">
-											<div class="btn-group-vertical pull-right">
-												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-sticky-note-o"></i></a>
-												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-share-alt"></i></a>
+									</div>
+
+									<div class="col col-xs-12 col-sm-6 col-md-6 col-lg-4">
+										<div class="row masonry-card">
+											<!-- begin bottom-button -->
+											<div class="bottom-button">
+												<div class="triangle-bottomright"></div>
+												<div class="rectangle-bottomright"><i class="fa fa-plus "></i></div>
 											</div>
-											<h4><a href="javascript:void(0);">Juan Jóse Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
-											<img src="img/avatars/male.png" class="hide" alt="">
-											<div>
-												<p class="note">
-													<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> REPUVE&nbsp;&nbsp;</a>
-													<a href="javascript:void(0);"><i class="fa fa-legal txt-color-red"></i> Con Orden de Aprensión&nbsp;&nbsp;</a>
-													<a href="javascript:void(0);"><i class="fa fa-globe"></i> Mexicano&nbsp;&nbsp;</a>
-												</p>
-												<div class="url text-success">
-													PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
+											<!-- end bottom-button -->
+											<div class="col-xs-3 mugshot" style="background-image:url('img/demo-pics/mugshot-1.jpg');"></div>
+											<div class="col-xs-9">
+												<div class="row">
+													<div class="col-xs-12">
+														<h3>Júan José Hernandes de Santiago</h2>
+														<span class="text-muted top-data">
+															<i class="fa fa-fw fa-map-marker text-muted"></i> Origen: <strong>Santiago de Querétaro, Querétaro</strong>
+														</span>
+													</div>
+													<div class="col-xs-12 col-sm-7">
+														<span class="text-muted">
+															<i class="fa fa-fw fa-tag text-muted"></i> CURP <strong>SHJJ481526ED56</strong>
+														</span>
+													</div>
+													<div class="col-xs-12 col-sm-5">
+														<span class="text-muted">
+															<i class="fa fa-fw fa-calendar-o text-muted"></i> Edad <strong>40</strong> años <br>
+
+														</span>
+													</div>
 												</div>
-												<p class="description">
-													Oct 1, 2013
-												</p>
-											</div>
 
+											</div>
 										</div>
-										<div class="search-results clearfix">
-											<div class="btn-group-vertical pull-right">
-												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-sticky-note-o"></i></a>
-												<a class="btn btn-default" href="javascript:void(0);"><i class="fa fa-share-alt"></i></a>
+									</div>
+
+									<div class="col col-xs-12 col-sm-6 col-md-6 col-lg-4">
+										<div class="row masonry-card">
+											<!-- begin bottom-button -->
+											<div class="bottom-button">
+												<div class="triangle-bottomright"></div>
+												<div class="rectangle-bottomright"><i class="fa fa-plus "></i></div>
 											</div>
-											<h4><a href="javascript:void(0);">José Hernandez Galindo</a>&nbsp;&nbsp;<a href="javascript:void(0);"><i class="fa fa-caret-up fa-lg"></i></a></h4>
+											<!-- end bottom-button -->
+											<div class="col-xs-3 mugshot" style="background-image:url('img/demo-pics/mugshot-2.jpg');"></div>
+											<div class="col-xs-9">
+												<div class="row">
+													<div class="col-xs-12">
+														<h3>Júan José Hernandes de Santiago</h2>
+														<span class="text-muted top-data">
+															<i class="fa fa-fw fa-map-marker text-muted"></i> Origen: <strong>Santiago de Querétaro, Querétaro</strong>
+														</span>
+													</div>
+													<div class="col-xs-12 col-sm-7">
+														<span class="text-muted">
+															<i class="fa fa-fw fa-tag text-muted"></i> CURP <strong>SHJJ481526ED56</strong>
+														</span>
+													</div>
+													<div class="col-xs-12 col-sm-5">
+														<span class="text-muted">
+															<i class="fa fa-fw fa-calendar-o text-muted"></i> Edad <strong>40</strong> años <br>
 
-											<div>
-
-												<!-- <span class="sparkline txt-color-blueLight" data-sparkline-type="line" data-sparkline-width="150px" data-sparkline-height="25px"> 10,3,8,4,3,10,7,8,4,6,4,6,8,3 </span>
-													<span class="display-inline note font-lg semi-bold"><small><i class="fa fa-arrow-circle-up text-success"></i> 143.43</small></span> -->
-
-												<p class="note">
-													<a href="javascript:void(0);" class="text-danger"><i class="fa fa-filter"></i> Licencias de Conducir&nbsp;&nbsp;</a>
-													<a href="javascript:void(0);"><i class="fa fa-globe"></i> Mexicano&nbsp;&nbsp;</a>
-												</p>
-												<div class="url text-success">
-													PUEBLA &gt; Procuraduria General de Justicia<i class="fa fa-caret-down"></i>
+														</span>
+													</div>
 												</div>
-												<p class="description">
-													Investigación que participan en estas acciones censaron mil 850 negocios en el perímetro de Eje 2 Norte, Circunvalación, Eje 1 Oriente Vidal Alcocer...
-												</p>
 											</div>
-
 										</div>
+									</div>
+
+									<div class="col col-xs-12 col-sm-6 col-md-6 col-lg-4">
+										<div class="row masonry-card">
+											<!-- begin bottom-button -->
+											<div class="bottom-button">
+												<div class="triangle-bottomright"></div>
+												<div class="rectangle-bottomright"><i class="fa fa-plus "></i></div>
+											</div>
+											<!-- end bottom-button -->
+											<div class="col-xs-3 mugshot" style="background-image:url('img/demo-pics/mugshot-3.jpg');"></div>
+											<div class="col-xs-9">
+												<div class="row">
+													<div class="col-xs-12">
+														<h3>Júan Hernandéz Garcia Zarate</h2>
+														<span class="text-muted top-data">
+															<i class="fa fa-fw fa-map-marker text-muted"></i> Origen: <strong>Santiago de Querétaro, Querétaro</strong>
+														</span>
+													</div>
+													<div class="col-xs-12 col-sm-7">
+														<span class="text-muted">
+															<i class="fa fa-fw fa-tag text-muted"></i> CURP <strong>SHJJ481526ED56</strong>
+														</span>
+													</div>
+													<div class="col-xs-12 col-sm-5">
+														<span class="text-muted">
+															<i class="fa fa-fw fa-calendar-o text-muted"></i> Edad <strong>40</strong> años <br>
+
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col col-xs-12 col-sm-6 col-md-6 col-lg-4">
+										<div class="row masonry-card">
+											<!-- begin bottom-button -->
+											<div class="bottom-button">
+												<div class="triangle-bottomright"></div>
+												<div class="rectangle-bottomright"><i class="fa fa-plus "></i></div>
+											</div>
+											<!-- end bottom-button -->
+											<div class="col-xs-3 mugshot" style="background-image:url('img/demo-pics/mugshot-4.jpg');"></div>
+											<div class="col-xs-9">
+												<div class="row">
+													<div class="col-xs-12">
+														<h3>Júan José Hernandes Gonzalez</h2>
+														<span class="text-muted top-data">
+															<i class="fa fa-fw fa-map-marker text-muted"></i> Origen: <strong>Tecate, Baja California Norte</strong>
+														</span>
+													</div>
+													<div class="col-xs-12 col-sm-7">
+														<span class="text-muted">
+															<i class="fa fa-fw fa-tag text-muted"></i> CURP <strong>SDEW481526ED56</strong>
+														</span>
+													</div>
+													<div class="col-xs-12 col-sm-5">
+														<span class="text-muted">
+															<i class="fa fa-fw fa-calendar-o text-muted"></i> Edad <strong>30</strong> años <br>
+
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<!--  end masonry cards -->
 										<div class="text-center">
 											<hr>
 											<ul class="pagination no-margin">
@@ -1396,7 +1543,7 @@ src="https://www.google.com/maps/embed/v1/place?q=ssp&key=AIzaSyD8rd4WJFLjFBFWOS
 		<div class="row">
 			<div class="col-xs-12 col-sm-6">
 				<span class="cns-text-footer hidden-xs">
-					SUIC&nbsp;<i class="fa fa-fw fa-angle-right"></i>&nbsp;Portal Único&nbsp;<i class="fa fa-fw fa-angle-right"></i>&nbsp;Búsquedas 2.0.0
+					SUIC&nbsp;<i class="fa fa-fw fa-angle-right"></i>&nbsp;Portal Único&nbsp;<i class="fa fa-fw fa-angle-right"></i>&nbsp;Sistema de Correlación 2.0.0
 				</span>
 			</div>
 			<div class="col-xs-6 col-sm-6 text-right hidden-xs">
