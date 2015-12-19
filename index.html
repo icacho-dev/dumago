@@ -22,6 +22,8 @@
 	specific styles this will also ensure you retrain your customization with each SmartAdmin update.
 	<link rel="stylesheet" type="text/css" media="screen" href="css/your_style.css"> -->
 	<link rel="stylesheet" type="text/css" media="screen" href="css/your_style.css">
+	<link rel="stylesheet" type="text/css" href="js/slidetabs/templates/clean/template.css">
+
 	<!-- Demo purpose only: goes with demo.js, you can delete this css when designing your own WebApp -->
 	<!-- <link rel="stylesheet" type="text/css" media="screen" href="css/demo.min.css"> -->
 	<!-- FAVICONS -->
@@ -1337,6 +1339,25 @@ Use search to find needed section.
 						<!--  end panel taxonomias-->
 					</div>
 					<div class="col col-xs-12 col-sm-8 col-md-9">
+						<!--  start slideTabs -->
+						<div id="slidetabs" class="clean-horizontal">
+							<div class="st_tabs">
+								<div class="st_tabs_wrap">
+									<ul>
+										<li><a href="#view_1">Tab 1</a></li>
+										<li><a href="#view_2">Tab 2</a></li>
+										<li><a href="#view_3">Tab 3</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="st_views">
+						        <div class="view_1 st_view">Tab 1 Content</div>
+						        <div class="view_2 st_view">Tab 2 Content</div>
+						        <div class="view_3 st_view">Tab 3 Content</div>
+							</div>
+						</div>
+						<!--  fin slideTabs -->
+
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<div class="row">
@@ -1386,7 +1407,7 @@ Use search to find needed section.
 									<div class="col-sm-12 col-md-12 " id="resultsContent">
 										<!-- start Results -->
 
-										
+
 
 										<div class="text-center">
 											<hr>
@@ -1934,6 +1955,9 @@ Use search to find needed section.
 	<script src="js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
 	<!-- FastClick: For mobile devices -->
 	<script src="js/plugin/fastclick/fastclick.min.js"></script>
+	<!--  SlideTabs -->
+	<script src="js/slidetabs/js/jquery.slidetabs.min.js"></script>
+
 	<!--[if IE 8]>
 <h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
 <![endif]-->
@@ -2261,6 +2285,11 @@ Use search to find needed section.
 			});
 			// end select fuentes
 		})
+	</script>
+	<script type="text/javascript">
+    jQuery(document).ready(function() {
+        jQuery('#slidetabs').slidetabs();
+    });
 	</script>
 	<!-- Your GOOGLE ANALYTICS CODE Below -->
 	<script type="text/javascript">

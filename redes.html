@@ -21,13 +21,17 @@
 	specific styles this will also ensure you retrain your customization with each SmartAdmin update.
 	<link rel="stylesheet" type="text/css" media="screen" href="css/your_style.css"> -->
 	<link rel="stylesheet" type="text/css" media="screen" href="css/your_style.css">
+	<link rel="stylesheet" type="text/css" href="js/slidetabs/templates/clean/template.css">
+
 	<!-- Demo purpose only: goes with demo.js, you can delete this css when designing your own WebApp -->
 	<!-- <link rel="stylesheet" type="text/css" media="screen" href="css/demo.min.css"> -->
 	<!-- FAVICONS -->
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<!-- GOOGLE FONT -->
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+	<!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700"> -->
+	<link rel="stylesheet" type="text/css" media="screen" href="css/fonts.css">
+
 	<!--  Slide Panel -->
 	<link rel="stylesheet" type="text/css" media="screen" href="js/plugin/slidepanel/stylesheet.css">
 	<!-- Specifying a Webpage Icon for Web Clip
@@ -90,7 +94,8 @@ Use search to find needed section.
 * 'fixed-page-footer' - Fixes footer
 * 'container'         - boxed layout mode (non-responsive: will not work with fixed-navigation & fixed-ribbon)
 -->
-<body class="smart-style-0 no-menu smart-style-0-alt fixed-page-footer">
+
+<body class="smart-style-0 smart-style-0-alt fixed-page-footer no-menu">
 	<div class="container-fluid">
 		<div class="row cns-header">
 			<div class="col col-xs-12 col-sm-6 hidden-xs">
@@ -118,246 +123,8 @@ Use search to find needed section.
 		</div>
 	</div>
 	<!-- HEADER -->
-	<header id="header">
 
-
-		<!--  top-menu -->
-		<ul class="nav navbar-nav bg-color-blueMiranda-alt">
-			<li>
-				<a href="#">
-					<i class="fa fa-lg fa-search-plus"></i>
-					Búsquedas <strong>Exactas</strong>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class="fa fa-lg fa-search"></i>
-					Búsquedas <strong>Abiertas</strong>
-				</a>
-			</li>
-			<li  class="active">
-				<a href="#">
-					<i class="fa fa-lg fa-stack-overflow"></i>
-					Redes <strong>Sociales</strong>
-				</a>
-			</li>
-			<li class="hide">
-				<a href="#">Estadisticas y Producción</a>
-			</li>
-		</ul>
-		<!--  end top-menu -->
-		<!-- projects dropdown -->
-		<div class="project-context hidden-xs hide">
-			<span class="label">Projects:</span>
-			<span class="project-selector dropdown-toggle" data-toggle="dropdown">Recent projects <i class="fa fa-angle-down"></i></span>
-			<!-- Suggestion: populate this list with fetch and push technique -->
-			<ul class="dropdown-menu">
-				<li>
-					<a href="javascript:void(0);">Online e-merchant management system - attaching integration with the iOS</a>
-				</li>
-				<li>
-					<a href="javascript:void(0);">Notes on pipeline upgradee</a>
-				</li>
-				<li>
-					<a href="javascript:void(0);">Assesment Report for merchant account</a>
-				</li>
-				<li class="divider"></li>
-				<li>
-					<a href="javascript:void(0);"><i class="fa fa-power-off"></i> Clear</a>
-				</li>
-			</ul>
-			<!-- end dropdown-menu-->
-		</div>
-		<!-- end projects dropdown -->
-
-		<!-- pulled right: nav area -->
-		<div class="pull-right ">
-
-			<!-- collapse menu button -->
-			<div id="hide-menu" class="btn-header pull-right hide">
-				<span> <a href="javascript:void(0);" data-action="toggleMenu" title="Collapse Menu"><i class="fa fa-reorder"></i></a> </span>
-			</div>
-			<!-- end collapse menu -->
-
-			<!-- #MOBILE -->
-			<!-- Top menu profile link : this shows only when top menu is active -->
-			<!-- <ul id="mobile-profile-img" class="header-dropdown-list hidden-xs padding-5 hide">
-				<li class="">
-					<a href="#" class="dropdown-toggle no-margin userdropdown" data-toggle="dropdown">
-						<img src="img/avatars/sunny.png" alt="John Doe" class="online" />
-					</a>
-					<ul class="dropdown-menu pull-right">
-						<li>
-							<a href="javascript:void(0);" class="padding-10 padding-top-0 padding-bottom-0"><i class="fa fa-cog"></i> Setting</a>
-						</li>
-						<li class="divider"></li>
-						<li>
-							<a href="profile.html" class="padding-10 padding-top-0 padding-bottom-0"> <i class="fa fa-user"></i> <u>P</u>rofile</a>
-						</li>
-						<li class="divider"></li>
-						<li>
-							<a href="javascript:void(0);" class="padding-10 padding-top-0 padding-bottom-0" data-action="toggleShortcut"><i class="fa fa-arrow-down"></i> <u>S</u>hortcut</a>
-						</li>
-						<li class="divider"></li>
-						<li>
-							<a href="javascript:void(0);" class="padding-10 padding-top-0 padding-bottom-0" data-action="launchFullscreen"><i class="fa fa-arrows-alt"></i> Full <u>S</u>creen</a>
-						</li>
-						<li class="divider"></li>
-						<li>
-							<a href="login.html" class="padding-10 padding-top-5 padding-bottom-5" data-action="userLogout"><i class="fa fa-sign-out fa-lg"></i> <strong><u>L</u>ogout</strong></a>
-						</li>
-					</ul>
-				</li>
-			</ul> -->
-			<!-- logout button -->
-			<div id="logout" class="btn-header transparent pull-right hide">
-				<span> <a href="login.html" title="Sign Out" data-action="userLogout" data-logout-msg="You can improve your security further after logging out by closing this opened browser"><i class="fa fa-sign-out"></i></a> </span>
-			</div>
-			<!-- end logout button -->
-			<!-- search mobile button (this is hidden till mobile view port) -->
-			<div id="search-mobile" class="btn-header transparent pull-right hide">
-				<span> <a href="javascript:void(0)" title="Search"><i class="fa fa-search"></i></a> </span>
-			</div>
-			<!-- end search mobile button -->
-			<!-- input: search field -->
-			<form action="search.html" class="header-search pull-right hide">
-				<input id="search-fld"  type="text" name="param" placeholder="Buscar..." data-autocomplete='[
-				"ActionScript",
-				"AppleScript",
-				"Asp",
-				"BASIC",
-				"C",
-				"C++",
-				"Clojure",
-				"COBOL",
-				"ColdFusion",
-				"Erlang",
-				"Fortran",
-				"Groovy",
-				"Haskell",
-				"Java",
-				"JavaScript",
-				"Lisp",
-				"Perl",
-				"PHP",
-				"Python",
-				"Ruby",
-				"Scala",
-				"Scheme"]'>
-				<button type="submit">
-					<i class="fa fa-search"></i>
-				</button>
-				<!-- <a href="javascript:void(0);" id="cancel-search-js" title="Cancel Search"><i class="fa fa-times"></i></a> -->
-			</form>
-			<!-- end input: search field -->
-			<!-- fullscreen button -->
-			<div id="fullscreen" class="btn-header transparent pull-right">
-				<span> <a href="javascript:void(0);" data-action="launchFullscreen" title="Full Screen"><i class="fa fa-arrows-alt"></i></a> </span>
-			</div>
-			<!-- end fullscreen button -->
-
-			<!-- #Voice Command: Start Speech -->
-			<div id="speech-btn" class="btn-header transparent pull-right hidden-sm hidden-xs hide">
-				<div>
-					<a href="javascript:void(0)" title="Voice Command" data-action="voiceCommand"><i class="fa fa-microphone"></i></a>
-					<div class="popover bottom"><div class="arrow"></div>
-					<div class="popover-content">
-						<h4 class="vc-title">Voice command activated <br><small>Please speak clearly into the mic</small></h4>
-						<h4 class="vc-title-error text-center">
-							<i class="fa fa-microphone-slash"></i> Voice command failed
-							<br><small class="txt-color-red">Must <strong>"Allow"</strong> Microphone</small>
-							<br><small class="txt-color-red">Must have <strong>Internet Connection</strong></small>
-						</h4>
-						<a href="javascript:void(0);" class="btn btn-success" onclick="commands.help()">See Commands</a>
-						<a href="javascript:void(0);" class="btn bg-color-purple txt-color-white" onclick="$('#speech-btn .popover').fadeOut(50);">Close Popup</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- end voice command -->
-		<!-- multiple lang dropdown : find all flags in the flags page -->
-		<ul class="header-dropdown-list hidden-xs hide">
-			<li>
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="img/blank.gif" class="flag flag-us" alt="United States"> <span> English (US) </span> <i class="fa fa-angle-down"></i> </a>
-				<ul class="dropdown-menu pull-right">
-					<li class="active">
-						<a href="javascript:void(0);"><img src="img/blank.gif" class="flag flag-us" alt="United States"> English (US)</a>
-					</li>
-					<li>
-						<a href="javascript:void(0);"><img src="img/blank.gif" class="flag flag-fr" alt="France"> Français</a>
-					</li>
-					<li>
-						<a href="javascript:void(0);"><img src="img/blank.gif" class="flag flag-es" alt="Spanish"> Español</a>
-					</li>
-					<li>
-						<a href="javascript:void(0);"><img src="img/blank.gif" class="flag flag-de" alt="German"> Deutsch</a>
-					</li>
-					<li>
-						<a href="javascript:void(0);"><img src="img/blank.gif" class="flag flag-jp" alt="Japan"> 日本語</a>
-					</li>
-					<li>
-						<a href="javascript:void(0);"><img src="img/blank.gif" class="flag flag-cn" alt="China"> 中文</a>
-					</li>
-					<li>
-						<a href="javascript:void(0);"><img src="img/blank.gif" class="flag flag-it" alt="Italy"> Italiano</a>
-					</li>
-					<li>
-						<a href="javascript:void(0);"><img src="img/blank.gif" class="flag flag-pt" alt="Portugal"> Portugal</a>
-					</li>
-					<li>
-						<a href="javascript:void(0);"><img src="img/blank.gif" class="flag flag-ru" alt="Russia"> Русский язык</a>
-					</li>
-					<li>
-						<a href="javascript:void(0);"><img src="img/blank.gif" class="flag flag-kr" alt="Korea"> 한국어</a>
-					</li>
-
-				</ul>
-			</li>
-		</ul>
-		<!-- end multiple lang -->
-	</div>
-	<!-- end pulled right: nav area -->
-	<!--  alerts -->
-	<div id="logo-group" style="float:right;">
-
-		<!-- PLACE YOUR LOGO HERE -->
-
-		<!-- END LOGO PLACEHOLDER -->
-					<!-- Note: The activity badge color changes when clicked and resets the number to 0
-					Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications -->
-					<span id="activity" class="activity-dropdown "> <i class="fa fa-user"></i> <b class="badge"> 6 </b> </span>
-					<!-- AJAX-DROPDOWN : control this dropdown height, look and feel from the LESS variable file -->
-					<div class="ajax-dropdown">
-						<!-- the ID links are fetched via AJAX to the ajax container "ajax-notifications" -->
-						<div class="btn-group btn-group-justified" data-toggle="buttons">
-							<label class="btn btn-default">
-								<input type="radio" name="activity" id="ajax/notify/busquedas.html">
-								Búsquedas Prog. (3) </label>
-								<label class="btn btn-default">
-									<input type="radio" name="activity" id="ajax/notify/notifications-ac.html">
-									Notificaciones (3) </label>
-								</div>
-								<!-- notification content -->
-								<div class="ajax-notifications custom-scroll">
-									<div class="alert alert-transparent">
-										<h4>Click a button to show messages here</h4>
-										This blank page message helps protect your privacy, or you can show the first message here automatically.
-									</div>
-									<i class="fa fa-lock fa-4x fa-border"></i>
-								</div>
-								<!-- end notification content -->
-								<!-- footer: refresh area -->
-								<span class="font-xs text-muted"> Última actualización el: 12/12/2013 9:43AM
-									<button type="button" data-loading-text="<i class='fa fa-refresh fa-spin'></i> Loading..." class="btn btn-xs btn-default pull-right">
-										<i class="fa fa-refresh"></i>
-									</button> </span>
-									<!-- end footer -->
-								</div>
-								<!-- END AJAX-DROPDOWN -->
-							</div>
-							<!--  end alerts -->
-						</header>
-						<!-- END HEADER -->
+					<!-- END HEADER -->
 						<!-- Left panel : Navigation area -->
 						<!-- Note: This width of the aside area can be adjusted through LESS variables -->
 						<aside id="left-panel" class="aside-top-mod">
@@ -527,6 +294,11 @@ Use search to find needed section.
 								<a href="javascript:void(0);" class="button-icon jarviswidget-toggle-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Collapse"><i class="fa fa-minus "></i></a>
 								<!-- <a href="javascript:void(0);" class="button-icon jarviswidget-fullscreen-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Fullscreen"><i class="fa fa-expand "></i></a> -->
 								<!-- <a href="javascript:void(0);" class="button-icon jarviswidget-delete-btn" rel="tooltip" title="" data-placement="bottom" data-original-title="Delete"><i class="fa fa-times"></i></a> -->
+							</div>
+							<div class="widget-toolbar" role="menu">
+									<div class="label bg-color-red" style="font-size: 14px; padding: 4px 7px; font-weight: 400;">
+										<i class="fa fa-fw fa-search"></i> <strong>REDES</strong> 1.0
+									</div>
 							</div>
 
 
@@ -793,8 +565,394 @@ Use search to find needed section.
 
 		<!-- row -->
 
-		<div class="row">
+		<div id="resultsBlock" class="row animated ">
+			<div class="col col-xs-12 col-sm-12 col-md-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="row">
+							<div class="col col-xs-12 col-sm-4">
+								<span id="fuenteActiva" style="font-size:1.5em!important;"></span>
+							</div>
+							<div class="col col-xs-12 col-sm-4 no-padding text-center">
+								<!-- start res por page -->
+								<span id="totalResults" class="font-md txt-color-red" style="    font-weight: bold;
+font-size: 1.5em!important;">451</span> resultados
+								<span class="note">(tiempo 5.05 seg.) </span>
+								<!-- end res por oage -->
+							</div>
+							<div class="col col-xs-12 col-sm-4 text-align-right ">
+								<ul class="pagination pagination-sm pagination no-margin">
+									<li>
+										<a href="javascript:void(0);"><i class="fa fa-angle-left"></i></a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">1</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">2</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">3</a>
+									</li>
+									<li class="active">
+										<a href="javascript:void(0);">4</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);">5</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);"><i class="fa fa-angle-right"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="panel-body">
 
+						<!--  start results container -->
+						<!--  start masonry cards -->
+						<div class="row masonry-cards">
+							<!--  start item redes -->
+							<div class="col col-xs-12 ">
+								<div class="row masonry-card">
+									<!-- begin bottom-button -->
+									<div class="bottom-button">
+										<div class="triangle-bottomright"></div>
+										<div class="rectangle-bottomright"><i class="fa fa-plus "></i></div>
+									</div>
+									<!-- end bottom-button -->
+									<div class="col-xs-3 col-sm-1 mugshot" style="background-image:url('img/demo-pics/mugshot-2.jpg');"></div>
+									<div class="col-xs-10 col-sm-11">
+										<div class="row">
+											<div class="col-xs-12 col-sm-12 col-md-4">
+												<h3>Júan José Hernandes de Santiago</h2>
+													<span class="text-muted top-data">
+														<i class="fa fa-fw fa-map-marker text-muted"></i> Origen:
+														<strong>Santiago de Querétaro, Querétaro</strong><br>
+														<i class="fa fa-fw fa-tag text-muted"></i> CURP
+														<strong>SHJJ481526ED56</strong><br>
+														<i class="fa fa-fw fa-calendar-o text-muted"></i> Edad
+														<strong>40</strong> años <br>
+														<span class="label label-primary"><i class="fa fa-map-marker"></i> Ver Mapa</span>
+													</span>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4">
+												<div class="row">
+													<div class="col-xs-6 col-sm-6 text-center">
+														<h2>Siguiendo</h2>
+														<small class="font-xl">1,588</small>
+													</div>
+													<div class="col-xs-6 col-sm-6 text-center">
+														<h2>Seguidores</h2>
+														<small class="font-xl">12,112</small>
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+												<h2>Redes</h2>
+
+												<ul class="social-icons icon-circle list-unstyled list-inline">
+				      						<li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+										      <li> <a href="#"><i class="fa fa-google-plus"></i></a></li>
+										      <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+										  	</ul>
+
+											</div>
+
+											<div class="col col-xs-12 padding-10 text-muted hide">
+												<strong>Notas: </strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed leo eu nisi commodo malesuada. Cras feugiat eu orci eget auctor. Sed at bibendum orci, ac pretium dui. In sollicitudin odio porta, suscipit tellus non, ullamcorper diam. Aliquam ut erat eu orci gravida feugiat vel in risus. Morbi pretium suscipit dui. Sed sem sem, porttitor in quam ultrices, porttitor volutpat lectus. Maecenas posuere et ligula quis fringilla. Suspendisse potenti. Nam id facilisis eros. Cras orci urna, rutrum dapibus massa quis, semper suscipit dui.
+											</div>
+
+										</div>
+
+									</div>
+									<div class="col-xs-1 hidden-sm">
+
+									</div>
+								</div>
+							</div>
+							<!--  end item redes -->
+							<!--  start item redes -->
+							<div class="col col-xs-12 ">
+								<div class="row masonry-card">
+									<!-- begin bottom-button -->
+									<div class="bottom-button">
+										<div class="triangle-bottomright"></div>
+										<div class="rectangle-bottomright"><i class="fa fa-plus "></i></div>
+									</div>
+									<!-- end bottom-button -->
+									<div class="col-xs-3 col-sm-1 mugshot" style="background-image:url('img/demo-pics/mugshot-4.jpg');"></div>
+									<div class="col-xs-10 col-sm-11">
+										<div class="row">
+											<div class="col-xs-12 col-sm-12 col-md-4">
+												<h3>Júan José Hernandes de Santiago</h2>
+													<span class="text-muted top-data">
+														<i class="fa fa-fw fa-map-marker text-muted"></i> Origen:
+														<strong>Santiago de Querétaro, Querétaro</strong><br>
+														<i class="fa fa-fw fa-tag text-muted"></i> CURP
+														<strong>SHJJ481526ED56</strong><br>
+														<i class="fa fa-fw fa-calendar-o text-muted"></i> Edad
+														<strong>40</strong> años <br>
+														<span class="label label-primary"><i class="fa fa-map-marker"></i> Ver Mapa</span>
+													</span>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4">
+												<div class="row">
+													<div class="col-xs-6 col-sm-6 text-center">
+														<h2>Siguiendo</h2>
+														<small class="font-xl">1,588</small>
+													</div>
+													<div class="col-xs-6 col-sm-6 text-center">
+														<h2>Seguidores</h2>
+														<small class="font-xl">12,112</small>
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+												<h2>Redes</h2>
+
+												<ul class="social-icons icon-circle list-unstyled list-inline">
+				      						<li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+										      <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+										  	</ul>
+
+											</div>
+
+											<div class="col col-xs-12 padding-10">
+												<strong>Notas: </strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed leo eu nisi commodo malesuada. Cras feugiat eu orci eget auctor. Sed at bibendum orci, ac pretium dui. In sollicitudin odio porta, suscipit tellus non, ullamcorper diam. Aliquam ut erat eu orci gravida feugiat vel in risus. Morbi pretium suscipit dui. Sed sem sem, porttitor in quam ultrices, porttitor volutpat lectus. Maecenas posuere et ligula quis fringilla. Suspendisse potenti. Nam id facilisis eros. Cras orci urna, rutrum dapibus massa quis, semper suscipit dui.
+											</div>
+
+										</div>
+
+									</div>
+									<div class="col-xs-1 hidden-sm">
+
+									</div>
+								</div>
+							</div>
+							<!--  end item redes -->
+							<!--  start item redes -->
+							<div class="col col-xs-12 ">
+								<div class="row masonry-card">
+									<!-- begin bottom-button -->
+									<div class="bottom-button">
+										<div class="triangle-bottomright"></div>
+										<div class="rectangle-bottomright"><i class="fa fa-plus "></i></div>
+									</div>
+									<!-- end bottom-button -->
+									<div class="col-xs-3 col-sm-1 mugshot" style="background-image:url('img/demo-pics/mugshot-2.jpg');"></div>
+									<div class="col-xs-10 col-sm-11">
+										<div class="row">
+											<div class="col-xs-12 col-sm-12 col-md-4">
+												<h3>Júan José Hernandes de Santiago</h2>
+													<span class="text-muted top-data">
+														<i class="fa fa-fw fa-map-marker text-muted"></i> Origen:
+														<strong>Santiago de Querétaro, Querétaro</strong><br>
+														<i class="fa fa-fw fa-tag text-muted"></i> CURP
+														<strong>SHJJ481526ED56</strong><br>
+														<i class="fa fa-fw fa-calendar-o text-muted"></i> Edad
+														<strong>40</strong> años <br>
+														<span class="label label-primary"><i class="fa fa-map-marker"></i> Ver Mapa</span>
+													</span>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4">
+												<div class="row">
+													<div class="col-xs-6 col-sm-6 text-center">
+														<h2>Siguiendo</h2>
+														<small class="font-xl">1,588</small>
+													</div>
+													<div class="col-xs-6 col-sm-6 text-center">
+														<h2>Seguidores</h2>
+														<small class="font-xl">12,112</small>
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+												<h2>Redes</h2>
+
+												<ul class="social-icons icon-circle list-unstyled list-inline">
+				      						<li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+										  	</ul>
+
+											</div>
+
+											<div class="col col-xs-12 padding-10 hide">
+												<strong>Notas: </strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed leo eu nisi commodo malesuada. Cras feugiat eu orci eget auctor. Sed at bibendum orci, ac pretium dui. In sollicitudin odio porta, suscipit tellus non, ullamcorper diam. Aliquam ut erat eu orci gravida feugiat vel in risus. Morbi pretium suscipit dui. Sed sem sem, porttitor in quam ultrices, porttitor volutpat lectus. Maecenas posuere et ligula quis fringilla. Suspendisse potenti. Nam id facilisis eros. Cras orci urna, rutrum dapibus massa quis, semper suscipit dui.
+											</div>
+
+										</div>
+
+									</div>
+									<div class="col-xs-1 hidden-sm">
+
+									</div>
+								</div>
+							</div>
+							<!--  end item redes -->
+							<!--  start item redes -->
+							<div class="col col-xs-12 ">
+								<div class="row masonry-card">
+									<!-- begin bottom-button -->
+									<div class="bottom-button">
+										<div class="triangle-bottomright"></div>
+										<div class="rectangle-bottomright"><i class="fa fa-plus "></i></div>
+									</div>
+									<!-- end bottom-button -->
+									<div class="col-xs-3 col-sm-1 mugshot" style="background-image:url('img/demo-pics/mugshot-1.jpg');"></div>
+									<div class="col-xs-10 col-sm-11">
+										<div class="row">
+											<div class="col-xs-12 col-sm-12 col-md-4">
+												<h3>Júan José Hernandes de Santiago</h2>
+													<span class="text-muted top-data">
+														<i class="fa fa-fw fa-map-marker text-muted"></i> Origen:
+														<strong>Santiago de Querétaro, Querétaro</strong><br>
+														<i class="fa fa-fw fa-tag text-muted"></i> CURP
+														<strong>SHJJ481526ED56</strong><br>
+														<i class="fa fa-fw fa-calendar-o text-muted"></i> Edad
+														<strong>40</strong> años <br>
+														<span class="label label-primary"><i class="fa fa-map-marker"></i> Ver Mapa</span>
+													</span>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4">
+												<div class="row">
+													<div class="col-xs-6 col-sm-6 text-center">
+														<h2>Siguiendo</h2>
+														<small class="font-xl">1,588</small>
+													</div>
+													<div class="col-xs-6 col-sm-6 text-center">
+														<h2>Seguidores</h2>
+														<small class="font-xl">12,112</small>
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+												<h2>Redes</h2>
+
+												<ul class="social-icons icon-circle list-unstyled list-inline">
+				      						<li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+										      <li> <a href="#"><i class="fa fa-google-plus"></i></a></li>
+										      <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+										      <li> <a href="#"><i class="fa fa-pinterest"></i></a></li>
+										      <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+										  	</ul>
+
+											</div>
+
+											<div class="col col-xs-12 padding-10 hide">
+												<strong>Notas: </strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed leo eu nisi commodo malesuada. Cras feugiat eu orci eget auctor. Sed at bibendum orci, ac pretium dui. In sollicitudin odio porta, suscipit tellus non, ullamcorper diam. Aliquam ut erat eu orci gravida feugiat vel in risus. Morbi pretium suscipit dui. Sed sem sem, porttitor in quam ultrices, porttitor volutpat lectus. Maecenas posuere et ligula quis fringilla. Suspendisse potenti. Nam id facilisis eros. Cras orci urna, rutrum dapibus massa quis, semper suscipit dui.
+											</div>
+
+										</div>
+
+									</div>
+									<div class="col-xs-1 hidden-sm">
+
+									</div>
+								</div>
+							</div>
+							<!--  end item redes -->
+							<!--  start item redes -->
+							<div class="col col-xs-12 ">
+								<div class="row masonry-card">
+									<!-- begin bottom-button -->
+									<div class="bottom-button">
+										<div class="triangle-bottomright"></div>
+										<div class="rectangle-bottomright"><i class="fa fa-plus "></i></div>
+									</div>
+									<!-- end bottom-button -->
+									<div class="col-xs-3 col-sm-1 mugshot" style="background-image:url('img/demo-pics/mugshot-1.jpg');"></div>
+									<div class="col-xs-10 col-sm-11">
+										<div class="row">
+											<div class="col-xs-12 col-sm-12 col-md-4">
+												<h3>Júan José Hernandes de Santiago</h2>
+													<span class="text-muted top-data">
+														<i class="fa fa-fw fa-map-marker text-muted"></i> Origen:
+														<strong>Santiago de Querétaro, Querétaro</strong><br>
+														<i class="fa fa-fw fa-tag text-muted"></i> CURP
+														<strong>SHJJ481526ED56</strong><br>
+														<i class="fa fa-fw fa-calendar-o text-muted"></i> Edad
+														<strong>40</strong> años <br>
+														<span class="label label-primary"><i class="fa fa-map-marker"></i> Ver Mapa</span>
+													</span>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4">
+												<div class="row">
+													<div class="col-xs-6 col-sm-6 text-center">
+														<h2>Siguiendo</h2>
+														<small class="font-xl">1,588</small>
+													</div>
+													<div class="col-xs-6 col-sm-6 text-center">
+														<h2>Seguidores</h2>
+														<small class="font-xl">12,112</small>
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+												<h2>Redes</h2>
+
+												<ul class="social-icons icon-circle list-unstyled list-inline">
+				      						<li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+										      <li> <a href="#"><i class="fa fa-google-plus"></i></a></li>
+										      <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+										      <li> <a href="#"><i class="fa fa-pinterest"></i></a></li>
+										      <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+										  	</ul>
+
+											</div>
+
+											<div class="col col-xs-12 padding-10">
+												<strong>Notas: </strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed leo eu nisi commodo malesuada. Cras feugiat eu orci eget auctor. Sed at bibendum orci, ac pretium dui. In sollicitudin odio porta, suscipit tellus non, ullamcorper diam. Aliquam ut erat eu orci gravida feugiat vel in risus. Morbi pretium suscipit dui. Sed sem sem, porttitor in quam ultrices, porttitor volutpat lectus. Maecenas posuere et ligula quis fringilla. Suspendisse potenti. Nam id facilisis eros. Cras orci urna, rutrum dapibus massa quis, semper suscipit dui.
+											</div>
+
+										</div>
+
+									</div>
+									<div class="col-xs-1 hidden-sm">
+
+									</div>
+								</div>
+							</div>
+							<!--  end item redes -->
+						</div>
+						<!--  end masonry cards -->
+						<div class="text-center">
+							<hr>
+							<ul class="pagination no-margin">
+								<li class="prev disabled">
+									<a href="javascript:void(0);">Atras</a>
+								</li>
+								<li class="active">
+									<a href="javascript:void(0);">1</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">2</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">3</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">4</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">5</a>
+								</li>
+								<li class="next">
+									<a href="javascript:void(0);">Siguiente</a>
+								</li>
+							</ul>
+							<br>
+							<span class="note">320 resultadoss (5.05 seg.) </span>
+							<br>
+							<br>
+						</div>
+						<!-- end Results -->
+					</div>
+					<!-- end resultsContent -->
+
+
+				</div>
+				<!--  end  results container-->
+			</div>
 		</div>
 
 		<!-- end row -->
