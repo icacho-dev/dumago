@@ -22,7 +22,6 @@
 	<link rel="stylesheet" type="text/css" media="screen" href="css/your_style.css"> -->
 	<link rel="stylesheet" type="text/css" media="screen" href="css/your_style.css">
 	<link rel="stylesheet" type="text/css" href="js/slidetabs/templates/clean/template.css">
-
 	<!-- Demo purpose only: goes with demo.js, you can delete this css when designing your own WebApp -->
 	<!-- <link rel="stylesheet" type="text/css" media="screen" href="css/demo.min.css"> -->
 	<!-- FAVICONS -->
@@ -31,6 +30,9 @@
 	<!-- GOOGLE FONT -->
 	<!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700"> -->
 	<link rel="stylesheet" type="text/css" media="screen" href="css/fonts.css">
+
+	<!--  JQCloud -->
+	<link rel="stylesheet" type="text/css" media="screen" href="js/jqcloud/jqcloud.min.css">
 
 	<!--  Slide Panel -->
 	<link rel="stylesheet" type="text/css" media="screen" href="js/plugin/slidepanel/stylesheet.css">
@@ -564,396 +566,520 @@ Use search to find needed section.
 		<!-- end row -->
 
 		<!-- row -->
-
-		<div id="resultsBlock" class="row animated ">
-			<div class="col col-xs-12 col-sm-12 col-md-12">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<div class="row">
-							<div class="col col-xs-12 col-sm-4">
-								<span id="fuenteActiva" style="font-size:1.5em!important;"></span>
-							</div>
-							<div class="col col-xs-12 col-sm-4 no-padding text-center">
-								<!-- start res por page -->
-								<span id="totalResults" class="font-md txt-color-red" style="    font-weight: bold;
-font-size: 1.5em!important;">451</span> resultados
-								<span class="note">(tiempo 5.05 seg.) </span>
-								<!-- end res por oage -->
-							</div>
-							<div class="col col-xs-12 col-sm-4 text-align-right ">
-								<ul class="pagination pagination-sm pagination no-margin">
-									<li>
-										<a href="javascript:void(0);"><i class="fa fa-angle-left"></i></a>
-									</li>
-									<li>
-										<a href="javascript:void(0);">1</a>
-									</li>
-									<li>
-										<a href="javascript:void(0);">2</a>
-									</li>
-									<li>
-										<a href="javascript:void(0);">3</a>
-									</li>
-									<li class="active">
-										<a href="javascript:void(0);">4</a>
-									</li>
-									<li>
-										<a href="javascript:void(0);">5</a>
-									</li>
-									<li>
-										<a href="javascript:void(0);"><i class="fa fa-angle-right"></i></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="panel-body">
-
-						<!--  start results container -->
-						<!--  start masonry cards -->
-						<div class="row masonry-cards">
-							<!--  start item redes -->
-							<div class="col col-xs-12 ">
-								<div class="row masonry-card">
-									<!-- begin bottom-button -->
-									<div class="bottom-button">
-										<div class="triangle-bottomright"></div>
-										<div class="rectangle-bottomright"><i class="fa fa-plus "></i></div>
-									</div>
-									<!-- end bottom-button -->
-									<div class="col-xs-3 col-sm-1 mugshot" style="background-image:url('img/demo-pics/mugshot-2.jpg');"></div>
-									<div class="col-xs-10 col-sm-11">
-										<div class="row">
-											<div class="col-xs-12 col-sm-12 col-md-4">
-												<h3>Júan José Hernandes de Santiago</h2>
-													<span class="text-muted top-data">
-														<i class="fa fa-fw fa-map-marker text-muted"></i> Origen:
-														<strong>Santiago de Querétaro, Querétaro</strong><br>
-														<i class="fa fa-fw fa-tag text-muted"></i> CURP
-														<strong>SHJJ481526ED56</strong><br>
-														<i class="fa fa-fw fa-calendar-o text-muted"></i> Edad
-														<strong>40</strong> años <br>
-														<span class="label label-primary"><i class="fa fa-map-marker"></i> Ver Mapa</span>
-													</span>
-											</div>
-											<div class="col-xs-12 col-sm-6 col-md-4">
-												<div class="row">
-													<div class="col-xs-6 col-sm-6 text-center">
-														<h2>Siguiendo</h2>
-														<small class="font-xl">1,588</small>
-													</div>
-													<div class="col-xs-6 col-sm-6 text-center">
-														<h2>Seguidores</h2>
-														<small class="font-xl">12,112</small>
-													</div>
-												</div>
-											</div>
-											<div class="col-xs-12 col-sm-6 col-md-4 text-center">
-												<h2>Redes</h2>
-
-												<ul class="social-icons icon-circle list-unstyled list-inline">
-				      						<li> <a href="#"><i class="fa fa-facebook"></i></a></li>
-										      <li> <a href="#"><i class="fa fa-google-plus"></i></a></li>
-										      <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-										  	</ul>
-
-											</div>
-
-											<div class="col col-xs-12 padding-10 text-muted hide">
-												<strong>Notas: </strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed leo eu nisi commodo malesuada. Cras feugiat eu orci eget auctor. Sed at bibendum orci, ac pretium dui. In sollicitudin odio porta, suscipit tellus non, ullamcorper diam. Aliquam ut erat eu orci gravida feugiat vel in risus. Morbi pretium suscipit dui. Sed sem sem, porttitor in quam ultrices, porttitor volutpat lectus. Maecenas posuere et ligula quis fringilla. Suspendisse potenti. Nam id facilisis eros. Cras orci urna, rutrum dapibus massa quis, semper suscipit dui.
-											</div>
-
-										</div>
-
-									</div>
-									<div class="col-xs-1 hidden-sm">
-
-									</div>
-								</div>
-							</div>
-							<!--  end item redes -->
-							<!--  start item redes -->
-							<div class="col col-xs-12 ">
-								<div class="row masonry-card">
-									<!-- begin bottom-button -->
-									<div class="bottom-button">
-										<div class="triangle-bottomright"></div>
-										<div class="rectangle-bottomright"><i class="fa fa-plus "></i></div>
-									</div>
-									<!-- end bottom-button -->
-									<div class="col-xs-3 col-sm-1 mugshot" style="background-image:url('img/demo-pics/mugshot-4.jpg');"></div>
-									<div class="col-xs-10 col-sm-11">
-										<div class="row">
-											<div class="col-xs-12 col-sm-12 col-md-4">
-												<h3>Júan José Hernandes de Santiago</h2>
-													<span class="text-muted top-data">
-														<i class="fa fa-fw fa-map-marker text-muted"></i> Origen:
-														<strong>Santiago de Querétaro, Querétaro</strong><br>
-														<i class="fa fa-fw fa-tag text-muted"></i> CURP
-														<strong>SHJJ481526ED56</strong><br>
-														<i class="fa fa-fw fa-calendar-o text-muted"></i> Edad
-														<strong>40</strong> años <br>
-														<span class="label label-primary"><i class="fa fa-map-marker"></i> Ver Mapa</span>
-													</span>
-											</div>
-											<div class="col-xs-12 col-sm-6 col-md-4">
-												<div class="row">
-													<div class="col-xs-6 col-sm-6 text-center">
-														<h2>Siguiendo</h2>
-														<small class="font-xl">1,588</small>
-													</div>
-													<div class="col-xs-6 col-sm-6 text-center">
-														<h2>Seguidores</h2>
-														<small class="font-xl">12,112</small>
-													</div>
-												</div>
-											</div>
-											<div class="col-xs-12 col-sm-6 col-md-4 text-center">
-												<h2>Redes</h2>
-
-												<ul class="social-icons icon-circle list-unstyled list-inline">
-				      						<li> <a href="#"><i class="fa fa-facebook"></i></a></li>
-										      <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-										  	</ul>
-
-											</div>
-
-											<div class="col col-xs-12 padding-10">
-												<strong>Notas: </strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed leo eu nisi commodo malesuada. Cras feugiat eu orci eget auctor. Sed at bibendum orci, ac pretium dui. In sollicitudin odio porta, suscipit tellus non, ullamcorper diam. Aliquam ut erat eu orci gravida feugiat vel in risus. Morbi pretium suscipit dui. Sed sem sem, porttitor in quam ultrices, porttitor volutpat lectus. Maecenas posuere et ligula quis fringilla. Suspendisse potenti. Nam id facilisis eros. Cras orci urna, rutrum dapibus massa quis, semper suscipit dui.
-											</div>
-
-										</div>
-
-									</div>
-									<div class="col-xs-1 hidden-sm">
-
-									</div>
-								</div>
-							</div>
-							<!--  end item redes -->
-							<!--  start item redes -->
-							<div class="col col-xs-12 ">
-								<div class="row masonry-card">
-									<!-- begin bottom-button -->
-									<div class="bottom-button">
-										<div class="triangle-bottomright"></div>
-										<div class="rectangle-bottomright"><i class="fa fa-plus "></i></div>
-									</div>
-									<!-- end bottom-button -->
-									<div class="col-xs-3 col-sm-1 mugshot" style="background-image:url('img/demo-pics/mugshot-2.jpg');"></div>
-									<div class="col-xs-10 col-sm-11">
-										<div class="row">
-											<div class="col-xs-12 col-sm-12 col-md-4">
-												<h3>Júan José Hernandes de Santiago</h2>
-													<span class="text-muted top-data">
-														<i class="fa fa-fw fa-map-marker text-muted"></i> Origen:
-														<strong>Santiago de Querétaro, Querétaro</strong><br>
-														<i class="fa fa-fw fa-tag text-muted"></i> CURP
-														<strong>SHJJ481526ED56</strong><br>
-														<i class="fa fa-fw fa-calendar-o text-muted"></i> Edad
-														<strong>40</strong> años <br>
-														<span class="label label-primary"><i class="fa fa-map-marker"></i> Ver Mapa</span>
-													</span>
-											</div>
-											<div class="col-xs-12 col-sm-6 col-md-4">
-												<div class="row">
-													<div class="col-xs-6 col-sm-6 text-center">
-														<h2>Siguiendo</h2>
-														<small class="font-xl">1,588</small>
-													</div>
-													<div class="col-xs-6 col-sm-6 text-center">
-														<h2>Seguidores</h2>
-														<small class="font-xl">12,112</small>
-													</div>
-												</div>
-											</div>
-											<div class="col-xs-12 col-sm-6 col-md-4 text-center">
-												<h2>Redes</h2>
-
-												<ul class="social-icons icon-circle list-unstyled list-inline">
-				      						<li> <a href="#"><i class="fa fa-facebook"></i></a></li>
-										  	</ul>
-
-											</div>
-
-											<div class="col col-xs-12 padding-10 hide">
-												<strong>Notas: </strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed leo eu nisi commodo malesuada. Cras feugiat eu orci eget auctor. Sed at bibendum orci, ac pretium dui. In sollicitudin odio porta, suscipit tellus non, ullamcorper diam. Aliquam ut erat eu orci gravida feugiat vel in risus. Morbi pretium suscipit dui. Sed sem sem, porttitor in quam ultrices, porttitor volutpat lectus. Maecenas posuere et ligula quis fringilla. Suspendisse potenti. Nam id facilisis eros. Cras orci urna, rutrum dapibus massa quis, semper suscipit dui.
-											</div>
-
-										</div>
-
-									</div>
-									<div class="col-xs-1 hidden-sm">
-
-									</div>
-								</div>
-							</div>
-							<!--  end item redes -->
-							<!--  start item redes -->
-							<div class="col col-xs-12 ">
-								<div class="row masonry-card">
-									<!-- begin bottom-button -->
-									<div class="bottom-button">
-										<div class="triangle-bottomright"></div>
-										<div class="rectangle-bottomright"><i class="fa fa-plus "></i></div>
-									</div>
-									<!-- end bottom-button -->
-									<div class="col-xs-3 col-sm-1 mugshot" style="background-image:url('img/demo-pics/mugshot-1.jpg');"></div>
-									<div class="col-xs-10 col-sm-11">
-										<div class="row">
-											<div class="col-xs-12 col-sm-12 col-md-4">
-												<h3>Júan José Hernandes de Santiago</h2>
-													<span class="text-muted top-data">
-														<i class="fa fa-fw fa-map-marker text-muted"></i> Origen:
-														<strong>Santiago de Querétaro, Querétaro</strong><br>
-														<i class="fa fa-fw fa-tag text-muted"></i> CURP
-														<strong>SHJJ481526ED56</strong><br>
-														<i class="fa fa-fw fa-calendar-o text-muted"></i> Edad
-														<strong>40</strong> años <br>
-														<span class="label label-primary"><i class="fa fa-map-marker"></i> Ver Mapa</span>
-													</span>
-											</div>
-											<div class="col-xs-12 col-sm-6 col-md-4">
-												<div class="row">
-													<div class="col-xs-6 col-sm-6 text-center">
-														<h2>Siguiendo</h2>
-														<small class="font-xl">1,588</small>
-													</div>
-													<div class="col-xs-6 col-sm-6 text-center">
-														<h2>Seguidores</h2>
-														<small class="font-xl">12,112</small>
-													</div>
-												</div>
-											</div>
-											<div class="col-xs-12 col-sm-6 col-md-4 text-center">
-												<h2>Redes</h2>
-
-												<ul class="social-icons icon-circle list-unstyled list-inline">
-				      						<li> <a href="#"><i class="fa fa-facebook"></i></a></li>
-										      <li> <a href="#"><i class="fa fa-google-plus"></i></a></li>
-										      <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
-										      <li> <a href="#"><i class="fa fa-pinterest"></i></a></li>
-										      <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-										  	</ul>
-
-											</div>
-
-											<div class="col col-xs-12 padding-10 hide">
-												<strong>Notas: </strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed leo eu nisi commodo malesuada. Cras feugiat eu orci eget auctor. Sed at bibendum orci, ac pretium dui. In sollicitudin odio porta, suscipit tellus non, ullamcorper diam. Aliquam ut erat eu orci gravida feugiat vel in risus. Morbi pretium suscipit dui. Sed sem sem, porttitor in quam ultrices, porttitor volutpat lectus. Maecenas posuere et ligula quis fringilla. Suspendisse potenti. Nam id facilisis eros. Cras orci urna, rutrum dapibus massa quis, semper suscipit dui.
-											</div>
-
-										</div>
-
-									</div>
-									<div class="col-xs-1 hidden-sm">
-
-									</div>
-								</div>
-							</div>
-							<!--  end item redes -->
-							<!--  start item redes -->
-							<div class="col col-xs-12 ">
-								<div class="row masonry-card">
-									<!-- begin bottom-button -->
-									<div class="bottom-button">
-										<div class="triangle-bottomright"></div>
-										<div class="rectangle-bottomright"><i class="fa fa-plus "></i></div>
-									</div>
-									<!-- end bottom-button -->
-									<div class="col-xs-3 col-sm-1 mugshot" style="background-image:url('img/demo-pics/mugshot-1.jpg');"></div>
-									<div class="col-xs-10 col-sm-11">
-										<div class="row">
-											<div class="col-xs-12 col-sm-12 col-md-4">
-												<h3>Júan José Hernandes de Santiago</h2>
-													<span class="text-muted top-data">
-														<i class="fa fa-fw fa-map-marker text-muted"></i> Origen:
-														<strong>Santiago de Querétaro, Querétaro</strong><br>
-														<i class="fa fa-fw fa-tag text-muted"></i> CURP
-														<strong>SHJJ481526ED56</strong><br>
-														<i class="fa fa-fw fa-calendar-o text-muted"></i> Edad
-														<strong>40</strong> años <br>
-														<span class="label label-primary"><i class="fa fa-map-marker"></i> Ver Mapa</span>
-													</span>
-											</div>
-											<div class="col-xs-12 col-sm-6 col-md-4">
-												<div class="row">
-													<div class="col-xs-6 col-sm-6 text-center">
-														<h2>Siguiendo</h2>
-														<small class="font-xl">1,588</small>
-													</div>
-													<div class="col-xs-6 col-sm-6 text-center">
-														<h2>Seguidores</h2>
-														<small class="font-xl">12,112</small>
-													</div>
-												</div>
-											</div>
-											<div class="col-xs-12 col-sm-6 col-md-4 text-center">
-												<h2>Redes</h2>
-
-												<ul class="social-icons icon-circle list-unstyled list-inline">
-				      						<li> <a href="#"><i class="fa fa-facebook"></i></a></li>
-										      <li> <a href="#"><i class="fa fa-google-plus"></i></a></li>
-										      <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
-										      <li> <a href="#"><i class="fa fa-pinterest"></i></a></li>
-										      <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-										  	</ul>
-
-											</div>
-
-											<div class="col col-xs-12 padding-10">
-												<strong>Notas: </strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed leo eu nisi commodo malesuada. Cras feugiat eu orci eget auctor. Sed at bibendum orci, ac pretium dui. In sollicitudin odio porta, suscipit tellus non, ullamcorper diam. Aliquam ut erat eu orci gravida feugiat vel in risus. Morbi pretium suscipit dui. Sed sem sem, porttitor in quam ultrices, porttitor volutpat lectus. Maecenas posuere et ligula quis fringilla. Suspendisse potenti. Nam id facilisis eros. Cras orci urna, rutrum dapibus massa quis, semper suscipit dui.
-											</div>
-
-										</div>
-
-									</div>
-									<div class="col-xs-1 hidden-sm">
-
-									</div>
-								</div>
-							</div>
-							<!--  end item redes -->
-						</div>
-						<!--  end masonry cards -->
-						<div class="text-center">
-							<hr>
-							<ul class="pagination no-margin">
-								<li class="prev disabled">
-									<a href="javascript:void(0);">Atras</a>
-								</li>
-								<li class="active">
-									<a href="javascript:void(0);">1</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);">2</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);">3</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);">4</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);">5</a>
-								</li>
-								<li class="next">
-									<a href="javascript:void(0);">Siguiente</a>
-								</li>
-							</ul>
-							<br>
-							<span class="note">320 resultadoss (5.05 seg.) </span>
-							<br>
-							<br>
-						</div>
-						<!-- end Results -->
-					</div>
-					<!-- end resultsContent -->
-
-
+		<!--  start tabs-container -->
+		<div id="slidetabs" class="clean-horizontal">
+			<div class="st_tabs">
+				<div class="st_tabs_wrap">
+					<ul>
+						<li><a href="#view_1">Resultados: Júan José Hernandes de Santiago</a></li>
+						<li><a href="#view_2">Detalle: Júan José Hernandes de Santiago</a></li>
+						<li><a href="#view_3">Tab 3</a></li>
+					</ul>
 				</div>
-				<!--  end  results container-->
+			</div>
+			<div class="st_views">
+						<div class="view_1 st_view padding-10">
+							<div id="resultsBlock" class="row animated ">
+								<div class="col col-xs-12 col-sm-12 col-md-12">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<div class="row">
+												<div class="col col-xs-12 col-sm-4">
+													<span id="fuenteActiva" style="font-size:1.5em!important;"></span>
+												</div>
+												<div class="col col-xs-12 col-sm-4 no-padding text-center">
+													<!-- start res por page -->
+													<span id="totalResults" class="font-md txt-color-red" style="    font-weight: bold;
+					font-size: 1.5em!important;">451</span> resultados
+													<span class="note">(tiempo 5.05 seg.) </span>
+													<!-- end res por oage -->
+												</div>
+												<div class="col col-xs-12 col-sm-4 text-align-right ">
+													<ul class="pagination pagination-sm pagination no-margin">
+														<li>
+															<a href="javascript:void(0);"><i class="fa fa-angle-left"></i></a>
+														</li>
+														<li>
+															<a href="javascript:void(0);">1</a>
+														</li>
+														<li>
+															<a href="javascript:void(0);">2</a>
+														</li>
+														<li>
+															<a href="javascript:void(0);">3</a>
+														</li>
+														<li class="active">
+															<a href="javascript:void(0);">4</a>
+														</li>
+														<li>
+															<a href="javascript:void(0);">5</a>
+														</li>
+														<li>
+															<a href="javascript:void(0);"><i class="fa fa-angle-right"></i></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="panel-body">
+
+											<!--  start results container -->
+
+											<!--  start masonry cards -->
+											<div class="row masonry-cards">
+												<!--  start item redes -->
+												<div class="col col-xs-12 ">
+													<div class="row masonry-card">
+														<!-- begin bottom-button -->
+														<div class="bottom-button">
+															<div class="triangle-bottomright"></div>
+															<div class="rectangle-bottomright"><i class="fa fa-plus "></i></div>
+														</div>
+														<!-- end bottom-button -->
+														<div class="col-xs-3 col-sm-1 mugshot" style="background-image:url('img/demo-pics/mugshot-2.jpg');"></div>
+														<div class="col-xs-10 col-sm-11">
+															<div class="row">
+																<div class="col-xs-12 col-sm-12 col-md-4">
+																	<h3>Júan José Hernandes de Santiago</h2>
+																		<span class="text-muted top-data">
+																			<i class="fa fa-fw fa-map-marker text-muted"></i> Origen:
+																			<strong>Santiago de Querétaro, Querétaro</strong><br>
+																			<i class="fa fa-fw fa-tag text-muted"></i> CURP
+																			<strong>SHJJ481526ED56</strong><br>
+																			<i class="fa fa-fw fa-calendar-o text-muted"></i> Edad
+																			<strong>40</strong> años <br>
+																			<span class="label label-primary"><i class="fa fa-map-marker"></i> Ver Mapa</span>
+																		</span>
+																</div>
+																<div class="col-xs-12 col-sm-6 col-md-4">
+																	<div class="row">
+																		<div class="col-xs-6 col-sm-6 text-center">
+																			<h2>Siguiendo</h2>
+																			<small class="font-xl">1,588</small>
+																		</div>
+																		<div class="col-xs-6 col-sm-6 text-center">
+																			<h2>Seguidores</h2>
+																			<small class="font-xl">12,112</small>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+																	<h2>Redes</h2>
+
+																	<ul class="social-icons icon-circle list-unstyled list-inline">
+																		<li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+																		<li> <a href="#"><i class="fa fa-google-plus"></i></a></li>
+																		<li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+																	</ul>
+
+																</div>
+
+																<div class="col col-xs-12 padding-10 text-muted hide">
+																	<strong>Notas: </strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed leo eu nisi commodo malesuada. Cras feugiat eu orci eget auctor. Sed at bibendum orci, ac pretium dui. In sollicitudin odio porta, suscipit tellus non, ullamcorper diam. Aliquam ut erat eu orci gravida feugiat vel in risus. Morbi pretium suscipit dui. Sed sem sem, porttitor in quam ultrices, porttitor volutpat lectus. Maecenas posuere et ligula quis fringilla. Suspendisse potenti. Nam id facilisis eros. Cras orci urna, rutrum dapibus massa quis, semper suscipit dui.
+																</div>
+
+															</div>
+
+														</div>
+														<div class="col-xs-1 hidden-sm">
+
+														</div>
+													</div>
+												</div>
+												<!--  end item redes -->
+												<!--  start item redes -->
+												<div class="col col-xs-12 ">
+													<div class="row masonry-card">
+														<!-- begin bottom-button -->
+														<div class="bottom-button">
+															<div class="triangle-bottomright"></div>
+															<div class="rectangle-bottomright"><i class="fa fa-plus "></i></div>
+														</div>
+														<!-- end bottom-button -->
+														<div class="col-xs-3 col-sm-1 mugshot" style="background-image:url('img/demo-pics/mugshot-4.jpg');"></div>
+														<div class="col-xs-10 col-sm-11">
+															<div class="row">
+																<div class="col-xs-12 col-sm-12 col-md-4">
+																	<h3>Júan José Hernandes de Santiago</h2>
+																		<span class="text-muted top-data">
+																			<i class="fa fa-fw fa-map-marker text-muted"></i> Origen:
+																			<strong>Santiago de Querétaro, Querétaro</strong><br>
+																			<i class="fa fa-fw fa-tag text-muted"></i> CURP
+																			<strong>SHJJ481526ED56</strong><br>
+																			<i class="fa fa-fw fa-calendar-o text-muted"></i> Edad
+																			<strong>40</strong> años <br>
+																			<span class="label label-primary"><i class="fa fa-map-marker"></i> Ver Mapa</span>
+																		</span>
+																</div>
+																<div class="col-xs-12 col-sm-6 col-md-4">
+																	<div class="row">
+																		<div class="col-xs-6 col-sm-6 text-center">
+																			<h2>Siguiendo</h2>
+																			<small class="font-xl">1,588</small>
+																		</div>
+																		<div class="col-xs-6 col-sm-6 text-center">
+																			<h2>Seguidores</h2>
+																			<small class="font-xl">12,112</small>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+																	<h2>Redes</h2>
+
+																	<ul class="social-icons icon-circle list-unstyled list-inline">
+																		<li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+																		<li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+																	</ul>
+
+																</div>
+
+																<div class="col col-xs-12 padding-10">
+																	<strong>Notas: </strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed leo eu nisi commodo malesuada. Cras feugiat eu orci eget auctor. Sed at bibendum orci, ac pretium dui. In sollicitudin odio porta, suscipit tellus non, ullamcorper diam. Aliquam ut erat eu orci gravida feugiat vel in risus. Morbi pretium suscipit dui. Sed sem sem, porttitor in quam ultrices, porttitor volutpat lectus. Maecenas posuere et ligula quis fringilla. Suspendisse potenti. Nam id facilisis eros. Cras orci urna, rutrum dapibus massa quis, semper suscipit dui.
+																</div>
+
+															</div>
+
+														</div>
+														<div class="col-xs-1 hidden-sm">
+
+														</div>
+													</div>
+												</div>
+												<!--  end item redes -->
+												<!--  start item redes -->
+												<div class="col col-xs-12 ">
+													<div class="row masonry-card">
+														<!-- begin bottom-button -->
+														<div class="bottom-button">
+															<div class="triangle-bottomright"></div>
+															<div class="rectangle-bottomright"><i class="fa fa-plus "></i></div>
+														</div>
+														<!-- end bottom-button -->
+														<div class="col-xs-3 col-sm-1 mugshot" style="background-image:url('img/demo-pics/mugshot-2.jpg');"></div>
+														<div class="col-xs-10 col-sm-11">
+															<div class="row">
+																<div class="col-xs-12 col-sm-12 col-md-4">
+																	<h3>Júan José Hernandes de Santiago</h2>
+																		<span class="text-muted top-data">
+																			<i class="fa fa-fw fa-map-marker text-muted"></i> Origen:
+																			<strong>Santiago de Querétaro, Querétaro</strong><br>
+																			<i class="fa fa-fw fa-tag text-muted"></i> CURP
+																			<strong>SHJJ481526ED56</strong><br>
+																			<i class="fa fa-fw fa-calendar-o text-muted"></i> Edad
+																			<strong>40</strong> años <br>
+																			<span class="label label-primary"><i class="fa fa-map-marker"></i> Ver Mapa</span>
+																		</span>
+																</div>
+																<div class="col-xs-12 col-sm-6 col-md-4">
+																	<div class="row">
+																		<div class="col-xs-6 col-sm-6 text-center">
+																			<h2>Siguiendo</h2>
+																			<small class="font-xl">1,588</small>
+																		</div>
+																		<div class="col-xs-6 col-sm-6 text-center">
+																			<h2>Seguidores</h2>
+																			<small class="font-xl">12,112</small>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+																	<h2>Redes</h2>
+
+																	<ul class="social-icons icon-circle list-unstyled list-inline">
+																		<li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+																	</ul>
+
+																</div>
+
+																<div class="col col-xs-12 padding-10 ">
+																	<strong>Notas: </strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed leo eu nisi commodo malesuada. Cras feugiat eu orci eget auctor. Sed at bibendum orci, ac pretium dui. In sollicitudin odio porta, suscipit tellus non, ullamcorper diam. Aliquam ut erat eu orci gravida feugiat vel in risus. Morbi pretium suscipit dui. Sed sem sem, porttitor in quam ultrices, porttitor volutpat lectus. Maecenas posuere et ligula quis fringilla. Suspendisse potenti. Nam id facilisis eros. Cras orci urna, rutrum dapibus massa quis, semper suscipit dui.
+																</div>
+
+															</div>
+
+														</div>
+														<div class="col-xs-1 hidden-sm">
+
+														</div>
+													</div>
+												</div>
+												<!--  end item redes -->
+												<!--  start item redes -->
+												<div class="col col-xs-12 ">
+													<div class="row masonry-card">
+														<!-- begin bottom-button -->
+														<div class="bottom-button">
+															<div class="triangle-bottomright"></div>
+															<div class="rectangle-bottomright"><i class="fa fa-plus "></i></div>
+														</div>
+														<!-- end bottom-button -->
+														<div class="col-xs-3 col-sm-1 mugshot" style="background-image:url('img/demo-pics/mugshot-1.jpg');"></div>
+														<div class="col-xs-10 col-sm-11">
+															<div class="row">
+																<div class="col-xs-12 col-sm-12 col-md-4">
+																	<h3>Júan José Hernandes de Santiago</h2>
+																		<span class="text-muted top-data">
+																			<i class="fa fa-fw fa-map-marker text-muted"></i> Origen:
+																			<strong>Santiago de Querétaro, Querétaro</strong><br>
+																			<i class="fa fa-fw fa-tag text-muted"></i> CURP
+																			<strong>SHJJ481526ED56</strong><br>
+																			<i class="fa fa-fw fa-calendar-o text-muted"></i> Edad
+																			<strong>40</strong> años <br>
+																			<span class="label label-primary"><i class="fa fa-map-marker"></i> Ver Mapa</span>
+																		</span>
+																</div>
+																<div class="col-xs-12 col-sm-6 col-md-4">
+																	<div class="row">
+																		<div class="col-xs-6 col-sm-6 text-center">
+																			<h2>Siguiendo</h2>
+																			<small class="font-xl">1,588</small>
+																		</div>
+																		<div class="col-xs-6 col-sm-6 text-center">
+																			<h2>Seguidores</h2>
+																			<small class="font-xl">12,112</small>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+																	<h2>Redes</h2>
+
+																	<ul class="social-icons icon-circle list-unstyled list-inline">
+																		<li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+																		<li> <a href="#"><i class="fa fa-google-plus"></i></a></li>
+																		<li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+																		<li> <a href="#"><i class="fa fa-pinterest"></i></a></li>
+																		<li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+																	</ul>
+
+																</div>
+
+																<div class="col col-xs-12 padding-10 hide">
+																	<strong>Notas: </strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed leo eu nisi commodo malesuada. Cras feugiat eu orci eget auctor. Sed at bibendum orci, ac pretium dui. In sollicitudin odio porta, suscipit tellus non, ullamcorper diam. Aliquam ut erat eu orci gravida feugiat vel in risus. Morbi pretium suscipit dui. Sed sem sem, porttitor in quam ultrices, porttitor volutpat lectus. Maecenas posuere et ligula quis fringilla. Suspendisse potenti. Nam id facilisis eros. Cras orci urna, rutrum dapibus massa quis, semper suscipit dui.
+																</div>
+
+															</div>
+
+														</div>
+														<div class="col-xs-1 hidden-sm">
+
+														</div>
+													</div>
+												</div>
+												<!--  end item redes -->
+												<!--  start item redes -->
+												<div class="col col-xs-12 ">
+													<div class="row masonry-card">
+														<!-- begin bottom-button -->
+														<div class="bottom-button">
+															<div class="triangle-bottomright"></div>
+															<div class="rectangle-bottomright"><i class="fa fa-plus "></i></div>
+														</div>
+														<!-- end bottom-button -->
+														<div class="col-xs-3 col-sm-1 mugshot" style="background-image:url('img/demo-pics/mugshot-1.jpg');"></div>
+														<div class="col-xs-10 col-sm-11">
+															<div class="row">
+																<div class="col-xs-12 col-sm-12 col-md-4">
+																	<h3>Júan José Hernandes de Santiago</h2>
+																		<span class="text-muted top-data">
+																			<i class="fa fa-fw fa-map-marker text-muted"></i> Origen:
+																			<strong>Santiago de Querétaro, Querétaro</strong><br>
+																			<i class="fa fa-fw fa-tag text-muted"></i> CURP
+																			<strong>SHJJ481526ED56</strong><br>
+																			<i class="fa fa-fw fa-calendar-o text-muted"></i> Edad
+																			<strong>40</strong> años <br>
+																			<span class="label label-primary"><i class="fa fa-map-marker"></i> Ver Mapa</span>
+																		</span>
+																</div>
+																<div class="col-xs-12 col-sm-6 col-md-4">
+																	<div class="row">
+																		<div class="col-xs-6 col-sm-6 text-center">
+																			<h2>Siguiendo</h2>
+																			<small class="font-xl">1,588</small>
+																		</div>
+																		<div class="col-xs-6 col-sm-6 text-center">
+																			<h2>Seguidores</h2>
+																			<small class="font-xl">12,112</small>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-xs-12 col-sm-6 col-md-4 text-center">
+																	<h2>Redes</h2>
+
+																	<ul class="social-icons icon-circle list-unstyled list-inline">
+																		<li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+																		<li> <a href="#"><i class="fa fa-google-plus"></i></a></li>
+																		<li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+																		<li> <a href="#"><i class="fa fa-pinterest"></i></a></li>
+																		<li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+																	</ul>
+
+																</div>
+
+																<div class="col col-xs-12 padding-10">
+																	<strong>Notas: </strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed leo eu nisi commodo malesuada. Cras feugiat eu orci eget auctor. Sed at bibendum orci, ac pretium dui. In sollicitudin odio porta, suscipit tellus non, ullamcorper diam. Aliquam ut erat eu orci gravida feugiat vel in risus. Morbi pretium suscipit dui. Sed sem sem, porttitor in quam ultrices, porttitor volutpat lectus. Maecenas posuere et ligula quis fringilla. Suspendisse potenti. Nam id facilisis eros. Cras orci urna, rutrum dapibus massa quis, semper suscipit dui.
+																</div>
+
+															</div>
+
+														</div>
+														<div class="col-xs-1 hidden-sm">
+
+														</div>
+													</div>
+												</div>
+												<!--  end item redes -->
+											</div>
+											<!--  end masonry cards -->
+											<div class="text-center">
+												<hr>
+												<ul class="pagination no-margin">
+													<li class="prev disabled">
+														<a href="javascript:void(0);">Atras</a>
+													</li>
+													<li class="active">
+														<a href="javascript:void(0);">1</a>
+													</li>
+													<li>
+														<a href="javascript:void(0);">2</a>
+													</li>
+													<li>
+														<a href="javascript:void(0);">3</a>
+													</li>
+													<li>
+														<a href="javascript:void(0);">4</a>
+													</li>
+													<li>
+														<a href="javascript:void(0);">5</a>
+													</li>
+													<li class="next">
+														<a href="javascript:void(0);">Siguiente</a>
+													</li>
+												</ul>
+												<br>
+												<span class="note">320 resultadoss (5.05 seg.) </span>
+												<br>
+												<br>
+											</div>
+											<!-- end Results -->
+										</div>
+										<!-- end resultsContent -->
+
+
+									</div>
+									<!--  end  results container-->
+								</div>
+							</div>
+						</div>
+						<!--  start vista-unica -->
+						<div class="view_2 st_view">
+							<!--  start item redes -->
+							<div class="col col-xs-12 ">
+								<div class="row masonry-card">
+									<!-- begin bottom-button -->
+									<div class="bottom-button hide">
+										<div class="triangle-bottomright"></div>
+										<div class="rectangle-bottomright"><i class="fa fa-plus "></i></div>
+									</div>
+									<!-- end bottom-button -->
+									<div class="col-xs-2 col-sm-2 padding-10">
+										<img src="img/demo-pics/mugshot-2.jpg" alt="" class="img-responsive" /></div>
+									<div class="col-xs-11 col-sm-10">
+										<div class="row">
+											<div class="col-xs-12 col-sm-12 col-md-4">
+												<h3>Júan José Hernandes de Santiago</h2>
+													<span class="text-muted top-data">
+														<i class="fa fa-fw fa-map-marker text-muted"></i> Origen:
+														<strong>Santiago de Querétaro, Querétaro</strong><br>
+														<i class="fa fa-fw fa-tag text-muted"></i> CURP
+														<strong>SHJJ481526ED56</strong><br>
+														<i class="fa fa-fw fa-calendar-o text-muted"></i> Edad
+														<strong>40</strong> años <br>
+														<hr>
+														<i class="fa fa-fw fa-map-marker text-muted"></i> Ubicación actual:
+														<strong>Santiago de Querétaro, Querétaro</strong><br>
+														<i class="fa fa-fw fa-tag text-muted"></i> RFC
+														<strong>SHJJ481526ED56-DRF</strong><br>
+														<i class="fa fa-fw fa-calendar-o text-muted"></i> Fecha de Nacimiento
+														<strong>01/12/1988</strong> años <br>
+														<hr>
+														<a href="javascript:void(0);" class="btn btn-labeled btn-primary"> <span class="btn-label"><i class="glyphicon glyphicon-map-marker"></i></span>Ver Mapa </a>
+													</span>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4">
+												<div class="row">
+													<div class="col-xs-6 col-sm-6 text-center">
+														<h2>Siguiendo</h2>
+														<small class="font-xl">1,588</small>
+													</div>
+													<div class="col-xs-6 col-sm-6 text-center">
+														<h2>Seguidores</h2>
+														<small class="font-xl">12,112</small>
+													</div>
+													<div class="col-xs-12 text-center">
+														<h2>Redes</h2>
+
+														<ul class="social-icons icon-circle list-unstyled list-inline">
+															<li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+															<li> <a href="#"><i class="fa fa-google-plus"></i></a></li>
+															<li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+														</ul>
+
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-4 text-center concept-cloud">
+
+												<div id="jQCloudRedes" class="">
+
+												</div>
+
+											</div>
+
+											<div class="col col-xs-12 padding-10">
+												<h2>Últimas Menciones</h2>
+												<ul class="media-list">
+													<li class="media">
+														<a class="pull-left" href="javascript:void(0);"> <img class="media-object img-circle" alt="64x64" src="img/demo/64x64.png" style="width:64px; height:64px;"> </a>
+														<div class="media-body">
+															<h4 class="media-heading"><i class="fa fa-twitter" style="color:#32CCFE;"></i> @JJHSantiago_2011</h4>
+															<small>20-11-2015 16:15 hrs.</small>
+															<p>
+																Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+																Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+															</p>
+														</div>
+													</li>
+													<li class="media">
+														<a class="pull-left" href="javascript:void(0);"> <img class="media-object img-circle" alt="64x64" src="img/demo/64x64.png" style="width:64px; height:64px;"> </a>
+														<div class="media-body">
+															<h4 class="media-heading"><i class="fa fa-facebook" style="color:#3C599F;"></i> Santiago_2011</h4>
+															<small>20-11-2015 16:15 hrs.</small>
+															<p>
+																Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+															</p>
+
+														</div>
+													</li>
+												</ul>
+
+											</div>
+
+										</div>
+
+									</div>
+									<div class="col-xs-1 hidden-sm">
+
+									</div>
+								</div>
+							</div>
+							<!--  end item redes -->
+						</div>
+						<!-- end vista-unica -->
+						<div class="view_3 st_view">Tab 3 Content</div>
 			</div>
 		</div>
+		<!--  end tabs-container -->
+
 
 		<!-- end row -->
 
@@ -1468,6 +1594,12 @@ you can add as many as you like
 <script src="js/smart-chat-ui/smart.chat.manager.min.js"></script>
 <!--  Slide Panel -->
 <script src="js/plugin/slidepanel/jquery.slidepanel.js"></script>
+<!--  SLIDETABS -->
+<script src="js/slidetabs/js/jquery.slidetabs.min.js"></script>
+<script src="js/slidetabs/js/plugins/jquery.easing.1.3.js"></script>
+<!--  JQCLOUD -->
+<script src="js/jqcloud/jqcloud.min.js"></script>
+
 <!-- PAGE RELATED PLUGIN(S)
 	<script src="..."></script>-->
 	<script type="text/javascript">
@@ -1726,6 +1858,63 @@ $('ul.bg-color-blueMiranda-alt > li > a').click(function(e){
 		var s = document.getElementsByTagName('script')[0];
 		s.parentNode.insertBefore(ga, s);
 	})();
+</script>
+<script type="text/javascript">
+  jQuery(document).ready(function() {
+      jQuery('#slidetabs').slidetabs({autoHeight: true});
+
+			// jQCloud
+			var words = [
+				{text: "Lorem", weight: 13},
+	{text: "Ipsum", weight: 10.5},
+	{text: "Dolor", weight: 9.4},
+	{text: "Sit", weight: 8},
+	{text: "Amet", weight: 6.2},
+	{text: "Consectetur", weight: 5},
+	{text: "Adipiscing", weight: 5},
+	{text: "Elit", weight: 5},
+	{text: "Nam et", weight: 5},
+	{text: "Leo", weight: 4},
+	{text: "Sapien", weight: 4},
+	{text: "Pellentesque", weight: 3},
+	{text: "habitant", weight: 3},
+	{text: "morbi", weight: 3},
+	{text: "tristisque", weight: 3},
+	{text: "senectus", weight: 3},
+	{text: "et netus", weight: 3},
+	{text: "et malesuada", weight: 3},
+	{text: "fames", weight: 2},
+	{text: "ac turpis", weight: 2},
+	{text: "egestas", weight: 2},
+	{text: "Aenean", weight: 2},
+	{text: "vestibulum", weight: 2},
+	{text: "elit", weight: 2},
+	{text: "sit amet", weight: 2},
+	{text: "metus", weight: 2},
+	{text: "adipiscing", weight: 2},
+	{text: "ut ultrices", weight: 2},
+	{text: "justo", weight: 1},
+	{text: "dictum", weight: 1},
+	{text: "Ut et leo", weight: 1},
+	{text: "metus", weight: 1},
+	{text: "at molestie", weight: 1},
+	{text: "purus", weight: 1},
+	{text: "Curabitur", weight: 1},
+	{text: "diam", weight: 1},
+	{text: "dui", weight: 1},
+	{text: "ullamcorper", weight: 1},
+	{text: "id vuluptate ut", weight: 1},
+	{text: "mattis", weight: 1},
+	{text: "et nulla", weight: 1},
+	{text: "Sed", weight: 1}
+			];
+
+			$('#jQCloudRedes').jQCloud(words,{
+				width: 500,
+				height: 350
+			});
+  });
+
 </script>
 </body>
 </html>
