@@ -345,12 +345,6 @@ Use search to find needed section.
 													</a>
 												</li>
 
-												<li class="">
-													<a data-toggle="tab" href="#hr3" aria-expanded="false">
-														<i class="fa fa-lg fa-tag"></i>
-														<span class="hidden-mobile hidden-tablet"> Medios </span>
-													</a>
-												</li>
 
 											</ul>
 											<div class="tab-content">
@@ -390,76 +384,31 @@ Use search to find needed section.
 													<!--  Start Form2 -->
 													<form id="login-form-2" class="smart-form" novalidate="novalidate">
 														<fieldset class="padding-top-0">
+
+															<div class="row no-margin">
+																<section class="col col-6">
+																	<label class="input"> <i class="icon-append fa fa-calendar"></i>
+																		<input type="text" name="desdeFecha" id="desdeFecha" placeholder="Desde">
+																	</label>
+																</section>
+																<section class="col col-6">
+																	<label class="input"> <i class="icon-append fa fa-calendar"></i>
+																		<input type="text" name="hastaFecha" id="hastaFecha" placeholder="Hasta">
+																	</label>
+																</section>
+															</div>
+
 															<section>
 																<label class="textarea"> <i class="icon-append fa fa-file-text-o "></i>
-																	<textarea rows="6" name="review" id="fpost_contenido" placeholder="Contenido/Texto a buscar..."></textarea>
+																	<textarea rows="3" name="review" id="fpost_contenido" placeholder="Contenido/Texto a buscar..."></textarea>
 																</label>
 															</section>
+
 														</fieldset>
 													</form>
 													<!--  End Form2 -->
 												</div>
-												<div class="tab-pane" id="hr3">
-													<!-- Start Form3 -->
-													<form id="login-form-3" class="smart-form" novalidate="novalidate">
-														<fieldset class="padding-top-0">
-															<div class="row">
-																<section>
-																	<label class="input"> <i class="icon-prepend fa fa-tag"></i>
-																		<input type="text" id="fmedios_contenido" name="fmedios_contenido" placeholder="Contenido/Texto a buscar..." >
-																	</label>
-																</section>
-															</div>
-															<div class="row">
-																<section class="col col-4">
-																	<label class="checkbox">
-																		<input name="subscription" id="subscription" type="checkbox">
-																		<i></i>
-																		Buho Legal
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="checkbox">
-																		<input name="subscription" id="subscription" type="checkbox">
-																		<i></i>
-																		El Reforma
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="checkbox">
-																		<input name="subscription" id="subscription" type="checkbox">
-																		<i></i>
-																		El Universal
-																	</label>
-																</section>
-															</div>
-															<div class="row">
-																<section class="col col-4">
-																	<label class="checkbox">
-																		<input name="subscription" id="subscription" type="checkbox">
-																		<i></i>
-																		La Jornada
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="checkbox">
-																		<input name="subscription" id="subscription" type="checkbox">
-																		<i></i>
-																		Sitio Web Y
-																	</label>
-																</section>
-																<section class="col col-4">
-																	<label class="checkbox">
-																		<input name="subscription" id="subscription" type="checkbox">
-																		<i></i>
-																		Sitio Web Z
-																	</label>
-																</section>
-															</div>
-														</fieldset>
-													</form>
-													<!-- End Form3 -->
-												</div>
+
 											</div>
 										</div>
 									</div>
@@ -571,9 +520,8 @@ Use search to find needed section.
 			<div class="st_tabs">
 				<div class="st_tabs_wrap">
 					<ul>
-						<li><a href="#view_1">Resultados: Júan José Hernandes de Santiago</a></li>
-						<li><a href="#view_2">Detalle: Júan José Hernandes de Santiago</a></li>
-						<li><a href="#view_3">Tab 3</a></li>
+						<li><a href="#view_1"><i class="glyphicon glyphicon-remove closeTab"></i> Resultados: Júan José Hernandes de Santiago</a></li>
+						<li><a href="#view_2"><i class="glyphicon glyphicon-remove closeTab"></i> Detalle: Júan José Hernandes de Santiago</a></li>
 					</ul>
 				</div>
 			</div>
@@ -1003,7 +951,7 @@ Use search to find needed section.
 														<strong>01/12/1988</strong> años <br>
 														<hr>
 														<a href="javascript:void(0);" class="btn btn-labeled btn-primary"> <span class="btn-label"><i class="glyphicon glyphicon-map-marker"></i></span>Ver Mapa </a>
-														<a href="javascript:void(0);" class="btn btn-labeled btn-warning"> <span class="btn-label"><i class="glyphicon glyphicon-magnet"></i></span>Circulo de Influencia </a>
+
 													</span>
 											</div>
 											<div class="col-xs-12 col-sm-6 col-md-4">
@@ -1035,9 +983,9 @@ Use search to find needed section.
 												</div>
 
 											</div>
-
+											
 											<div class="col col-xs-12 padding-10">
-												<h2>Últimas Menciones</h2>
+												<h2>Actividad Reciente</h2>
 												<ul class="media-list">
 													<li class="media  well well-sm">
 														<a class="pull-left" href="javascript:void(0);"> <img class="media-object img-circle" alt="64x64" src="img/demo/64x64.png" style="width:64px; height:64px;"> </a>
@@ -1048,7 +996,7 @@ Use search to find needed section.
 																Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
 															</p>
 															<small class="text-muted pull-right">20-11-2015 16:15 hrs.</small>
-															
+
 														</div>
 													</li>
 													<li class="media  well well-sm">
@@ -1077,7 +1025,6 @@ Use search to find needed section.
 							<!--  end item redes -->
 						</div>
 						<!-- end vista-unica -->
-						<div class="view_3 st_view">Tab 3 Content</div>
 			</div>
 		</div>
 		<!--  end tabs-container -->
@@ -1597,8 +1544,9 @@ you can add as many as you like
 <!--  Slide Panel -->
 <script src="js/plugin/slidepanel/jquery.slidepanel.js"></script>
 <!--  SLIDETABS -->
-<script src="js/slidetabs/js/jquery.slidetabs.min.js"></script>
+<script src="js/slidetabs/js/plugins/jquery.mousewheel.min.js"></script>
 <script src="js/slidetabs/js/plugins/jquery.easing.1.3.js"></script>
+<script src="js/slidetabs/js/jquery.slidetabs.min.js"></script>
 <!--  JQCLOUD -->
 <script src="js/jqcloud/jqcloud.min.js"></script>
 
@@ -1843,6 +1791,26 @@ $('ul.bg-color-blueMiranda-alt > li > a').click(function(e){
 		}
 	});
 	// end datepicker01
+	// start datepicker02
+	$('#desdeFecha').datepicker({
+		dateFormat : 'dd/mm/yy',
+		prevText : '<i class="fa fa-chevron-left"></i>',
+		nextText : '<i class="fa fa-chevron-right"></i>',
+		onSelect : function(selectedDate) {
+			//$('#hastaFecha').datepicker('option', 'maxDate', selectedDate);
+		}
+	});
+	// end datepicker02
+	// start datepicker03
+	$('#hastaFecha').datepicker({
+		dateFormat : 'dd/mm/yy',
+		prevText : '<i class="fa fa-chevron-left"></i>',
+		nextText : '<i class="fa fa-chevron-right"></i>',
+		onSelect : function(selectedDate) {
+			// $('#startdate').datepicker('option', 'maxDate', selectedDate);
+		}
+	});
+	// end datepicker03
 
 })
 </script>
