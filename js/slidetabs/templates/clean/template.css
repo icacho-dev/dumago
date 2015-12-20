@@ -1,4 +1,4 @@
-/* 
+/*
 	Template Name: Clean
 	Template URI: www.slidetabs.com
 	Description: Clean style tabs
@@ -9,11 +9,11 @@
 /* NOTE: Prefix the template styles with <TEMPLATE FOLDER NAME>-horizontal/vertical */
 
 
-/* 
+/*
  * Horizontal Tabs
  *
 ------------------------------------------------------------------------------------- */
-div.clean-horizontal { /* The main container */	
+div.clean-horizontal { /* The main container */
 	position:relative;
 	clear:both;
 	width:100%; /* Set the full width */
@@ -21,7 +21,7 @@ div.clean-horizontal { /* The main container */
 
 /* Directional Buttons (horizontal)
 ------------------------------------------------------------------------------------- */
-div.clean-horizontal > div.st_tabs a.st_prev, 
+div.clean-horizontal > div.st_tabs a.st_prev,
 div.clean-horizontal > div.st_tabs a.st_next { /* Directional buttons (previous/next) */
 	display:none;
 	position:absolute;
@@ -32,13 +32,13 @@ div.clean-horizontal > div.st_tabs a.st_next { /* Directional buttons (previous/
 	text-indent:-999em;
 	border:1px solid #ccc;
 	outline:none;
-	background:#fff url("images/arrows_h.gif") no-repeat;	
+	background:#fff url("images/arrows_h.gif") no-repeat;
 }
 div.clean-horizontal > div.st_tabs a.st_prev { /* Previous button */
 	left:0px;
 	background-position:center 15px;
 }
-div.clean-horizontal > div.st_tabs a.st_prev:hover { /* Previous button hover */	
+div.clean-horizontal > div.st_tabs a.st_prev:hover { /* Previous button hover */
 	background-position:center -45px;
 	background-color:#f8f8f8;
 }
@@ -46,11 +46,11 @@ div.clean-horizontal > div.st_tabs a.st_next { /* Next button */
 	right:0px;
 	background-position:center -15px;
 }
-div.clean-horizontal > div.st_tabs a.st_next:hover { /* Next button hover */	
+div.clean-horizontal > div.st_tabs a.st_next:hover { /* Next button hover */
 	background-position:center -75px;
 	background-color:#f8f8f8;
 }
-div.clean-horizontal > div.st_tabs a.st_prev.st_btn_disabled, 
+div.clean-horizontal > div.st_tabs a.st_prev.st_btn_disabled,
 div.clean-horizontal > div.st_tabs a.st_next.st_btn_disabled { /* Previous and next buttons disabled state */
 	cursor:default;
 	background-color:#f8f8f8;
@@ -64,10 +64,10 @@ div.clean-horizontal > div.st_tabs a.st_next.st_btn_disabled { /* Next button di
 
 /* Tabs (horizontal)
 ------------------------------------------------------------------------------------- */
-div.clean-horizontal > div.st_tabs { /* Tabs main container */		
+div.clean-horizontal > div.st_tabs { /* Tabs main container */
 	position:relative;
-	z-index:100;		
-	width:100% !important;	
+	z-index:100;
+	width:100% !important;
 	height:45px;
 	margin-bottom:-1px;
 	overflow:hidden;
@@ -123,9 +123,13 @@ div.clean-horizontal.st_sliding_active > div.st_tabs ul li a.st_tab_last { /* La
 	border-right:0 none;
 }
 div.clean-horizontal > div.st_tabs ul li a.st_tab_active { /* Tab active/highlighted state */
-	padding-bottom:2px;
+	/*padding-bottom:2px;
 	background:#fff;
-	color:#1ca5ec;
+	color:#1ca5ec;*/
+	padding-top: 0px;
+	margin-top: 2px;
+	background: #fff;
+	color: #1ca5ec;
 }
 
 /* Content (horizontal)
@@ -181,7 +185,7 @@ div.clean-horizontal.align_bottom > div.st_tabs ul li a { /* Tab links */
 }
 
 
-/* 
+/*
  * Vertical Tabs
  *
 ------------------------------------------------------------------------------------- */
@@ -193,19 +197,19 @@ div.clean-vertical { /* The main container */
 
 /* Control Buttons (vertical)
 ------------------------------------------------------------------------------------- */
-div.clean-vertical > div.st_tabs a.st_prev, 
-div.clean-vertical > div.st_tabs a.st_next { /* Directional buttons (previous/next) */	
+div.clean-vertical > div.st_tabs a.st_prev,
+div.clean-vertical > div.st_tabs a.st_next { /* Directional buttons (previous/next) */
 	display:none;
 	float:left;
 	position:relative;
-	z-index:100;	
+	z-index:100;
 	height:34px;
 	width:93px;
 	text-indent:-999em;
 	border:1px solid #ccc;
 	border-top:0 none;
-	outline:none;	
-	background:#fff url("images/arrows_v.gif") no-repeat;	
+	outline:none;
+	background:#fff url("images/arrows_v.gif") no-repeat;
 }
 div.clean-vertical > div.st_tabs a.st_prev { /* Previous button */
 	border-right:0 none;
@@ -236,7 +240,7 @@ div.clean-vertical > div.st_tabs a.st_next.st_btn_disabled { /* Next button disa
 
 /* Tabs (vertical)
 ------------------------------------------------------------------------------------- */
-div.clean-vertical > div.st_tabs { /* Tabs main container */  	
+div.clean-vertical > div.st_tabs { /* Tabs main container */
 	position:relative;
 	z-index:100;
 	float:left;
@@ -253,7 +257,7 @@ div.clean-vertical > div.st_tabs div.st_tabs_wrap { /* Tabs slide-container */
 }
 div.clean-vertical > div.st_tabs ul { /* Tabs unordered list */
 	float:left;
-	width:188px;	
+	width:188px;
 	margin:0px;
 	padding:0px;
 	list-style:none;
@@ -298,7 +302,7 @@ div.clean-vertical > div.st_tabs ul li a span {
 	font-size:11px;
 	font-weight:normal;
 	color:#838383;
-	padding-top:3px;	
+	padding-top:3px;
 }
 
 /* Content (vertical)
@@ -313,7 +317,7 @@ div.clean-vertical > div.st_views { /* Main content container */
 	overflow:hidden;
 }
 div.clean-vertical > div.st_views div.st_view { /* Content containers - NOTE: background images will be set on these containers */
-	width:100%;	
+	width:100%;
 	height:100%;
 	overflow:hidden;
 	background-image:none;
@@ -338,7 +342,7 @@ div.clean-vertical.align_right > div.st_tabs a.st_prev { /* Previous button */
 div.clean-vertical.align_right > div.st_tabs a.st_next { /* Previous button */
 	margin-right:-1px;
 }
-div.clean-vertical.align_right > div.st_tabs { /* Tabs main container */  	
+div.clean-vertical.align_right > div.st_tabs { /* Tabs main container */
 	float:right;
 	margin-left:-1px;
 	margin-right:0px;
@@ -349,23 +353,23 @@ div.clean-vertical.align_right > div.st_tabs ul li a.st_tab_active { /* Tab acti
 }
 
 
-/* 
+/*
  * Media Queries
  *
 ------------------------------------------------------------------------------------- */
 @media screen and (max-width: 760px) {
 	/* Horizontal Tabs
 	------------------------------------------------------------------------------------- */
-		
+
 	/* Tabs (horizontal) */
 	div.clean-horizontal > div.st_tabs ul li a {
 		padding-right:21px;
 		padding-left:21px;
 	}
-	
+
 	/* Vertical Tabs
 	------------------------------------------------------------------------------------- */
-	
+
 	/* Arrow Buttons (vertical) */
 	div.clean-vertical > div.st_tabs a.st_prev,
 	div.clean-vertical > div.st_tabs a.st_next {
@@ -373,8 +377,8 @@ div.clean-vertical.align_right > div.st_tabs ul li a.st_tab_active { /* Tab acti
 	}
 	div.clean-vertical > div.st_tabs a.st_prev { /* Previous button */
 		border-right:1px solid #ccc;
-	}	
-	
+	}
+
 	/* Tabs (vertical) */
 	div.clean-vertical > div.st_tabs {
 		width:52px;
@@ -384,27 +388,27 @@ div.clean-vertical.align_right > div.st_tabs ul li a.st_tab_active { /* Tab acti
 		width:50px;
 		height:40px;
 		padding:0;
-		text-indent:-1000em;		
+		text-indent:-1000em;
 		background:url("images/tab_dots.gif") no-repeat center 18px #f8f8f8;
 	}
-	div.clean-vertical > div.st_tabs ul li a:hover { /* Tabs hover state */	
+	div.clean-vertical > div.st_tabs ul li a:hover { /* Tabs hover state */
 		background-color:#fbfbfb;
 	}
-	div.clean-vertical > div.st_tabs ul li a.st_tab_active {    
+	div.clean-vertical > div.st_tabs ul li a.st_tab_active {
     	padding-right:1px;
 		background:url("images/tab_dots.gif") no-repeat center -64px #ffffff;
 	}
 	div.clean-vertical.align_right > div.st_tabs ul li a.st_tab_active { /* Tab active/highlighted state */
 		padding-right:0px;
 	}
-	
+
 	/* Content (vertical) */
 	div.clean-vertical > div.st_views {
 		height:356px;
 	}
-	
+
 	/* Right-aligned Tabs (vertical) */
-	div.clean-vertical.align_right > div.st_tabs a.st_prev, 
+	div.clean-vertical.align_right > div.st_tabs a.st_prev,
 	div.clean-vertical.align_right > div.st_tabs a.st_next {
     	border-left:1px solid #ccc;
 	}
@@ -412,7 +416,7 @@ div.clean-vertical.align_right > div.st_tabs ul li a.st_tab_active { /* Tab acti
 
 @media screen and (max-width: 480px) {
 	/* Tabs (horizontal) */
-	div.clean-horizontal > div.st_tabs ul li a {	
+	div.clean-horizontal > div.st_tabs ul li a {
 		padding-right:14px;
 		padding-left:14px;
 	}

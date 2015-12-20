@@ -729,3 +729,7 @@ nav ul ul > li:hover b {
 .social-icons .fa-windows{background-color:#12B6F3;}
 .social-icons .fa-xing,.social-icons .fa-xing-square{background-color:#00555C;}
 .social-icons .fa-youtube,.social-icons .fa-youtube-play,.social-icons .fa-youtube-square{background-color:#C52F30;}
+
+.closeTab:hover {
+  color: rgb(214, 49, 49);
+}
