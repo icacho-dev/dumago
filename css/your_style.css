@@ -615,6 +615,7 @@ nav ul ul > li:hover b {
 }
 .bottom-button:hover {
   cursor: pointer;
+  z-index: 99;
 }
 .bottom-button:hover .triangle-bottomright {
   border-bottom: 30px solid #a7233a;
